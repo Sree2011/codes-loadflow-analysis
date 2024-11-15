@@ -70,4 +70,4 @@ Here are the links to the implementations:
 
 ## References
 
-[1] Hadi Saadat. Power System Analysis. United States, Psa Pub, 2010.
+[1] Hadi Saadat, *""Power System Analysis""*. Psa Pub, United States, 2010.
