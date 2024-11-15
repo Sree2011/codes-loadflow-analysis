@@ -1,7 +1,7 @@
 # bus-admittance-matrix
 This repository implements Bus admittance matrix of a power system in java, python and matlab.
 
-### Algorithm to Generate Bus Admittance Matrix
+## Algorithm to Generate Bus Admittance Matrix
 
 1. **Initialization**:
    - Import necessary libraries.
@@ -33,7 +33,7 @@ This repository implements Bus admittance matrix of a power system in java, pyth
 6. **Output Bus Admittance Matrix**:
    - Print the bus admittance matrix `Ybus`.
 
-### Pseudocode
+## Pseudocode
 
 ```pseudocode
 Initialize variables and matrices
@@ -62,3 +62,15 @@ For each bus i:
 Print bus admittance matrix Ybus
 ```
 
+## The Actual Code
+
+Here are the links to the implementations:
+
+1. [Python](./Ybus/python/Ybus_Python.py)
+2. [Java](./Ybus/java/Ybus_Java.java)
+3. [MATLAB](./Ybus/matlab/Ybus_matlab.m)
+
+
+## References
+
+[1] Hadi Saadat. Power System Analysis. United States, Psa Pub, 2010.
