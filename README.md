@@ -1,5 +1,6 @@
-## Algorithm to Generate Bus Admittance Matrix
+## Generate Bus Admittance Matrix
 
+## Algorithm
 1. **Initialization**:
    - Import necessary libraries.
    - Initialize variables for the number of buses `n` and the choice of input type (impedance or admittance).
