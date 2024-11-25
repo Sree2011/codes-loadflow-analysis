@@ -39,7 +39,7 @@ nbus = max(max(nl),max(nr));
 Z = R+j*X;
 
 % Calculate Admittance
-y = ones(nbr,1)/Z;
+y = ones(nbr,1)./Z;
 
 % Form bus admittance matrix
 Ybus = zeros(nbus,nbus);
@@ -64,4 +64,11 @@ end
 
 
 disp('Bus Admittance Matrix is:');
-disp(Ybus);
+
+for i = 1:nbus
+    for j = 1:nbus
+        % Print the complex number with real and imaginary parts
+        fprintf('%.4f + %.4fj  ', real(Ybus(i, j)), imag(Ybus(i, j))); 
+    end
+    fprintf('\n'); % Print a new line after each row
+end
