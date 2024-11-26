@@ -36,18 +36,14 @@ X = zdata[:,3]
 Z = np.zeros(nbr,dtype=complex)
 # Total number of buses
 nbus = int(max(max(nl),max(nr)))
-print(R)
-print(X)
 
-print(nbus)
 # Calculate Impedance
 for i in range(len(R)):
     Z[i] = complex(R[i],X[i])
 
-print(Z)
+
 # Calculate Admittance
 y = 1/Z
-print(y)
 # Form bus admittance matrix
 Ybus = np.zeros((nbus,nbus),dtype=complex)
 
