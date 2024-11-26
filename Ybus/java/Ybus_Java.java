@@ -48,14 +48,13 @@ public class Ybus_Java {
         for (int i = 0; i < R.length; i++) {
             Z[i] = new Complex(R[i], X[i]);
             y[i] = Z[i].reciprocal();
-            
         }
 
         // Form Bus Admittance matrix
         // Formation of off diagonal elements
         for(int k=0;k<zdata.length;k++){
-            if(nl[k]>0 & nr[k] >0){
-                Ybus[nl[k]-1][nr[k]-1] = y[k].subtract(Ybus[nl[k]-1][nr[k]-1]);
+            if(nl[k]-1>0 && nr[k]-1 >0){
+                Ybus[nl[k]-1][nr[k]-1] = Ybus[nl[k]-1][nr[k]-1].subtract(y[k]);       
                 Ybus[nr[k]-1][nl[k]-1] = Ybus[nl[k]-1][nr[k]-1];
             }
         }
@@ -63,19 +62,11 @@ public class Ybus_Java {
         // Formation of diagonal elements
         for(int n=0;n<nbus;n++){
             for(int k=0;k<zdata.length;k++){
-                if (nl[k] == n || nr[k] == n){
+                if (nl[k]-1 == n || nr[k]-1 == n){
                     Ybus[n][n] = Ybus[n][n].add(y[k]);
                 }
-                else{
-                    continue;
-                }
-
             }
         }
-
-        
-            
-        
 
         System.out.println("Bus Admittance Matrix is:");
         for (int i = 0; i < nbus; i++) {
