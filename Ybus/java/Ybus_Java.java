@@ -1,66 +1,82 @@
-import java.util.*;
 
 public class Ybus_Java {
-    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("Enter the number of buses:");
-        int n = sc.nextInt();
-        sc.nextLine(); // Consume the newline
+        // Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
+        float[][] zdata = {
+                {1, 2, 0.02f, 0.06f},
+                {1, 3, 0.08f, 0.24f},
+                {2, 3, 0.06f, 0.25f},
+                {2, 4, 0.06f, 0.18f},
+                {2, 5, 0.04f, 0.12f},
+                {3, 4, 0.01f, 0.03f},
+                {4, 5, 0.08f, 0.24f}
+        };
 
-        System.out.println("Enter 1 for impedance and 2 for admittance:");
-        int choice = sc.nextInt();
-        sc.nextLine();
+        // Extract data
+        int[] nl = new int[zdata.length]; // Starting bus numbers
+        int[] nr = new int[zdata.length]; // Ending bus numbers
+        float[] R = new float[zdata.length]; // Resistance (pu)
+        float[] X = new float[zdata.length]; // Reactance (pu)
 
-        Complex[][] y = new Complex[n][n];
-        Complex[][] Ybus = new Complex[n][n];
+        for (int i = 0; i < zdata.length; i++) {
+            nl[i] = (int) zdata[i][0];
+            nr[i] = (int) zdata[i][1];
+            R[i] = zdata[i][2];
+            X[i] = zdata[i][3];
+        }
 
-        // Initialize the Ybus matrix with zeros
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        // Total number of buses (considering max bus number)
+        int nbus = Math.max(nl[nl.length - 1], nr[nr.length - 1]);
+
+        // Initialize matrices
+        Complex[] Z = new Complex[zdata.length];
+        Complex[] y = new Complex[zdata.length];
+        Complex[][] Ybus = new Complex[nbus][nbus];
+
+        for (int i = 0; i < zdata.length; i++) {
+            y[i] = new Complex(0, 0);
+        }
+
+        for (int i = 0; i < nbus; i++) {
+            for (int j = 0; j < nbus; j++) {
                 Ybus[i][j] = new Complex(0, 0);
             }
         }
 
-        if (choice == 1) {
-            // Take impedance as input and calculate Admittance
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                    System.out.println("Enter the impedance between bus " + (i+1) + " and bus " + (j+1));
-                    String s = sc.nextLine();
-                    y[i][j] = Complex.fromString(s);
-                    y[i][j] = y[i][j].reciprocal();
-                }
-            }
-        } else if (choice == 2) {
-            // Take Admittance as input
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < n; j++) {
-                    System.out.println("Enter the admittance between bus " + (i+1) + " and bus " + (j+1));
-                    String s = sc.nextLine();
-                    y[i][j] = Complex.fromString(s);
-                }
+        // Calculate Impedance and Admittance
+        for (int i = 0; i < R.length; i++) {
+            Z[i] = new Complex(R[i], X[i]);
+            y[i] = Z[i].reciprocal();
+            
+        }
+
+        // Form Bus Admittance matrix
+        // Formation of off diagonal elements
+        for(int k=0;k<zdata.length;k++){
+            if(nl[k]>0 & nr[k] >0){
+                Ybus[nl(k)][nr(k)] = Ybus[nl(k)][nr(k)] - y(k);
+                Ybus[nr(k)][nl(k)] = Ybus[nl(k)][nr(k)];
             }
         }
 
-        // Form bus admittance matrix
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i == j) { // Diagonal elements
-                    for (int k = 0; k < n; k++) {
-                        Ybus[i][j] = Ybus[i][j].add(y[i][k]);
-                    }
-                } else {
-                    Ybus[i][j] = y[i][j].negate();
-                }
-            }
-        }
+        % Formation of diagonal elements
+        for n = 1:nbus
+            for k = 1:nbr
+                if nl(k) == n | nr(k) == n
+                    Ybus(n,n) = Ybus(n,n)+y(k);
+                else,end
+            end
+        end
 
-        // Display the Y-bus matrix
-        System.out.println("Y-bus Matrix:");
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.print(Ybus[i][j] + "\t");
+        
+            
+        
+
+        System.out.println("Bus Admittance Matrix is:");
+        for (int i = 0; i < nbus; i++) {
+            for (int j = 0; j < nbus; j++) {
+                System.out.print(Ybus[i][j].toString() + " ");
             }
             System.out.println();
         }
