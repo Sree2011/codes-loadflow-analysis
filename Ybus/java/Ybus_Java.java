@@ -55,19 +55,23 @@ public class Ybus_Java {
         // Formation of off diagonal elements
         for(int k=0;k<zdata.length;k++){
             if(nl[k]>0 & nr[k] >0){
-                Ybus[nl(k)][nr(k)] = Ybus[nl(k)][nr(k)] - y(k);
-                Ybus[nr(k)][nl(k)] = Ybus[nl(k)][nr(k)];
+                Ybus[nl[k]-1][nr[k]-1] = y[k].subtract(Ybus[nl[k]-1][nr[k]-1]);
+                Ybus[nr[k]-1][nl[k]-1] = Ybus[nl[k]-1][nr[k]-1];
             }
         }
 
-        % Formation of diagonal elements
-        for n = 1:nbus
-            for k = 1:nbr
-                if nl(k) == n | nr(k) == n
-                    Ybus(n,n) = Ybus(n,n)+y(k);
-                else,end
-            end
-        end
+        // Formation of diagonal elements
+        for(int n=0;n<nbus;n++){
+            for(int k=0;k<zdata.length;k++){
+                if (nl[k] == n || nr[k] == n){
+                    Ybus[n][n] = Ybus[n][n].add(y[k]);
+                }
+                else{
+                    continue;
+                }
+
+            }
+        }
 
         
             
