@@ -2,7 +2,9 @@
 public class Ybus_Java {
 
     public static void main(String[] args) {
-        // Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
+        /**
+         * Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
+         **/
         float[][] zdata = {
                 {1, 2, 0.02f, 0.06f},
                 {1, 3, 0.08f, 0.24f},
@@ -14,7 +16,11 @@ public class Ybus_Java {
         };
 
         // Extract data
+
+        /**@variable nl The starting bus number */
         int[] nl = new int[zdata.length]; // Starting bus numbers
+
+        
         int[] nr = new int[zdata.length]; // Ending bus numbers
         float[] R = new float[zdata.length]; // Resistance (pu)
         float[] X = new float[zdata.length]; // Reactance (pu)
