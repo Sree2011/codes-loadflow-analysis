@@ -1,10 +1,14 @@
-
+/**
+ * This class creates a bus admittance matrix (Ybus).
+ * Functions:
+ * - main(): The main function that executes the formation of the Ybus matrix.
+ */
 public class Ybus_Java {
 
     public static void main(String[] args) {
         /**
          * Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
-         **/
+         */
         float[][] zdata = {
                 {1, 2, 0.02f, 0.06f},
                 {1, 3, 0.08f, 0.24f},
@@ -17,10 +21,14 @@ public class Ybus_Java {
 
         // Extract data
 
-        /**@variable nl The starting bus number */
+        /**
+         * The starting bus numbers
+         */
         int[] nl = new int[zdata.length]; // Starting bus numbers
 
-        
+        /**
+         * The ending bus numbers
+         */
         int[] nr = new int[zdata.length]; // Ending bus numbers
         float[] R = new float[zdata.length]; // Resistance (pu)
         float[] X = new float[zdata.length]; // Reactance (pu)
@@ -50,12 +58,11 @@ public class Ybus_Java {
             }
         }
 
-        for(int i=0;i<zdata.length;i++){
-            Z[i] = new Complex(R[i],X[i]);
+        for (int i = 0; i < zdata.length; i++) {
+            Z[i] = new Complex(R[i], X[i]);
             y[i] = Z[i].reciprocal();
         }
 
-      
         // Form Bus Admittance matrix
         // Formation of off-diagonal elements
         for (int k = 0; k < zdata.length; k++) {
@@ -87,5 +94,5 @@ public class Ybus_Java {
             }
             System.out.println();
         }
-     }
- }
+    }
+}
