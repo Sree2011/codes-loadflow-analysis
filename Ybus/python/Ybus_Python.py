@@ -30,7 +30,7 @@ def calculate_admittance_matrix(zdata):
     Returns:
         np.array: Bus admittance matrix.
     """
-    # Number of lines or branches
+    """ @variable nbr Number of lines or branches """
     nbr = len(zdata[:,1])
     
     # Starting bus numbers
