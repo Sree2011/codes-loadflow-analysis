@@ -27,8 +27,7 @@ jobs:
 
     - name: Generate Javadoc
       run: |
-
-        
+        pip install lazydocs
         mkdir -p docs
         javadoc -d docs $(find Ybus/java -name "*.java")
         mkdir -p docs/python
