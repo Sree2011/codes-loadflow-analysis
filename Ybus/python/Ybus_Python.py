@@ -64,5 +64,5 @@ print('Bus Admittance Matrix is:');
 
 for i in range(len(Ybus)):
     for j in range(len(Ybus)):
-        print("{num.real:+0.04f} {num.imag:+0.04f}j".format(num=Ybus[i][j]),end="  ")
+        print("{num.real:+0.02f} {num.imag:+0.02f}j".format(num=Ybus[i][j]),end="  ")
     print()

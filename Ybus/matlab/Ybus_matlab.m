@@ -68,7 +68,7 @@ disp('Bus Admittance Matrix is:');
 for i = 1:nbus
     for j = 1:nbus
         % Print the complex number with real and imaginary parts
-        fprintf('%.4f + %.4fj  ', real(Ybus(i, j)), imag(Ybus(i, j))); 
+        fprintf('%.2f + %.2fj  ', real(Ybus(i, j)), imag(Ybus(i, j))); 
     end
     fprintf('\n'); % Print a new line after each row
 end

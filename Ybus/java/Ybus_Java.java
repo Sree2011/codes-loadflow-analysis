@@ -27,7 +27,7 @@ public class Ybus_Java {
         }
 
         // Total number of buses (considering max bus number)
-        int nbus = Math.max(nl[nl.length - 1], nr[nr.length - 1]);
+        int nbus = Math.max(Complex.findMax(nl), Complex.findMax(nr));
 
         // Initialize matrices
         Complex[] Z = new Complex[zdata.length];
@@ -44,25 +44,31 @@ public class Ybus_Java {
             }
         }
 
-        // Calculate Impedance and Admittance
-        for (int i = 0; i < R.length; i++) {
-            Z[i] = new Complex(R[i], X[i]);
+        for(int i=0;i<zdata.length;i++){
+            Z[i] = new Complex(R[i],X[i]);
             y[i] = Z[i].reciprocal();
         }
 
+      
         // Form Bus Admittance matrix
-        // Formation of off diagonal elements
-        for(int k=0;k<zdata.length;k++){
-            if(nl[k]-1>0 && nr[k]-1 >0){
-                Ybus[nl[k]-1][nr[k]-1] = Ybus[nl[k]-1][nr[k]-1].subtract(y[k]);       
-                Ybus[nr[k]-1][nl[k]-1] = Ybus[nl[k]-1][nr[k]-1];
+        // Formation of off-diagonal elements
+        for (int k = 0; k < zdata.length; k++) {
+            int i = nl[k] - 1; // Start bus index (zero-based)
+            int j = nr[k] - 1; // End bus index (zero-based)
+            if (i >= 0 && j >= 0) {
+                // Off-diagonal elements are the negative of the admittances
+                Ybus[i][j] = Ybus[i][j].subtract(y[k]);
+                Ybus[j][i] = Ybus[i][j]; // Symmetrical
             }
         }
 
         // Formation of diagonal elements
-        for(int n=0;n<nbus;n++){
-            for(int k=0;k<zdata.length;k++){
-                if (nl[k]-1 == n || nr[k]-1 == n){
+        for (int n = 0; n < nbus; n++) {
+            for (int k = 0; k < zdata.length; k++) {
+                int i = nl[k] - 1; // Start bus index (zero-based)
+                int j = nr[k] - 1; // End bus index (zero-based)
+                if (i == n || j == n) {
+                    // Diagonal elements are the sum of the admittances
                     Ybus[n][n] = Ybus[n][n].add(y[k]);
                 }
             }
@@ -75,5 +81,5 @@ public class Ybus_Java {
             }
             System.out.println();
         }
-    }
-}
+     }
+ }

@@ -1,10 +1,11 @@
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Complex {
 
-    private static float real;
-    private static float imaginary;
+    private float real;
+    private float imaginary;
 
     public Complex(float real, float imaginary) {
         this.real = real;
@@ -29,6 +30,16 @@ public class Complex {
         } else {
             throw new IllegalArgumentException("Invalid complex number format");
         }
+    }
+
+    public static int findMax(int[] array) { 
+        int max = array[0]; 
+        for (int i = 1; i < array.length; i++) { 
+            if (array[i] > max) { 
+                max = array[i]; 
+            } 
+        } 
+        return max; 
     }
 
     public Complex add(Complex other) {
@@ -61,40 +72,8 @@ public class Complex {
         return new Complex(newReal, newImaginary);
     }
 
-    // Note: These methods don't use complex numbers and remain unchanged
-
-    public static float[] getColumn(float[][] array, int columnIndex) {
-        // Validate input
-        if (array == null || array.length == 0 || columnIndex < 0 || columnIndex >= array[0].length) {
-            throw new IllegalArgumentException("Invalid array or column index.");
-        }
-
-        float[] column = new float[array.length];
-        for (int i = 0; i < array.length; i++) {
-            column[i] = array[i][columnIndex]; // Extracting the column element
-        }
-        return column;
-    }
-
-    public static int findMax(int[] array) {
-        int max = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > max) {
-                max = array[i];
-            }
-        }
-        return max;
-    }
-
-    public static int max(int n1, int n2) {
-        if (n1 > n2) {
-            return n1;
-        }
-        return n2;
-    }
-
     @Override
     public String toString() {
-        return real + " + " + imaginary + "j";
+        return String.format("%.2f + %.2fj", real, imaginary);
     }
 }
