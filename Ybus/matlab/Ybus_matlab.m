@@ -1,13 +1,15 @@
+% /**
 % This program generates a bus admittance matrix for a given set of buses and lines.
 % The user need to keep linedata matrix into four columns.: Bus 1,Bus 2, Resistance and Reactance.
 % Then, replace the zdata matrix with their own. For now, the linedata of the IEEE-30 Bus system is considered.
 % The program then calculates the admittance matrix and prints it to the console.
+% **/
 
 % @author SREE SAI NANDINI
 
 clear all;
 clc;
-% Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
+%% Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
 %  bus1 bus2 R(pu) X(pu)
 zdata = [
     1   2  0.02  0.06;
@@ -18,7 +20,7 @@ zdata = [
     3   4  0.01  0.03;
     4   5  0.08  0.24;
 ];
-% Extract data
+%% Extract data
 
 % Number of lines or branches
 nbr = size(zdata(:,1))(1);
@@ -35,13 +37,13 @@ X = zdata(:,4);
 % Total number of buses
 nbus = max(max(nl),max(nr));
 
-% Calculate Impedance
+%% Calculate Impedance
 Z = R+j*X;
 
-% Calculate Admittance
+%% Calculate Admittance
 y = ones(nbr,1)./Z;
 
-% Form bus admittance matrix
+%% Form bus admittance matrix
 Ybus = zeros(nbus,nbus);
 
 % Formation of off diagonal elements
@@ -62,7 +64,7 @@ for n = 1:nbus
 end
 
 
-
+%% Display the results
 disp('Bus Admittance Matrix is:');
 
 for i = 1:nbus
@@ -72,3 +74,4 @@ for i = 1:nbus
     end
     fprintf('\n'); % Print a new line after each row
 end
+

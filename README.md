@@ -66,7 +66,7 @@ Print bus admittance matrix Ybus
 
 Here are the links to the implementations:
 
-1. [Python](./Ybus/python/Ybus_Python.py)
+1. [Python](./Ybus/python/docs/Ybus_python.py.md)
 2. [Java](./Ybus/java/Ybus_Java.java)
 3. [MATLAB](./Ybus/matlab/Ybus_matlab.m)
 
