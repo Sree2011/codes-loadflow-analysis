@@ -4,7 +4,7 @@
  * Functions:
  * - @code Complex(float,float): The constructor
  * - <code>getReal(),getImg()</code>: the getter functions
- * - <code>fromString(s)</code> : Creates a complex number based on the input string
+ * - fromString(s) : Creates a complex number based on the input string
  * 
  */
 import java.util.regex.Matcher;
