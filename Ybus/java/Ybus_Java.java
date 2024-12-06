@@ -1,13 +1,22 @@
+
 /**
  * This class creates a bus admittance matrix (Ybus).
  * Functions:
- * - main(): The main function that executes the formation of the Ybus matrix.
+ * - {@code main()}: The main function that executes the formation of the Ybus matrix.
  */
 public class Ybus_Java {
 
+    /**
+     * Main function that executes the formation of the Ybus matrix.
+     * 
+     * @param args Command line arguments.
+     */
     public static void main(String[] args) {
         /**
-         * Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
+         * "Example linedata matrix for IEEE-30 Bus system"
+         *  Replace this with your own linedata matrix. 
+         *  Ensure the format is: Bus1, Bus2, Resistance (pu), Reactance (pu)
+         * 
          */
         float[][] zdata = {
                 {1, 2, 0.02f, 0.06f},
@@ -22,12 +31,12 @@ public class Ybus_Java {
         // Extract data
 
         /**
-         * The starting bus numbers
+         * The starting bus numbers.
          */
         int[] nl = new int[zdata.length]; // Starting bus numbers
 
         /**
-         * The ending bus numbers
+         * The ending bus numbers.
          */
         int[] nr = new int[zdata.length]; // Ending bus numbers
         float[] R = new float[zdata.length]; // Resistance (pu)
