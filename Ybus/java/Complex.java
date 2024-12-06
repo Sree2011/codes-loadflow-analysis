@@ -1,4 +1,9 @@
-
+/**
+ * This class defines utility functions for
+ * handling complex numbers.
+ * Functions:
+ * 
+ */
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
