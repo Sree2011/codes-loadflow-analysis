@@ -1,0 +1,133 @@
+\hypertarget{namespaceYbus__Python}{}\doxysection{Ybus\+\_\+\+Python Namespace Reference}
+\label{namespaceYbus__Python}\index{Ybus\_Python@{Ybus\_Python}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceYbus__Python_a8337066dd1c28292f77f0b4245cbb009}{calculate\+\_\+admittance}} (\mbox{\hyperlink{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}{R}}, \mbox{\hyperlink{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}{X}})
+\item 
+def \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{calculate\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}})
+\item 
+def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{print\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}{Ybus}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}
+\item 
+\mbox{\hyperlink{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}{nbr}} = len(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}} = np.\+array(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 0\mbox{]}, dtype=int)
+\item 
+\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{nr}} = np.\+array(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]}, dtype=int)
+\item 
+\mbox{\hyperlink{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}{R}} = \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 2\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}{X}} = \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 3\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}} = int(max(max(\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}}), max(\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{nr}})))
+\item 
+def \mbox{\hyperlink{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}{Ybus}} = \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{calculate\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceYbus__Python_a8337066dd1c28292f77f0b4245cbb009}\label{namespaceYbus__Python_a8337066dd1c28292f77f0b4245cbb009}} 
+\index{Ybus\_Python@{Ybus\_Python}!calculate\_admittance@{calculate\_admittance}}
+\index{calculate\_admittance@{calculate\_admittance}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{calculate\_admittance()}{calculate\_admittance()}}
+{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+calculate\+\_\+admittance (\begin{DoxyParamCaption}\item[{}]{R,  }\item[{}]{X }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the admittance values from resistance and reactance.
+
+Args:
+    R (np.array): Resistance values.
+    X (np.array): Reactance values.
+
+Returns:
+    np.array: Admittance values.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}\label{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}} 
+\index{Ybus\_Python@{Ybus\_Python}!calculate\_admittance\_matrix@{calculate\_admittance\_matrix}}
+\index{calculate\_admittance\_matrix@{calculate\_admittance\_matrix}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{calculate\_admittance\_matrix()}{calculate\_admittance\_matrix()}}
+{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+calculate\+\_\+admittance\+\_\+matrix (\begin{DoxyParamCaption}\item[{}]{zdata }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the bus admittance matrix from the linedata.
+
+Args:
+    zdata (np.array): Linedata matrix.
+
+Returns:
+    np.array: Bus admittance matrix.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}\label{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}} 
+\index{Ybus\_Python@{Ybus\_Python}!print\_admittance\_matrix@{print\_admittance\_matrix}}
+\index{print\_admittance\_matrix@{print\_admittance\_matrix}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{print\_admittance\_matrix()}{print\_admittance\_matrix()}}
+{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+print\+\_\+admittance\+\_\+matrix (\begin{DoxyParamCaption}\item[{}]{Ybus }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prints the bus admittance matrix to the console.
+
+Args:
+    Ybus (np.array): Bus admittance matrix.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}\label{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}} 
+\index{Ybus\_Python@{Ybus\_Python}!nbr@{nbr}}
+\index{nbr@{nbr}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{nbr}{nbr}}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+nbr = len(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]})}
+
+\mbox{\Hypertarget{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}\label{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}} 
+\index{Ybus\_Python@{Ybus\_Python}!nbus@{nbus}}
+\index{nbus@{nbus}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{nbus}{nbus}}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+nbus = int(max(max(\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}}), max(\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{nr}})))}
+
+\mbox{\Hypertarget{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}\label{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}} 
+\index{Ybus\_Python@{Ybus\_Python}!nl@{nl}}
+\index{nl@{nl}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{nl}{nl}}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+nl = np.\+array(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 0\mbox{]}, dtype=int)}
+
+\mbox{\Hypertarget{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}\label{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}} 
+\index{Ybus\_Python@{Ybus\_Python}!nr@{nr}}
+\index{nr@{nr}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{nr}{nr}}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+nr = np.\+array(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]}, dtype=int)}
+
+\mbox{\Hypertarget{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}\label{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}} 
+\index{Ybus\_Python@{Ybus\_Python}!R@{R}}
+\index{R@{R}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+R = \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 2\mbox{]}}
+
+\mbox{\Hypertarget{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}\label{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}} 
+\index{Ybus\_Python@{Ybus\_Python}!X@{X}}
+\index{X@{X}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+X = \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 3\mbox{]}}
+
+\mbox{\Hypertarget{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}\label{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}} 
+\index{Ybus\_Python@{Ybus\_Python}!Ybus@{Ybus}}
+\index{Ybus@{Ybus}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{Ybus}{Ybus}}
+{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+Ybus = \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{calculate\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}})}
+
+\mbox{\Hypertarget{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}\label{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}} 
+\index{Ybus\_Python@{Ybus\_Python}!zdata@{zdata}}
+\index{zdata@{zdata}!Ybus\_Python@{Ybus\_Python}}
+\doxysubsubsection{\texorpdfstring{zdata}{zdata}}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+zdata}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  np.array([}
+\DoxyCodeLine{2     [1, 2, 0.02, 0.06],}
+\DoxyCodeLine{3     [1, 3, 0.08, 0.24],}
+\DoxyCodeLine{4     \textcolor{comment}{\# ... other lines}}
+\DoxyCodeLine{5 ])}
+
+\end{DoxyCode}
