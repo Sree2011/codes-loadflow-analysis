@@ -1,0 +1,91 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Algorithm}\label{md_README_autotoc_md1}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Initialization}}\+:
+\begin{DoxyItemize}
+\item Import necessary libraries.
+\item Initialize variables for the number of buses {\ttfamily n} and the choice of input type (impedance or admittance).
+\end{DoxyItemize}
+\item {\bfseries{Input Number of Buses}}\+:
+\begin{DoxyItemize}
+\item Prompt the user to enter the number of buses.
+\item Initialize the bus admittance matrix {\ttfamily Ybus} with complex zeros.
+\item Initialize a placeholder matrix {\ttfamily y} with complex zeros.
+\end{DoxyItemize}
+\item {\bfseries{Input Choice for Impedance or Admittance}}\+:
+\begin{DoxyItemize}
+\item Prompt the user to choose between entering impedance or admittance values.
+\end{DoxyItemize}
+\item {\bfseries{Input Impedance or Admittance Values}}\+:
+\begin{DoxyItemize}
+\item {\bfseries{Case 1}}\+: If the user chooses impedance\+:
+\begin{DoxyItemize}
+\item For each pair of buses, prompt the user to enter the impedance value.
+\item Calculate the admittance for each pair as the reciprocal of the impedance and store it in matrix {\ttfamily y}.
+\end{DoxyItemize}
+\item {\bfseries{Case 2}}\+: If the user chooses admittance\+:
+\begin{DoxyItemize}
+\item For each pair of buses, prompt the user to enter the admittance value directly and store it in matrix {\ttfamily y}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Form Bus Admittance Matrix}}\+:
+\begin{DoxyItemize}
+\item For each bus {\ttfamily i}\+:
+\begin{DoxyItemize}
+\item For each bus {\ttfamily j}\+:
+\begin{DoxyItemize}
+\item If {\ttfamily i} equals {\ttfamily j} (diagonal elements)\+:
+\begin{DoxyItemize}
+\item Sum the admittances of all lines connected to bus {\ttfamily i} and update {\ttfamily Ybus\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}}.
+\end{DoxyItemize}
+\item Otherwise (off-\/diagonal elements)\+:
+\begin{DoxyItemize}
+\item Set the element {\ttfamily Ybus\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}} to the negative of the corresponding admittance value {\ttfamily y\mbox{[}i\mbox{]}\mbox{[}j\mbox{]}}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Output Bus Admittance Matrix}}\+:
+\begin{DoxyItemize}
+\item Print the bus admittance matrix {\ttfamily Ybus}.
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md2}{}\doxysection{Pseudocode}\label{md_README_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Initialize variables and matrices}
+\DoxyCodeLine{Prompt user to enter the number of buses}
+\DoxyCodeLine{Prompt user to choose between impedance and admittance}
+\DoxyCodeLine{}
+\DoxyCodeLine{If choice is impedance:}
+\DoxyCodeLine{    For each bus pair (i, j):}
+\DoxyCodeLine{        Prompt user to enter the impedance value between bus i and bus j}
+\DoxyCodeLine{        Calculate admittance and store in matrix y}
+\DoxyCodeLine{}
+\DoxyCodeLine{Else if choice is admittance:}
+\DoxyCodeLine{    For each bus pair (i, j):}
+\DoxyCodeLine{        Prompt user to enter the admittance value between bus i and bus j}
+\DoxyCodeLine{        Store the admittance value in matrix y}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Form bus admittance matrix:}
+\DoxyCodeLine{For each bus i:}
+\DoxyCodeLine{    For each bus j:}
+\DoxyCodeLine{        If i == j:}
+\DoxyCodeLine{            Sum admittances of all lines connected to bus i}
+\DoxyCodeLine{            Update Ybus[i][j]}
+\DoxyCodeLine{        Else:}
+\DoxyCodeLine{            Set Ybus[i][j] to -\/y[i][j]}
+\DoxyCodeLine{}
+\DoxyCodeLine{Print bus admittance matrix Ybus}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md3}{}\doxysection{The Actual Code}\label{md_README_autotoc_md3}
+Here are the links to the implementations\+:
+
+
+\begin{DoxyEnumerate}
+\item Python
+\item \href{./docs/Ybus_Java.html}{\texttt{ Java -\/ Main code}}
+\item \href{./docs/Complex.html}{\texttt{ Java -\/ Complex numbers}}
+\item \href{./Ybus/matlab/Ybus_matlab.m}{\texttt{ MATLAB}}
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md4}{}\doxysection{References}\label{md_README_autotoc_md4}
+\mbox{[}1\mbox{]} Hadi Saadat, $\ast$\char`\"{}\+Power System Analysis\char`\"{}$\ast$. Psa Pub, United States, 2010. \mbox{[}2\mbox{]} Mohammad Shahidehpour; Yaoyu Wang, \char`\"{}\+Appendix C\+: IEEE30 Bus System Data,\char`\"{} in Communication and Control in Electric Power Systems\+: Applications of Parallel and Distributed Processing , IEEE, 2003, pp.\+493-\/495, doi\+: 10.\+1002/0471462926.app3. 
