@@ -12,11 +12,23 @@ zdata = np.array([
     # ... other lines
 ])
 
-# Number of lines or branches
+"""
+nbr: int
+This variable stores number of lines or branches in the power system network
+"""
 nbr = len(zdata[:, 1])
 
 # Starting and ending bus numbers
+"""
+nl: int
+This variable stores the starting bus numbers from the line data
+"""
 nl = np.array(zdata[:, 0], dtype=int)
+
+"""
+nr: int
+This variable stores the ending bus numbers from the line data
+"""
 nr = np.array(zdata[:, 1], dtype=int)
 
 # Resistance and reactance (pu)
