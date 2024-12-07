@@ -17,17 +17,17 @@ def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{pr
 \mbox{\hyperlink{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}{nbr}} = len(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]})
 \begin{DoxyCompactList}\small\item\em nbr(int)\+: This variable stores number of lines or branches in the power system network \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}} = np.\+array(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 0\mbox{]}, dtype=int)
-\begin{DoxyCompactList}\small\item\em nl(int)\+: This variable stores the starting bus numbers from the line data \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em nl(np.\+array(int))\+: This variable stores the starting bus numbers from the line data \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{nr}} = np.\+array(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]}, dtype=int)
-\begin{DoxyCompactList}\small\item\em nr(int)\+: This variable stores the ending bus numbers from the line data \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em nr(np.\+array(int))\+: This variable stores the ending bus numbers from the line data \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}{R}} = \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 2\mbox{]}
-\begin{DoxyCompactList}\small\item\em R(np.\+array)\+: This variable stores the line resistance from the line data. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em R(np.\+array(float))\+: This variable stores the line resistance from the line data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}{X}} = \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 3\mbox{]}
-\begin{DoxyCompactList}\small\item\em X(np.\+array)\+: This variable stores the line reactance from the line data. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em X(np.\+array(float))\+: This variable stores the line reactance from the line data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}} = int(max(max(\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}}), max(\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{nr}})))
 \begin{DoxyCompactList}\small\item\em nbus(int)\+: This variable stores total no.\+of buses in the power system from the line data \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}{Ybus}} = np.\+zeros((\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}, \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}), dtype=complex)
-\begin{DoxyCompactList}\small\item\em Ybus\+: np.\+array(\+Complex) This variable stores the bus admittance matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Ybus(np.\+array(\+Complex))\+: This variable stores the bus admittance matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -102,7 +102,7 @@ nbus(int)\+: This variable stores total no.\+of buses in the power system from t
 
 
 
-nl(int)\+: This variable stores the starting bus numbers from the line data 
+nl(np.\+array(int))\+: This variable stores the starting bus numbers from the line data 
 
 \mbox{\Hypertarget{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}\label{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}} 
 \index{Ybus\_Python@{Ybus\_Python}!nr@{nr}}
@@ -112,7 +112,7 @@ nl(int)\+: This variable stores the starting bus numbers from the line data
 
 
 
-nr(int)\+: This variable stores the ending bus numbers from the line data 
+nr(np.\+array(int))\+: This variable stores the ending bus numbers from the line data 
 
 \mbox{\Hypertarget{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}\label{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}} 
 \index{Ybus\_Python@{Ybus\_Python}!R@{R}}
@@ -122,7 +122,7 @@ nr(int)\+: This variable stores the ending bus numbers from the line data
 
 
 
-R(np.\+array)\+: This variable stores the line resistance from the line data. 
+R(np.\+array(float))\+: This variable stores the line resistance from the line data. 
 
 \mbox{\Hypertarget{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}\label{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}} 
 \index{Ybus\_Python@{Ybus\_Python}!X@{X}}
@@ -132,7 +132,7 @@ R(np.\+array)\+: This variable stores the line resistance from the line data.
 
 
 
-X(np.\+array)\+: This variable stores the line reactance from the line data. 
+X(np.\+array(float))\+: This variable stores the line reactance from the line data. 
 
 \mbox{\Hypertarget{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}\label{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}} 
 \index{Ybus\_Python@{Ybus\_Python}!Ybus@{Ybus}}
@@ -142,7 +142,7 @@ X(np.\+array)\+: This variable stores the line reactance from the line data.
 
 
 
-Ybus\+: np.\+array(\+Complex) This variable stores the bus admittance matrix. 
+Ybus(np.\+array(\+Complex))\+: This variable stores the bus admittance matrix. 
 
 \mbox{\Hypertarget{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}\label{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}} 
 \index{Ybus\_Python@{Ybus\_Python}!zdata@{zdata}}

@@ -89,22 +89,22 @@ Variables</h2></td></tr>
 <tr class="memdesc:ad1cde47feef0d59f44bfe17e291369c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">nbr(int): This variable stores number of lines or branches in the power system network  <a href="namespaceYbus__Python.html#ad1cde47feef0d59f44bfe17e291369c6">More...</a><br /></td></tr>
 <tr class="separator:ad1cde47feef0d59f44bfe17e291369c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3373b7aada0b9c77891659bb28d5592f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f">nl</a> = np.array(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 0], dtype=int)</td></tr>
-<tr class="memdesc:a3373b7aada0b9c77891659bb28d5592f"><td class="mdescLeft">&#160;</td><td class="mdescRight">nl(int): This variable stores the starting bus numbers from the line data  <a href="namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f">More...</a><br /></td></tr>
+<tr class="memdesc:a3373b7aada0b9c77891659bb28d5592f"><td class="mdescLeft">&#160;</td><td class="mdescRight">nl(np.array(int)): This variable stores the starting bus numbers from the line data  <a href="namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f">More...</a><br /></td></tr>
 <tr class="separator:a3373b7aada0b9c77891659bb28d5592f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab595cbcd2b6c783038faa89931713614"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614">nr</a> = np.array(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 1], dtype=int)</td></tr>
-<tr class="memdesc:ab595cbcd2b6c783038faa89931713614"><td class="mdescLeft">&#160;</td><td class="mdescRight">nr(int): This variable stores the ending bus numbers from the line data  <a href="namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614">More...</a><br /></td></tr>
+<tr class="memdesc:ab595cbcd2b6c783038faa89931713614"><td class="mdescLeft">&#160;</td><td class="mdescRight">nr(np.array(int)): This variable stores the ending bus numbers from the line data  <a href="namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614">More...</a><br /></td></tr>
 <tr class="separator:ab595cbcd2b6c783038faa89931713614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dfdc2f385bd66bf3a514dd8ab75f75a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a9dfdc2f385bd66bf3a514dd8ab75f75a">R</a> = <a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 2]</td></tr>
-<tr class="memdesc:a9dfdc2f385bd66bf3a514dd8ab75f75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">R(np.array): This variable stores the line resistance from the line data.  <a href="namespaceYbus__Python.html#a9dfdc2f385bd66bf3a514dd8ab75f75a">More...</a><br /></td></tr>
+<tr class="memdesc:a9dfdc2f385bd66bf3a514dd8ab75f75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">R(np.array(float)): This variable stores the line resistance from the line data.  <a href="namespaceYbus__Python.html#a9dfdc2f385bd66bf3a514dd8ab75f75a">More...</a><br /></td></tr>
 <tr class="separator:a9dfdc2f385bd66bf3a514dd8ab75f75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99131e0f417d515d45b9583f7917fced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a99131e0f417d515d45b9583f7917fced">X</a> = <a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 3]</td></tr>
-<tr class="memdesc:a99131e0f417d515d45b9583f7917fced"><td class="mdescLeft">&#160;</td><td class="mdescRight">X(np.array): This variable stores the line reactance from the line data.  <a href="namespaceYbus__Python.html#a99131e0f417d515d45b9583f7917fced">More...</a><br /></td></tr>
+<tr class="memdesc:a99131e0f417d515d45b9583f7917fced"><td class="mdescLeft">&#160;</td><td class="mdescRight">X(np.array(float)): This variable stores the line reactance from the line data.  <a href="namespaceYbus__Python.html#a99131e0f417d515d45b9583f7917fced">More...</a><br /></td></tr>
 <tr class="separator:a99131e0f417d515d45b9583f7917fced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b77a86f6929d937247685ff621fb31d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a> = int(max(max(<a class="el" href="namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f">nl</a>), max(<a class="el" href="namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614">nr</a>)))</td></tr>
 <tr class="memdesc:a8b77a86f6929d937247685ff621fb31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">nbus(int): This variable stores total no.of buses in the power system from the line data  <a href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">More...</a><br /></td></tr>
 <tr class="separator:a8b77a86f6929d937247685ff621fb31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c91b2e0aba86cb35a3525a3c1096246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">Ybus</a> = np.zeros((<a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>, <a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>), dtype=complex)</td></tr>
-<tr class="memdesc:a5c91b2e0aba86cb35a3525a3c1096246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ybus: np.array(Complex) This variable stores the bus admittance matrix.  <a href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">More...</a><br /></td></tr>
+<tr class="memdesc:a5c91b2e0aba86cb35a3525a3c1096246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ybus(np.array(Complex)): This variable stores the bus admittance matrix.  <a href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">More...</a><br /></td></tr>
 <tr class="separator:a5c91b2e0aba86cb35a3525a3c1096246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -236,7 +236,7 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p>nl(int): This variable stores the starting bus numbers from the line data </p>
+<p>nl(np.array(int)): This variable stores the starting bus numbers from the line data </p>
 
 </div>
 </div>
@@ -252,7 +252,7 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p>nr(int): This variable stores the ending bus numbers from the line data </p>
+<p>nr(np.array(int)): This variable stores the ending bus numbers from the line data </p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p>R(np.array): This variable stores the line resistance from the line data. </p>
+<p>R(np.array(float)): This variable stores the line resistance from the line data. </p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p>X(np.array): This variable stores the line reactance from the line data. </p>
+<p>X(np.array(float)): This variable stores the line reactance from the line data. </p>
 
 </div>
 </div>
@@ -300,7 +300,7 @@ Args:
       </table>
 </div><div class="memdoc">
 
-<p>Ybus: np.array(Complex) This variable stores the bus admittance matrix. </p>
+<p>Ybus(np.array(Complex)): This variable stores the bus admittance matrix. </p>
 
 </div>
 </div>
