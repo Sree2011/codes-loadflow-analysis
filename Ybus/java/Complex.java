@@ -22,7 +22,6 @@ public class Complex {
         this.real = real;
         this.imaginary = imaginary;
     }
-    
 
     /**
      * Returns the real part of the complex number.

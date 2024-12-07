@@ -14,6 +14,8 @@
 Here are the links to the implementations:
 
 1. [Python](./docs/html/namespaceYbus__Python.html)
+2. [Java](./docs/html/classes.html)
+3. [MATLAB](./docs/html/Ybus__matlab_8m.html)
 
 ## References
 
