@@ -1,4 +1,4 @@
-%% Linedata Matrix
+%> Linedata Matrix
 zdata = [
     1   2   0.02  0.06;
     1   3   0.08  0.24;
@@ -9,7 +9,7 @@ zdata = [
     4   5   0.08  0.24;
 ];
 
-% Number of branches
+%> Number of branches
 nbr = size(zdata, 1);
 
 % Starting bus numbers
