@@ -1,70 +1,71 @@
-% /**
-%  * This program generates a bus admittance matrix for a given set of buses and lines.
-%  * The user needs to keep the linedata matrix into four columns: Bus 1, Bus 2, Resistance, and Reactance.
-%  * Then, replace the zdata matrix with their own. For now, the linedata of the IEEE-30 Bus system is considered.
-%  * The program then calculates the admittance matrix and prints it to the console.
-%  *
-%  * @file admittance_matrix.m
-%  * @date 2024-12-07
-%  * @author SREE SAI NANDINI
-%  **/
+/**
+ * @file admittance_matrix.m
+ * @brief Generates a bus admittance matrix for a given set of buses and lines.
+ *
+ * This program calculates the bus admittance matrix for a power system network given a set of lines and their impedances.
+ * The user provides the line data in a matrix format with columns representing the starting bus, ending bus, resistance, and reactance.
+ * 
+ * @author SREE SAI NANDINI
+ * @date 2024-12-07
+ */
 
-clear all;
-clc;
-%% Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
-% @brief Define the linedata matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
-% @details The columns are: bus1, bus2, Resistance (pu), Reactance (pu)
+%% Define the line data matrix
+/**
+ * @brief Defines the line data matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
+ * 
+ * The line data matrix contains information about the lines in the power system network. 
+ * Each row represents a line with the following columns:
+ * 1. Starting bus number
+ * 2. Ending bus number
+ * 3. Resistance in per unit (pu)
+ * 4. Reactance in per unit (pu)
+ */
 zdata = [
-    1   2  0.02  0.06;
-    1   3  0.08  0.24;
-    2   3  0.06  0.25;
-    2   4  0.06  0.18;
-    2   5  0.04  0.12;
-    3   4  0.01  0.03;
-    4   5  0.08  0.24;
+    1   2   0.02  0.06;
+    1   3   0.08  0.24;
+    2   3   0.06  0.25;
+    2   4   0.06  0.18;
+    2   5   0.04  0.12;
+    3   4   0.01  0.03;
+    4   5   0.08  0.24;
 ];
 
-%% Extract data
-% @brief Extract data from the linedata matrix
+%% Extract data from the line data matrix
+/**
+ * @brief Extracts data from the line data matrix
+ * 
+ * This section extracts the relevant information from the line data matrix:
+ * - Number of lines (branches)
+ * - Starting bus numbers
+ * - Ending bus numbers
+ * - Resistance values
+ * - Reactance values
+ * - Total number of buses
+ */
+nbr = size(zdata(:,1), 1);  % Number of lines (branches)
+nl = zdata(:,1);           % Starting bus numbers
+nr = zdata(:,2);           % Ending bus numbers
+R = zdata(:,3);            % Resistance (pu)
+X = zdata(:,4);            % Reactance (pu)
+nbus = max(max(nl), max(nr));  % Total number of buses
 
-% Number of lines or branches
-% @var nbr Number of lines or branches
-nbr = size(zdata(:,1))(1);
+%% Calculate Impedance and Admittance
+/**
+ * @brief Calculates impedance and admittance from resistance and reactance
+ * 
+ * This section calculates the impedance and admittance values for each line using the given resistance and reactance values.
+ */
+Z = R + 1j * X;  % Impedance
+y = 1 ./ Z;      % Admittance
 
-% Starting bus numbers
-% @var nl Starting bus numbers
-nl = zdata(:,1);
-
-% Ending bus numbers
-% @var nr Ending bus numbers
-nr = zdata(:,2);
-
-% Resistance (pu)
-% @var R Resistance (pu)
-R = zdata(:,3);
-
-% Reactance (pu)
-% @var X Reactance (pu)
-X = zdata(:,4);
-
-% Total number of buses
-% @var nbus Total number of buses
-nbus = max(max(nl),max(nr));
-
-%% Calculate Impedance
-% @brief Calculate impedance from resistance and reactance
-Z = R + j * X;
-
-%% Calculate Admittance
-% @brief Calculate admittance from impedance
-y = ones(nbr,1) ./ Z;
-
-%% Form bus admittance matrix
-% @brief Form the bus admittance matrix
-
-% Initialize bus admittance matrix
-% @var Ybus Bus admittance matrix
-Ybus = zeros(nbus, nbus);
+%% Form the bus admittance matrix
+/**
+ * @brief Forms the bus admittance matrix
+ * 
+ * This section forms the bus admittance matrix, which is a key component in power system analysis.
+ * The off-diagonal elements represent the admittance between two buses, while the diagonal elements represent the sum of admittances connected to a bus.
+ */
+Ybus = zeros(nbus, nbus);  % Initialize bus admittance matrix
 
 % Formation of off-diagonal elements
 for k = 1:nbr
@@ -83,13 +84,16 @@ for n = 1:nbus
     end
 end
 
-%% Display the results
-% @brief Display the bus admittance matrix
+%% Display the bus admittance matrix
+/**
+ * @brief Displays the bus admittance matrix
+ * 
+ * This section prints the calculated bus admittance matrix to the console, formatting the complex numbers with real and imaginary parts.
+ */
 disp('Bus Admittance Matrix is:');
 for i = 1:nbus
     for j = 1:nbus
-        % Print the complex number with real and imaginary parts
         fprintf('%.2f + %.2fj  ', real(Ybus(i, j)), imag(Ybus(i, j)));
     end
-    fprintf('\n'); % Print a new line after each row
+    fprintf('\n');
 end
