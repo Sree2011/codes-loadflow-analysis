@@ -45,9 +45,11 @@ zdata = [
 
 
  /**
- * @brief @var Number of lines(branches)
+ * @brief This variable stores the number of branches
+ *
+ * @var nbr
  */
- 
+
 nbr = size(zdata(:,1), 1);
 
 /**
