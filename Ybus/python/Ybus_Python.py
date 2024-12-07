@@ -1,11 +1,9 @@
 import numpy as np
 
-"""
-**Example linedata matrix for IEEE-30 Bus system**
 
-Replace this with your own linedata matrix. 
-Ensure the format is: Bus1, Bus2, Resistance (pu), Reactance (pu)
-"""
+## Example linedata matrix for IEEE-30 Bus system
+## Replace this with your own linedata matrix. 
+## Ensure the format is: Bus1, Bus2, Resistance (pu), Reactance (pu)
 zdata = np.array([
     [1, 2, 0.02, 0.06],
     [1, 3, 0.08, 0.24],
@@ -16,6 +14,7 @@ zdata = np.array([
     [4, 5, 0.08, 0.24]
     
 ])
+
 
 """
 nbr: int
