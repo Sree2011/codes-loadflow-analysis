@@ -77,7 +77,7 @@ Functions</h2></td></tr>
 <tr class="separator:a8337066dd1c28292f77f0b4245cbb009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5af37732f8e5035d81bc877fabc7fc4e"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a5af37732f8e5035d81bc877fabc7fc4e">calculate_admittance_matrix</a> (<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>)</td></tr>
 <tr class="separator:a5af37732f8e5035d81bc877fabc7fc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36997eff40ce42c24fdf980b6fba21c4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a36997eff40ce42c24fdf980b6fba21c4">print_admittance_matrix</a> (<a class="el" href="namespaceYbus__Python.html#a815d9c76682474f52c1718b5d23ca513">Ybus</a>)</td></tr>
+<tr class="memitem:a36997eff40ce42c24fdf980b6fba21c4"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a36997eff40ce42c24fdf980b6fba21c4">print_admittance_matrix</a> (<a class="el" href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">Ybus</a>)</td></tr>
 <tr class="separator:a36997eff40ce42c24fdf980b6fba21c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -103,8 +103,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a8b77a86f6929d937247685ff621fb31d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a> = int(max(max(<a class="el" href="namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f">nl</a>), max(<a class="el" href="namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614">nr</a>)))</td></tr>
 <tr class="memdesc:a8b77a86f6929d937247685ff621fb31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">nbus(int): This variable stores total no.of buses in the power system from the line data  <a href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">More...</a><br /></td></tr>
 <tr class="separator:a8b77a86f6929d937247685ff621fb31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a815d9c76682474f52c1718b5d23ca513"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a815d9c76682474f52c1718b5d23ca513">Ybus</a> = <a class="el" href="namespaceYbus__Python.html#a5af37732f8e5035d81bc877fabc7fc4e">calculate_admittance_matrix</a>(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>)</td></tr>
-<tr class="separator:a815d9c76682474f52c1718b5d23ca513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c91b2e0aba86cb35a3525a3c1096246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">Ybus</a> = np.zeros((<a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>, <a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>), dtype=complex)</td></tr>
+<tr class="memdesc:a5c91b2e0aba86cb35a3525a3c1096246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ybus: np.array(Complex) This variable stores the bus admittance matrix.  <a href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">More...</a><br /></td></tr>
+<tr class="separator:a5c91b2e0aba86cb35a3525a3c1096246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a8337066dd1c28292f77f0b4245cbb009"></a>
@@ -287,17 +288,19 @@ Args:
 
 </div>
 </div>
-<a id="a815d9c76682474f52c1718b5d23ca513"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a815d9c76682474f52c1718b5d23ca513">&#9670;&nbsp;</a></span>Ybus</h2>
+<a id="a5c91b2e0aba86cb35a3525a3c1096246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c91b2e0aba86cb35a3525a3c1096246">&#9670;&nbsp;</a></span>Ybus</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def Ybus_Python.Ybus = <a class="el" href="namespaceYbus__Python.html#a5af37732f8e5035d81bc877fabc7fc4e">calculate_admittance_matrix</a>(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>)</td>
+          <td class="memname">def Ybus_Python.Ybus = np.zeros((<a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>, <a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>), dtype=complex)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Ybus: np.array(Complex) This variable stores the bus admittance matrix. </p>
 
 </div>
 </div>

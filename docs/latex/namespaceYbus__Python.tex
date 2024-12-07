@@ -7,7 +7,7 @@ def \mbox{\hyperlink{namespaceYbus__Python_a8337066dd1c28292f77f0b4245cbb009}{ca
 \item 
 def \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{calculate\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}})
 \item 
-def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{print\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}{Ybus}})
+def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{print\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}{Ybus}})
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -26,8 +26,8 @@ def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{pr
 \begin{DoxyCompactList}\small\item\em X(np.\+array)\+: This variable stores the line reactance from the line data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}} = int(max(max(\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}}), max(\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{nr}})))
 \begin{DoxyCompactList}\small\item\em nbus(int)\+: This variable stores total no.\+of buses in the power system from the line data \end{DoxyCompactList}\item 
-def \mbox{\hyperlink{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}{Ybus}} = \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{calculate\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}})
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}{Ybus}} = np.\+zeros((\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}, \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}), dtype=complex)
+\begin{DoxyCompactList}\small\item\em Ybus\+: np.\+array(\+Complex) This variable stores the bus admittance matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
@@ -134,11 +134,15 @@ R(np.\+array)\+: This variable stores the line resistance from the line data.
 
 X(np.\+array)\+: This variable stores the line reactance from the line data. 
 
-\mbox{\Hypertarget{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}\label{namespaceYbus__Python_a815d9c76682474f52c1718b5d23ca513}} 
+\mbox{\Hypertarget{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}\label{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}} 
 \index{Ybus\_Python@{Ybus\_Python}!Ybus@{Ybus}}
 \index{Ybus@{Ybus}!Ybus\_Python@{Ybus\_Python}}
 \doxysubsubsection{\texorpdfstring{Ybus}{Ybus}}
-{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+Ybus = \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{calculate\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}})}
+{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+Ybus = np.\+zeros((\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}, \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}), dtype=complex)}
+
+
+
+Ybus\+: np.\+array(\+Complex) This variable stores the bus admittance matrix. 
 
 \mbox{\Hypertarget{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}\label{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}} 
 \index{Ybus\_Python@{Ybus\_Python}!zdata@{zdata}}
