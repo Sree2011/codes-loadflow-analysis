@@ -47,9 +47,21 @@ zdata = [
  /**
  * @var nbr Number of lines(branches)
  */
-nbr = size(zdata(:,1), 1);  
-nl = zdata(:,1);           
-nr = zdata(:,2);           
+nbr = size(zdata(:,1), 1);
+
+/**
+* @var nl Starting bus numbers
+*/
+nl = zdata(:,1);  
+
+/**
+* @var nr Ending bus numbers
+*/
+nr = zdata(:,2);
+
+/**
+* @var R Resistance of the line
+*/
 R = zdata(:,3);            
 X = zdata(:,4);
 nbus = max(max(nl), max(nr));
