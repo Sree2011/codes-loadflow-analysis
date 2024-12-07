@@ -123,6 +123,11 @@ end
  * This section prints the calculated bus admittance matrix to the console, formatting the complex numbers with real and imaginary parts.
  */
 disp('Bus Admittance Matrix is:');
+
+/**
+* @variable i Outer Loop counter iterating through 1 to nbus
+* @variable j Inner Loop counter iterating through 1 to nbus
+*/
 for i = 1:nbus
     for j = 1:nbus
         fprintf('%.2f + %.2fj  ', real(Ybus(i, j)), imag(Ybus(i, j)));
