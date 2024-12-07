@@ -47,6 +47,9 @@ X = zdata[:, 3]
 ## This variable stores total no.of buses in the power system from the line data
 nbus = int(max(max(nl), max(nr)))
 
+## Ybus: np.array(Complex)
+## This variable stores the bus admittance matrix
+Ybus = np.zeros((nbus, nbus), dtype=complex)
 
 def calculate_admittance(R, X):
     """
@@ -75,11 +78,6 @@ def calculate_admittance_matrix(zdata):
         np.array: Bus admittance matrix.
     """
     y = calculate_admittance(R, X)
-
-    
-    ## Ybus: np.array(Complex)
-    ## This variable stores the bus admittance matrix
-    Ybus = np.zeros((nbus, nbus), dtype=complex)
 
     # Form off-diagonal elements
     for k in range(nbr):
