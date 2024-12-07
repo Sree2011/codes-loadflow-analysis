@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ybus_72',['Ybus',['../Ybus__matlab_8m.html#a308bec2ae202b12ed258d1100a092db7',1,'Ybus_matlab.m']]]
+  ['tostring_70',['toString',['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex']]]
 ];

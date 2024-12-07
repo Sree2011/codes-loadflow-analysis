@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['k_3a_18',['k:',['../Ybus__matlab_8m.html#a6df84753b5dd2381b7fdffd1ae35b7f7',1,'Ybus_matlab.m']]]
+  ['lines_15',['lines',['../Ybus__matlab_8m.html#af4bc2963b3268a05fa3c2e316e9ef1ca',1,'Ybus_matlab.m']]]
 ];

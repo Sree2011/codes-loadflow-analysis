@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['all_73',['all',['../Ybus__matlab_8m.html#a4603254d9990f7140c024d51302d1a8f',1,'Ybus_matlab.m']]]
+  ['i_72',['i',['../Ybus__matlab_8m.html#a6f6ccfcf58b31cb6412107d9d5281426',1,'Ybus_matlab.m']]],
+  ['imaginary_73',['imaginary',['../classComplex.html#a8dffa50f84dbc9d206dbbc7416f16e17',1,'Complex']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['r_84',['R',['../namespaceYbus__Python.html#a9dfdc2f385bd66bf3a514dd8ab75f75a',1,'Ybus_Python']]],
-  ['reactance_85',['Reactance',['../Ybus__matlab_8m.html#a48ea94e21751baab58454d6960a5e721',1,'Ybus_matlab.m']]],
-  ['real_86',['real',['../classComplex.html#a345da274bb05610ff7d549028bc6d510',1,'Complex']]]
+  ['z_84',['Z',['../Ybus__matlab_8m.html#a35f83a4799618a2d2c5f8e720c768c35',1,'Ybus_matlab.m']]],
+  ['zdata_85',['zdata',['../Ybus__matlab_8m.html#aa009bd7067a3d286bb37d03a9639b56f',1,'zdata():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe',1,'Ybus_Python.zdata()']]]
 ];
