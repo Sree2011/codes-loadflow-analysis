@@ -1,12 +1,3 @@
-%% @file admittance_matrix.m
-%% @brief Generates a bus admittance matrix for a given set of buses and lines.
-%% 
-%% This program calculates the bus admittance matrix for a power system network given a set of lines and their impedances.
-%% The user provides the line data in a matrix format with columns representing the starting bus, ending bus, resistance, and reactance.
-
-%% @author SREE SAI NANDINI
-%% @date 2024-12-07
-
 %% @brief Defines the line data matrix with columns: bus1, bus2, Resistance (pu), Reactance (pu)
 %% 
 %% The line data matrix contains information about the lines in the power system network. 
@@ -15,7 +6,6 @@
 %% 2. Ending bus number
 %% 3. Resistance in per unit (pu)
 %% 4. Reactance in per unit (pu)
-
 zdata = [
     1   2   0.02  0.06;
     1   3   0.08  0.24;
