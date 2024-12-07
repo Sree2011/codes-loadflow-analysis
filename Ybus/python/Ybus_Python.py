@@ -1,6 +1,7 @@
 import numpy as np
 
 
+## zdata(np.array):
 ## Example linedata matrix for IEEE-30 Bus system
 ## Replace this with your own linedata matrix. 
 ## Ensure the format is: Bus1, Bus2, Resistance (pu), Reactance (pu)
@@ -16,45 +17,34 @@ zdata = np.array([
 ])
 
 
-"""
-nbr: int
-This variable stores number of lines or branches in the power system network
-"""
+## nbr(int):
+## This variable stores number of lines or branches in the power system network
 nbr = len(zdata[:, 1])
 
-# Starting and ending bus numbers
-"""
-nl: int
-This variable stores the starting bus numbers from the line data
-"""
+
+## nl(int):
+## This variable stores the starting bus numbers from the line data
 nl = np.array(zdata[:, 0], dtype=int)
 
-"""
-nr: int
-This variable stores the ending bus numbers from the line data
-"""
+
+## nr(int):
+## This variable stores the ending bus numbers from the line data
 nr = np.array(zdata[:, 1], dtype=int)
 
-# Resistance and reactance (pu)
 
-"""
-R: float
-This variable stores the line resistance from the line data
-"""
+## R(np.array):
+## This variable stores the line resistance from the line data
 R = zdata[:, 2]
 
-"""
-X: float
-This variable stores the line reactance from the line data
-"""
+
+## X(np.array):
+## This variable stores the line reactance from the line data
 X = zdata[:, 3]
 
-# Total number of buses
 
-"""
-nbus: int
-This variable calculates total no.of buses in the power system from the line data
-"""
+
+## nbus(int):
+## This variable stores total no.of buses in the power system from the line data
 nbus = int(max(max(nl), max(nr)))
 
 
@@ -86,12 +76,9 @@ def calculate_admittance_matrix(zdata):
     """
     y = calculate_admittance(R, X)
 
-    # Initialize the bus admittance matrix
-
-    """
-    Ybus: np.array(Complex)
-    This variable stores the bus admittance matrix
-    """
+    
+    ## Ybus: np.array(Complex)
+    ## This variable stores the bus admittance matrix
     Ybus = np.zeros((nbus, nbus), dtype=complex)
 
     # Form off-diagonal elements
