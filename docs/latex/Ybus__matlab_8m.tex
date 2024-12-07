@@ -12,17 +12,17 @@ end \mbox{\hyperlink{Ybus__matlab_8m_aff4dded346989c83bf4c208e76b15a06}{fprintf}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}
+file admittance\+\_\+matrix m brief Generates a bus admittance matrix for a given set of buses and lines \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}
 \begin{DoxyCompactList}\small\item\em Defines the line data matrix with columns\+: bus1, bus2, Resistance (pu), Reactance (pu) \end{DoxyCompactList}\item 
-\mbox{\hyperlink{Ybus__matlab_8m_a48fff352c738a42ce3c5fdee4dcbb66a}{nbr}} = size(\mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,1), 1)
+\mbox{\hyperlink{Ybus__matlab_8m_a48fff352c738a42ce3c5fdee4dcbb66a}{nbr}} = size(\mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,1), 1)
 \begin{DoxyCompactList}\small\item\em nbr(int)\+: This variable stores the ending bus numbers from the line data \end{DoxyCompactList}\item 
-\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,1)
+\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}} = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,1)
 \begin{DoxyCompactList}\small\item\em nl(int\mbox{[}$\,$\mbox{]})\+: This variable stores the starting bus numbers from the line data \end{DoxyCompactList}\item 
-\mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,2)
+\mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}} = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,2)
 \begin{DoxyCompactList}\small\item\em nr(int\mbox{[}$\,$\mbox{]})\+: This variable stores the ending bus numbers from the line data \end{DoxyCompactList}\item 
-\mbox{\hyperlink{Ybus__matlab_8m_acb95449a94688af33f6e9bb090cf2936}{R}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,3)
+\mbox{\hyperlink{Ybus__matlab_8m_acb95449a94688af33f6e9bb090cf2936}{R}} = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,3)
 \begin{DoxyCompactList}\small\item\em R(float\mbox{[}$\,$\mbox{]})\+: This variable stores the line resistance. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{Ybus__matlab_8m_ac51b57a703ba1c5869228690c93e1701}{X}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,4)
+\mbox{\hyperlink{Ybus__matlab_8m_ac51b57a703ba1c5869228690c93e1701}{X}} = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,4)
 \begin{DoxyCompactList}\small\item\em X(float\mbox{[}$\,$\mbox{]})\+: This variable stores the line reactance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}{nbus}} = max(max(\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}}))
 \begin{DoxyCompactList}\small\item\em nbus(int)\+: This variable stores the total number of buses \end{DoxyCompactList}\item 
@@ -119,7 +119,7 @@ This loop calculates diagonal elements of Ybus matrix.
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nbr@{nbr}}
 \index{nbr@{nbr}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{nbr}{nbr}}
-{\footnotesize\ttfamily nbr = size(\mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,1), 1)}
+{\footnotesize\ttfamily nbr = size(\mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,1), 1)}
 
 
 
@@ -139,7 +139,7 @@ nbus(int)\+: This variable stores the total number of buses
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nl@{nl}}
 \index{nl@{nl}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{nl}{nl}}
-{\footnotesize\ttfamily nl = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,1)}
+{\footnotesize\ttfamily nl = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,1)}
 
 
 
@@ -149,7 +149,7 @@ nl(int\mbox{[}$\,$\mbox{]})\+: This variable stores the starting bus numbers fro
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nr@{nr}}
 \index{nr@{nr}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{nr}{nr}}
-{\footnotesize\ttfamily nr = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,2)}
+{\footnotesize\ttfamily nr = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,2)}
 
 
 
@@ -159,7 +159,7 @@ nr(int\mbox{[}$\,$\mbox{]})\+: This variable stores the ending bus numbers from 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!R@{R}}
 \index{R@{R}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{R}{R}}
-{\footnotesize\ttfamily R = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,3)}
+{\footnotesize\ttfamily R = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,3)}
 
 
 
@@ -169,7 +169,7 @@ R(float\mbox{[}$\,$\mbox{]})\+: This variable stores the line resistance.
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!X@{X}}
 \index{X@{X}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{X}{X}}
-{\footnotesize\ttfamily X = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,4)}
+{\footnotesize\ttfamily X = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}(\+:,4)}
 
 
 
@@ -205,11 +205,11 @@ Ybus(complex\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]})\+: This variable stores th
 
 Z(complex\mbox{[}$\,$\mbox{]})\+: This variable stores the line impedance Z(R+jX) 
 
-\mbox{\Hypertarget{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}\label{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}\label{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!zdata@{zdata}}
 \index{zdata@{zdata}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{zdata}{zdata}}
-{\footnotesize\ttfamily zdata}
+{\footnotesize\ttfamily file admittance\+\_\+matrix m brief Generates a bus admittance matrix for a given set of buses and lines zdata}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
@@ -220,6 +220,14 @@ Z(complex\mbox{[}$\,$\mbox{]})\+: This variable stores the line impedance Z(R+jX
 
 Defines the line data matrix with columns\+: bus1, bus2, Resistance (pu), Reactance (pu) 
 
+This program calculates the bus admittance matrix for a power system network given a set of lines and their impedances. The user provides the line data in a matrix format with columns representing the starting bus, ending bus, resistance, and reactance.
+
+\begin{DoxyAuthor}{Author}
+SREE SAI NANDINI 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2024-\/12-\/07
+\end{DoxyDate}
 The line data matrix contains information about the lines in the power system network. Each row represents a line with the following columns\+:
 \begin{DoxyEnumerate}
 \item Starting bus number
