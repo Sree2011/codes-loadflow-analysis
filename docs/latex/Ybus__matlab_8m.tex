@@ -15,27 +15,27 @@ end \mbox{\hyperlink{Ybus__matlab_8m_aff4dded346989c83bf4c208e76b15a06}{fprintf}
 \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}
 \begin{DoxyCompactList}\small\item\em Defines the line data matrix with columns\+: bus1, bus2, Resistance (pu), Reactance (pu) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_a48fff352c738a42ce3c5fdee4dcbb66a}{nbr}} = size(\mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,1), 1)
-\begin{DoxyCompactList}\small\item\em This variable stores the number of branches. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em nbr(int)\+: This variable stores the ending bus numbers from the line data \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,1)
-\item 
+\begin{DoxyCompactList}\small\item\em nl(int\mbox{[}$\,$\mbox{]})\+: This variable stores the starting bus numbers from the line data \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,2)
-\item 
+\begin{DoxyCompactList}\small\item\em nr(int\mbox{[}$\,$\mbox{]})\+: This variable stores the ending bus numbers from the line data \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_acb95449a94688af33f6e9bb090cf2936}{R}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,3)
-\item 
+\begin{DoxyCompactList}\small\item\em R(float\mbox{[}$\,$\mbox{]})\+: This variable stores the line resistance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_ac51b57a703ba1c5869228690c93e1701}{X}} = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,4)
-\item 
+\begin{DoxyCompactList}\small\item\em X(float\mbox{[}$\,$\mbox{]})\+: This variable stores the line reactance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}{nbus}} = max(max(\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}}))
-\item 
+\begin{DoxyCompactList}\small\item\em nbus(int)\+: This variable stores the total number of buses \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}} = \mbox{\hyperlink{Ybus__matlab_8m_acb95449a94688af33f6e9bb090cf2936}{R}} + 1j $\ast$ \mbox{\hyperlink{Ybus__matlab_8m_ac51b57a703ba1c5869228690c93e1701}{X}}
-\begin{DoxyCompactList}\small\item\em Calculates impedance and admittance from resistance and reactance. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Z(complex\mbox{[}$\,$\mbox{]})\+: This variable stores the line impedance Z(R+jX) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}} = 1 ./ \mbox{\hyperlink{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}}
-\item 
+\begin{DoxyCompactList}\small\item\em y(complex\mbox{[}$\,$\mbox{]})\+: This temporary variable stores the line admittance Y(G+jB) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_ac25c9c48335df8ed826eb132aa2a0b7d}{Ybus}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}{nbus}})
-\begin{DoxyCompactList}\small\item\em Forms the bus admittance matrix. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Ybus(complex\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]})\+: This variable stores the bus admittance matrix. \end{DoxyCompactList}\item 
 for \mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}
-\item 
+\begin{DoxyCompactList}\small\item\em This loop calculates off-\/diagonal elements of Ybus matrix. \end{DoxyCompactList}\item 
 end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}
-\item 
+\begin{DoxyCompactList}\small\item\em This loop calculates diagonal elements of Ybus matrix. \end{DoxyCompactList}\item 
 for \mbox{\hyperlink{Ybus__matlab_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}
 \end{DoxyCompactItemize}
 
@@ -92,6 +92,10 @@ This section prints the calculated bus admittance matrix to the console, formatt
 \DoxyCodeLine{        \mbox{\hyperlink{Ybus__matlab_8m_ac25c9c48335df8ed826eb132aa2a0b7d}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})) = \mbox{\hyperlink{Ybus__matlab_8m_ac25c9c48335df8ed826eb132aa2a0b7d}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})) -\/ \mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})}
 
 \end{DoxyCode}
+
+
+This loop calculates off-\/diagonal elements of Ybus matrix. 
+
 \mbox{\Hypertarget{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}\label{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!n@{n}}
 \index{n@{n}!Ybus\_matlab.m@{Ybus\_matlab.m}}
@@ -106,6 +110,10 @@ This section prints the calculated bus admittance matrix to the console, formatt
 \DoxyCodeLine{            \mbox{\hyperlink{Ybus__matlab_8m_ac25c9c48335df8ed826eb132aa2a0b7d}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}) = \mbox{\hyperlink{Ybus__matlab_8m_ac25c9c48335df8ed826eb132aa2a0b7d}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}) + \mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})}
 
 \end{DoxyCode}
+
+
+This loop calculates diagonal elements of Ybus matrix. 
+
 \mbox{\Hypertarget{Ybus__matlab_8m_a48fff352c738a42ce3c5fdee4dcbb66a}\label{Ybus__matlab_8m_a48fff352c738a42ce3c5fdee4dcbb66a}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nbr@{nbr}}
 \index{nbr@{nbr}!Ybus\_matlab.m@{Ybus\_matlab.m}}
@@ -114,7 +122,7 @@ This section prints the calculated bus admittance matrix to the console, formatt
 
 
 
-This variable stores the number of branches. 
+nbr(int)\+: This variable stores the ending bus numbers from the line data 
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}\label{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nbus@{nbus}}
@@ -122,11 +130,19 @@ This variable stores the number of branches.
 \doxysubsubsection{\texorpdfstring{nbus}{nbus}}
 {\footnotesize\ttfamily nbus = max(max(\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}}))}
 
+
+
+nbus(int)\+: This variable stores the total number of buses 
+
 \mbox{\Hypertarget{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}\label{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nl@{nl}}
 \index{nl@{nl}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{nl}{nl}}
 {\footnotesize\ttfamily nl = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,1)}
+
+
+
+nl(int\mbox{[}$\,$\mbox{]})\+: This variable stores the starting bus numbers from the line data 
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}\label{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nr@{nr}}
@@ -134,11 +150,19 @@ This variable stores the number of branches.
 \doxysubsubsection{\texorpdfstring{nr}{nr}}
 {\footnotesize\ttfamily nr = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,2)}
 
+
+
+nr(int\mbox{[}$\,$\mbox{]})\+: This variable stores the ending bus numbers from the line data 
+
 \mbox{\Hypertarget{Ybus__matlab_8m_acb95449a94688af33f6e9bb090cf2936}\label{Ybus__matlab_8m_acb95449a94688af33f6e9bb090cf2936}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!R@{R}}
 \index{R@{R}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{R}{R}}
 {\footnotesize\ttfamily R = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,3)}
+
+
+
+R(float\mbox{[}$\,$\mbox{]})\+: This variable stores the line resistance. 
 
 \mbox{\Hypertarget{Ybus__matlab_8m_ac51b57a703ba1c5869228690c93e1701}\label{Ybus__matlab_8m_ac51b57a703ba1c5869228690c93e1701}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!X@{X}}
@@ -146,11 +170,19 @@ This variable stores the number of branches.
 \doxysubsubsection{\texorpdfstring{X}{X}}
 {\footnotesize\ttfamily X = \mbox{\hyperlink{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}{zdata}}(\+:,4)}
 
+
+
+X(float\mbox{[}$\,$\mbox{]})\+: This variable stores the line reactance. 
+
 \mbox{\Hypertarget{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}\label{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!y@{y}}
 \index{y@{y}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{y}{y}}
 {\footnotesize\ttfamily y = 1 ./ \mbox{\hyperlink{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}}}
+
+
+
+y(complex\mbox{[}$\,$\mbox{]})\+: This temporary variable stores the line admittance Y(G+jB) 
 
 \mbox{\Hypertarget{Ybus__matlab_8m_ac25c9c48335df8ed826eb132aa2a0b7d}\label{Ybus__matlab_8m_ac25c9c48335df8ed826eb132aa2a0b7d}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!Ybus@{Ybus}}
@@ -160,9 +192,9 @@ This variable stores the number of branches.
 
 
 
-Forms the bus admittance matrix. 
+Ybus(complex\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]})\+: This variable stores the bus admittance matrix. 
 
-This section forms the bus admittance matrix, which is a key component in power system analysis. The off-\/diagonal elements represent the admittance between two buses, while the diagonal elements represent the sum of admittances connected to a bus. \mbox{\Hypertarget{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}\label{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}\label{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!Z@{Z}}
 \index{Z@{Z}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{Z}{Z}}
@@ -170,9 +202,9 @@ This section forms the bus admittance matrix, which is a key component in power 
 
 
 
-Calculates impedance and admittance from resistance and reactance. 
+Z(complex\mbox{[}$\,$\mbox{]})\+: This variable stores the line impedance Z(R+jX) 
 
-This section calculates the impedance and admittance values for each line using the given resistance and reactance values. \mbox{\Hypertarget{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}\label{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}\label{Ybus__matlab_8m_a6adc313101ca09445381034b34a410fc}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!zdata@{zdata}}
 \index{zdata@{zdata}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{zdata}{zdata}}
