@@ -45,7 +45,7 @@ zdata = [
 
 
  /**
- * @var nbr Number of lines(branches)
+ * @brief @var Number of lines(branches)
  */
 nbr = size(zdata(:,1), 1);
 
