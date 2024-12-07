@@ -27,16 +27,18 @@ X = zdata(:, 4);
 % Total number of buses
 nbus = max(max(nl), max(nr));
 
+% Impedance matrix
+Z = R + 1j * X;
 
-Z = R + 1j * X;  % Impedance matrix
-y = 1 ./ Z;  % Admittance matrix
+% Placeholder admittance matrix
+y = 1 ./ Z;
 
 %% Initialize the bus admittance matrix
 Ybus = zeros(nbus, nbus);
 
 
 function YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
-    Ybus = zeros(nbus, nbus);  % Initialize inside the function
+    Ybus = zeros(nbus, nbus);
     for k = 1:nbr
         if nl(k) > 0 && nr(k) > 0
             Ybus(nl(k), nr(k)) = Ybus(nl(k), nr(k)) - y(k);
@@ -51,7 +53,7 @@ function YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
             end
         end
     end
-    YBUS = Ybus;  % Ensure it returns the updated matrix
+    YBUS = Ybus;
 end
 
 %% Display the bus admittance matrix function
