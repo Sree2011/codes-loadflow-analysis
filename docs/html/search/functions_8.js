@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['negate_64',['negate',['../classComplex.html#a63ce0a55d8a970161830e4dffc43bcd4',1,'Complex']]]
+  ['reciprocal_61',['reciprocal',['../classComplex.html#a3abc78c5a8c36a75d16bd964e7e5cdca',1,'Complex']]]
 ];

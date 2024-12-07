@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['subtract_30',['subtract',['../classComplex.html#ad552a93c53be71388e817329c3be0e94',1,'Complex']]]
+  ['tostring_28',['toString',['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex']]]
 ];

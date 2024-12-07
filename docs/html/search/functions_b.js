@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['subtract_69',['subtract',['../classComplex.html#ad552a93c53be71388e817329c3be0e94',1,'Complex']]]
+  ['ybus_64',['Ybus',['../Ybus__matlab_8m.html#a308bec2ae202b12ed258d1100a092db7',1,'Ybus_matlab.m']]]
 ];

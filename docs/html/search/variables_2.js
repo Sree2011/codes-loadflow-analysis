@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['r_79',['R',['../Ybus__matlab_8m.html#a5dc92b43b91fbf8ef6ed06eca2554fb5',1,'R():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a9dfdc2f385bd66bf3a514dd8ab75f75a',1,'Ybus_Python.R()']]],
-  ['real_80',['real',['../classComplex.html#a345da274bb05610ff7d549028bc6d510',1,'Complex']]]
+  ['n_68',['n',['../Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e',1,'Ybus_matlab.m']]],
+  ['nbr_69',['nbr',['../Ybus__matlab_8m.html#a48fff352c738a42ce3c5fdee4dcbb66a',1,'nbr():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ad1cde47feef0d59f44bfe17e291369c6',1,'Ybus_Python.nbr()']]],
+  ['nbus_70',['nbus',['../Ybus__matlab_8m.html#a63e9e059a4672b552e581447fedf8be2',1,'nbus():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d',1,'Ybus_Python.nbus()']]],
+  ['nl_71',['nl',['../Ybus__matlab_8m.html#ac6c8f64a5d39a67bbb5a2f5d95014e04',1,'nl():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f',1,'Ybus_Python.nl()']]],
+  ['nr_72',['nr',['../Ybus__matlab_8m.html#a70c1a5f25e12e70da97faf350ec11f8b',1,'nr():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614',1,'Ybus_Python.nr()']]]
 ];

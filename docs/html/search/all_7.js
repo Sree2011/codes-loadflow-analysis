@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lines_15',['lines',['../Ybus__matlab_8m.html#af4bc2963b3268a05fa3c2e316e9ef1ca',1,'Ybus_matlab.m']]]
+  ['main_15',['main',['../classYbus__Java.html#ac90297417d2db3f47056a73c29636427',1,'Ybus_Java']]],
+  ['multiply_16',['multiply',['../classComplex.html#a8ec653650f97d75bed0cd8d924ba4ef2',1,'Complex']]]
 ];
