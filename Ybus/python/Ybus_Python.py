@@ -22,32 +22,31 @@ zdata = np.array([
 nbr = len(zdata[:, 1])
 
 
-## nl(int):
+## nl(np.array(int)):
 ## This variable stores the starting bus numbers from the line data
 nl = np.array(zdata[:, 0], dtype=int)
 
 
-## nr(int):
+## nr(np.array(int)):
 ## This variable stores the ending bus numbers from the line data
 nr = np.array(zdata[:, 1], dtype=int)
 
 
-## R(np.array):
+## R(np.array(float)):
 ## This variable stores the line resistance from the line data
 R = zdata[:, 2]
 
 
-## X(np.array):
+## X(np.array(float)):
 ## This variable stores the line reactance from the line data
 X = zdata[:, 3]
-
 
 
 ## nbus(int):
 ## This variable stores total no.of buses in the power system from the line data
 nbus = int(max(max(nl), max(nr)))
 
-## Ybus: np.array(Complex)
+## Ybus(np.array(Complex)):
 ## This variable stores the bus admittance matrix
 Ybus = np.zeros((nbus, nbus), dtype=complex)
 
