@@ -1,7 +1,8 @@
-/**
- * @file admittance_matrix.m
- * @brief Generates a bus admittance matrix for a given set of buses and lines.
- *
+
+%> @file admittance_matrix.m
+%> @brief Generates a bus admittance matrix for a given set of buses and lines.
+
+ /**
  * This program calculates the bus admittance matrix for a power system network given a set of lines and their impedances.
  * The user provides the line data in a matrix format with columns representing the starting bus, ending bus, resistance, and reactance.
  * 
