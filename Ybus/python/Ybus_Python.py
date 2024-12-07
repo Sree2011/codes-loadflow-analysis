@@ -32,10 +32,25 @@ This variable stores the ending bus numbers from the line data
 nr = np.array(zdata[:, 1], dtype=int)
 
 # Resistance and reactance (pu)
+
+"""
+R: float
+This variable stores the line resistance from the line data
+"""
 R = zdata[:, 2]
+
+"""
+X: float
+This variable stores the line reactance from the line data
+"""
 X = zdata[:, 3]
 
 # Total number of buses
+
+"""
+nbus: int
+This variable calculates total no.of buses in the power system from the line data
+"""
 nbus = int(max(max(nl), max(nr)))
 
 
@@ -68,6 +83,11 @@ def calculate_admittance_matrix(zdata):
     y = calculate_admittance(R, X)
 
     # Initialize the bus admittance matrix
+
+    """
+    Ybus: np.array(Complex)
+    This variable stores the bus admittance matrix
+    """
     Ybus = np.zeros((nbus, nbus), dtype=complex)
 
     # Form off-diagonal elements
