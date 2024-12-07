@@ -3,40 +3,42 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-id \mbox{\hyperlink{Ybus__matlab_8m_a7277c344d1ad6963e60675b005bacc28}{columns\+:columns\+:}} (pu following,\mbox{[}columns\mbox{]} pu zdata)
+brief Defines the line data matrix with \mbox{\hyperlink{Ybus__matlab_8m_a0e936a06656c4b0a530ab8b26841eec4}{Resistance}} (pu)
 \item 
 \mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}} (\mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}))
 \item 
-Ensure it returns the updated matrix end Display the \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}) disp( \textquotesingle{}Bus Admittance Matrix end \mbox{\hyperlink{Ybus__matlab_8m_ad8bdccde910ad5282ca779b6269d0162}{fprintf}} (\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{})
+Ensure it returns the updated matrix end Display the bus admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}) disp( \textquotesingle{}Bus Admittance Matrix end \mbox{\hyperlink{Ybus__matlab_8m_ad8bdccde910ad5282ca779b6269d0162}{fprintf}} (\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{})
 \item 
 \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}{YBUS}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}})
 \end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-file admittance\+\_\+matrix m brief Generates a bus admittance matrix for a given set of buses and lines This program calculates the bus admittance matrix for a power system network given a set of lines and their impedances The user provides the line data in a matrix format with columns representing the starting \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}}
+brief Defines the line data matrix with \mbox{\hyperlink{Ybus__matlab_8m_a307a0001d07748d00c821c6ab87878d2}{columns}}
 \item 
-file admittance\+\_\+matrix m brief Generates a \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix for a given set of buses and lines This program calculates the \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix for a power system network given a set of lines and their impedances The user provides the line data in a matrix format with columns representing the starting ending \mbox{\hyperlink{Ybus__matlab_8m_a585a839757ab84aab35650906963673a}{resistance}}
+brief Defines the line data matrix with \mbox{\hyperlink{Ybus__matlab_8m_a477c64f3dd0332e3e52991ee1a57375f}{bus2}}
+\item 
+brief Defines the line data matrix with \mbox{\hyperlink{Ybus__matlab_8m_aa07437b9143279ad47b94d3cfe4dad97}{Reactance}} (pu) \%\% \%\% The line data matrix contains information about the lines in the power system network. \%\% Each row represents a line with the following \mbox{\hyperlink{Ybus__matlab_8m_a307a0001d07748d00c821c6ab87878d2}{columns}}
 \item 
 Extract line data \mbox{\hyperlink{Ybus__matlab_8m_a8081d6b6fd576357984874af9cc4c49b}{nbr}} = size(zdata, 1)
 \item 
 Number of branches \mbox{\hyperlink{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}{nl}} = zdata(\+:, 1)
 \item 
-From \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} number \mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}} = zdata(\+:, 2)
+From bus number \mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}} = zdata(\+:, 2)
 \item 
-To \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} number \mbox{\hyperlink{Ybus__matlab_8m_a4cd314adedb1fa4d5ba5687f0e1c5005}{R}} = zdata(\+:, 3)
+To bus number \mbox{\hyperlink{Ybus__matlab_8m_a4cd314adedb1fa4d5ba5687f0e1c5005}{R}} = zdata(\+:, 3)
 \item 
-Resistance \mbox{\hyperlink{Ybus__matlab_8m_adc915f7351249d650f997a2117385632}{X}} = zdata(\+:, 4)
+\mbox{\hyperlink{Ybus__matlab_8m_a0e936a06656c4b0a530ab8b26841eec4}{Resistance}} \mbox{\hyperlink{Ybus__matlab_8m_adc915f7351249d650f997a2117385632}{X}} = zdata(\+:, 4)
 \item 
-Reactance \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}} = max(max(\mbox{\hyperlink{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}}))
+\mbox{\hyperlink{Ybus__matlab_8m_aa07437b9143279ad47b94d3cfe4dad97}{Reactance}} \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}} = max(max(\mbox{\hyperlink{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}}))
 \item 
 Number of buses Calculate admittance values \mbox{\hyperlink{Ybus__matlab_8m_a3caa9296f3ea7c15163c915324168b86}{Z}} = \mbox{\hyperlink{Ybus__matlab_8m_a4cd314adedb1fa4d5ba5687f0e1c5005}{R}} + 1j $\ast$ \mbox{\hyperlink{Ybus__matlab_8m_adc915f7351249d650f997a2117385632}{X}}
 \item 
 Impedance matrix \mbox{\hyperlink{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}{y}} = 1 ./ \mbox{\hyperlink{Ybus__matlab_8m_a3caa9296f3ea7c15163c915324168b86}{Z}}
 \item 
-Admittance matrix Initialize the \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}})
+Admittance matrix Initialize the bus admittance matrix \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}})
 \item 
-Create the \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}{YBUS}}
+Create the bus admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}{YBUS}}
 \item 
 Initialize inside the function for \mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}
 \item 
@@ -45,12 +47,6 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{Ybus__matlab_8m_a7277c344d1ad6963e60675b005bacc28}\label{Ybus__matlab_8m_a7277c344d1ad6963e60675b005bacc28}} 
-\index{Ybus\_matlab.m@{Ybus\_matlab.m}!columns:columns:@{columns:columns:}}
-\index{columns:columns:@{columns:columns:}!Ybus\_matlab.m@{Ybus\_matlab.m}}
-\doxysubsubsection{\texorpdfstring{columns:columns:()}{columns:columns:()}}
-{\footnotesize\ttfamily id columns\+:columns\+: (\begin{DoxyParamCaption}\item[{pu}]{following,  }\item[{\mbox{[}columns\mbox{]} pu}]{zdata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
 \mbox{\Hypertarget{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}\label{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!display\_admittance\_matrix@{display\_admittance\_matrix}}
 \index{display\_admittance\_matrix@{display\_admittance\_matrix}!Ybus\_matlab.m@{Ybus\_matlab.m}}
@@ -61,7 +57,13 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!fprintf@{fprintf}}
 \index{fprintf@{fprintf}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{fprintf()}{fprintf()}}
-{\footnotesize\ttfamily Ensure it returns the updated matrix end Display the \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}) disp(\textquotesingle{}Bus Admittance Matrix end fprintf (\begin{DoxyParamCaption}\item[{\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Ensure it returns the updated matrix end Display the bus admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}) disp(\textquotesingle{}Bus Admittance Matrix end fprintf (\begin{DoxyParamCaption}\item[{\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{Ybus__matlab_8m_a0e936a06656c4b0a530ab8b26841eec4}\label{Ybus__matlab_8m_a0e936a06656c4b0a530ab8b26841eec4}} 
+\index{Ybus\_matlab.m@{Ybus\_matlab.m}!Resistance@{Resistance}}
+\index{Resistance@{Resistance}!Ybus\_matlab.m@{Ybus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{Resistance()}{Resistance()}}
+{\footnotesize\ttfamily brief Defines the line data matrix with Resistance (\begin{DoxyParamCaption}\item[{pu}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}\label{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!Ybus@{Ybus}}
@@ -72,11 +74,17 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}\label{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}} 
-\index{Ybus\_matlab.m@{Ybus\_matlab.m}!bus@{bus}}
-\index{bus@{bus}!Ybus\_matlab.m@{Ybus\_matlab.m}}
-\doxysubsubsection{\texorpdfstring{bus}{bus}}
-{\footnotesize\ttfamily file admittance\+\_\+matrix m brief Generates a bus admittance matrix for a given set of buses and lines This program calculates the bus admittance matrix for a power system network given a set of lines and their impedances The user provides the line data in a matrix format with columns representing the starting ending bus}
+\mbox{\Hypertarget{Ybus__matlab_8m_a477c64f3dd0332e3e52991ee1a57375f}\label{Ybus__matlab_8m_a477c64f3dd0332e3e52991ee1a57375f}} 
+\index{Ybus\_matlab.m@{Ybus\_matlab.m}!bus2@{bus2}}
+\index{bus2@{bus2}!Ybus\_matlab.m@{Ybus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{bus2}{bus2}}
+{\footnotesize\ttfamily brief Defines the line data matrix with bus2}
+
+\mbox{\Hypertarget{Ybus__matlab_8m_a307a0001d07748d00c821c6ab87878d2}\label{Ybus__matlab_8m_a307a0001d07748d00c821c6ab87878d2}} 
+\index{Ybus\_matlab.m@{Ybus\_matlab.m}!columns@{columns}}
+\index{columns@{columns}!Ybus\_matlab.m@{Ybus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{columns}{columns}}
+{\footnotesize\ttfamily brief Defines the line data matrix with columns}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}\label{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!k@{k}}
@@ -115,7 +123,7 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nbus@{nbus}}
 \index{nbus@{nbus}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{nbus}{nbus}}
-{\footnotesize\ttfamily Reactance nbus = max(max(\mbox{\hyperlink{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}}))}
+{\footnotesize\ttfamily \mbox{\hyperlink{Ybus__matlab_8m_aa07437b9143279ad47b94d3cfe4dad97}{Reactance}} nbus = max(max(\mbox{\hyperlink{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}}))}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}\label{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nl@{nl}}
@@ -127,25 +135,25 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!nr@{nr}}
 \index{nr@{nr}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{nr}{nr}}
-{\footnotesize\ttfamily From \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} number nr = zdata(\+:, 2)}
+{\footnotesize\ttfamily From bus number nr = zdata(\+:, 2)}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a4cd314adedb1fa4d5ba5687f0e1c5005}\label{Ybus__matlab_8m_a4cd314adedb1fa4d5ba5687f0e1c5005}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!R@{R}}
 \index{R@{R}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{R}{R}}
-{\footnotesize\ttfamily To \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} number R = zdata(\+:, 3)}
+{\footnotesize\ttfamily To bus number R = zdata(\+:, 3)}
 
-\mbox{\Hypertarget{Ybus__matlab_8m_a585a839757ab84aab35650906963673a}\label{Ybus__matlab_8m_a585a839757ab84aab35650906963673a}} 
-\index{Ybus\_matlab.m@{Ybus\_matlab.m}!resistance@{resistance}}
-\index{resistance@{resistance}!Ybus\_matlab.m@{Ybus\_matlab.m}}
-\doxysubsubsection{\texorpdfstring{resistance}{resistance}}
-{\footnotesize\ttfamily file admittance\+\_\+matrix m brief Generates a \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix for a given set of buses and lines This program calculates the \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix for a power system network given a set of lines and their impedances The user provides the line data in a matrix format with columns representing the starting ending resistance}
+\mbox{\Hypertarget{Ybus__matlab_8m_aa07437b9143279ad47b94d3cfe4dad97}\label{Ybus__matlab_8m_aa07437b9143279ad47b94d3cfe4dad97}} 
+\index{Ybus\_matlab.m@{Ybus\_matlab.m}!Reactance@{Reactance}}
+\index{Reactance@{Reactance}!Ybus\_matlab.m@{Ybus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{Reactance}{Reactance}}
+{\footnotesize\ttfamily brief Defines the line data matrix with Reactance(pu) \%\% \%\% The line data matrix contains information about the lines in the power system network. \%\% Each row represents a line with the following \mbox{\hyperlink{Ybus__matlab_8m_a307a0001d07748d00c821c6ab87878d2}{columns}} (\begin{DoxyParamCaption}\item[{pu}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_adc915f7351249d650f997a2117385632}\label{Ybus__matlab_8m_adc915f7351249d650f997a2117385632}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!X@{X}}
 \index{X@{X}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{X}{X}}
-{\footnotesize\ttfamily Resistance X = zdata(\+:, 4)}
+{\footnotesize\ttfamily \mbox{\hyperlink{Ybus__matlab_8m_a0e936a06656c4b0a530ab8b26841eec4}{Resistance}} X = zdata(\+:, 4)}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}\label{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!y@{y}}
@@ -157,7 +165,7 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!Ybus@{Ybus}}
 \index{Ybus@{Ybus}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{Ybus}{Ybus}}
-{\footnotesize\ttfamily Admittance matrix Initialize the \mbox{\hyperlink{Ybus__matlab_8m_a0b5ecced53f95063315909ef266b400c}{bus}} admittance matrix Ybus = zeros(\mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}})}
+{\footnotesize\ttfamily Admittance matrix Initialize the bus admittance matrix Ybus = zeros(\mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}})}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}\label{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!YBUS@{YBUS}}

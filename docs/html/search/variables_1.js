@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['imaginary_70',['imaginary',['../classComplex.html#a8dffa50f84dbc9d206dbbc7416f16e17',1,'Complex']]]
+  ['columns_71',['columns',['../Ybus__matlab_8m.html#a307a0001d07748d00c821c6ab87878d2',1,'Ybus_matlab.m']]]
 ];
