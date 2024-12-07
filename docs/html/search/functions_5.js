@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['k_3a_60',['k:',['../Ybus__matlab_8m.html#a6df84753b5dd2381b7fdffd1ae35b7f7',1,'Ybus_matlab.m']]]
+  ['main_57',['main',['../classYbus__Java.html#ac90297417d2db3f47056a73c29636427',1,'Ybus_Java']]],
+  ['multiply_58',['multiply',['../classComplex.html#a8ec653650f97d75bed0cd8d924ba4ef2',1,'Complex']]]
 ];

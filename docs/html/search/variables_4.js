@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['y_82',['y',['../Ybus__matlab_8m.html#a978229db833434ffa9daf2296f31ec7e',1,'Ybus_matlab.m']]],
-  ['ybus_83',['Ybus',['../Ybus__matlab_8m.html#a441137d611075f65119f0671c115f0a4',1,'Ybus():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246',1,'Ybus_Python.Ybus()']]]
+  ['x_75',['X',['../Ybus__matlab_8m.html#ac51b57a703ba1c5869228690c93e1701',1,'X():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a99131e0f417d515d45b9583f7917fced',1,'Ybus_Python.X()']]]
 ];

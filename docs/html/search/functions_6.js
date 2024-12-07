@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lines_61',['lines',['../Ybus__matlab_8m.html#af4bc2963b3268a05fa3c2e316e9ef1ca',1,'Ybus_matlab.m']]]
+  ['negate_59',['negate',['../classComplex.html#a63ce0a55d8a970161830e4dffc43bcd4',1,'Complex']]]
 ];
