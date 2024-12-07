@@ -32,7 +32,7 @@ zdata = [
 
 
  /**
- * @brief This variable stores the number of branches
+ * @brief nbr(int): This variable stores the ending bus numbers from the line data
  *
  * 
  */
@@ -40,40 +40,62 @@ nbr = size(zdata(:,1), 1);
 
 
 /**
-* @var nl Starting bus numbers
+* @brief nl(int[]): This variable stores the starting bus numbers from the line data
 *
 *
 */
 nl = zdata(:,1); 
 
 /**
-* @var nr Ending bus numbers
+* @brief nr(int[]): This variable stores the ending bus numbers from the line data
+*
 */
 nr = zdata(:,2);
 
 /**
-* @var R Resistance of the line
+* @brief R(float[]): This variable stores the line resistance
+*
 */
-R = zdata(:,3);            
+R = zdata(:,3);
+
+/**
+* @brief X(float[]): This variable stores the line reactance
+*
+*/
 X = zdata(:,4);
+
+/**
+* @brief nbus(int): This variable stores the total number of buses
+*
+*/
 nbus = max(max(nl), max(nr));
 
+
 /**
- * @brief Calculates impedance and admittance from resistance and reactance
- * 
- * This section calculates the impedance and admittance values for each line using the given resistance and reactance values.
- */
-Z = R + 1j * X;  
+* @brief Z(complex[]): This variable stores the line impedance Z(R+jX)
+*
+*/
+Z = R + 1j * X;
+
+/**
+* @brief y(complex[]): This temporary variable stores the line admittance Y(G+jB)
+*
+*/
 y = 1 ./ Z;
 
+
 /**
- * @brief Forms the bus admittance matrix
- * 
- * This section forms the bus admittance matrix, which is a key component in power system analysis.
- * The off-diagonal elements represent the admittance between two buses, while the diagonal elements represent the sum of admittances connected to a bus.
- */
+* @brief Ybus(complex[][]): This variable stores the bus admittance matrix
+*
+*/
 Ybus = zeros(nbus, nbus);
 
+
+
+/**
+* @brief This loop calculates off-diagonal elements of Ybus matrix
+*
+*/
 for k = 1:nbr
     if nl(k) > 0 && nr(k) > 0
         Ybus(nl(k), nr(k)) = Ybus(nl(k), nr(k)) - y(k);
@@ -82,6 +104,10 @@ for k = 1:nbr
 end
 
 
+/**
+* @brief This loop calculates diagonal elements of Ybus matrix
+*
+*/
 for n = 1:nbus
     for k = 1:nbr
         if nl(k) == n || nr(k) == n
