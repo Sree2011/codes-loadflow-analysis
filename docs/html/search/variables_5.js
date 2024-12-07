@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r_79',['R',['../Ybus__matlab_8m.html#a4cd314adedb1fa4d5ba5687f0e1c5005',1,'R():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a9dfdc2f385bd66bf3a514dd8ab75f75a',1,'Ybus_Python.R()']]],
-  ['reactance_80',['Reactance',['../Ybus__matlab_8m.html#aa07437b9143279ad47b94d3cfe4dad97',1,'Ybus_matlab.m']]],
-  ['real_81',['real',['../classComplex.html#a345da274bb05610ff7d549028bc6d510',1,'Complex']]]
+  ['y_75',['y',['../Ybus__matlab_8m.html#ab098f68e1c25a12e50a14120b9bc9138',1,'Ybus_matlab.m']]],
+  ['ybus_76',['YBUS',['../Ybus__matlab_8m.html#a4133bab9ceab9e7b4797de2a73f9782b',1,'Ybus_matlab.m']]],
+  ['ybus_77',['Ybus',['../Ybus__matlab_8m.html#a8e089e95b4bf2f9e6594a5ad0a68c4e5',1,'Ybus():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246',1,'Ybus_Python.Ybus()']]]
 ];
