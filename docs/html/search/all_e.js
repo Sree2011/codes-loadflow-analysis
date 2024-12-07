@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tostring_35',['toString',['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex']]]
+  ['x_35',['X',['../namespaceYbus__Python.html#a99131e0f417d515d45b9583f7917fced',1,'Ybus_Python']]]
 ];
