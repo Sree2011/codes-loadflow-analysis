@@ -31,31 +31,20 @@ zdata = [
 ];
 
 
-/**
- * @brief Extracts data from the line data matrix
- * 
- * This section extracts the relevant information from the line data matrix:
- * - Number of lines (branches)
- * - Starting bus numbers
- * - Ending bus numbers
- * - Resistance values
- * - Reactance values
- * - Total number of buses
- */
-
-
  /**
  * @brief This variable stores the number of branches
  *
- * @var nbr
+ * 
  */
-
 nbr = size(zdata(:,1), 1);
+
 
 /**
 * @var nl Starting bus numbers
+*
+*
 */
-nl = zdata(:,1);  
+nl = zdata(:,1); 
 
 /**
 * @var nr Ending bus numbers
