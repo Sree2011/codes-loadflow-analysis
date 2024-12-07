@@ -68,8 +68,6 @@ Here are the links to the implementations:
 
 1. [Python](./docs/html/namespaceYbus__Python.html)
 
-
-
 ## References
 
 [1] Hadi Saadat, *"Power System Analysis"*. Psa Pub, United States, 2010.
