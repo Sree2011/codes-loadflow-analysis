@@ -3,9 +3,9 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}} (\mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}))
+\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}} (\mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}))
 \item 
-Ensure it returns the updated matrix end Display the bus admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}) disp( \textquotesingle{}Bus Admittance Matrix end \mbox{\hyperlink{Ybus__matlab_8m_ad8bdccde910ad5282ca779b6269d0162}{fprintf}} (\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{})
+end Display the bus admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}}(\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}) disp( \textquotesingle{}Bus Admittance Matrix end \mbox{\hyperlink{Ybus__matlab_8m_a539cf02e887be0038ea9be756e66a46e}{fprintf}} (\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{})
 \item 
 \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}{YBUS}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}})
 \end{DoxyCompactItemize}
@@ -26,15 +26,15 @@ Reactance \mbox{\hyperlink{Ybus__matlab_8m_a8aafc0ca07724cc47417bc82bba4ff73}{X}
 \item 
 Total number of buses \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}} = max(max(\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}))
 \item 
-\mbox{\hyperlink{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}} = \mbox{\hyperlink{Ybus__matlab_8m_ab92b277529325cadb7ad389b5df0a92d}{R}} + 1j $\ast$ \mbox{\hyperlink{Ybus__matlab_8m_a8aafc0ca07724cc47417bc82bba4ff73}{X}}
+Impedance matrix \mbox{\hyperlink{Ybus__matlab_8m_aa30cc5d0245a5d69d8f10afae5560945}{Z}} = \mbox{\hyperlink{Ybus__matlab_8m_ab92b277529325cadb7ad389b5df0a92d}{R}} + 1j $\ast$ \mbox{\hyperlink{Ybus__matlab_8m_a8aafc0ca07724cc47417bc82bba4ff73}{X}}
 \item 
-Impedance matrix \mbox{\hyperlink{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}{y}} = 1 ./ \mbox{\hyperlink{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}}
+Placeholder admittance matrix \mbox{\hyperlink{Ybus__matlab_8m_ae25865c3a7e418f54933c25c3038128b}{y}} = 1 ./ \mbox{\hyperlink{Ybus__matlab_8m_aa30cc5d0245a5d69d8f10afae5560945}{Z}}
 \item 
-Admittance matrix Initialize the bus admittance matrix \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}})
+Initialize the bus admittance matrix \mbox{\hyperlink{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}{Ybus}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}})
 \item 
 function \mbox{\hyperlink{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}{YBUS}}
 \item 
-Initialize inside the function for \mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}
+for \mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}
 \item 
 end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}
 \end{DoxyCompactItemize}
@@ -47,32 +47,32 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 \doxysubsubsection{\texorpdfstring{display\_admittance\_matrix()}{display\_admittance\_matrix()}}
 {\footnotesize\ttfamily display\+\_\+admittance\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}{YBUS}}}]{,  }\item[{\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}}]{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{Ybus__matlab_8m_ad8bdccde910ad5282ca779b6269d0162}\label{Ybus__matlab_8m_ad8bdccde910ad5282ca779b6269d0162}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_a539cf02e887be0038ea9be756e66a46e}\label{Ybus__matlab_8m_a539cf02e887be0038ea9be756e66a46e}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!fprintf@{fprintf}}
 \index{fprintf@{fprintf}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{fprintf()}{fprintf()}}
-{\footnotesize\ttfamily Ensure it returns the updated matrix end Display the bus admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}) disp(\textquotesingle{}Bus Admittance Matrix end fprintf (\begin{DoxyParamCaption}\item[{\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily end Display the bus admittance matrix function function \mbox{\hyperlink{Ybus__matlab_8m_afeba875cb0d2ddeb1e880d719fdd4d54}{display\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}) disp(\textquotesingle{}Bus Admittance Matrix end fprintf (\begin{DoxyParamCaption}\item[{\textquotesingle{}\textbackslash{}\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}\label{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!Ybus@{Ybus}}
 \index{Ybus@{Ybus}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{Ybus()}{Ybus()}}
-{\footnotesize\ttfamily Ybus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}})}]{,  }\item[{\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}})}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Ybus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})}]{,  }\item[{\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})}]{ }\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}\label{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}\label{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!k@{k}}
 \index{k@{k}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{k}{k}}
-{\footnotesize\ttfamily Initialize inside the function for k}
+{\footnotesize\ttfamily for k}
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{= 1:\mbox{\hyperlink{Ybus__matlab_8m_a0073182b0fbe931a27d6a2dd7911c11d}{nbr}}}
-\DoxyCodeLine{        \textcolor{keywordflow}{if} \mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}) > 0 \&\& \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}) > 0}
-\DoxyCodeLine{            \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}})) = \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}})) -\/ \mbox{\hyperlink{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}{y}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}})}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} \mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}) > 0 \&\& \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}) > 0}
+\DoxyCodeLine{            \mbox{\hyperlink{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})) = \mbox{\hyperlink{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}), \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})) -\/ \mbox{\hyperlink{Ybus__matlab_8m_ae25865c3a7e418f54933c25c3038128b}{y}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}\label{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}} 
@@ -84,9 +84,9 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{= 1:\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}}
-\DoxyCodeLine{        \textcolor{keywordflow}{for} \mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}} = 1:\mbox{\hyperlink{Ybus__matlab_8m_a0073182b0fbe931a27d6a2dd7911c11d}{nbr}}}
-\DoxyCodeLine{            \textcolor{keywordflow}{if} \mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}) == \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}} || \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}}) == \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}}
-\DoxyCodeLine{                \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}) = \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}) + \mbox{\hyperlink{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}{y}}(\mbox{\hyperlink{Ybus__matlab_8m_a6287df719752cfcf564fe779111958a8}{k}})}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} \mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}} = 1:\mbox{\hyperlink{Ybus__matlab_8m_a0073182b0fbe931a27d6a2dd7911c11d}{nbr}}}
+\DoxyCodeLine{            \textcolor{keywordflow}{if} \mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}) == \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}} || \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}}) == \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}}
+\DoxyCodeLine{                \mbox{\hyperlink{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}) = \mbox{\hyperlink{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}{Ybus}}(\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{n}}) + \mbox{\hyperlink{Ybus__matlab_8m_ae25865c3a7e418f54933c25c3038128b}{y}}(\mbox{\hyperlink{Ybus__matlab_8m_a1c73327b2882639bc9f5e416bb3cc7ac}{k}})}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{Ybus__matlab_8m_a0073182b0fbe931a27d6a2dd7911c11d}\label{Ybus__matlab_8m_a0073182b0fbe931a27d6a2dd7911c11d}} 
@@ -125,17 +125,17 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 \doxysubsubsection{\texorpdfstring{X}{X}}
 {\footnotesize\ttfamily Reactance X = \mbox{\hyperlink{Ybus__matlab_8m_a8878f775609579f72569e1d60770b2fa}{zdata}}(\+:, 4)}
 
-\mbox{\Hypertarget{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}\label{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_ae25865c3a7e418f54933c25c3038128b}\label{Ybus__matlab_8m_ae25865c3a7e418f54933c25c3038128b}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!y@{y}}
 \index{y@{y}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{y}{y}}
-{\footnotesize\ttfamily Impedance matrix y = 1 ./ \mbox{\hyperlink{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}{Z}}}
+{\footnotesize\ttfamily Placeholder admittance matrix y = 1 ./ \mbox{\hyperlink{Ybus__matlab_8m_aa30cc5d0245a5d69d8f10afae5560945}{Z}}}
 
-\mbox{\Hypertarget{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}\label{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}\label{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!Ybus@{Ybus}}
 \index{Ybus@{Ybus}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{Ybus}{Ybus}}
-{\footnotesize\ttfamily Admittance matrix Initialize the bus admittance matrix Ybus = zeros(\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}})}
+{\footnotesize\ttfamily Initialize the bus admittance matrix Ybus = zeros(\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}})}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}\label{Ybus__matlab_8m_a4133bab9ceab9e7b4797de2a73f9782b}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!YBUS@{YBUS}}
@@ -145,15 +145,15 @@ end end for \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{
 
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{= create\_admittance\_matrix(\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}, \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}, \mbox{\hyperlink{Ybus__matlab_8m_a0073182b0fbe931a27d6a2dd7911c11d}{nbr}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_ab098f68e1c25a12e50a14120b9bc9138}{y}})}
-\DoxyCodeLine{    \mbox{\hyperlink{Ybus__matlab_8m_a8e089e95b4bf2f9e6594a5ad0a68c4e5}{Ybus}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}})}
+\DoxyCodeLine{= create\_admittance\_matrix(\mbox{\hyperlink{Ybus__matlab_8m_a4f6d773a512f63c50efdf8a852f2fbd3}{nl}}, \mbox{\hyperlink{Ybus__matlab_8m_a62b91f472c8056d13d9cf9e3c47f95b0}{nr}}, \mbox{\hyperlink{Ybus__matlab_8m_a0073182b0fbe931a27d6a2dd7911c11d}{nbr}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae25865c3a7e418f54933c25c3038128b}{y}})}
+\DoxyCodeLine{    \mbox{\hyperlink{Ybus__matlab_8m_a60c0e245db1e11bdc07bdcddaa837ab2}{Ybus}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a19e9998e9c3c574ae18d3375acb9edaa}{nbus}})}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}\label{Ybus__matlab_8m_adc18d83abfd9f87d396e8fd6b6ac0fe1}} 
+\mbox{\Hypertarget{Ybus__matlab_8m_aa30cc5d0245a5d69d8f10afae5560945}\label{Ybus__matlab_8m_aa30cc5d0245a5d69d8f10afae5560945}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!Z@{Z}}
 \index{Z@{Z}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{Z}{Z}}
-{\footnotesize\ttfamily Z = \mbox{\hyperlink{Ybus__matlab_8m_ab92b277529325cadb7ad389b5df0a92d}{R}} + 1j $\ast$ \mbox{\hyperlink{Ybus__matlab_8m_a8aafc0ca07724cc47417bc82bba4ff73}{X}}}
+{\footnotesize\ttfamily Impedance matrix Z = \mbox{\hyperlink{Ybus__matlab_8m_ab92b277529325cadb7ad389b5df0a92d}{R}} + 1j $\ast$ \mbox{\hyperlink{Ybus__matlab_8m_a8aafc0ca07724cc47417bc82bba4ff73}{X}}}
 
 \mbox{\Hypertarget{Ybus__matlab_8m_a8878f775609579f72569e1d60770b2fa}\label{Ybus__matlab_8m_a8878f775609579f72569e1d60770b2fa}} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!zdata@{zdata}}
