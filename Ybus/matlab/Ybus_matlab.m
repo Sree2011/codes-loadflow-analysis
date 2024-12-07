@@ -124,11 +124,11 @@ end
  */
 disp('Bus Admittance Matrix is:');
 
-/**
-* @variable i Outer Loop counter iterating through 1 to nbus
-* @variable j Inner Loop counter iterating through 1 to nbus
-*/
+
 for i = 1:nbus
+    /**
+    * i outer loop counter
+    */
     for j = 1:nbus
         fprintf('%.2f + %.2fj  ', real(Ybus(i, j)), imag(Ybus(i, j)));
     end
