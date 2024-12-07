@@ -8,9 +8,9 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{namespaceYbus__Python_a8337066dd1c28292f77f0b4245cbb009}{Ybus\+\_\+\+Python.\+calculate\+\_\+admittance}} (\mbox{\hyperlink{Ybus__matlab_8m_acb95449a94688af33f6e9bb090cf2936}{R}}, \mbox{\hyperlink{Ybus__matlab_8m_ac51b57a703ba1c5869228690c93e1701}{X}})
+def \mbox{\hyperlink{namespaceYbus__Python_a8337066dd1c28292f77f0b4245cbb009}{Ybus\+\_\+\+Python.\+calculate\+\_\+admittance}} (\mbox{\hyperlink{Ybus__matlab_8m_a4cd314adedb1fa4d5ba5687f0e1c5005}{R}}, \mbox{\hyperlink{Ybus__matlab_8m_adc915f7351249d650f997a2117385632}{X}})
 \item 
-def \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{Ybus\+\_\+\+Python.\+calculate\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}})
+def \mbox{\hyperlink{namespaceYbus__Python_a5af37732f8e5035d81bc877fabc7fc4e}{Ybus\+\_\+\+Python.\+calculate\+\_\+admittance\+\_\+matrix}} (zdata)
 \item 
 def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{Ybus\+\_\+\+Python.\+print\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a308bec2ae202b12ed258d1100a092db7}{Ybus}})
 \end{DoxyCompactItemize}
@@ -19,17 +19,17 @@ def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{Yb
 \item 
 \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{Ybus\+\_\+\+Python.\+zdata}}
 \begin{DoxyCompactList}\small\item\em zdata(np.\+array)\+: Example linedata matrix for IEEE-\/30 Bus system Replace this with your own linedata matrix. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}{Ybus\+\_\+\+Python.\+nbr}} = len(\mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}\mbox{[}\+:, 1\mbox{]})
+\mbox{\hyperlink{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}{Ybus\+\_\+\+Python.\+nbr}} = len(zdata\mbox{[}\+:, 1\mbox{]})
 \begin{DoxyCompactList}\small\item\em nbr(int)\+: This variable stores number of lines or branches in the power system network \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{Ybus\+\_\+\+Python.\+nl}} = np.\+array(\mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}\mbox{[}\+:, 0\mbox{]}, dtype=int)
+\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{Ybus\+\_\+\+Python.\+nl}} = np.\+array(zdata\mbox{[}\+:, 0\mbox{]}, dtype=int)
 \begin{DoxyCompactList}\small\item\em nl(np.\+array(int))\+: This variable stores the starting bus numbers from the line data \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{Ybus\+\_\+\+Python.\+nr}} = np.\+array(\mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}\mbox{[}\+:, 1\mbox{]}, dtype=int)
+\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{Ybus\+\_\+\+Python.\+nr}} = np.\+array(zdata\mbox{[}\+:, 1\mbox{]}, dtype=int)
 \begin{DoxyCompactList}\small\item\em nr(np.\+array(int))\+: This variable stores the ending bus numbers from the line data \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}{Ybus\+\_\+\+Python.\+R}} = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}\mbox{[}\+:, 2\mbox{]}
+\mbox{\hyperlink{namespaceYbus__Python_a9dfdc2f385bd66bf3a514dd8ab75f75a}{Ybus\+\_\+\+Python.\+R}} = zdata\mbox{[}\+:, 2\mbox{]}
 \begin{DoxyCompactList}\small\item\em R(np.\+array(float))\+: This variable stores the line resistance from the line data. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}{Ybus\+\_\+\+Python.\+X}} = \mbox{\hyperlink{Ybus__matlab_8m_a3b7bf90ba0e70ea30986ccac9cbd060d}{zdata}}\mbox{[}\+:, 3\mbox{]}
+\mbox{\hyperlink{namespaceYbus__Python_a99131e0f417d515d45b9583f7917fced}{Ybus\+\_\+\+Python.\+X}} = zdata\mbox{[}\+:, 3\mbox{]}
 \begin{DoxyCompactList}\small\item\em X(np.\+array(float))\+: This variable stores the line reactance from the line data. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{Ybus\+\_\+\+Python.\+nbus}} = int(max(max(\mbox{\hyperlink{Ybus__matlab_8m_ac6c8f64a5d39a67bbb5a2f5d95014e04}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_a70c1a5f25e12e70da97faf350ec11f8b}{nr}})))
+\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{Ybus\+\_\+\+Python.\+nbus}} = int(max(max(\mbox{\hyperlink{Ybus__matlab_8m_a626ebadfa4c79ee736d0904ccb594dac}{nl}}), max(\mbox{\hyperlink{Ybus__matlab_8m_adf22e7ba09fee7969248ece5bf313069}{nr}})))
 \begin{DoxyCompactList}\small\item\em nbus(int)\+: This variable stores total no.\+of buses in the power system from the line data \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}{Ybus\+\_\+\+Python.\+Ybus}} = np.\+zeros((\mbox{\hyperlink{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_a63e9e059a4672b552e581447fedf8be2}{nbus}}), dtype=complex)
+\mbox{\hyperlink{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}{Ybus\+\_\+\+Python.\+Ybus}} = np.\+zeros((\mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}, \mbox{\hyperlink{Ybus__matlab_8m_ae49d3180a59eb2190ed65be6eb2048a2}{nbus}}), dtype=complex)
 \begin{DoxyCompactList}\small\item\em Ybus(np.\+array(\+Complex))\+: This variable stores the bus admittance matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}

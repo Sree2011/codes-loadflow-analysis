@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['getimag_10',['getImag',['../classComplex.html#a874cd609fc70d1a80e5d2cd2b6565c0e',1,'Complex']]],
-  ['getreal_11',['getReal',['../classComplex.html#a4d797850f2dc802a81632b5dad6658d5',1,'Complex']]]
+  ['findmax_9',['findMax',['../classComplex.html#a02613088714ee3c7a489b25532856050',1,'Complex']]],
+  ['fprintf_10',['fprintf',['../Ybus__matlab_8m.html#ad8bdccde910ad5282ca779b6269d0162',1,'Ybus_matlab.m']]],
+  ['fromstring_11',['fromString',['../classComplex.html#a32cf17d402f8f5b7289462f011627673',1,'Complex']]]
 ];

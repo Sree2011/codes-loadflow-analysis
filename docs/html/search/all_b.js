@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['subtract_27',['subtract',['../classComplex.html#ad552a93c53be71388e817329c3be0e94',1,'Complex']]]
+  ['r_25',['R',['../Ybus__matlab_8m.html#a4cd314adedb1fa4d5ba5687f0e1c5005',1,'R():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a9dfdc2f385bd66bf3a514dd8ab75f75a',1,'Ybus_Python.R()']]],
+  ['real_26',['real',['../classComplex.html#a345da274bb05610ff7d549028bc6d510',1,'Complex']]],
+  ['reciprocal_27',['reciprocal',['../classComplex.html#a3abc78c5a8c36a75d16bd964e7e5cdca',1,'Complex']]],
+  ['resistance_28',['resistance',['../Ybus__matlab_8m.html#a585a839757ab84aab35650906963673a',1,'Ybus_matlab.m']]]
 ];
