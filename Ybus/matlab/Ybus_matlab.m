@@ -9,12 +9,22 @@ zdata = [
     4   5   0.08  0.24;
 ];
 
+% Number of branches
+nbr = size(zdata, 1);
 
-nbr = size(zdata, 1);  % Number of branches
-nl = zdata(:, 1);  % From bus number
-nr = zdata(:, 2);  % To bus number
-R = zdata(:, 3);  % Resistance
-X = zdata(:, 4); 
+% Starting bus numbers
+nl = zdata(:, 1);
+
+% Ending bus numbers
+nr = zdata(:, 2);
+
+% Resistance
+R = zdata(:, 3);
+
+% Reactance
+X = zdata(:, 4);
+
+% Total number of buses
 nbus = max(max(nl), max(nr));
 
 
