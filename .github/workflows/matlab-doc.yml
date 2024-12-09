@@ -21,6 +21,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y octave
 
+        
     - name: Generate Documentation
       run: |
         cd ./Ybus/matlab
