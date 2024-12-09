@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ybus_matlab</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] },
+  TeX: { equationNumbers: { autoNumber: 'all' } }
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<style>
+body > * {
+  max-width: 42em;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 7.5em;
+  padding-right: 7.5em;
+}
+pre, code {
+  max-width: 50em;
+  font-family: monospace;
+}
+pre.oct-code {
+  border: 1px solid Grey;
+  padding: 5px;
+}
+pre.oct-code-output {
+  margin-left: 2em;
+}
+span.comment {
+  color: ForestGreen;
+}
+span.keyword {
+  color: Blue;
+}
+span.string {
+  color: DarkOrchid;
+}
+footer {
+  margin-top: 2em;
+  font-size: 80%;
+}
+a, a:visited {
+  color: Blue;
+}
+h2 {
+  font-family: "Roboto Condensed", serif;
+  margin-top: 1.5em;
+}
+h2 a, h2 a:visited {
+  color: Black;
+}
+</style>
+
+</head>
+<body>
+<h1>Ybus_matlab</h1>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#node1">Initialize the bus admittance matrix</a></li>
+<li><a href="#node2">Display the bus admittance matrix function</a></li>
+<li><a href="#node3">Call the functions to create and display the matrix</a></li>
+</ul>
+
+<pre class="oct-code"><span class="comment">%&gt; Linedata Matrix</span>
+zdata = [
+    1   2   0.02  0.06;
+    1   3   0.08  0.24;
+    2   3   0.06  0.25;
+    2   4   0.06  0.18;
+    2   5   0.04  0.12;
+    3   4   0.01  0.03;
+    4   5   0.08  0.24;
+];
+
+
+<span class="comment">%&gt; Number of branches</span>
+nbr = size(zdata, 1);
+
+<span class="comment">% Starting bus numbers</span>
+nl = zdata(:, 1);
+
+<span class="comment">% Ending bus numbers</span>
+nr = zdata(:, 2);
+
+<span class="comment">% Resistance</span>
+R = zdata(:, 3);
+
+<span class="comment">% Reactance</span>
+X = zdata(:, 4);
+
+<span class="comment">% Total number of buses</span>
+nbus = max(max(nl), max(nr));
+
+<span class="comment">% Impedance matrix</span>
+Z = R + 1j * X;
+
+<span class="comment">% Placeholder admittance matrix</span>
+y = 1 ./ Z;</pre>
+<h2><a id="node1">Initialize the bus admittance matrix</a></h2>
+<pre class="oct-code">Ybus = zeros(nbus, nbus);
+
+
+<span class="keyword">function</span> YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
+    Ybus = zeros(nbus, nbus);
+    <span class="keyword">for</span> k = 1:nbr
+        <span class="keyword">if</span> nl(k) &gt; 0 &amp;&amp; nr(k) &gt; 0
+            Ybus(nl(k), nr(k)) = Ybus(nl(k), nr(k)) - y(k);
+            Ybus(nr(k), nl(k)) = Ybus(nl(k), nr(k));
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+
+    <span class="keyword">for</span> n = 1:nbus
+        <span class="keyword">for</span> k = 1:nbr
+            <span class="keyword">if</span> nl(k) == n || nr(k) == n
+                Ybus(n, n) = Ybus(n, n) + y(k);
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    YBUS = Ybus;
+<span class="keyword">end</span></pre>
+<h2><a id="node2">Display the bus admittance matrix function</a></h2>
+<pre class="oct-code"><span class="keyword">function</span> display_admittance_matrix(Ybus, nbus)
+    disp(<span class="string">'Bus Admittance Matrix:'</span>)
+    <span class="keyword">for</span> i = 1:nbus
+        <span class="keyword">for</span> j = 1:nbus
+            fprintf(<span class="string">'%.2f + %.2fj  '</span>, real(Ybus(i, j)), imag(Ybus(i, j)));
+        <span class="keyword">end</span>
+        fprintf(<span class="string">'\n'</span>);
+    <span class="keyword">end</span>
+<span class="keyword">end</span></pre>
+<h2><a id="node3">Call the functions to create and display the matrix</a></h2>
+<pre class="oct-code">YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
+display_admittance_matrix(YBUS, nbus);</pre>
+
+<pre class="oct-code-output">Bus Admittance Matrix:
+6.25 + -18.75j  -5.00 + 15.00j  -1.25 + 3.75j  0.00 + 0.00j  0.00 + 0.00j  
+-5.00 + 15.00j  10.07 + -31.28j  -0.91 + 3.78j  -1.67 + 5.00j  -2.50 + 7.50j  
+-1.25 + 3.75j  -0.91 + 3.78j  12.16 + -37.53j  -10.00 + 30.00j  0.00 + 0.00j  
+0.00 + 0.00j  -1.67 + 5.00j  -10.00 + 30.00j  12.92 + -38.75j  -1.25 + 3.75j  
+0.00 + 0.00j  -2.50 + 7.50j  0.00 + 0.00j  -1.25 + 3.75j  3.75 + -11.25j  
+</pre>
+
+<footer>
+<hr>
+<a href="https://www.octave.org">Published with GNU Octave 6.4.0</a>
+</footer>
+<!--
+##### SOURCE BEGIN #####
+%> Linedata Matrix
+zdata = [
+    1   2   0.02  0.06;
+    1   3   0.08  0.24;
+    2   3   0.06  0.25;
+    2   4   0.06  0.18;
+    2   5   0.04  0.12;
+    3   4   0.01  0.03;
+    4   5   0.08  0.24;
+];
+
+
+%> Number of branches
+nbr = size(zdata, 1);
+
+% Starting bus numbers
+nl = zdata(:, 1);
+
+% Ending bus numbers
+nr = zdata(:, 2);
+
+% Resistance
+R = zdata(:, 3);
+
+% Reactance
+X = zdata(:, 4);
+
+% Total number of buses
+nbus = max(max(nl), max(nr));
+
+% Impedance matrix
+Z = R + 1j * X;
+
+% Placeholder admittance matrix
+y = 1 ./ Z;
+
+%% Initialize the bus admittance matrix
+Ybus = zeros(nbus, nbus);
+
+
+function YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
+    Ybus = zeros(nbus, nbus);
+    for k = 1:nbr
+        if nl(k) > 0 && nr(k) > 0
+            Ybus(nl(k), nr(k)) = Ybus(nl(k), nr(k)) - y(k);
+            Ybus(nr(k), nl(k)) = Ybus(nl(k), nr(k));
+        end
+    end
+
+    for n = 1:nbus
+        for k = 1:nbr
+            if nl(k) == n || nr(k) == n
+                Ybus(n, n) = Ybus(n, n) + y(k);
+            end
+        end
+    end
+    YBUS = Ybus;
+end
+
+%% Display the bus admittance matrix function
+function display_admittance_matrix(Ybus, nbus)
+    disp('Bus Admittance Matrix:')
+    for i = 1:nbus
+        for j = 1:nbus
+            fprintf('%.2f + %.2fj  ', real(Ybus(i, j)), imag(Ybus(i, j)));
+        end
+        fprintf('\n');
+    end
+end
+
+%% Call the functions to create and display the matrix
+YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
+display_admittance_matrix(YBUS, nbus);
+##### SOURCE END #####
+-->
+</body>
+</html>
