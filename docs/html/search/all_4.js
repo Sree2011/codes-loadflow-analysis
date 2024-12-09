@@ -1,20 +1,5 @@
 var searchData=
 [
-  ['c_12',['c',['../m2html_8m.html#ac026da8dc24eac97b7c4c54df3cd00f0',1,'c():&#160;m2html.m'],['../doxysearch_8m.html#ac026da8dc24eac97b7c4c54df3cd00f0',1,'c():&#160;doxysearch.m']]],
-  ['calculate_5fadmittance_13',['calculate_admittance',['../namespaceYbus__Python.html#a8337066dd1c28292f77f0b4245cbb009',1,'Ybus_Python']]],
-  ['calculate_5fadmittance_5fmatrix_14',['calculate_admittance_matrix',['../namespaceYbus__Python.html#a5af37732f8e5035d81bc877fabc7fc4e',1,'Ybus_Python']]],
-  ['calldot_15',['calldot',['../m2html_8m.html#a9e1b2062c4b225f1f6dc0284ff73397f',1,'m2html.m']]],
-  ['case_16',['case',['../m2html_8m.html#a97ee6abe7d21ae63d3399f62a2abd639',1,'m2html.m']]],
-  ['cell_17',['cell',['../m2html_8m.html#a04bb86d4a7721a59ff613b69f959dbf8',1,'cell():&#160;m2html.m'],['../doxyread_8m.html#a90435c7c125e093c927cd5a9cf5bbf15',1,'cell():&#160;doxyread.m']]],
-  ['char_18',['char',['../doxysearch_8m.html#aa4db8ef143f7e0f37229eb9bd5d160fe',1,'char():&#160;doxysearch.m'],['../doxyread_8m.html#aa4db8ef143f7e0f37229eb9bd5d160fe',1,'char():&#160;doxyread.m']]],
-  ['char_2em_19',['char.m',['../char_8m.html',1,'']]],
-  ['combineresults_20',['combineResults',['../doxysearch_8m.html#a7f4c95bf4f50f7242e1c7638247f0316',1,'doxysearch.m']]],
-  ['comment_21',['comment',['../mfileparse_8m.html#a80ed5a9ca60d36c91a25884605e05bdd',1,'comment():&#160;mfileparse.m'],['../m2html_8m.html#a5f5b7297a5660934a8e1bc9469064ed8',1,'comment():&#160;m2html.m'],['../splitcode_8m.html#a919e3d49c3857c21e113599ed4df6966',1,'comment(%...):&#160;splitcode.m']]],
-  ['complex_22',['Complex',['../classComplex.html#aa3ad102258dba549bd6d81c198a824b1',1,'Complex.Complex()'],['../classComplex.html',1,'Complex']]],
-  ['complex_2ejava_23',['Complex.java',['../Complex_8java.html',1,'']]],
-  ['contents_2em_24',['Contents.m',['../Contents_8m.html',1,'']]],
-  ['continuation_25',['continuation',['../splitcode_8m.html#a40c244cbfbe14d9c086bad92f384296b',1,'splitcode.m']]],
-  ['copyright_26',['Copyright',['../mexexts_8m.html#a6d19623498db800ad124adf71fc6025b',1,'mexexts.m']]],
-  ['counter_27',['counter',['../doxywrite_8m.html#a61f7b3cbcedea4bae0c663c892d5d07f',1,'doxywrite.m']]],
-  ['cpath_28',['cpath',['../m2html_8m.html#a1235268c43019281683f0a08381428c1',1,'m2html.m']]]
+  ['getimag_10',['getImag',['../classComplex.html#a874cd609fc70d1a80e5d2cd2b6565c0e',1,'Complex']]],
+  ['getreal_11',['getReal',['../classComplex.html#a4d797850f2dc802a81632b5dad6658d5',1,'Complex']]]
 ];

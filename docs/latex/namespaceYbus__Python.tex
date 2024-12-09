@@ -14,7 +14,7 @@ def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{pr
 \item 
 \mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}
 \begin{DoxyCompactList}\small\item\em zdata(np.\+array)\+: Example linedata matrix for IEEE-\/30 Bus system Replace this with your own linedata matrix. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}{nbr}} = \mbox{\hyperlink{strtok_8m_a211f311d8f56da639cf787514370e683}{len}}(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]})
+\mbox{\hyperlink{namespaceYbus__Python_ad1cde47feef0d59f44bfe17e291369c6}{nbr}} = len(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]})
 \begin{DoxyCompactList}\small\item\em nbr(int)\+: This variable stores number of lines or branches in the power system network \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}} = np.\+array(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 0\mbox{]}, dtype=int)
 \begin{DoxyCompactList}\small\item\em nl(np.\+array(int))\+: This variable stores the starting bus numbers from the line data \end{DoxyCompactList}\item 
@@ -26,7 +26,7 @@ def \mbox{\hyperlink{namespaceYbus__Python_a36997eff40ce42c24fdf980b6fba21c4}{pr
 \begin{DoxyCompactList}\small\item\em X(np.\+array(float))\+: This variable stores the line reactance from the line data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}} = int(max(max(\mbox{\hyperlink{namespaceYbus__Python_a3373b7aada0b9c77891659bb28d5592f}{nl}}), max(\mbox{\hyperlink{namespaceYbus__Python_ab595cbcd2b6c783038faa89931713614}{nr}})))
 \begin{DoxyCompactList}\small\item\em nbus(int)\+: This variable stores total no.\+of buses in the power system from the line data \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}{Ybus}} = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{np.\+zeros}}((\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}, \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}), dtype=complex)
+\mbox{\hyperlink{namespaceYbus__Python_a5c91b2e0aba86cb35a3525a3c1096246}{Ybus}} = np.\+zeros((\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}, \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}), dtype=complex)
 \begin{DoxyCompactList}\small\item\em Ybus(np.\+array(\+Complex))\+: This variable stores the bus admittance matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -78,7 +78,7 @@ Args:
 \index{Ybus\_Python@{Ybus\_Python}!nbr@{nbr}}
 \index{nbr@{nbr}!Ybus\_Python@{Ybus\_Python}}
 \doxysubsubsection{\texorpdfstring{nbr}{nbr}}
-{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+nbr = \mbox{\hyperlink{strtok_8m_a211f311d8f56da639cf787514370e683}{len}}(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]})}
+{\footnotesize\ttfamily Ybus\+\_\+\+Python.\+nbr = len(\mbox{\hyperlink{namespaceYbus__Python_a7090c9ce28ddaed32c5bdd92d78347fe}{zdata}}\mbox{[}\+:, 1\mbox{]})}
 
 
 
@@ -138,7 +138,7 @@ X(np.\+array(float))\+: This variable stores the line reactance from the line da
 \index{Ybus\_Python@{Ybus\_Python}!Ybus@{Ybus}}
 \index{Ybus@{Ybus}!Ybus\_Python@{Ybus\_Python}}
 \doxysubsubsection{\texorpdfstring{Ybus}{Ybus}}
-{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+Ybus = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{np.\+zeros}}((\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}, \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}), dtype=complex)}
+{\footnotesize\ttfamily def Ybus\+\_\+\+Python.\+Ybus = np.\+zeros((\mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}, \mbox{\hyperlink{namespaceYbus__Python_a8b77a86f6929d937247685ff621fb31d}{nbus}}), dtype=complex)}
 
 
 

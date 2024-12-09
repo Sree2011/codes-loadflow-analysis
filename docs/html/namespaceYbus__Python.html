@@ -85,7 +85,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a7090c9ce28ddaed32c5bdd92d78347fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a></td></tr>
 <tr class="memdesc:a7090c9ce28ddaed32c5bdd92d78347fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">zdata(np.array): Example linedata matrix for IEEE-30 Bus system Replace this with your own linedata matrix.  <a href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">More...</a><br /></td></tr>
 <tr class="separator:a7090c9ce28ddaed32c5bdd92d78347fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1cde47feef0d59f44bfe17e291369c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#ad1cde47feef0d59f44bfe17e291369c6">nbr</a> = <a class="el" href="strtok_8m.html#a211f311d8f56da639cf787514370e683">len</a>(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 1])</td></tr>
+<tr class="memitem:ad1cde47feef0d59f44bfe17e291369c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#ad1cde47feef0d59f44bfe17e291369c6">nbr</a> = len(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 1])</td></tr>
 <tr class="memdesc:ad1cde47feef0d59f44bfe17e291369c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">nbr(int): This variable stores number of lines or branches in the power system network  <a href="namespaceYbus__Python.html#ad1cde47feef0d59f44bfe17e291369c6">More...</a><br /></td></tr>
 <tr class="separator:ad1cde47feef0d59f44bfe17e291369c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3373b7aada0b9c77891659bb28d5592f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f">nl</a> = np.array(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 0], dtype=int)</td></tr>
@@ -103,7 +103,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a8b77a86f6929d937247685ff621fb31d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a> = int(max(max(<a class="el" href="namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f">nl</a>), max(<a class="el" href="namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614">nr</a>)))</td></tr>
 <tr class="memdesc:a8b77a86f6929d937247685ff621fb31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">nbus(int): This variable stores total no.of buses in the power system from the line data  <a href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">More...</a><br /></td></tr>
 <tr class="separator:a8b77a86f6929d937247685ff621fb31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c91b2e0aba86cb35a3525a3c1096246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">Ybus</a> = <a class="el" href="mfileparse_8m.html#ad5508e8abff96d9f9f06cc1accc29fc4">np.zeros</a>((<a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>, <a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>), dtype=complex)</td></tr>
+<tr class="memitem:a5c91b2e0aba86cb35a3525a3c1096246"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">Ybus</a> = np.zeros((<a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>, <a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>), dtype=complex)</td></tr>
 <tr class="memdesc:a5c91b2e0aba86cb35a3525a3c1096246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ybus(np.array(Complex)): This variable stores the bus admittance matrix.  <a href="namespaceYbus__Python.html#a5c91b2e0aba86cb35a3525a3c1096246">More...</a><br /></td></tr>
 <tr class="separator:a5c91b2e0aba86cb35a3525a3c1096246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -199,7 +199,7 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Ybus_Python.nbr = <a class="el" href="strtok_8m.html#a211f311d8f56da639cf787514370e683">len</a>(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 1])</td>
+          <td class="memname">Ybus_Python.nbr = len(<a class="el" href="namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe">zdata</a>[:, 1])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -295,7 +295,7 @@ Args:
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def Ybus_Python.Ybus = <a class="el" href="mfileparse_8m.html#ad5508e8abff96d9f9f06cc1accc29fc4">np.zeros</a>((<a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>, <a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>), dtype=complex)</td>
+          <td class="memname">def Ybus_Python.Ybus = np.zeros((<a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>, <a class="el" href="namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d">nbus</a>), dtype=complex)</td>
         </tr>
       </table>
 </div><div class="memdoc">

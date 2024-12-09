@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['blk_497',['blk',['../set_8m.html#afe88e062d4f1112d55397689ab6bce7b',1,'set.m']]],
-  ['break_498',['break',['../m2html_8m.html#a5840f841b13af2c1a8961678416150ac',1,'break():&#160;m2html.m'],['../doxyread_8m.html#a5840f841b13af2c1a8961678416150ac',1,'break():&#160;doxyread.m'],['../doxysearch_8m.html#a5840f841b13af2c1a8961678416150ac',1,'break():&#160;doxysearch.m'],['../doxywrite_8m.html#ae4c8c28548258d8f1a4434e3d86108a7',1,'break():&#160;doxywrite.m'],['../mfileparse_8m.html#a5840f841b13af2c1a8961678416150ac',1,'break():&#160;mfileparse.m'],['../splitcode_8m.html#a91cf6fbebedd86150a36e5ac3d5d3bfc',1,'break():&#160;splitcode.m'],['../strtok_8m.html#a91cf6fbebedd86150a36e5ac3d5d3bfc',1,'break():&#160;strtok.m']]],
-  ['button_499',['button',['../mwizard_8m.html#a2717ba03da980233870e81c68801239e',1,'button():&#160;mwizard.m'],['../mwizard2_8m.html#a2717ba03da980233870e81c68801239e',1,'button():&#160;mwizard2.m']]]
+  ['n_67',['n',['../Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e',1,'Ybus_matlab.m']]],
+  ['nbr_68',['nbr',['../Ybus__matlab_8m.html#a0073182b0fbe931a27d6a2dd7911c11d',1,'nbr():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ad1cde47feef0d59f44bfe17e291369c6',1,'Ybus_Python.nbr()']]],
+  ['nbus_69',['nbus',['../Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa',1,'nbus():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a8b77a86f6929d937247685ff621fb31d',1,'Ybus_Python.nbus()']]],
+  ['nl_70',['nl',['../Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3',1,'nl():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a3373b7aada0b9c77891659bb28d5592f',1,'Ybus_Python.nl()']]],
+  ['nr_71',['nr',['../Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0',1,'nr():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab595cbcd2b6c783038faa89931713614',1,'Ybus_Python.nr()']]]
 ];

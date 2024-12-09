@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['getappdata_415',['getappdata',['../mwizard_8m.html#ad35f4033e4345c6c55eea0dd6f6c2d8d',1,'getappdata():&#160;mwizard.m'],['../mwizard2_8m.html#adaaac415e7d0379fc4f3136efca41721',1,'getappdata():&#160;mwizard2.m']]],
-  ['getimag_416',['getImag',['../classComplex.html#a874cd609fc70d1a80e5d2cd2b6565c0e',1,'Complex']]],
-  ['getreal_417',['getReal',['../classComplex.html#a4d797850f2dc802a81632b5dad6658d5',1,'Complex']]]
+  ['print_5fadmittance_5fmatrix_60',['print_admittance_matrix',['../namespaceYbus__Python.html#a36997eff40ce42c24fdf980b6fba21c4',1,'Ybus_Python']]]
 ];
