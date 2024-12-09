@@ -88,8 +88,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a8878f775609579f72569e1d60770b2fa"><td class="memItemLeft" align="right" valign="top">Linedata Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa">zdata</a></td></tr>
 <tr class="separator:a8878f775609579f72569e1d60770b2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0073182b0fbe931a27d6a2dd7911c11d"><td class="memItemLeft" align="right" valign="top">Number of branches&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a0073182b0fbe931a27d6a2dd7911c11d">nbr</a> = size(<a class="el" href="Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa">zdata</a>, 1)</td></tr>
-<tr class="separator:a0073182b0fbe931a27d6a2dd7911c11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1188489f615da5982fb027faa8ba8670"><td class="memItemLeft" align="right" valign="top">*Extract data *Number of branches&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a1188489f615da5982fb027faa8ba8670">nbr</a> = size(<a class="el" href="Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa">zdata</a>, 1)</td></tr>
+<tr class="separator:a1188489f615da5982fb027faa8ba8670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f6d773a512f63c50efdf8a852f2fbd3"><td class="memItemLeft" align="right" valign="top">Starting bus numbers&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a> = <a class="el" href="Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa">zdata</a>(:, 1)</td></tr>
 <tr class="separator:a4f6d773a512f63c50efdf8a852f2fbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b91f472c8056d13d9cf9e3c47f95b0"><td class="memItemLeft" align="right" valign="top">Ending bus numbers&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a> = <a class="el" href="Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa">zdata</a>(:, 2)</td></tr>
@@ -104,8 +104,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa30cc5d0245a5d69d8f10afae5560945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25865c3a7e418f54933c25c3038128b"><td class="memItemLeft" align="right" valign="top">Placeholder admittance matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a> = 1 ./ <a class="el" href="Ybus__matlab_8m.html#aa30cc5d0245a5d69d8f10afae5560945">Z</a></td></tr>
 <tr class="separator:ae25865c3a7e418f54933c25c3038128b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60c0e245db1e11bdc07bdcddaa837ab2"><td class="memItemLeft" align="right" valign="top">Initialize the bus admittance matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a60c0e245db1e11bdc07bdcddaa837ab2">Ybus</a> = zeros(<a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>)</td></tr>
-<tr class="separator:a60c0e245db1e11bdc07bdcddaa837ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62622fe9d698237737fab1adebadbeb9"><td class="memItemLeft" align="right" valign="top">*Initialize the bus admittance matrix *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a62622fe9d698237737fab1adebadbeb9">Ybus</a> = zeros(<a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>)</td></tr>
+<tr class="separator:a62622fe9d698237737fab1adebadbeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4133bab9ceab9e7b4797de2a73f9782b"><td class="memItemLeft" align="right" valign="top">function&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a4133bab9ceab9e7b4797de2a73f9782b">YBUS</a></td></tr>
 <tr class="separator:a4133bab9ceab9e7b4797de2a73f9782b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c73327b2882639bc9f5e416bb3cc7ac"><td class="memItemLeft" align="right" valign="top">for&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a></td></tr>
@@ -200,15 +200,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= 1:<a class="code" href="Ybus__matlab_8m.html#a0073182b0fbe931a27d6a2dd7911c11d">nbr</a></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= 1:<a class="code" href="Ybus__matlab_8m.html#a1188489f615da5982fb027faa8ba8670">nbr</a></div>
 <div class="line">        <span class="keywordflow">if</span> <a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>) &gt; 0 &amp;&amp; <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>) &gt; 0</div>
-<div class="line">            <a class="code" href="Ybus__matlab_8m.html#a60c0e245db1e11bdc07bdcddaa837ab2">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>), <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)) = <a class="code" href="Ybus__matlab_8m.html#a60c0e245db1e11bdc07bdcddaa837ab2">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>), <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)) - <a class="code" href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)</div>
-<div class="ttc" id="aYbus__matlab_8m_html_a0073182b0fbe931a27d6a2dd7911c11d"><div class="ttname"><a href="Ybus__matlab_8m.html#a0073182b0fbe931a27d6a2dd7911c11d">nbr</a></div><div class="ttdeci">Number of branches nbr</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:14</div></div>
-<div class="ttc" id="aYbus__matlab_8m_html_a1c73327b2882639bc9f5e416bb3cc7ac"><div class="ttname"><a href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a></div><div class="ttdeci">for k</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:43</div></div>
-<div class="ttc" id="aYbus__matlab_8m_html_a4f6d773a512f63c50efdf8a852f2fbd3"><div class="ttname"><a href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a></div><div class="ttdeci">Starting bus numbers nl</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:17</div></div>
-<div class="ttc" id="aYbus__matlab_8m_html_a60c0e245db1e11bdc07bdcddaa837ab2"><div class="ttname"><a href="Ybus__matlab_8m.html#a60c0e245db1e11bdc07bdcddaa837ab2">Ybus</a></div><div class="ttdeci">Initialize the bus admittance matrix Ybus</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:38</div></div>
-<div class="ttc" id="aYbus__matlab_8m_html_a62b91f472c8056d13d9cf9e3c47f95b0"><div class="ttname"><a href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a></div><div class="ttdeci">Ending bus numbers nr</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:20</div></div>
-<div class="ttc" id="aYbus__matlab_8m_html_ae25865c3a7e418f54933c25c3038128b"><div class="ttname"><a href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a></div><div class="ttdeci">Placeholder admittance matrix y</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:35</div></div>
+<div class="line">            <a class="code" href="Ybus__matlab_8m.html#a62622fe9d698237737fab1adebadbeb9">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>), <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)) = <a class="code" href="Ybus__matlab_8m.html#a62622fe9d698237737fab1adebadbeb9">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>), <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)) - <a class="code" href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)</div>
+<div class="ttc" id="aYbus__matlab_8m_html_a1188489f615da5982fb027faa8ba8670"><div class="ttname"><a href="Ybus__matlab_8m.html#a1188489f615da5982fb027faa8ba8670">nbr</a></div><div class="ttdeci">*Extract data *Number of branches nbr</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:16</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_a1c73327b2882639bc9f5e416bb3cc7ac"><div class="ttname"><a href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a></div><div class="ttdeci">for k</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:45</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_a4f6d773a512f63c50efdf8a852f2fbd3"><div class="ttname"><a href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a></div><div class="ttdeci">Starting bus numbers nl</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:19</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_a62622fe9d698237737fab1adebadbeb9"><div class="ttname"><a href="Ybus__matlab_8m.html#a62622fe9d698237737fab1adebadbeb9">Ybus</a></div><div class="ttdeci">*Initialize the bus admittance matrix * Ybus</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:40</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_a62b91f472c8056d13d9cf9e3c47f95b0"><div class="ttname"><a href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a></div><div class="ttdeci">Ending bus numbers nr</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:22</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_ae25865c3a7e418f54933c25c3038128b"><div class="ttname"><a href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a></div><div class="ttdeci">Placeholder admittance matrix y</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:37</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -224,22 +224,22 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= 1:<a class="code" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a></div>
-<div class="line">        <span class="keywordflow">for</span> <a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a> = 1:<a class="code" href="Ybus__matlab_8m.html#a0073182b0fbe931a27d6a2dd7911c11d">nbr</a></div>
+<div class="line">        <span class="keywordflow">for</span> <a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a> = 1:<a class="code" href="Ybus__matlab_8m.html#a1188489f615da5982fb027faa8ba8670">nbr</a></div>
 <div class="line">            <span class="keywordflow">if</span> <a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>) == <a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a> || <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>) == <a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a></div>
-<div class="line">                <a class="code" href="Ybus__matlab_8m.html#a60c0e245db1e11bdc07bdcddaa837ab2">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>, <a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>) = <a class="code" href="Ybus__matlab_8m.html#a60c0e245db1e11bdc07bdcddaa837ab2">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>, <a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>) + <a class="code" href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)</div>
-<div class="ttc" id="aYbus__matlab_8m_html_a19e9998e9c3c574ae18d3375acb9edaa"><div class="ttname"><a href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a></div><div class="ttdeci">Total number of buses nbus</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:29</div></div>
-<div class="ttc" id="aYbus__matlab_8m_html_ad4dc65bd479bfcef34c7ced3491aaf2e"><div class="ttname"><a href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a></div><div class="ttdeci">end end for n</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:51</div></div>
+<div class="line">                <a class="code" href="Ybus__matlab_8m.html#a62622fe9d698237737fab1adebadbeb9">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>, <a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>) = <a class="code" href="Ybus__matlab_8m.html#a62622fe9d698237737fab1adebadbeb9">Ybus</a>(<a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>, <a class="code" href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a>) + <a class="code" href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a>(<a class="code" href="Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac">k</a>)</div>
+<div class="ttc" id="aYbus__matlab_8m_html_a19e9998e9c3c574ae18d3375acb9edaa"><div class="ttname"><a href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a></div><div class="ttdeci">Total number of buses nbus</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:31</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_ad4dc65bd479bfcef34c7ced3491aaf2e"><div class="ttname"><a href="Ybus__matlab_8m.html#ad4dc65bd479bfcef34c7ced3491aaf2e">n</a></div><div class="ttdeci">end end for n</div><div class="ttdef"><b>Definition:</b> Ybus_matlab.m:53</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0073182b0fbe931a27d6a2dd7911c11d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0073182b0fbe931a27d6a2dd7911c11d">&#9670;&nbsp;</a></span>nbr</h2>
+<a id="a1188489f615da5982fb027faa8ba8670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1188489f615da5982fb027faa8ba8670">&#9670;&nbsp;</a></span>nbr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Number of branches nbr = size(<a class="el" href="Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa">zdata</a>, 1)</td>
+          <td class="memname">* Extract data* Number of branches nbr = size(<a class="el" href="Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa">zdata</a>, 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -330,14 +330,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a60c0e245db1e11bdc07bdcddaa837ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60c0e245db1e11bdc07bdcddaa837ab2">&#9670;&nbsp;</a></span>Ybus</h2>
+<a id="a62622fe9d698237737fab1adebadbeb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62622fe9d698237737fab1adebadbeb9">&#9670;&nbsp;</a></span>Ybus</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Initialize the bus admittance matrix Ybus = zeros(<a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>)</td>
+          <td class="memname">* Initialize the bus admittance matrix* Ybus = zeros(<a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="el" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -355,8 +355,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= create_admittance_matrix(<a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>, <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>, <a class="code" href="Ybus__matlab_8m.html#a0073182b0fbe931a27d6a2dd7911c11d">nbr</a>, <a class="code" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="code" href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a>)</div>
-<div class="line">    <a class="code" href="Ybus__matlab_8m.html#a60c0e245db1e11bdc07bdcddaa837ab2">Ybus</a> = zeros(<a class="code" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="code" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>)</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= create_admittance_matrix(<a class="code" href="Ybus__matlab_8m.html#a4f6d773a512f63c50efdf8a852f2fbd3">nl</a>, <a class="code" href="Ybus__matlab_8m.html#a62b91f472c8056d13d9cf9e3c47f95b0">nr</a>, <a class="code" href="Ybus__matlab_8m.html#a1188489f615da5982fb027faa8ba8670">nbr</a>, <a class="code" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="code" href="Ybus__matlab_8m.html#ae25865c3a7e418f54933c25c3038128b">y</a>)</div>
+<div class="line">    <a class="code" href="Ybus__matlab_8m.html#a62622fe9d698237737fab1adebadbeb9">Ybus</a> = zeros(<a class="code" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>, <a class="code" href="Ybus__matlab_8m.html#a19e9998e9c3c574ae18d3375acb9edaa">nbus</a>)</div>
 </div><!-- fragment -->
 </div>
 </div>
