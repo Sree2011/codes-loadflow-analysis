@@ -62,13 +62,22 @@ h2 a, h2 a:visited {
 
 <h2>Contents</h2>
 <ul>
-<li><a href="#node1">Initialize the bus admittance matrix</a></li>
-<li><a href="#node2">Display the bus admittance matrix function</a></li>
-<li><a href="#node3">Call the functions to create and display the matrix</a></li>
+<li><a href="#node1">Linedata Matrix</a></li>
+<li><a href="#node2"><b>Extract data</b></a></li>
+<li><a href="#node3">Number of branches</a></li>
+<li><a href="#node4">Starting bus numbers</a></li>
+<li><a href="#node5">Ending bus numbers</a></li>
+<li><a href="#node6">Resistance</a></li>
+<li><a href="#node7">Reactance</a></li>
+<li><a href="#node8">Total number of buses</a></li>
+<li><a href="#node9">Impedance matrix</a></li>
+<li><a href="#node10">Placeholder admittance matrix</a></li>
+<li><a href="#node11"><b>Initialize the bus admittance matrix</b></a></li>
+<li><a href="#node12">Display the bus admittance matrix function</a></li>
+<li><a href="#node13">Call the functions to create and display the matrix</a></li>
 </ul>
-
-<pre class="oct-code"><span class="comment">%&gt; Linedata Matrix</span>
-zdata = [
+<h2><a id="node1">Linedata Matrix</a></h2>
+<pre class="oct-code">zdata = [
     1   2   0.02  0.06;
     1   3   0.08  0.24;
     2   3   0.06  0.25;
@@ -76,33 +85,24 @@ zdata = [
     2   5   0.04  0.12;
     3   4   0.01  0.03;
     4   5   0.08  0.24;
-];
-
-
-<span class="comment">%&gt; Number of branches</span>
-nbr = size(zdata, 1);
-
-<span class="comment">% Starting bus numbers</span>
-nl = zdata(:, 1);
-
-<span class="comment">% Ending bus numbers</span>
-nr = zdata(:, 2);
-
-<span class="comment">% Resistance</span>
-R = zdata(:, 3);
-
-<span class="comment">% Reactance</span>
-X = zdata(:, 4);
-
-<span class="comment">% Total number of buses</span>
-nbus = max(max(nl), max(nr));
-
-<span class="comment">% Impedance matrix</span>
-Z = R + 1j * X;
-
-<span class="comment">% Placeholder admittance matrix</span>
-y = 1 ./ Z;</pre>
-<h2><a id="node1">Initialize the bus admittance matrix</a></h2>
+];</pre>
+<h2><a id="node2"><b>Extract data</b></a></h2><h2><a id="node3">Number of branches</a></h2>
+<pre class="oct-code">nbr = size(zdata, 1);</pre>
+<h2><a id="node4">Starting bus numbers</a></h2>
+<pre class="oct-code">nl = zdata(:, 1);</pre>
+<h2><a id="node5">Ending bus numbers</a></h2>
+<pre class="oct-code">nr = zdata(:, 2);</pre>
+<h2><a id="node6">Resistance</a></h2>
+<pre class="oct-code">R = zdata(:, 3);</pre>
+<h2><a id="node7">Reactance</a></h2>
+<pre class="oct-code">X = zdata(:, 4);</pre>
+<h2><a id="node8">Total number of buses</a></h2>
+<pre class="oct-code">nbus = max(max(nl), max(nr));</pre>
+<h2><a id="node9">Impedance matrix</a></h2>
+<pre class="oct-code">Z = R + 1j * X;</pre>
+<h2><a id="node10">Placeholder admittance matrix</a></h2>
+<pre class="oct-code">y = 1 ./ Z;</pre>
+<h2><a id="node11"><b>Initialize the bus admittance matrix</b></a></h2>
 <pre class="oct-code">Ybus = zeros(nbus, nbus);
 
 
@@ -125,7 +125,7 @@ y = 1 ./ Z;</pre>
     <span class="keyword">end</span>
     YBUS = Ybus;
 <span class="keyword">end</span></pre>
-<h2><a id="node2">Display the bus admittance matrix function</a></h2>
+<h2><a id="node12">Display the bus admittance matrix function</a></h2>
 <pre class="oct-code"><span class="keyword">function</span> display_admittance_matrix(Ybus, nbus)
     disp(<span class="string">'Bus Admittance Matrix:'</span>)
     <span class="keyword">for</span> i = 1:nbus
@@ -135,7 +135,7 @@ y = 1 ./ Z;</pre>
         fprintf(<span class="string">'\n'</span>);
     <span class="keyword">end</span>
 <span class="keyword">end</span></pre>
-<h2><a id="node3">Call the functions to create and display the matrix</a></h2>
+<h2><a id="node13">Call the functions to create and display the matrix</a></h2>
 <pre class="oct-code">YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
 display_admittance_matrix(YBUS, nbus);</pre>
 
@@ -153,7 +153,7 @@ display_admittance_matrix(YBUS, nbus);</pre>
 </footer>
 <!--
 ##### SOURCE BEGIN #####
-%> Linedata Matrix
+%% Linedata Matrix
 zdata = [
     1   2   0.02  0.06;
     1   3   0.08  0.24;
@@ -164,32 +164,34 @@ zdata = [
     4   5   0.08  0.24;
 ];
 
+%% *Extract data*
 
-%> Number of branches
+
+%% Number of branches
 nbr = size(zdata, 1);
 
-% Starting bus numbers
+%% Starting bus numbers
 nl = zdata(:, 1);
 
-% Ending bus numbers
+%% Ending bus numbers
 nr = zdata(:, 2);
 
-% Resistance
+%% Resistance
 R = zdata(:, 3);
 
-% Reactance
+%% Reactance
 X = zdata(:, 4);
 
-% Total number of buses
+%% Total number of buses
 nbus = max(max(nl), max(nr));
 
-% Impedance matrix
+%% Impedance matrix
 Z = R + 1j * X;
 
-% Placeholder admittance matrix
+%% Placeholder admittance matrix
 y = 1 ./ Z;
 
-%% Initialize the bus admittance matrix
+%% *Initialize the bus admittance matrix*
 Ybus = zeros(nbus, nbus);
 
 
@@ -227,6 +229,7 @@ end
 %% Call the functions to create and display the matrix
 YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
 display_admittance_matrix(YBUS, nbus);
+
 ##### SOURCE END #####
 -->
 </body>
