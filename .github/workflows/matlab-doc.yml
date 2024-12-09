@@ -35,7 +35,7 @@ jobs:
     - name: Commit and Push changes
       run: |
         cd ./Ybus/matlab
-        git add doc
+        git add .
         git commit -m "Update MATLAB documentation"
         git push origin main
       env:
