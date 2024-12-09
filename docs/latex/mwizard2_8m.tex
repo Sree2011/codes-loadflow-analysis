@@ -1,0 +1,1257 @@
+\hypertarget{mwizard2_8m}{}\doxysection{Ybus/matlab/m2html/mwizard2.m File Reference}
+\label{mwizard2_8m}\index{Ybus/matlab/m2html/mwizard2.m@{Ybus/matlab/m2html/mwizard2.m}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{mwizard2_8m_a8f227c068d8168fa51935c00dea92fb5}{mwizard}} (\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}) \%\mbox{\hyperlink{m2html_8m_a885f10ff76a79ee93095d9dbca378377}{MWIZARD}} -\/ M2\+HTML Graphical User Interface \% \mbox{\hyperlink{m2html_8m_a885f10ff76a79ee93095d9dbca378377}{MWIZARD}} launches a Matlab GUI front-\/\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} to edit parameters \% that are then used by M2\+HTML to generate HTML documentation. \% \mbox{\hyperlink{m2html_8m_a885f10ff76a79ee93095d9dbca378377}{MWIZARD}}(FILE) allows to specify a \mbox{\hyperlink{mwizard2_8m_a8e67c3d7b1746c5b102102eb77e6cbd6}{mat}}-\/\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} FILE from which \% default parameters are extracted \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} can be updated. \% \% For more information
+\item 
+nargchk(0, 1, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}} \mbox{\hyperlink{mwizard2_8m_a252b775c86f9d08e2001376d571ddf9f}{error}} ()
+\item 
+\mbox{\hyperlink{mwizard2_8m_aae475746c55b6683ccf3ff542a5f2d55}{disp}} (\textquotesingle{}This \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} a beta version of mwizard.\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a7a5175735b13ce2daa71d9da9d0fc1ab}{disp}} (\textquotesingle{}Please use the online version \mbox{\hyperlink{mwizard2_8m_aeb916c8fed70854e18005992328772b5}{m2html}} instead.\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_ad1df068f09e084270f7d0c05469476b5}{init\+Options}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a5a81a8e965d2de5bb3bb134f54db6c21}{build\+Window}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_af941fbc06fbe91dad5636442b1ac3200}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}{handles}}\textquotesingle{}, guihandles(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}))
+\item 
+M Krauski \mbox{\hyperlink{mwizard2_8m_a8454f56cd15042c026e52bca3b9c8963}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}pwd\textquotesingle{}, pwd)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a3909f64af9ec6124c8cdf7beece7da19}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}{needsave}}\textquotesingle{}, 1)
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{mwizard2_8m_a14dd808746ecb8ef69fa2a33d5799849}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{}, \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a0fa89a16420addf1c0136186a4dc3a94}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}{needsave}}\textquotesingle{}, 0)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a308ce80bc457accb2d22ce1801b56089}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{}, \mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{opt.\+options}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a2bc3e0df2e46839b9b98608b2465cabd}{refresh\+Options}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mwizard2_8m_a21daec7694ccb6c15511a5f1ca968dca}{set}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}Handle\+Visibility\textquotesingle{}, \textquotesingle{}callback\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_adfd337a1731778dc98066ad854c01566}{set}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}Close\+Request\+Fcn\textquotesingle{}, \{ @do\+Close, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a736a3d5a0d115dcdac4ae30d0920d8bc}{set}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}Color\textquotesingle{}, wincolor.\+bg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(\mbox{\hyperlink{mfileparse_8m_a41f9187e72427c596765bf547b8fb131}{fileparts}}(which(mfilename \mbox{\hyperlink{mwizard2_8m_a8e67c3d7b1746c5b102102eb77e6cbd6}{mat}} ()
+\item 
+\mbox{\hyperlink{mwizard2_8m_ad06b318d9ac920b4af146cdb0571bcce}{uipushtool}} (\textquotesingle{}CData\textquotesingle{}, icons.\+new\+Icon,... \textquotesingle{}enable\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Separator\textquotesingle{}, \textquotesingle{}off\textquotesingle{},... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}, \textquotesingle{}New File\textquotesingle{},... \textquotesingle{}Clicked\+Callback\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_a0ec3dbce5562cb96c8b79a845ba6e3fe}{do\+New\+File}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}New\+Tool\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a2dac509b2352ec28caad5b7e2e490804}{uipushtool}} (\textquotesingle{}CData\textquotesingle{}, icons.\+open\+Icon,... \textquotesingle{}enable\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Separator\textquotesingle{}, \textquotesingle{}off\textquotesingle{},... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}, \textquotesingle{}Open File\textquotesingle{},... \textquotesingle{}Clicked\+Callback\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_ada50637f6f5e414567f8e16565c3722a}{do\+Open\+File}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}Open\+Tool\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a90d4d5d1a51d1bf0ddc8865066a2bcc6}{uipushtool}} (\textquotesingle{}CData\textquotesingle{}, icons.\+save\+Icon,... \textquotesingle{}enable\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Separator\textquotesingle{}, \textquotesingle{}off\textquotesingle{},... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}, \textquotesingle{}Save File\textquotesingle{},... \textquotesingle{}Clicked\+Callback\textquotesingle{},\{ @do\+Save\+File, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}Save\+Tool\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a56074f42fa099d071145845ddbdea9c5}{uipushtool}} (\textquotesingle{}CData\textquotesingle{}, icons.\+save\+As\+Icon,... \textquotesingle{}enable\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Separator\textquotesingle{}, \textquotesingle{}off\textquotesingle{},... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}, \textquotesingle{}Save File As\textquotesingle{},... \textquotesingle{}Clicked\+Callback\textquotesingle{},\{ @do\+Save\+As\+File, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}Save\+As\+Tool\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a570a5e240e372ee0b7c6853dec4187f5}{uipushtool}} (\textquotesingle{}CData\textquotesingle{}, icons.\+wheel\+Icon,... \textquotesingle{}enable\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Separator\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}, \textquotesingle{}Save \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} Run M2\+HTML\textquotesingle{},... \textquotesingle{}Clicked\+Callback\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_a7ba8b1878f45b6f2839af2823599eb55}{do\+Run\+File}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}Run\+Tool\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a79c4adbfea372f4e9cf8a52fac0b8f20}{uipushtool}} (\textquotesingle{}CData\textquotesingle{}, icons.\+web\+Icon,... \textquotesingle{}enable\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Separator\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}, \textquotesingle{}Online Tutorial\textquotesingle{},... \textquotesingle{}Clicked\+Callback\textquotesingle{},... \textquotesingle{}web(\textquotesingle{} \textquotesingle{}\mbox{\hyperlink{doxywrite_8m_aaa409478bb047f46bbba594122317aa3}{http\+:}}\textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}Web\+Tool\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_ab1d53b539220dfd077bcd73f5b21f54e}{uipushtool}} (\textquotesingle{}CData\textquotesingle{}, icons.\+help\+Icon,... \textquotesingle{}enable\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Separator\textquotesingle{}, \textquotesingle{}off\textquotesingle{},... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}, \textquotesingle{}Help\textquotesingle{},... \textquotesingle{}Clicked\+Callback\textquotesingle{},\{ @do\+Help, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}Help\+Tool\textquotesingle{})
+\item 
+\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Frame\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{}, \mbox{[}0.\+02, 0.\+92, 0.\+96, 0.\+06\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+title \mbox{\hyperlink{mwizard2_8m_ad6872ad5a05fa57868c158837747b53b}{uicontrol}} ()
+\item 
+\mbox{\hyperlink{mwizard2_8m_a2c9c5ac655049b3cf0dae86071a0e2a6}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}M2\+HTML Wizard\textquotesingle{},... \textquotesingle{}Font\+Size\textquotesingle{}, 18,... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}center\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+03, 0.\+93, 0.\+94, 0.\+038\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+title)
+\item 
+\mbox{\hyperlink{mwizard2_8m_acf715392a02b5bdeb2c691fa60fd3fad}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Frame\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}center\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+02, 0.\+87, 0.\+96, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+title)
+\item 
+\mbox{\hyperlink{mwizard2_8m_afef87a536d00bf2cdb5c67a209248aa7}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}M-\/Files Input\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+03, 0.\+875, 0.\+94, 0.\+02\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+title)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a6c4f6932fbbc4e497dc8b0c2f930869d}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Root directory\+:\textquotesingle{},... \textquotesingle{}Font\+Angle\textquotesingle{}, \textquotesingle{}oblique\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+825, 0.\+6, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+M Krauski changed \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} resized control to work with browse push \mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}} \mbox{\hyperlink{mwizard2_8m_a17857905195714fb807a18c5fd858d29}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \% \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \% \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+83, 0.\+74, 0.\+03\mbox{]},... \% \textquotesingle{}String\textquotesingle{}, pwd,... \% \textquotesingle{}Enable\textquotesingle{}, \textquotesingle{}inactive\textquotesingle{},... \% \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \% \textquotesingle{}Callback\textquotesingle{}, \textquotesingle{}uigetfile;\textquotesingle{},...\%uigetdir \% \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \% \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}{rootdir}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a5b355457827121f6376401a349e845f8}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+83, 0.\+59, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{}, pwd,... \%this will be over written in \mbox{\hyperlink{mwizard2_8m_a2bc3e0df2e46839b9b98608b2465cabd}{refresh\+Options}} \textquotesingle{}Enable\textquotesingle{}, \textquotesingle{}inactive\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}{rootdir}}\textquotesingle{})
+\item 
+M Krauski added control \mbox{\hyperlink{mwizard2_8m_a8068dddbdf90acfa4648157edf9e2a16}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}pushbutton\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+81, 0.\+83, 0.\+14, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Browse...\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Browse\+Button, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}browsebutton\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_ac5bb1c250dcb0aa56838214c7e01ff56}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Relative pathes\+:\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+785, 0.\+6, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+M Krauski changed \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} resized control to work with select push \mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}} \mbox{\hyperlink{mwizard2_8m_adf8dd0fc27c75203aac922ee823e08a3}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \% \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \% \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+79, 0.\+74, 0.\+03\mbox{]},... \% \textquotesingle{}String\textquotesingle{},\textquotesingle{}\textquotesingle{},... \% \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \% \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Mfiles, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \% \textquotesingle{}Create\+Fcn\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_a9013be807ab72caf283dd01447e6418a}{do\+Init\+Mfiles}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \% \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \% \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a28a9bfe93b813fff2bbe26e0cff12c1c}{mfiles}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a8665cd8a3033c9c2e26c1097d4e2e88f}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+79, 0.\+59, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{}\textquotesingle{},... \textquotesingle{}Enable\textquotesingle{}, \textquotesingle{}inactive\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Create\+Fcn\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_a9013be807ab72caf283dd01447e6418a}{do\+Init\+Mfiles}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a28a9bfe93b813fff2bbe26e0cff12c1c}{mfiles}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a0823945cc72a5f8fa2561adf99bbace6}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}pushbutton\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+81, 0.\+79, 0.\+14, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Select...\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Select\+Mfiles, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}selectbutton\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a94fa880e0486e8925e1c52e4f34c4c9e}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Check\+Box\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+749, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Recursive\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Recursive, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 0,... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_a665a5cc0c3c3bbd8a91be438e7c2ca3e}{recursive}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a3bc2d13cb29e3121a78c3bb43cf726f1}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}HTML Output\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+03, 0.\+695, 0.\+94, 0.\+02\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+title)
+\item 
+\mbox{\hyperlink{mwizard2_8m_ab5818d0c76b9d3d3959b3a2450fb7ea3}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Output Directory\+:\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+645, 0.\+6, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a5be70561d6faa9f46b10c979572a15d8}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+65, 0.\+74, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{}\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Output\+Dir, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Create\+Fcn\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_a7892017e9c89f5620f1eb6629577b786}{do\+Init\+HTMLDir}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}htmldir\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a6ff7dfeb12b4b54b6397ef5255a82bc9}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}HTML Index\+:\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+605, 0.\+6, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a6845c89d7f757324e90d0ccd0b480375}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+61, 0.\+25, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}index\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Index, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}index\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_aed598d63db88a9bdb13a67c379436bf2}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Extension\+:\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+53, 0.\+605, 0.\+3, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a44e1adbdca5c7bb5c51a6a55791ddaf5}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+70, 0.\+61, 0.\+25, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}html\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Extension, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}extension\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_abdff728238617fe851b082d93b06e7bf}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Template\+:\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+565, 0.\+3, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_aa88cf6db6a4dbb73b4f4a722226009b4}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}popupmenu\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+57, 0.\+25, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{}\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}center\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Template, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Create\+Fcn\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_af86eb36845a6d8c26fd3d307200f1521}{do\+Init\+Tpl}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a5bfd1cd749c14e86103a3206175eedc5}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Other Options\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+03, 0.\+515, 0.\+94, 0.\+02\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+title)
+\item 
+\mbox{\hyperlink{mwizard2_8m_add2066e2ca6db804f445dda54d46fe3b}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+464, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Include Source Code\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Source, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 1,... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Include Source Code of each M-\/\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}source\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a1493af5cd724e1878353579b471e166f}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+53, 0.\+464, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Syntax Highlighting\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Highlight, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 1,... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Source Code Syntax Highlighting\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}highlight\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a6a89b20046de4585e9ee185075a0446f}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+42, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Create Dependency Graphs\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Graph, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Create\+Fcn\textquotesingle{},\{ @\mbox{\hyperlink{mwizard2_8m_a928d46b8c706f2174b4c70bfa6aecf8c}{do\+Init\+Graphs}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 0,... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Compute a Dependency Graph using Graph\+Viz\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}graph\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_aaba559ccb8be98c820aee9e9d70113fd}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+53, 0.\+42, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} PHP Search Engine\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Search, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 0,... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Create an Index for a PHP Search Engine\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}search\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_aee516b07403cc8c31d44faf3e6cc6975}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+378, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Global Hyperlinks\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Global, 1\},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 0,... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Hypertext links among separate Matlab Directories\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}globalhypertext\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a571d36ce9345926d25970fae15a4f21a}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+53, 0.\+378, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Downloadable M-\/files\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Download, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Add a link to download each M-\/\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} separately\textquotesingle{},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 0,... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}download\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_adbe93f5ba24ca45c9490dfc3706c800a}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+336, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} To Do List\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Todo, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tooltip\+String\textquotesingle{},\mbox{[}\textquotesingle{}Create a TODO \mbox{\hyperlink{m2html_8m_afa8db1da610ff469dcb0f53540a97691}{list}} in each directory summarizing\textquotesingle{}... \textquotesingle{} all the \textquotesingle{}\textquotesingle{}\% TODO \%\textquotesingle{}\textquotesingle{} lines found in Matlab code\textquotesingle{}\mbox{]},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 0,... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{m2html_8m_a0169c4dbcc9bb28f4e4e9616a6051ca4}{todo}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_ab14031d6b65b3b66cfc6d0e6c637e100}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+53, 0.\+336, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Verbose Mode\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Verbose, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Verbose mode\textquotesingle{},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 1,... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{m2html_8m_a87d8870306999ab73ea388bd50b21122}{verbose}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a49dbf22e951221dc7fd95b58a15dfaa9}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}checkbox\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+294, 0.\+42, 0.\+032\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{} Save M-\/files Parsing\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Save\+As\+Mat, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tooltip\+String\textquotesingle{},\mbox{[}\textquotesingle{}Save current state after M-\/files parsing in \textquotesingle{}... \textquotesingle{}\textquotesingle{} \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_a8e67c3d7b1746c5b102102eb77e6cbd6}{m2html.\+mat}}\textquotesingle{}\textquotesingle{} in the Output directory\textquotesingle{}\mbox{]},... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 0,... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_a7b0b1d345f691cafc96758c4df569db5}{save}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a04f2a603290ec28a0b2cf02dffa1c910}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Load File\+:\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+53, 0.\+289, 0.\+3, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a4e7ada7cea820f1f4cd3f98c6f9aac0d}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+70, 0.\+294, 0.\+25, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{},\textquotesingle{}\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Load\+Mat, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tooltip\+String\textquotesingle{},\mbox{[}\textquotesingle{}Load a previously saved MAT \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} \textquotesingle{}... \textquotesingle{}to generate HTML files once again\textquotesingle{}\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{load}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a2f7ea0b840809e32e38bc1db8c50bad8}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Tabs Length\+:\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+04, 0.\+247, 0.\+3, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a401b312edaed784c248f3f4eccf61186}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+21, 0.\+252, 0.\+25, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}4\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}right\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Tabs, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tooltip\+String\textquotesingle{},\mbox{[}\textquotesingle{}Replace horizontal tabs in source code \textquotesingle{}... \textquotesingle{}by N white space characters\textquotesingle{}\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}tabs\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a7fb8730093d482dd20f111c806da369e}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Nb Columns\+:\textquotesingle{},... \textquotesingle{}Font\+Angle\textquotesingle{}, \textquotesingle{}oblique\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+53, 0.\+247, 0.\+3, 0.\+03\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a250f0d717dfa45dd979dedf9d5677e7f}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}edit\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+70, 0.\+252, 0.\+25, 0.\+03\mbox{]},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}4\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}right\textquotesingle{},... \textquotesingle{}Callback\textquotesingle{},\{ @do\+Set\+Nb\+Columns, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\},... \textquotesingle{}Tooltip\+String\textquotesingle{}, \textquotesingle{}Number of columns for M-\/files output -\/ \mbox{\hyperlink{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}{not}} available\textquotesingle{},... \textquotesingle{}Enable\textquotesingle{}, \textquotesingle{}inactive\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+bg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}column\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a74193b7a186a46cf40ab6f69ee3a980d}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}M2\+HTML \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+03, 0.\+195, 0.\+94, 0.\+02\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+title)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a8758f8aa88c82fe93287d2087474d5ff}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{}, \textquotesingle{}Click on the wheel in the toolbar to launch M2\+HTML...\textquotesingle{},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}left\textquotesingle{},... \% center \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+12, 0.\+135, 0.\+76, 0.\+02\mbox{]},... \textquotesingle{}Visible\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Background\+Color\textquotesingle{}, wincolor.\+fg,... \textquotesingle{}Tag\textquotesingle{}, \textquotesingle{}textmisc\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a54d0c9b8344ea5ccdb5645506ede4cd7}{axes}} (\textquotesingle{}XLim\textquotesingle{},\mbox{[}0 100\mbox{]},... \textquotesingle{}YLim\textquotesingle{},\mbox{[}0 1\mbox{]},... \textquotesingle{}Box\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+07, 0.\+09, 0.\+86, 0.\+03\mbox{]},... \textquotesingle{}XTick\+Mode\textquotesingle{}, \textquotesingle{}manual\textquotesingle{},... \textquotesingle{}YTick\+Mode\textquotesingle{}, \textquotesingle{}manual\textquotesingle{},... \textquotesingle{}layer\textquotesingle{}, \textquotesingle{}top\textquotesingle{},... \textquotesingle{}XTick\textquotesingle{},\mbox{[}$\,$\mbox{]},... \textquotesingle{}YTick\textquotesingle{},\mbox{[}$\,$\mbox{]},... \textquotesingle{}XTick\+Label\+Mode\textquotesingle{}, \textquotesingle{}manual\textquotesingle{},... \textquotesingle{}XTick\+Label\textquotesingle{},\mbox{[}$\,$\mbox{]},... \textquotesingle{}YTick\+Label\+Mode\textquotesingle{}, \textquotesingle{}manual\textquotesingle{},... \textquotesingle{}Visible\textquotesingle{}, \textquotesingle{}on\textquotesingle{},... \textquotesingle{}YTick\+Label\textquotesingle{},\mbox{[}$\,$\mbox{]},... \textquotesingle{}Color\textquotesingle{}, wincolor.\+bg)
+\item 
+\mbox{\hyperlink{mwizard2_8m_acc5bb4b19a8a4a4716e8201b272fcef7}{pause}} (0.\+02)
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mwizard2_8m_ac71375592146c221707be3c13b6488e8}{set}} (\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}}, \textquotesingle{}Erase\+Mode\textquotesingle{}, \textquotesingle{}normal\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_abf5e4312eb55afbf39c39323616d0ccc}{set}} (\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}}, \textquotesingle{}Xdata\textquotesingle{},\mbox{[}0 0 0 0\mbox{]})
+\item 
+\mbox{\hyperlink{mwizard2_8m_ac56199a90d7c5b4785bbbd88a622c0d5}{set}} (\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}}, \textquotesingle{}Erase\+Mode\textquotesingle{}, \textquotesingle{}none\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_af47efbac1eb779b44175ea67a5c1b5b5}{uicontrol}} (\textquotesingle{}Style\textquotesingle{}, \textquotesingle{}Text\textquotesingle{},... \textquotesingle{}Units\textquotesingle{}, \textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}String\textquotesingle{},\mbox{[}\textquotesingle{}M2\+HTML © 2004 Guillaume Flandin$<$ Guillaume @artefact.\+tk $>$\textquotesingle{}\mbox{]},... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}, \textquotesingle{}right\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+03, 0.\+025, 0.\+94, 0.\+02\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{},\mbox{[}0.\+8 0.\+8 0.\+9\mbox{]})
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}} \mbox{\hyperlink{mwizard2_8m_abf453d01b52cba6c772c52b37df678bf}{delete}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{mwizard2_8m_a0ec3dbce5562cb96c8b79a845ba6e3fe}{do\+New\+File}} (fig, evd, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{mwizard2_8m_ada50637f6f5e414567f8e16565c3722a}{do\+Open\+File}} (fig, evd, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a3ce4d5687959cb7018891e1c83d1a87d}{if}} (isequal(\mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}, 0)$\vert$isequal(pathname, 0)) \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_aadb15e7894bdd53f10645ba87f2875fd}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{}, \mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(pathname, \mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}))
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a82c917efbaa051f4279f29023cc28e41}{isempty}} (\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}) \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a7b0b1d345f691cafc96758c4df569db5}{save}} (\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}} (pathname, \mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}))
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{mwizard2_8m_a7ba8b1878f45b6f2839af2823599eb55}{do\+Run\+File}} (fig, evd, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} could be directly given to \mbox{\hyperlink{mwizard2_8m_aeb916c8fed70854e18005992328772b5}{m2html}} (no need for \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} saving) \% just need to convert on/off using opt.\+param
+\item 
+\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{} \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}} ()
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a922c9336655c22324911d86010caea57}{strcmp}} (\mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}}, \textquotesingle{}Yes\textquotesingle{}) \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}
+\item 
+elseif \mbox{\hyperlink{mwizard2_8m_a3008854e41e172ce7c66d088f43f4cc9}{strcmp}} (\mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}}, \textquotesingle{}Cancel\textquotesingle{}) \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}=0
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Help(fig, evd, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) helpdlg(\mbox{\hyperlink{searchindex_8m_adf0cd8db3ce9bb02d4b5e45ca0db4cda}{sprintf}}(\mbox{[} \textquotesingle{}M2\+HTML by Guillaume \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{Flandin\textbackslash{}n}}\textquotesingle{}... \textquotesingle{}\mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} © 2003-\/2004\textbackslash{}n\+Guillaume @\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{artefact.\+tk\textbackslash{}n}}\textquotesingle{}... \textquotesingle{}$<$ http \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a925c053628cb3d8765a276d27177fa57}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{}, \mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a26969c90485d62604006f656d10ea805}{do\+Init\+Tpl}} (\mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{handles.\+template}}, 0, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_aada5e425a1b9a36273c9dc67f146f824}{do\+Init\+Mfiles}} (\mbox{\hyperlink{mfileparse_8m_a28a9bfe93b813fff2bbe26e0cff12c1c}{handles.\+mfiles}}, 0, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a7892017e9c89f5620f1eb6629577b786}{do\+Init\+HTMLDir}} (handles.\+htmldir, 0, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) \mbox{\hyperlink{mwizard2_8m_a2a8f491dbf59ec65aae8a4d92f05316f}{set}}(\mbox{\hyperlink{mwizard2_8m_a665a5cc0c3c3bbd8a91be438e7c2ca3e}{handles.\+recursive}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_ab354f89198b10bde21315a05416646dd}{set}} (handles.\+graph, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, opt.\+graph)
+\item 
+\mbox{\hyperlink{mwizard2_8m_aa99d276f02b74ef2594da88d56fa7977}{do\+Init\+Graphs}} (handles.\+graph, 0, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a059de5e1ba2f349aef5de3864c9d318a}{set}} (handles.\+index, \textquotesingle{}String\textquotesingle{}, opt.\+index\+File)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a9e848e6e357e28b6f605822a1cf60737}{set}} (handles.\+extension, \textquotesingle{}String\textquotesingle{}, opt.\+extension(2\+:\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}}))
+\item 
+remove the \mbox{\hyperlink{mwizard2_8m_a87cd5f5bfa797744817f5884d0a06275}{set}} (handles.\+tabs, \textquotesingle{}String\textquotesingle{}, num2str(opt.\+tabs))
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a5d645314b317babfab2de50d8cb43842}{$\sim$strcmp}} (\mbox{\hyperlink{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}{opt.\+rootdir}}, pwd) \% \mbox{\hyperlink{mwizard2_8m_a428881061869e8a8f8f0de8fa875ba30}{warning}}(\textquotesingle{}\mbox{[}M2\+HTML\mbox{]} You should \textquotesingle{} \textquotesingle{}cd \%\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}\textquotesingle{}\textquotesingle{} before...\textquotesingle{}
+\item 
+need to cd \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} different \mbox{\hyperlink{mwizard2_8m_a5d20d9cedcf7d90efcdf7d74502b8630}{set}} (handles.\+column, \textquotesingle{}String\textquotesingle{}, num2str(4))
+\item 
+\mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{handles.\+load}}, \textquotesingle{}String\textquotesingle{}, \mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{opt.\+load}} \mbox{\hyperlink{mwizard2_8m_aafaba91d2efeb44b5a85e9aa83f8cbd7}{set}} ()
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{mwizard2_8m_a1f4e86496db56574fa2111a697e1f171}{set}} (\mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{handles.\+load}}, \textquotesingle{}String\textquotesingle{}, \textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mwizard2_8m_accf13aecbe75202b0615ec43a733a65c}{set}} (handles.\+textmisc, \textquotesingle{}String\textquotesingle{},... \textquotesingle{}Click on the wheel in the toolbar to launch M2\+HTML...\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a50637ba441ddc4c19faa9b9339ef363f}{set}} (handles.\+waitbarmisc, \textquotesingle{}Xdata\textquotesingle{},\mbox{[}0 0 0 0\mbox{]})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a7dd6c366808339021b84160a13cd77d4}{set}} (handles.\+waitbarmisc, \textquotesingle{}Erase\+Mode\textquotesingle{}, \textquotesingle{}none\textquotesingle{})
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a20c52fbcdf11b6b4de1ea8ecdfca4e6b}{isempty}} (path) \mbox{\hyperlink{m2html_8m_a9d851f2d6fdf6e2eb52cacec0e7dd25e}{opt.\+html\+Dir}}
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mwizard2_8m_a11a39fb11ff7b7df1be61a48652fcb51}{set}} (fig, \textquotesingle{}String\textquotesingle{}, \mbox{\hyperlink{m2html_8m_a9d851f2d6fdf6e2eb52cacec0e7dd25e}{opt.\+html\+Dir}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_aaf1089b8b268aef89c1800078831f22d}{setappdata}} (\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{}, \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}})
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{mwizard2_8m_af86eb36845a6d8c26fd3d307200f1521}{do\+Init\+Tpl}} (fig, evd, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) \%-\/ problems when templates are still in full format \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a98e32933264b4764ea220751c302e520}{$\sim$isempty}} (\mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}}) \mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a0bf868646da0a7db3e3b14b2f6abde8b}{set}} (fig, \textquotesingle{}String\textquotesingle{}, \mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}(1\+:\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}}-\/1))
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a1b1cd6d916ef245c8b510b9704eaea03}{$\sim$isempty}} (\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}) \mbox{\hyperlink{mwizard2_8m_a2a8f491dbf59ec65aae8a4d92f05316f}{set}}(fig
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} (1))
+\item 
+\textquotesingle{}\mbox{[}M2\+HTML\mbox{]} Default \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} \textquotesingle{}\textquotesingle{}\%\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}\textquotesingle{}\textquotesingle{} \mbox{\hyperlink{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}{not}} found.\textquotesingle{}, \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{opt.\+template}} \mbox{\hyperlink{mwizard2_8m_a769376f0032f014e94a804bce35ccbd5}{warning}} ()
+\item 
+\mbox{\hyperlink{mwizard2_8m_a453f71f2e4cc36b837b66487aed1b5c6}{set}} (fig, \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}, 1)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a428881061869e8a8f8f0de8fa875ba30}{warning}} (\textquotesingle{}\mbox{[}M2\+HTML\mbox{]} Using \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} \textquotesingle{}\textquotesingle{}\%\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}\textquotesingle{}\textquotesingle{} instead.\textquotesingle{}, \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{opt.\+template}})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{mwizard2_8m_a3e3fa2572a318a9d5e9197a06c14c774}{error}} (\textquotesingle{}\mbox{[}M2\+HTML\mbox{]} No \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} found.\textquotesingle{})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{mwizard2_8m_a9013be807ab72caf283dd01447e6418a}{do\+Init\+Mfiles}} (fig, evd, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a1c57518b60089764365f97b18b800fea}{$\sim$isempty}} (\mbox{\hyperlink{mwizard2_8m_a0d97d7b7c2ede19a76cb4eb1d4990742}{opt.\+m\+Files}}\{1\}) \mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a1fb5fb66e23cac22be554146b6f5ee21}{set}} (fig, \textquotesingle{}String\textquotesingle{},\mbox{[}\textquotesingle{}\{\textquotesingle{} \mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}} \textquotesingle{}\}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a00d1f2cbd09b4592cf24525e4ac11916}{length}} (\mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a2a8f491dbf59ec65aae8a4d92f05316f}{set}} (fig, \textquotesingle{}String\textquotesingle{},\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{mwizard2_8m_a928d46b8c706f2174b4c70bfa6aecf8c}{do\+Init\+Graphs}} (fig, evd, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}} \mbox{\hyperlink{mwizard2_8m_a994a41f821a3575b4bde523743a5385d}{disp}} (\textquotesingle{}Graph\+Viz \mbox{\hyperlink{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}{not}} installed\+:\+Generation of dependency graphs desactivated.\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} please read the M2\+HTML tutorial \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} FAQ \mbox{\hyperlink{mwizard2_8m_a83bca2d1baeb1dcab49b8f77d1eac34e}{at}}
+\item 
+you can redistribute \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} or modify \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} under the terms of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} as published by the Free Software \mbox{\hyperlink{mwizard2_8m_a3d457b067498336c47db110a6ff3b861}{Foundation}}
+\item 
+either version of the \mbox{\hyperlink{mwizard2_8m_a355539e51bed3008068dfe985e226ab8}{License}}
+\item 
+either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be \mbox{\hyperlink{mwizard2_8m_ae2a91ce949e5bdf3fc60252199ce2a8f}{useful}}
+\item 
+either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be but WITHOUT ANY \mbox{\hyperlink{mwizard2_8m_abaa9e03fa09a5779d31cad764e04a830}{WARRANTY}}
+\item 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE See the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} for more details You should have received a copy of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} along with this \mbox{\hyperlink{mwizard2_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_ae6cf43db481de26465fb7c527d5d985f}{not}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} write to the Free Software \mbox{\hyperlink{doxywrite_8m_a833a45a60cb4083d97d5f6946c9d8818}{Foundation}} \mbox{\hyperlink{mwizard2_8m_ad3618412097151735f9acd692e15732a}{Inc}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}} = init\+Window
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_ad3df7962d8a81cbaa4317f7aeb80f4fd}{nargin}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} = \mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{load}}(\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} = 0
+\item 
+between \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} \mbox{\hyperlink{mwizard2_8m_af0dfc6bc89b7d45ccb575de2f6553bed}{xpatch}} = \mbox{[}0 \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} 0\mbox{]}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a535f82371151735729f3d553c1da30f8}{ypatch}} = \mbox{[}0 0 1 1\mbox{]}
+\item 
+\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a5b54c0a045f179bcbbbc9abcb8b5cd4c}{l}}
+\item 
+for \mbox{\hyperlink{mwizard2_8m_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}} \mbox{[}\mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}, pathname\mbox{]} = uigetfile(\textquotesingle{}$\ast$.\mbox{\hyperlink{mwizard2_8m_a8e67c3d7b1746c5b102102eb77e6cbd6}{mat}}\textquotesingle{},\textquotesingle{}Open File\textquotesingle{})
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{mwizard2_8m_a5c7bd190cfc3c2610eed4d42e0d70305}{options}} = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}options\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a07d72e5190d76f3cfc41ea900bf8e98c}{file}} = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}file\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_a514f1b439f404f86f77090fa9edc96ce}{r}} = \{\textquotesingle{}off\textquotesingle{} \textquotesingle{}on\textquotesingle{}\}
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}{needsave}} = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}needsave\textquotesingle{})
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}{needsave}} \mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}}
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{mwizard2_8m_a968c36b858473cd33cb78a9354b9a4e7}{varargout}} \{1\} = \mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}{handles}} = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}handles\textquotesingle{})
+\item 
+\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} \mbox{\hyperlink{mwizard2_8m_a665a5cc0c3c3bbd8a91be438e7c2ca3e}{recursive}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} \mbox{\hyperlink{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}{rootdir}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}} = \mbox{\hyperlink{m2html_8m_a96a994f7416199077f5fd5d911088630}{dir}}(\mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(\mbox{\hyperlink{mfileparse_8m_a41f9187e72427c596765bf547b8fb131}{fileparts}}(which(mfilename)),\textquotesingle{}templates\textquotesingle{}))
+\item 
+\mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} = \mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}}\{1\}
+\item 
+\mbox{\hyperlink{mwizard2_8m_a3691308f2a4c2f6983f2880d32e29c84}{s}} = s(1\+:\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}}-\/2)
+\item 
+\mbox{\hyperlink{mwizard2_8m_a9717e7bbecb906637e86cef6da3d83c2}{return}}
+\item 
+\mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} \mbox{\hyperlink{mwizard2_8m_a0d97d7b7c2ede19a76cb4eb1d4990742}{m\+Files}} = \mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mwizard2_8m_a54d0c9b8344ea5ccdb5645506ede4cd7}\label{mwizard2_8m_a54d0c9b8344ea5ccdb5645506ede4cd7}} 
+\index{mwizard2.m@{mwizard2.m}!axes@{axes}}
+\index{axes@{axes}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{axes()}{axes()}}
+{\footnotesize\ttfamily axes (\begin{DoxyParamCaption}\item[{\textquotesingle{}XLim\textquotesingle{}}]{,  }\item[{... \textquotesingle{}YLim\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Box\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}XTick\+Mode\textquotesingle{}}]{,  }\item[{\textquotesingle{}manual\textquotesingle{}}]{,  }\item[{... \textquotesingle{}YTick\+Mode\textquotesingle{}}]{,  }\item[{\textquotesingle{}manual\textquotesingle{}}]{,  }\item[{... \textquotesingle{}layer\textquotesingle{}}]{,  }\item[{\textquotesingle{}top\textquotesingle{}}]{,  }\item[{... \textquotesingle{}XTick\textquotesingle{}}]{,  }\item[{... \textquotesingle{}YTick\textquotesingle{}}]{,  }\item[{... \textquotesingle{}XTick\+Label\+Mode\textquotesingle{}}]{,  }\item[{\textquotesingle{}manual\textquotesingle{}}]{,  }\item[{... \textquotesingle{}XTick\+Label\textquotesingle{}}]{,  }\item[{... \textquotesingle{}YTick\+Label\+Mode\textquotesingle{}}]{,  }\item[{\textquotesingle{}manual\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Visible\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}YTick\+Label\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a5a81a8e965d2de5bb3bb134f54db6c21}\label{mwizard2_8m_a5a81a8e965d2de5bb3bb134f54db6c21}} 
+\index{mwizard2.m@{mwizard2.m}!buildWindow@{buildWindow}}
+\index{buildWindow@{buildWindow}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{buildWindow()}{buildWindow()}}
+{\footnotesize\ttfamily build\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_abf453d01b52cba6c772c52b37df678bf}\label{mwizard2_8m_abf453d01b52cba6c772c52b37df678bf}} 
+\index{mwizard2.m@{mwizard2.m}!delete@{delete}}
+\index{delete@{delete}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}} delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a994a41f821a3575b4bde523743a5385d}\label{mwizard2_8m_a994a41f821a3575b4bde523743a5385d}} 
+\index{mwizard2.m@{mwizard2.m}!disp@{disp}}
+\index{disp@{disp}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}} disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}Graph\+Viz \mbox{\hyperlink{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}{not}} installed\+:\+Generation of dependency graphs desactivated.\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a7a5175735b13ce2daa71d9da9d0fc1ab}\label{mwizard2_8m_a7a5175735b13ce2daa71d9da9d0fc1ab}} 
+\index{mwizard2.m@{mwizard2.m}!disp@{disp}}
+\index{disp@{disp}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}Please use the online version \mbox{\hyperlink{mwizard2_8m_aeb916c8fed70854e18005992328772b5}{m2html}} instead.\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aae475746c55b6683ccf3ff542a5f2d55}\label{mwizard2_8m_aae475746c55b6683ccf3ff542a5f2d55}} 
+\index{mwizard2.m@{mwizard2.m}!disp@{disp}}
+\index{disp@{disp}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}This \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} a beta version of mwizard.\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a928d46b8c706f2174b4c70bfa6aecf8c}\label{mwizard2_8m_a928d46b8c706f2174b4c70bfa6aecf8c}} 
+\index{mwizard2.m@{mwizard2.m}!doInitGraphs@{doInitGraphs}}
+\index{doInitGraphs@{doInitGraphs}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doInitGraphs()}{doInitGraphs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Init\+Graphs (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{evd}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aa99d276f02b74ef2594da88d56fa7977}\label{mwizard2_8m_aa99d276f02b74ef2594da88d56fa7977}} 
+\index{mwizard2.m@{mwizard2.m}!doInitGraphs@{doInitGraphs}}
+\index{doInitGraphs@{doInitGraphs}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doInitGraphs()}{doInitGraphs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily do\+Init\+Graphs (\begin{DoxyParamCaption}\item[{handles.}]{graph,  }\item[{0}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a7892017e9c89f5620f1eb6629577b786}\label{mwizard2_8m_a7892017e9c89f5620f1eb6629577b786}} 
+\index{mwizard2.m@{mwizard2.m}!doInitHTMLDir@{doInitHTMLDir}}
+\index{doInitHTMLDir@{doInitHTMLDir}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doInitHTMLDir()}{doInitHTMLDir()}}
+{\footnotesize\ttfamily do\+Init\+HTMLDir (\begin{DoxyParamCaption}\item[{handles.}]{htmldir,  }\item[{0}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a9013be807ab72caf283dd01447e6418a}\label{mwizard2_8m_a9013be807ab72caf283dd01447e6418a}} 
+\index{mwizard2.m@{mwizard2.m}!doInitMfiles@{doInitMfiles}}
+\index{doInitMfiles@{doInitMfiles}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doInitMfiles()}{doInitMfiles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Init\+Mfiles (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{evd}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aada5e425a1b9a36273c9dc67f146f824}\label{mwizard2_8m_aada5e425a1b9a36273c9dc67f146f824}} 
+\index{mwizard2.m@{mwizard2.m}!doInitMfiles@{doInitMfiles}}
+\index{doInitMfiles@{doInitMfiles}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doInitMfiles()}{doInitMfiles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily do\+Init\+Mfiles (\begin{DoxyParamCaption}\item[{handles.}]{mfiles,  }\item[{0}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_af86eb36845a6d8c26fd3d307200f1521}\label{mwizard2_8m_af86eb36845a6d8c26fd3d307200f1521}} 
+\index{mwizard2.m@{mwizard2.m}!doInitTpl@{doInitTpl}}
+\index{doInitTpl@{doInitTpl}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doInitTpl()}{doInitTpl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Init\+Tpl (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{evd}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a26969c90485d62604006f656d10ea805}\label{mwizard2_8m_a26969c90485d62604006f656d10ea805}} 
+\index{mwizard2.m@{mwizard2.m}!doInitTpl@{doInitTpl}}
+\index{doInitTpl@{doInitTpl}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doInitTpl()}{doInitTpl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily do\+Init\+Tpl (\begin{DoxyParamCaption}\item[{handles.}]{template,  }\item[{0}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a0ec3dbce5562cb96c8b79a845ba6e3fe}\label{mwizard2_8m_a0ec3dbce5562cb96c8b79a845ba6e3fe}} 
+\index{mwizard2.m@{mwizard2.m}!doNewFile@{doNewFile}}
+\index{doNewFile@{doNewFile}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doNewFile()}{doNewFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+New\+File (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{evd}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ada50637f6f5e414567f8e16565c3722a}\label{mwizard2_8m_ada50637f6f5e414567f8e16565c3722a}} 
+\index{mwizard2.m@{mwizard2.m}!doOpenFile@{doOpenFile}}
+\index{doOpenFile@{doOpenFile}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doOpenFile()}{doOpenFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Open\+File (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{evd}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a7ba8b1878f45b6f2839af2823599eb55}\label{mwizard2_8m_a7ba8b1878f45b6f2839af2823599eb55}} 
+\index{mwizard2.m@{mwizard2.m}!doRunFile@{doRunFile}}
+\index{doRunFile@{doRunFile}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{doRunFile()}{doRunFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Run\+File (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{evd}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a3e3fa2572a318a9d5e9197a06c14c774}\label{mwizard2_8m_a3e3fa2572a318a9d5e9197a06c14c774}} 
+\index{mwizard2.m@{mwizard2.m}!error@{error}}
+\index{error@{error}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} error (\begin{DoxyParamCaption}\item[{\textquotesingle{} No \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} found.\textquotesingle{}}]{\mbox{[}\+M2\+HTML\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a252b775c86f9d08e2001376d571ddf9f}\label{mwizard2_8m_a252b775c86f9d08e2001376d571ddf9f}} 
+\index{mwizard2.m@{mwizard2.m}!error@{error}}
+\index{error@{error}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily nargchk(0,1,\mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}} error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}\label{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}} 
+\index{mwizard2.m@{mwizard2.m}!fullfile@{fullfile}}
+\index{fullfile@{fullfile}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{fullfile()}{fullfile()}}
+{\footnotesize\ttfamily fullfile (\begin{DoxyParamCaption}\item[{pathname}]{,  }\item[{\mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}\label{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}} 
+\index{mwizard2.m@{mwizard2.m}!getappdata@{getappdata}}
+\index{getappdata@{getappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{getappdata()}{getappdata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{} getappdata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}\label{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}} 
+\index{mwizard2.m@{mwizard2.m}!i@{i}}
+\index{i@{i}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{i()}{i()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} i (\begin{DoxyParamCaption}\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a3ce4d5687959cb7018891e1c83d1a87d}\label{mwizard2_8m_a3ce4d5687959cb7018891e1c83d1a87d}} 
+\index{mwizard2.m@{mwizard2.m}!if@{if}}
+\index{if@{if}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{isequal(\mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}, 0)$\vert$isequal(pathname, 0)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ad1df068f09e084270f7d0c05469476b5}\label{mwizard2_8m_ad1df068f09e084270f7d0c05469476b5}} 
+\index{mwizard2.m@{mwizard2.m}!initOptions@{initOptions}}
+\index{initOptions@{initOptions}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{initOptions()}{initOptions()}}
+{\footnotesize\ttfamily init\+Options (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a82c917efbaa051f4279f29023cc28e41}\label{mwizard2_8m_a82c917efbaa051f4279f29023cc28e41}} 
+\index{mwizard2.m@{mwizard2.m}!isempty@{isempty}}
+\index{isempty@{isempty}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{isempty()}{isempty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} isempty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a20c52fbcdf11b6b4de1ea8ecdfca4e6b}\label{mwizard2_8m_a20c52fbcdf11b6b4de1ea8ecdfca4e6b}} 
+\index{mwizard2.m@{mwizard2.m}!isempty@{isempty}}
+\index{isempty@{isempty}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{isempty()}{isempty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} isempty (\begin{DoxyParamCaption}\item[{path}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a00d1f2cbd09b4592cf24525e4ac11916}\label{mwizard2_8m_a00d1f2cbd09b4592cf24525e4ac11916}} 
+\index{mwizard2.m@{mwizard2.m}!length@{length}}
+\index{length@{length}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aeb916c8fed70854e18005992328772b5}\label{mwizard2_8m_aeb916c8fed70854e18005992328772b5}} 
+\index{mwizard2.m@{mwizard2.m}!m2html@{m2html}}
+\index{m2html@{m2html}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{m2html()}{m2html()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} could be directly given to m2html (\begin{DoxyParamCaption}\item[{no need for \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}}]{saving }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a8e67c3d7b1746c5b102102eb77e6cbd6}\label{mwizard2_8m_a8e67c3d7b1746c5b102102eb77e6cbd6}} 
+\index{mwizard2.m@{mwizard2.m}!mat@{mat}}
+\index{mat@{mat}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{mat()}{mat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(\mbox{\hyperlink{mfileparse_8m_a41f9187e72427c596765bf547b8fb131}{fileparts}}(which(mfilename mat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{mwizard2_8m_a8f227c068d8168fa51935c00dea92fb5}\label{mwizard2_8m_a8f227c068d8168fa51935c00dea92fb5}} 
+\index{mwizard2.m@{mwizard2.m}!mwizard@{mwizard}}
+\index{mwizard@{mwizard}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{mwizard()}{mwizard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} mwizard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_acc5bb4b19a8a4a4716e8201b272fcef7}\label{mwizard2_8m_acc5bb4b19a8a4a4716e8201b272fcef7}} 
+\index{mwizard2.m@{mwizard2.m}!pause@{pause}}
+\index{pause@{pause}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily pause (\begin{DoxyParamCaption}\item[{0.}]{02 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a2bc3e0df2e46839b9b98608b2465cabd}\label{mwizard2_8m_a2bc3e0df2e46839b9b98608b2465cabd}} 
+\index{mwizard2.m@{mwizard2.m}!refreshOptions@{refreshOptions}}
+\index{refreshOptions@{refreshOptions}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{refreshOptions()}{refreshOptions()}}
+{\footnotesize\ttfamily refresh\+Options (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a7b0b1d345f691cafc96758c4df569db5}\label{mwizard2_8m_a7b0b1d345f691cafc96758c4df569db5}} 
+\index{mwizard2.m@{mwizard2.m}!save@{save}}
+\index{save@{save}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aafaba91d2efeb44b5a85e9aa83f8cbd7}\label{mwizard2_8m_aafaba91d2efeb44b5a85e9aa83f8cbd7}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/21]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{handles.\+load}}, \textquotesingle{}String\textquotesingle{}, \mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{opt.\+load}} set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{mwizard2_8m_a11a39fb11ff7b7df1be61a48652fcb51}\label{mwizard2_8m_a11a39fb11ff7b7df1be61a48652fcb51}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/21]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} set (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{opt.}]{html\+Dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a0bf868646da0a7db3e3b14b2f6abde8b}\label{mwizard2_8m_a0bf868646da0a7db3e3b14b2f6abde8b}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [3/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}(1\+:\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}}-\/1)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a2a8f491dbf59ec65aae8a4d92f05316f}\label{mwizard2_8m_a2a8f491dbf59ec65aae8a4d92f05316f}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [4/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a1fb5fb66e23cac22be554146b6f5ee21}\label{mwizard2_8m_a1fb5fb66e23cac22be554146b6f5ee21}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [5/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{\textquotesingle{}String\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a453f71f2e4cc36b837b66487aed1b5c6}\label{mwizard2_8m_a453f71f2e4cc36b837b66487aed1b5c6}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [6/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{fig}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_adfd337a1731778dc98066ad854c01566}\label{mwizard2_8m_adfd337a1731778dc98066ad854c01566}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [7/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}Close\+Request\+Fcn\textquotesingle{}}]{,  }\item[{\{ @do\+Close, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a736a3d5a0d115dcdac4ae30d0920d8bc}\label{mwizard2_8m_a736a3d5a0d115dcdac4ae30d0920d8bc}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [8/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a21daec7694ccb6c15511a5f1ca968dca}\label{mwizard2_8m_a21daec7694ccb6c15511a5f1ca968dca}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [9/21]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}Handle\+Visibility\textquotesingle{}}]{,  }\item[{\textquotesingle{}callback\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a5d20d9cedcf7d90efcdf7d74502b8630}\label{mwizard2_8m_a5d20d9cedcf7d90efcdf7d74502b8630}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [10/21]}}
+{\footnotesize\ttfamily need to cd \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} different set (\begin{DoxyParamCaption}\item[{handles.}]{column,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{num2str(4)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a9e848e6e357e28b6f605822a1cf60737}\label{mwizard2_8m_a9e848e6e357e28b6f605822a1cf60737}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [11/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{handles.}]{extension,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{opt.}]{extension2\+:end }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ab354f89198b10bde21315a05416646dd}\label{mwizard2_8m_ab354f89198b10bde21315a05416646dd}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [12/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{handles.}]{graph,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{opt.}]{graph }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a059de5e1ba2f349aef5de3864c9d318a}\label{mwizard2_8m_a059de5e1ba2f349aef5de3864c9d318a}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [13/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{handles.}]{index,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{opt.}]{index\+File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a1f4e86496db56574fa2111a697e1f171}\label{mwizard2_8m_a1f4e86496db56574fa2111a697e1f171}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [14/21]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} set (\begin{DoxyParamCaption}\item[{handles.}]{load,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a87cd5f5bfa797744817f5884d0a06275}\label{mwizard2_8m_a87cd5f5bfa797744817f5884d0a06275}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [15/21]}}
+{\footnotesize\ttfamily remove the set (\begin{DoxyParamCaption}\item[{handles.}]{tabs,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{num2str(opt.\+tabs)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_accf13aecbe75202b0615ec43a733a65c}\label{mwizard2_8m_accf13aecbe75202b0615ec43a733a65c}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [16/21]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} set (\begin{DoxyParamCaption}\item[{handles.}]{textmisc,  }\item[{\textquotesingle{}String\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Click on the wheel in the toolbar to launch M2\+HTML...\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a7dd6c366808339021b84160a13cd77d4}\label{mwizard2_8m_a7dd6c366808339021b84160a13cd77d4}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [17/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{handles.}]{waitbarmisc,  }\item[{\textquotesingle{}Erase\+Mode\textquotesingle{}}]{,  }\item[{\textquotesingle{}none\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a50637ba441ddc4c19faa9b9339ef363f}\label{mwizard2_8m_a50637ba441ddc4c19faa9b9339ef363f}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [18/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{handles.}]{waitbarmisc,  }\item[{\textquotesingle{}Xdata\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ac56199a90d7c5b4785bbbd88a622c0d5}\label{mwizard2_8m_ac56199a90d7c5b4785bbbd88a622c0d5}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [19/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}}}]{,  }\item[{\textquotesingle{}Erase\+Mode\textquotesingle{}}]{,  }\item[{\textquotesingle{}none\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ac71375592146c221707be3c13b6488e8}\label{mwizard2_8m_ac71375592146c221707be3c13b6488e8}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [20/21]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}}}]{,  }\item[{\textquotesingle{}Erase\+Mode\textquotesingle{}}]{,  }\item[{\textquotesingle{}normal\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_abf5e4312eb55afbf39c39323616d0ccc}\label{mwizard2_8m_abf5e4312eb55afbf39c39323616d0ccc}} 
+\index{mwizard2.m@{mwizard2.m}!set@{set}}
+\index{set@{set}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [21/21]}}
+{\footnotesize\ttfamily set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}}}]{,  }\item[{\textquotesingle{}Xdata\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a14dd808746ecb8ef69fa2a33d5799849}\label{mwizard2_8m_a14dd808746ecb8ef69fa2a33d5799849}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{}}]{,  }\item[{\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aadb15e7894bdd53f10645ba87f2875fd}\label{mwizard2_8m_aadb15e7894bdd53f10645ba87f2875fd}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{}}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(pathname, \mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_af941fbc06fbe91dad5636442b1ac3200}\label{mwizard2_8m_af941fbc06fbe91dad5636442b1ac3200}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}{handles}}\textquotesingle{}}]{,  }\item[{guihandles(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a0fa89a16420addf1c0136186a4dc3a94}\label{mwizard2_8m_a0fa89a16420addf1c0136186a4dc3a94}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}{needsave}}\textquotesingle{}}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a3909f64af9ec6124c8cdf7beece7da19}\label{mwizard2_8m_a3909f64af9ec6124c8cdf7beece7da19}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}{needsave}}\textquotesingle{}}]{,  }\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aaf1089b8b268aef89c1800078831f22d}\label{mwizard2_8m_aaf1089b8b268aef89c1800078831f22d}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{}}]{,  }\item[{\mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a308ce80bc457accb2d22ce1801b56089}\label{mwizard2_8m_a308ce80bc457accb2d22ce1801b56089}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{}}]{,  }\item[{opt.}]{options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a925c053628cb3d8765a276d27177fa57}\label{mwizard2_8m_a925c053628cb3d8765a276d27177fa57}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Help (fig,evd,\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) helpdlg(\mbox{\hyperlink{searchindex_8m_adf0cd8db3ce9bb02d4b5e45ca0db4cda}{sprintf}}(\mbox{[}\textquotesingle{}M2\+HTML by Guillaume \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{Flandin\textbackslash{}n}}\textquotesingle{}... \textquotesingle{}\mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} © 2003-\/2004\textbackslash{}n\+Guillaume@\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{artefact.\+tk\textbackslash{}n}}\textquotesingle{}... \textquotesingle{}$<$http \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{}}]{,  }\item[{\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a8454f56cd15042c026e52bca3b9c8963}\label{mwizard2_8m_a8454f56cd15042c026e52bca3b9c8963}} 
+\index{mwizard2.m@{mwizard2.m}!setappdata@{setappdata}}
+\index{setappdata@{setappdata}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{setappdata()}{setappdata()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily M Krauski setappdata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}}]{,  }\item[{\textquotesingle{}pwd\textquotesingle{}}]{,  }\item[{pwd}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a3008854e41e172ce7c66d088f43f4cc9}\label{mwizard2_8m_a3008854e41e172ce7c66d088f43f4cc9}} 
+\index{mwizard2.m@{mwizard2.m}!strcmp@{strcmp}}
+\index{strcmp@{strcmp}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{strcmp()}{strcmp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily elseif strcmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}}}]{,  }\item[{\textquotesingle{}Cancel\textquotesingle{}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{mwizard2_8m_a922c9336655c22324911d86010caea57}\label{mwizard2_8m_a922c9336655c22324911d86010caea57}} 
+\index{mwizard2.m@{mwizard2.m}!strcmp@{strcmp}}
+\index{strcmp@{strcmp}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{strcmp()}{strcmp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} strcmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}}}]{,  }\item[{\textquotesingle{}Yes\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a49dbf22e951221dc7fd95b58a15dfaa9}\label{mwizard2_8m_a49dbf22e951221dc7fd95b58a15dfaa9}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Save M-\/files Parsing\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Save\+As\+Mat, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{0}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_a7b0b1d345f691cafc96758c4df569db5}{save}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_adbe93f5ba24ca45c9490dfc3706c800a}\label{mwizard2_8m_adbe93f5ba24ca45c9490dfc3706c800a}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} To Do List\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Todo, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{0}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{m2html_8m_a0169c4dbcc9bb28f4e4e9616a6051ca4}{todo}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aee516b07403cc8c31d44faf3e6cc6975}\label{mwizard2_8m_aee516b07403cc8c31d44faf3e6cc6975}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [3/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Global Hyperlinks\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Global, 1\}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{0}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Hypertext links among separate Matlab Directories\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}globalhypertext\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a6a89b20046de4585e9ee185075a0446f}\label{mwizard2_8m_a6a89b20046de4585e9ee185075a0446f}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [4/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Create Dependency Graphs\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Graph, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Create\+Fcn\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_a928d46b8c706f2174b4c70bfa6aecf8c}{do\+Init\+Graphs}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{0}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Compute a Dependency Graph using Graph\+Viz\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}graph\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_add2066e2ca6db804f445dda54d46fe3b}\label{mwizard2_8m_add2066e2ca6db804f445dda54d46fe3b}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [5/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Include Source Code\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Source, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{1}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Include Source Code of each M-\/\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}source\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a94fa880e0486e8925e1c52e4f34c4c9e}\label{mwizard2_8m_a94fa880e0486e8925e1c52e4f34c4c9e}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [6/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Check\+Box\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Recursive\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Recursive, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{0}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_a665a5cc0c3c3bbd8a91be438e7c2ca3e}{recursive}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ab14031d6b65b3b66cfc6d0e6c637e100}\label{mwizard2_8m_ab14031d6b65b3b66cfc6d0e6c637e100}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [7/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Verbose Mode\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Verbose, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Verbose mode\textquotesingle{}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{1}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{m2html_8m_a87d8870306999ab73ea388bd50b21122}{verbose}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a571d36ce9345926d25970fae15a4f21a}\label{mwizard2_8m_a571d36ce9345926d25970fae15a4f21a}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [8/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Downloadable M-\/files\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Download, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Add a link to download each M-\/\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} separately\textquotesingle{}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{0}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}download\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aaba559ccb8be98c820aee9e9d70113fd}\label{mwizard2_8m_aaba559ccb8be98c820aee9e9d70113fd}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [9/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} PHP Search Engine\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Search, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{0}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Create an Index for a PHP Search Engine\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}search\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a1493af5cd724e1878353579b471e166f}\label{mwizard2_8m_a1493af5cd724e1878353579b471e166f}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [10/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}checkbox\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{} Syntax Highlighting\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Highlight, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}\mbox{\hyperlink{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}{Value}}\textquotesingle{}}]{,  }\item[{1}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Source Code Syntax Highlighting\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}highlight\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_adf8dd0fc27c75203aac922ee823e08a3}\label{mwizard2_8m_adf8dd0fc27c75203aac922ee823e08a3}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [11/41]}}
+{\footnotesize\ttfamily M Krauski changed \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} resized control to work with select push \mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}} uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Mfiles, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \% \textquotesingle{}Create\+Fcn\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_a9013be807ab72caf283dd01447e6418a}{do\+Init\+Mfiles}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \% \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \% \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a28a9bfe93b813fff2bbe26e0cff12c1c}{mfiles}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a17857905195714fb807a18c5fd858d29}\label{mwizard2_8m_a17857905195714fb807a18c5fd858d29}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [12/41]}}
+{\footnotesize\ttfamily M Krauski changed \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} resized control to work with browse push \mbox{\hyperlink{mwizard2_8m_a2717ba03da980233870e81c68801239e}{button}} uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}String\textquotesingle{}}]{,  }\item[{pwd}]{,  }\item[{... \% \textquotesingle{}Enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}inactive\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \% \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\textquotesingle{}uigetfile;\textquotesingle{}}]{,  }\item[{...\%uigetdir \% \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \% \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}{rootdir}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a401b312edaed784c248f3f4eccf61186}\label{mwizard2_8m_a401b312edaed784c248f3f4eccf61186}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [13/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}4\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}right\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Tabs, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}tabs\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a6845c89d7f757324e90d0ccd0b480375}\label{mwizard2_8m_a6845c89d7f757324e90d0ccd0b480375}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [14/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}index\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Index, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}index\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a5be70561d6faa9f46b10c979572a15d8}\label{mwizard2_8m_a5be70561d6faa9f46b10c979572a15d8}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [15/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Output\+Dir, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Create\+Fcn\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_a7892017e9c89f5620f1eb6629577b786}{do\+Init\+HTMLDir}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}htmldir\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a8665cd8a3033c9c2e26c1097d4e2e88f}\label{mwizard2_8m_a8665cd8a3033c9c2e26c1097d4e2e88f}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [16/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}inactive\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Create\+Fcn\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_a9013be807ab72caf283dd01447e6418a}{do\+Init\+Mfiles}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a28a9bfe93b813fff2bbe26e0cff12c1c}{mfiles}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a5b355457827121f6376401a349e845f8}\label{mwizard2_8m_a5b355457827121f6376401a349e845f8}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [17/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{pwd}]{,  }\item[{... \%this will be over written in \mbox{\hyperlink{mwizard2_8m_a2bc3e0df2e46839b9b98608b2465cabd}{refresh\+Options}} \textquotesingle{}Enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}inactive\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}{rootdir}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a250f0d717dfa45dd979dedf9d5677e7f}\label{mwizard2_8m_a250f0d717dfa45dd979dedf9d5677e7f}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [18/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}4\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}right\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Nb\+Columns, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Number of columns for M-\/files output -\/ \mbox{\hyperlink{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}{not}} available\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}inactive\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}column\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a4e7ada7cea820f1f4cd3f98c6f9aac0d}\label{mwizard2_8m_a4e7ada7cea820f1f4cd3f98c6f9aac0d}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [19/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Load\+Mat, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tooltip\+String\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{load}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a44e1adbdca5c7bb5c51a6a55791ddaf5}\label{mwizard2_8m_a44e1adbdca5c7bb5c51a6a55791ddaf5}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [20/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}edit\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}html\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Extension, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}extension\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_acf715392a02b5bdeb2c691fa60fd3fad}\label{mwizard2_8m_acf715392a02b5bdeb2c691fa60fd3fad}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [21/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Frame\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}center\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aa88cf6db6a4dbb73b4f4a722226009b4}\label{mwizard2_8m_aa88cf6db6a4dbb73b4f4a722226009b4}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [22/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}popupmenu\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}center\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Set\+Template, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Create\+Fcn\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_af86eb36845a6d8c26fd3d307200f1521}{do\+Init\+Tpl}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a0823945cc72a5f8fa2561adf99bbace6}\label{mwizard2_8m_a0823945cc72a5f8fa2561adf99bbace6}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [23/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}pushbutton\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Select...\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Select\+Mfiles, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}selectbutton\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a8068dddbdf90acfa4648157edf9e2a16}\label{mwizard2_8m_a8068dddbdf90acfa4648157edf9e2a16}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [24/41]}}
+{\footnotesize\ttfamily M Krauski added control uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}pushbutton\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Browse...\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Browse\+Button, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{bg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}browsebutton\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a8758f8aa88c82fe93287d2087474d5ff}\label{mwizard2_8m_a8758f8aa88c82fe93287d2087474d5ff}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [25/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Click on the wheel in the toolbar to launch M2\+HTML...\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \% center \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Visible\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}textmisc\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_aed598d63db88a9bdb13a67c379436bf2}\label{mwizard2_8m_aed598d63db88a9bdb13a67c379436bf2}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [26/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Extension\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a6ff7dfeb12b4b54b6397ef5255a82bc9}\label{mwizard2_8m_a6ff7dfeb12b4b54b6397ef5255a82bc9}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [27/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}HTML Index\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a3bc2d13cb29e3121a78c3bb43cf726f1}\label{mwizard2_8m_a3bc2d13cb29e3121a78c3bb43cf726f1}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [28/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}HTML Output\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a04f2a603290ec28a0b2cf02dffa1c910}\label{mwizard2_8m_a04f2a603290ec28a0b2cf02dffa1c910}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [29/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Load File\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_afef87a536d00bf2cdb5c67a209248aa7}\label{mwizard2_8m_afef87a536d00bf2cdb5c67a209248aa7}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [30/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}M-\/Files Input\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a74193b7a186a46cf40ab6f69ee3a980d}\label{mwizard2_8m_a74193b7a186a46cf40ab6f69ee3a980d}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [31/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}M2\+HTML \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}}\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a2c9c5ac655049b3cf0dae86071a0e2a6}\label{mwizard2_8m_a2c9c5ac655049b3cf0dae86071a0e2a6}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [32/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}M2\+HTML Wizard\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Font\+Size\textquotesingle{}}]{,  }\item[{18}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}center\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a7fb8730093d482dd20f111c806da369e}\label{mwizard2_8m_a7fb8730093d482dd20f111c806da369e}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [33/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Nb Columns\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Font\+Angle\textquotesingle{}}]{,  }\item[{\textquotesingle{}oblique\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a5bfd1cd749c14e86103a3206175eedc5}\label{mwizard2_8m_a5bfd1cd749c14e86103a3206175eedc5}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [34/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Other Options\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ab5818d0c76b9d3d3959b3a2450fb7ea3}\label{mwizard2_8m_ab5818d0c76b9d3d3959b3a2450fb7ea3}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [35/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Output Directory\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ac5bb1c250dcb0aa56838214c7e01ff56}\label{mwizard2_8m_ac5bb1c250dcb0aa56838214c7e01ff56}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [36/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Relative pathes\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a6c4f6932fbbc4e497dc8b0c2f930869d}\label{mwizard2_8m_a6c4f6932fbbc4e497dc8b0c2f930869d}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [37/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Root directory\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Font\+Angle\textquotesingle{}}]{,  }\item[{\textquotesingle{}oblique\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a2f7ea0b840809e32e38bc1db8c50bad8}\label{mwizard2_8m_a2f7ea0b840809e32e38bc1db8c50bad8}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [38/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Tabs Length\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_abdff728238617fe851b082d93b06e7bf}\label{mwizard2_8m_abdff728238617fe851b082d93b06e7bf}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [39/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Template\+:\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}left\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{,  }\item[{wincolor.}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_af47efbac1eb779b44175ea67a5c1b5b5}\label{mwizard2_8m_af47efbac1eb779b44175ea67a5c1b5b5}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [40/41]}}
+{\footnotesize\ttfamily uicontrol (\begin{DoxyParamCaption}\item[{\textquotesingle{}Style\textquotesingle{}}]{,  }\item[{\textquotesingle{}Text\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Units\textquotesingle{}}]{,  }\item[{\textquotesingle{}Normalized\textquotesingle{}}]{,  }\item[{... \textquotesingle{}String\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Horizontal\+Alignment\textquotesingle{}}]{,  }\item[{\textquotesingle{}right\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Position\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Background\+Color\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ad6872ad5a05fa57868c158837747b53b}\label{mwizard2_8m_ad6872ad5a05fa57868c158837747b53b}} 
+\index{mwizard2.m@{mwizard2.m}!uicontrol@{uicontrol}}
+\index{uicontrol@{uicontrol}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uicontrol()}{uicontrol()}\hspace{0.1cm}{\footnotesize\ttfamily [41/41]}}
+{\footnotesize\ttfamily \textquotesingle{}Style\textquotesingle{},\textquotesingle{}Frame\textquotesingle{},... \textquotesingle{}Units\textquotesingle{},\textquotesingle{}Normalized\textquotesingle{},... \textquotesingle{}Position\textquotesingle{},\mbox{[}0.\+02,0.\+92,0.\+96,0.\+06\mbox{]},... \textquotesingle{}Background\+Color\textquotesingle{},wincolor.\+title uicontrol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{mwizard2_8m_ab1d53b539220dfd077bcd73f5b21f54e}\label{mwizard2_8m_ab1d53b539220dfd077bcd73f5b21f54e}} 
+\index{mwizard2.m@{mwizard2.m}!uipushtool@{uipushtool}}
+\index{uipushtool@{uipushtool}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uipushtool()}{uipushtool()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily uipushtool (\begin{DoxyParamCaption}\item[{\textquotesingle{}CData\textquotesingle{}}]{,  }\item[{icons.}]{help\+Icon,  }\item[{... \textquotesingle{}enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Separator\textquotesingle{}}]{,  }\item[{\textquotesingle{}off\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Help\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Clicked\+Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Help, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}Help\+Tool\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_ad06b318d9ac920b4af146cdb0571bcce}\label{mwizard2_8m_ad06b318d9ac920b4af146cdb0571bcce}} 
+\index{mwizard2.m@{mwizard2.m}!uipushtool@{uipushtool}}
+\index{uipushtool@{uipushtool}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uipushtool()}{uipushtool()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily uipushtool (\begin{DoxyParamCaption}\item[{\textquotesingle{}CData\textquotesingle{}}]{,  }\item[{icons.}]{new\+Icon,  }\item[{... \textquotesingle{}enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Separator\textquotesingle{}}]{,  }\item[{\textquotesingle{}off\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}New File\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Clicked\+Callback\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_a0ec3dbce5562cb96c8b79a845ba6e3fe}{do\+New\+File}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}New\+Tool\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a2dac509b2352ec28caad5b7e2e490804}\label{mwizard2_8m_a2dac509b2352ec28caad5b7e2e490804}} 
+\index{mwizard2.m@{mwizard2.m}!uipushtool@{uipushtool}}
+\index{uipushtool@{uipushtool}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uipushtool()}{uipushtool()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily uipushtool (\begin{DoxyParamCaption}\item[{\textquotesingle{}CData\textquotesingle{}}]{,  }\item[{icons.}]{open\+Icon,  }\item[{... \textquotesingle{}enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Separator\textquotesingle{}}]{,  }\item[{\textquotesingle{}off\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Open File\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Clicked\+Callback\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_ada50637f6f5e414567f8e16565c3722a}{do\+Open\+File}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}Open\+Tool\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a56074f42fa099d071145845ddbdea9c5}\label{mwizard2_8m_a56074f42fa099d071145845ddbdea9c5}} 
+\index{mwizard2.m@{mwizard2.m}!uipushtool@{uipushtool}}
+\index{uipushtool@{uipushtool}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uipushtool()}{uipushtool()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily uipushtool (\begin{DoxyParamCaption}\item[{\textquotesingle{}CData\textquotesingle{}}]{,  }\item[{icons.}]{save\+As\+Icon,  }\item[{... \textquotesingle{}enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Separator\textquotesingle{}}]{,  }\item[{\textquotesingle{}off\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Save File As\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Clicked\+Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Save\+As\+File, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}Save\+As\+Tool\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a90d4d5d1a51d1bf0ddc8865066a2bcc6}\label{mwizard2_8m_a90d4d5d1a51d1bf0ddc8865066a2bcc6}} 
+\index{mwizard2.m@{mwizard2.m}!uipushtool@{uipushtool}}
+\index{uipushtool@{uipushtool}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uipushtool()}{uipushtool()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily uipushtool (\begin{DoxyParamCaption}\item[{\textquotesingle{}CData\textquotesingle{}}]{,  }\item[{icons.}]{save\+Icon,  }\item[{... \textquotesingle{}enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Separator\textquotesingle{}}]{,  }\item[{\textquotesingle{}off\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Save File\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Clicked\+Callback\textquotesingle{}}]{,  }\item[{\{ @do\+Save\+File, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}Save\+Tool\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a79c4adbfea372f4e9cf8a52fac0b8f20}\label{mwizard2_8m_a79c4adbfea372f4e9cf8a52fac0b8f20}} 
+\index{mwizard2.m@{mwizard2.m}!uipushtool@{uipushtool}}
+\index{uipushtool@{uipushtool}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uipushtool()}{uipushtool()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily uipushtool (\begin{DoxyParamCaption}\item[{\textquotesingle{}CData\textquotesingle{}}]{,  }\item[{icons.}]{web\+Icon,  }\item[{... \textquotesingle{}enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Separator\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Online Tutorial\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Clicked\+Callback\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a570a5e240e372ee0b7c6853dec4187f5}\label{mwizard2_8m_a570a5e240e372ee0b7c6853dec4187f5}} 
+\index{mwizard2.m@{mwizard2.m}!uipushtool@{uipushtool}}
+\index{uipushtool@{uipushtool}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{uipushtool()}{uipushtool()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily uipushtool (\begin{DoxyParamCaption}\item[{\textquotesingle{}CData\textquotesingle{}}]{,  }\item[{icons.}]{wheel\+Icon,  }\item[{... \textquotesingle{}enable\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Separator\textquotesingle{}}]{,  }\item[{\textquotesingle{}on\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Tool\+Tip\+String\textquotesingle{}}]{,  }\item[{\textquotesingle{}Save \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} Run M2\+HTML\textquotesingle{}}]{,  }\item[{... \textquotesingle{}Clicked\+Callback\textquotesingle{}}]{,  }\item[{\{ @\mbox{\hyperlink{mwizard2_8m_a7ba8b1878f45b6f2839af2823599eb55}{do\+Run\+File}}, \mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}\}}]{,  }\item[{... \textquotesingle{}Tag\textquotesingle{}}]{,  }\item[{\textquotesingle{}Run\+Tool\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a428881061869e8a8f8f0de8fa875ba30}\label{mwizard2_8m_a428881061869e8a8f8f0de8fa875ba30}} 
+\index{mwizard2.m@{mwizard2.m}!warning@{warning}}
+\index{warning@{warning}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily warning (\begin{DoxyParamCaption}\item[{\textquotesingle{} Using \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} \textquotesingle{}\textquotesingle{}\%\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}\textquotesingle{}\textquotesingle{} instead.\textquotesingle{}}]{\mbox{[}\+M2\+HTML\mbox{]},  }\item[{opt.}]{template }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a769376f0032f014e94a804bce35ccbd5}\label{mwizard2_8m_a769376f0032f014e94a804bce35ccbd5}} 
+\index{mwizard2.m@{mwizard2.m}!warning@{warning}}
+\index{warning@{warning}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{warning()}{warning()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \textquotesingle{}\mbox{[}M2\+HTML\mbox{]} Default \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} \textquotesingle{}\textquotesingle{}\%\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}\textquotesingle{}\textquotesingle{} \mbox{\hyperlink{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}{not}} found.\textquotesingle{},\mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{opt.\+template}} warning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{mwizard2_8m_a98e32933264b4764ea220751c302e520}\label{mwizard2_8m_a98e32933264b4764ea220751c302e520}} 
+\index{mwizard2.m@{mwizard2.m}!````~isempty@{$\sim$isempty}}
+\index{````~isempty@{$\sim$isempty}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{$\sim$isempty()}{~isempty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} $\sim$\mbox{\hyperlink{splitcode_8m_a656de3972b053a7a727cd58ea04f79fe}{isempty}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a1b1cd6d916ef245c8b510b9704eaea03}\label{mwizard2_8m_a1b1cd6d916ef245c8b510b9704eaea03}} 
+\index{mwizard2.m@{mwizard2.m}!````~isempty@{$\sim$isempty}}
+\index{````~isempty@{$\sim$isempty}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{$\sim$isempty()}{~isempty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} $\sim$\mbox{\hyperlink{splitcode_8m_a656de3972b053a7a727cd58ea04f79fe}{isempty}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a1c57518b60089764365f97b18b800fea}\label{mwizard2_8m_a1c57518b60089764365f97b18b800fea}} 
+\index{mwizard2.m@{mwizard2.m}!````~isempty@{$\sim$isempty}}
+\index{````~isempty@{$\sim$isempty}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{$\sim$isempty()}{~isempty()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} $\sim$\mbox{\hyperlink{splitcode_8m_a656de3972b053a7a727cd58ea04f79fe}{isempty}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mwizard2_8m_a0d97d7b7c2ede19a76cb4eb1d4990742}{opt.\+m\+Files}}\{1\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mwizard2_8m_a5d645314b317babfab2de50d8cb43842}\label{mwizard2_8m_a5d645314b317babfab2de50d8cb43842}} 
+\index{mwizard2.m@{mwizard2.m}!````~strcmp@{$\sim$strcmp}}
+\index{````~strcmp@{$\sim$strcmp}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{$\sim$strcmp()}{~strcmp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} $\sim$\mbox{\hyperlink{mwizard2_8m_a3008854e41e172ce7c66d088f43f4cc9}{strcmp}} (\begin{DoxyParamCaption}\item[{opt.}]{rootdir,  }\item[{pwd}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mwizard2_8m_a83bca2d1baeb1dcab49b8f77d1eac34e}\label{mwizard2_8m_a83bca2d1baeb1dcab49b8f77d1eac34e}} 
+\index{mwizard2.m@{mwizard2.m}!at@{at}}
+\index{at@{at}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{at}{at}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} please read the M2\+HTML tutorial \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} FAQ at}
+
+\mbox{\Hypertarget{mwizard2_8m_a2717ba03da980233870e81c68801239e}\label{mwizard2_8m_a2717ba03da980233870e81c68801239e}} 
+\index{mwizard2.m@{mwizard2.m}!button@{button}}
+\index{button@{button}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}{needsave}} button}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= questdlg(\mbox{\hyperlink{searchindex_8m_adf0cd8db3ce9bb02d4b5e45ca0db4cda}{sprintf}}(\textcolor{stringliteral}{'Save changes to \%s?'},\mbox{\hyperlink{mwizard2_8m_a07d72e5190d76f3cfc41ea900bf8e98c}{file}}),...}
+\DoxyCodeLine{            \textcolor{stringliteral}{'Mwizard'},\textcolor{stringliteral}{'Yes'},\textcolor{stringliteral}{'No'},\textcolor{stringliteral}{'Cancel'},\textcolor{stringliteral}{'Yes'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}\label{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}} 
+\index{mwizard2.m@{mwizard2.m}!d@{d}}
+\index{d@{d}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily d = \mbox{\hyperlink{m2html_8m_a96a994f7416199077f5fd5d911088630}{dir}}(\mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(\mbox{\hyperlink{mfileparse_8m_a41f9187e72427c596765bf547b8fb131}{fileparts}}(which(mfilename)),\textquotesingle{}templates\textquotesingle{}))}
+
+\mbox{\Hypertarget{mwizard2_8m_a07d72e5190d76f3cfc41ea900bf8e98c}\label{mwizard2_8m_a07d72e5190d76f3cfc41ea900bf8e98c}} 
+\index{mwizard2.m@{mwizard2.m}!file@{file}}
+\index{file@{file}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} file = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}file\textquotesingle{})}
+
+\mbox{\Hypertarget{mwizard2_8m_a3d457b067498336c47db110a6ff3b861}\label{mwizard2_8m_a3d457b067498336c47db110a6ff3b861}} 
+\index{mwizard2.m@{mwizard2.m}!Foundation@{Foundation}}
+\index{Foundation@{Foundation}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{Foundation}{Foundation}}
+{\footnotesize\ttfamily you can redistribute \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} or modify \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} under the terms of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} as published by the Free Software Foundation}
+
+\mbox{\Hypertarget{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}\label{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}} 
+\index{mwizard2.m@{mwizard2.m}!h@{h}}
+\index{h@{h}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily h = init\+Window}
+
+\mbox{\Hypertarget{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}\label{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}} 
+\index{mwizard2.m@{mwizard2.m}!handles@{handles}}
+\index{handles@{handles}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{handles}{handles}}
+{\footnotesize\ttfamily handles = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}handles\textquotesingle{})}
+
+\mbox{\Hypertarget{mwizard2_8m_a7e98b8a17c0aad30ba64d47b74e2a6c1}\label{mwizard2_8m_a7e98b8a17c0aad30ba64d47b74e2a6c1}} 
+\index{mwizard2.m@{mwizard2.m}!i@{i}}
+\index{i@{i}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=10:5:100}
+\DoxyCodeLine{\%     \textcolor{keyword}{set}(\mbox{\hyperlink{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}{p}},\textcolor{stringliteral}{'Xdata'},[0 i i 0])}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mwizard2_8m_ad3618412097151735f9acd692e15732a}\label{mwizard2_8m_ad3618412097151735f9acd692e15732a}} 
+\index{mwizard2.m@{mwizard2.m}!Inc@{Inc}}
+\index{Inc@{Inc}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{Inc}{Inc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} write to the Free Software \mbox{\hyperlink{doxywrite_8m_a833a45a60cb4083d97d5f6946c9d8818}{Foundation}} Inc}
+
+\mbox{\Hypertarget{mwizard2_8m_a5b54c0a045f179bcbbbc9abcb8b5cd4c}\label{mwizard2_8m_a5b54c0a045f179bcbbbc9abcb8b5cd4c}} 
+\index{mwizard2.m@{mwizard2.m}!l@{l}}
+\index{l@{l}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{l}{l}}
+{\footnotesize\ttfamily l}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{m2html_8m_a85461801662df843513494e77a51218b}{line}}([100 0 0 100 100], [0 0 1 1 0], ...}
+\DoxyCodeLine{    \textcolor{stringliteral}{'EraseMode'},\textcolor{stringliteral}{'none'}, ...}
+\DoxyCodeLine{    \textcolor{stringliteral}{'Visible'},\textcolor{stringliteral}{'on'},...}
+\DoxyCodeLine{    \textcolor{stringliteral}{'Color'},\textcolor{keyword}{get}(gca,\textcolor{stringliteral}{'XColor'}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mwizard2_8m_a355539e51bed3008068dfe985e226ab8}\label{mwizard2_8m_a355539e51bed3008068dfe985e226ab8}} 
+\index{mwizard2.m@{mwizard2.m}!License@{License}}
+\index{License@{License}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{License}{License}}
+{\footnotesize\ttfamily either version of the License}
+
+\mbox{\Hypertarget{mwizard2_8m_a0d97d7b7c2ede19a76cb4eb1d4990742}\label{mwizard2_8m_a0d97d7b7c2ede19a76cb4eb1d4990742}} 
+\index{mwizard2.m@{mwizard2.m}!mFiles@{mFiles}}
+\index{mFiles@{mFiles}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{mFiles}{mFiles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} m\+Files = \mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}}}
+
+\mbox{\Hypertarget{mwizard2_8m_ad3df7962d8a81cbaa4317f7aeb80f4fd}\label{mwizard2_8m_ad3df7962d8a81cbaa4317f7aeb80f4fd}} 
+\index{mwizard2.m@{mwizard2.m}!nargin@{nargin}}
+\index{nargin@{nargin}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{nargin}{nargin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} do\+Help (fig,evd,\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}) helpdlg(\mbox{\hyperlink{searchindex_8m_adf0cd8db3ce9bb02d4b5e45ca0db4cda}{sprintf}}(\mbox{[}\textquotesingle{}M2\+HTML by Guillaume \mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{Flandin\textbackslash{}n}}\textquotesingle{}... \textquotesingle{}\mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} © 2003-\/2004\textbackslash{}n\+Guillaume@\mbox{\hyperlink{Ybus__matlab_8m_ad4dc65bd479bfcef34c7ced3491aaf2e}{artefact.\+tk\textbackslash{}n}}\textquotesingle{}... \textquotesingle{}$<$http \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} nargin}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{== 0}
+\DoxyCodeLine{    \mbox{\hyperlink{mwizard2_8m_af941fbc06fbe91dad5636442b1ac3200}{setappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}}, \textcolor{stringliteral}{'file'}, \textcolor{stringliteral}{''})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}\label{mwizard2_8m_aa1d2775b08777a9e3aeea16e88ee4d90}} 
+\index{mwizard2.m@{mwizard2.m}!needsave@{needsave}}
+\index{needsave@{needsave}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{needsave}{needsave}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} needsave = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}needsave\textquotesingle{})}
+
+\mbox{\Hypertarget{mwizard2_8m_ae6cf43db481de26465fb7c527d5d985f}\label{mwizard2_8m_ae6cf43db481de26465fb7c527d5d985f}} 
+\index{mwizard2.m@{mwizard2.m}!not@{not}}
+\index{not@{not}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{not}{not}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} not}
+
+\mbox{\Hypertarget{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}\label{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}} 
+\index{mwizard2.m@{mwizard2.m}!opt@{opt}}
+\index{opt@{opt}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}{status}} opt = \mbox{\hyperlink{m2html_8m_acacfdc71b8c7342f1471f214993f5075}{load}}(\mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}}, \textquotesingle{}\mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}\textquotesingle{})}
+
+\mbox{\Hypertarget{mwizard2_8m_a5c7bd190cfc3c2610eed4d42e0d70305}\label{mwizard2_8m_a5c7bd190cfc3c2610eed4d42e0d70305}} 
+\index{mwizard2.m@{mwizard2.m}!options@{options}}
+\index{options@{options}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} options = \mbox{\hyperlink{mwizard2_8m_adaaac415e7d0379fc4f3136efca41721}{getappdata}}(\mbox{\hyperlink{mwizard2_8m_a5e36941b3d856737e81516acd45edc50}{h}},\textquotesingle{}options\textquotesingle{})}
+
+\mbox{\Hypertarget{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}\label{mwizard2_8m_ac483f6ce851c9ecd9fb835ff7551737c}} 
+\index{mwizard2.m@{mwizard2.m}!p@{p}}
+\index{p@{p}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily p}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= patch(\mbox{\hyperlink{mwizard2_8m_af0dfc6bc89b7d45ccb575de2f6553bed}{xpatch}},\mbox{\hyperlink{mwizard2_8m_a535f82371151735729f3d553c1da30f8}{ypatch}},\textcolor{charliteral}{'r'},...}
+\DoxyCodeLine{    \textcolor{stringliteral}{'EdgeColor'},\textcolor{charliteral}{'r'},...}
+\DoxyCodeLine{    \textcolor{stringliteral}{'Visible'},\textcolor{stringliteral}{'on'},...}
+\DoxyCodeLine{    \textcolor{stringliteral}{'EraseMode'},\textcolor{stringliteral}{'none'},...}
+\DoxyCodeLine{    \textcolor{stringliteral}{'Tag'},\textcolor{stringliteral}{'waitbarmisc'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{mwizard2_8m_ad1fcf7d480c2fceaa3fc2635af62b648}\label{mwizard2_8m_ad1fcf7d480c2fceaa3fc2635af62b648}} 
+\index{mwizard2.m@{mwizard2.m}!program@{program}}
+\index{program@{program}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{program}{program}}
+{\footnotesize\ttfamily without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE See the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} for more details You should have received a copy of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} along with this program}
+
+\mbox{\Hypertarget{mwizard2_8m_a514f1b439f404f86f77090fa9edc96ce}\label{mwizard2_8m_a514f1b439f404f86f77090fa9edc96ce}} 
+\index{mwizard2.m@{mwizard2.m}!r@{r}}
+\index{r@{r}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily r = \{\textquotesingle{}off\textquotesingle{} \textquotesingle{}on\textquotesingle{}\}}
+
+\mbox{\Hypertarget{mwizard2_8m_a665a5cc0c3c3bbd8a91be438e7c2ca3e}\label{mwizard2_8m_a665a5cc0c3c3bbd8a91be438e7c2ca3e}} 
+\index{mwizard2.m@{mwizard2.m}!recursive@{recursive}}
+\index{recursive@{recursive}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{recursive}{recursive}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} recursive}
+
+\mbox{\Hypertarget{mwizard2_8m_a9717e7bbecb906637e86cef6da3d83c2}\label{mwizard2_8m_a9717e7bbecb906637e86cef6da3d83c2}} 
+\index{mwizard2.m@{mwizard2.m}!return@{return}}
+\index{return@{return}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{return}{return}}
+{\footnotesize\ttfamily return}
+
+\mbox{\Hypertarget{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}\label{mwizard2_8m_ae78f63d1ae9ac40b8a07a57e0762b497}} 
+\index{mwizard2.m@{mwizard2.m}!rootdir@{rootdir}}
+\index{rootdir@{rootdir}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{rootdir}{rootdir}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} rootdir}
+
+\mbox{\Hypertarget{mwizard2_8m_a3691308f2a4c2f6983f2880d32e29c84}\label{mwizard2_8m_a3691308f2a4c2f6983f2880d32e29c84}} 
+\index{mwizard2.m@{mwizard2.m}!s@{s}}
+\index{s@{s}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily s = s(1\+:\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}}-\/2)}
+
+\mbox{\Hypertarget{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}\label{mwizard2_8m_a955242d1c71adbf832d37b0e3f34dfbc}} 
+\index{mwizard2.m@{mwizard2.m}!status@{status}}
+\index{status@{status}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily status = uigetfile(\textquotesingle{}$\ast$.\mbox{\hyperlink{mwizard2_8m_a8e67c3d7b1746c5b102102eb77e6cbd6}{mat}}\textquotesingle{},\textquotesingle{}Open File\textquotesingle{})}
+
+\mbox{\Hypertarget{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}\label{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}} 
+\index{mwizard2.m@{mwizard2.m}!template@{template}}
+\index{template@{template}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{template}{template}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mwizard2_8m_aa22aa8fe7eaf13983fae653f3db3409a}{opt}} template = \mbox{\hyperlink{mwizard2_8m_a1aabac6d068eef6a7bad3fdf50a05cc8}{d}}\{1\}}
+
+\mbox{\Hypertarget{mwizard2_8m_ae2a91ce949e5bdf3fc60252199ce2a8f}\label{mwizard2_8m_ae2a91ce949e5bdf3fc60252199ce2a8f}} 
+\index{mwizard2.m@{mwizard2.m}!useful@{useful}}
+\index{useful@{useful}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{useful}{useful}}
+{\footnotesize\ttfamily either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be useful}
+
+\mbox{\Hypertarget{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}\label{mwizard2_8m_acadfb0355182e1dc79a24a0f55e4926e}} 
+\index{mwizard2.m@{mwizard2.m}!Value@{Value}}
+\index{Value@{Value}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} Value}
+
+\mbox{\Hypertarget{mwizard2_8m_a968c36b858473cd33cb78a9354b9a4e7}\label{mwizard2_8m_a968c36b858473cd33cb78a9354b9a4e7}} 
+\index{mwizard2.m@{mwizard2.m}!varargout@{varargout}}
+\index{varargout@{varargout}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{varargout}{varargout}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} varargout \{1\} = \mbox{\hyperlink{mfileparse_8m_a49e36eb8d094755ad96cadf13df23057}{options}}}
+
+\mbox{\Hypertarget{mwizard2_8m_abaa9e03fa09a5779d31cad764e04a830}\label{mwizard2_8m_abaa9e03fa09a5779d31cad764e04a830}} 
+\index{mwizard2.m@{mwizard2.m}!WARRANTY@{WARRANTY}}
+\index{WARRANTY@{WARRANTY}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{WARRANTY}{WARRANTY}}
+{\footnotesize\ttfamily either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be but WITHOUT ANY WARRANTY}
+
+\mbox{\Hypertarget{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}\label{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}} 
+\index{mwizard2.m@{mwizard2.m}!x@{x}}
+\index{x@{x}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily x = 0}
+
+\mbox{\Hypertarget{mwizard2_8m_af0dfc6bc89b7d45ccb575de2f6553bed}\label{mwizard2_8m_af0dfc6bc89b7d45ccb575de2f6553bed}} 
+\index{mwizard2.m@{mwizard2.m}!xpatch@{xpatch}}
+\index{xpatch@{xpatch}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{xpatch}{xpatch}}
+{\footnotesize\ttfamily between \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} xpatch = \mbox{[}0 \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} 0\mbox{]}}
+
+\mbox{\Hypertarget{mwizard2_8m_a535f82371151735729f3d553c1da30f8}\label{mwizard2_8m_a535f82371151735729f3d553c1da30f8}} 
+\index{mwizard2.m@{mwizard2.m}!ypatch@{ypatch}}
+\index{ypatch@{ypatch}!mwizard2.m@{mwizard2.m}}
+\doxysubsubsection{\texorpdfstring{ypatch}{ypatch}}
+{\footnotesize\ttfamily ypatch = \mbox{[}0 0 1 1\mbox{]}}
+

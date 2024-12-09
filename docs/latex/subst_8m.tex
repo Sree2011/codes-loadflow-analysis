@@ -1,0 +1,51 @@
+\hypertarget{subst_8m}{}\doxysection{Ybus/matlab/m2html/@template/private/subst.m File Reference}
+\label{subst_8m}\index{Ybus/matlab/m2html/"@template/private/subst.m@{Ybus/matlab/m2html/"@template/private/subst.m}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{subst_8m_a17d17be2a7d02d2c7fb17536b7a2c3ac}{function}} \mbox{[}\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}, \mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}}\mbox{]}
+\item 
+\mbox{\hyperlink{subst_8m_a4b99ff73a8a869319570237b5c57ab03}{str}} = get(\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},\textquotesingle{}var\textquotesingle{},handle)
+\item 
+for \mbox{\hyperlink{subst_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{subst_8m_a17d17be2a7d02d2c7fb17536b7a2c3ac}\label{subst_8m_a17d17be2a7d02d2c7fb17536b7a2c3ac}} 
+\index{subst.m@{subst.m}!function@{function}}
+\index{function@{function}!subst.m@{subst.m}}
+\doxysubsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily function\mbox{[}\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}, \mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= subst(\mbox{\hyperlink{get_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},handle)}
+\DoxyCodeLine{\%TEMPLATE/SUBST Substitute a replacement field by its value}
+\DoxyCodeLine{\%  STR = SUBST(TPL,HANDLE) substitute all the known fields of variable HANDLE}
+\DoxyCodeLine{\%  in the \textcolor{keyword}{template} TPL.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\%  \mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} (C) 2003 Guillaume Flandin <Guillaume@artefact.tk>}
+\DoxyCodeLine{\%  \mbox{\hyperlink{strtok_8m_ac386dc3a6f038e347db2e3018aab2929}{\$Revision}}: 1.0 \$Date: 2003/05/05 22:19:51 \$}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{get_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}} = loadtpl(\mbox{\hyperlink{get_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},handle)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{subst_8m_a6f6ccfcf58b31cb6412107d9d5281426}\label{subst_8m_a6f6ccfcf58b31cb6412107d9d5281426}} 
+\index{subst.m@{subst.m}!i@{i}}
+\index{i@{i}!subst.m@{subst.m}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily for i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=1:\mbox{\hyperlink{m2html_8m_a59b31510d724b32c2d8ccdd970f572c3}{length}}(\mbox{\hyperlink{get_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}.varkeys)}
+\DoxyCodeLine{    \mbox{\hyperlink{subst_8m_a4b99ff73a8a869319570237b5c57ab03}{str}} = strrep(\mbox{\hyperlink{subst_8m_a4b99ff73a8a869319570237b5c57ab03}{str}}, strcat('\{\textcolor{stringliteral}{',tpl.varkeys\{i\},'}\}\textcolor{stringliteral}{'), tpl.varvals\{i\})}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{subst_8m_a4b99ff73a8a869319570237b5c57ab03}\label{subst_8m_a4b99ff73a8a869319570237b5c57ab03}} 
+\index{subst.m@{subst.m}!str@{str}}
+\index{str@{str}!subst.m@{subst.m}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily str = get(\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},\textquotesingle{}var\textquotesingle{},handle)}
+

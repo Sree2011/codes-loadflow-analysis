@@ -1,0 +1,402 @@
+\hypertarget{doxywrite_8m}{}\doxysection{Ybus/matlab/m2html/private/doxywrite.m File Reference}
+\label{doxywrite_8m}\index{Ybus/matlab/m2html/private/doxywrite.m@{Ybus/matlab/m2html/private/doxywrite.m}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{doxywrite_8m_a046faf63a7251ca36d5b9802da1e8481}{doxywrite}} (\mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}, \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}, \mbox{\hyperlink{m2html_8m_a5033d8e177591860e4b765530dd7c52f}{statinfo}}, \mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}) \%DOXYWRITE Write a \textquotesingle{}\mbox{\hyperlink{doxywrite_8m_ace7114e2121e8d0a58891f6e858647a1}{search.\+idx}}\textquotesingle{} \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} compatible with DOXYGEN \% DOXYWRITE(\mbox{\hyperlink{doxywrite_8m_aeb78df135b316d59219daf480ee39686}{FILENAME}}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} DOCINFO writes \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} \mbox{\hyperlink{doxywrite_8m_aeb78df135b316d59219daf480ee39686}{FILENAME}} (Doxygen search.\+idx. format) using the \mbox{\hyperlink{doxyread_8m_a90435c7c125e093c927cd5a9cf5bbf15}{cell}} array \mbox{\hyperlink{doxywrite_8m_a0cc6f7e9cccf037607e02af495a568c1}{KW}} containing the \% word \mbox{\hyperlink{m2html_8m_afa8db1da610ff469dcb0f53540a97691}{list}}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} DOCINFO writes \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} the sparse \mbox{\hyperlink{doxywrite_8m_a85ac42a71267deed070754e32ab80f78}{matrix}} (nbword \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} nbfile) with non-\/null values \% in(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}
+\item 
+id \mbox{\hyperlink{doxywrite_8m_aaa409478bb047f46bbba594122317aa3}{http\+:}} (nargchk(4, 4, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}) \mbox{\hyperlink{openfile_8m_a679393fa3ac757c0912ace6f0dfa5218}{error}})
+\item 
+\mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}, \textquotesingle{}\mbox{\hyperlink{doxysearch_8m_a66c8a22d6f7b094e9da8d80bb8ad63ee}{w}}\textquotesingle{}, \textquotesingle{}ieee-\/be\textquotesingle{} \mbox{\hyperlink{doxywrite_8m_aac90da52472cbe8a96b135319fdfc738}{fopen}} ()
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{doxywrite_8m_af83dd760f3b62561226b8e6f3c0eda36}{error}} (errmsg)
+\item 
+\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \textquotesingle{}DOXS\textquotesingle{}, \textquotesingle{}uchar\textquotesingle{} \mbox{\hyperlink{doxywrite_8m_a7001c0d965ce5208035d1e4af5dae028}{fwrite}} ()
+\item 
+256 \mbox{\hyperlink{doxywrite_8m_aabaaf13403a55bf6ec385c6d201b4870}{zeros}} ()
+\item 
+\mbox{\hyperlink{doxywrite_8m_abd00226b8f341fb45f8ad1f4f98f8d44}{write\+Int}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_ace7114e2121e8d0a58891f6e858647a1}{idx}})
+\item 
+\mbox{\hyperlink{doxywrite_8m_ace7114e2121e8d0a58891f6e858647a1}{idx}} (double(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}(2)+1), double(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}(1)+1))
+\item 
+\mbox{\hyperlink{strtok_8m_adca67cf018a9c20d42058fe4f20d86ae}{while}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}$<$=length(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}) \&strmatch(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}, \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}) \mbox{\hyperlink{doxywrite_8m_a7181c0778709a67d986e43ecb401ee37}{write\+String}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\});\mbox{\hyperlink{doxywrite_8m_ae6457931b43e823831f610a2e88be896}{idx2}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}})=ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}});\mbox{\hyperlink{doxywrite_8m_a1c521aaba37442a288da8d0bc9763050}{write\+Int}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 0);\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}=\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}+1;\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{doxywrite_8m_ac4f222291b35e36cd98d52802df99371}{fwrite}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 0, \textquotesingle{}int8\textquotesingle{});\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} $>$ \mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}} (\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}})
+\item 
+4 -\/ mod(ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}} \mbox{\hyperlink{doxywrite_8m_a9f638b71c78a5d5db77f660c71113ad6}{mod}} ()
+\item 
+for \mbox{\hyperlink{doxywrite_8m_ac4f222291b35e36cd98d52802df99371}{fwrite}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 0, \textquotesingle{}int8\textquotesingle{})
+\item 
+\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_adf54215d760dbf0f9fe5627a39015333}{pos}}, \textquotesingle{}bof\textquotesingle{} \mbox{\hyperlink{doxywrite_8m_ad7a92bddde5f3c3b9554d429117c036b}{fseek}} ()
+\item 
+Write word statistics \mbox{\hyperlink{doxywrite_8m_a413cb17199997ac89d30eb5358cb4ffa}{fseek}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_a66bb979da7a82fa2fc7a960265cb1b6c}{pos2}}, \textquotesingle{}bof\textquotesingle{})
+\item 
+\mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}} \mbox{\hyperlink{doxywrite_8m_a28199e094153afc4df01bff9158e1a97}{write\+Int}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}})
+\item 
+index \mbox{\hyperlink{doxywrite_8m_a16a557a4c23e267128b1b99d423da13e}{write\+Int}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, v(\mbox{\hyperlink{mfileparse_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}}))
+\item 
+id \mbox{\hyperlink{doxywrite_8m_a35d4674e31a301e0e2ff6a64a804521a}{i\+:}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_ae6457931b43e823831f610a2e88be896}{idx2}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}), \textquotesingle{}bof\textquotesingle{} \mbox{\hyperlink{doxywrite_8m_ac92031ff16551c7c9bde2b0983de9f47}{fseek}})
+\item 
+\mbox{\hyperlink{doxywrite_8m_a1c521aaba37442a288da8d0bc9763050}{write\+Int}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_aee412fe05680d610c995d3328dce7a8b}{idx3}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}))
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} Write urls \mbox{\hyperlink{doxywrite_8m_a009f22f71f316055b3791f16ddb36cb2}{fseek}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_aa5e89842f4e8b345443fb99b0017bbbf}{pos3}}, \textquotesingle{}bof\textquotesingle{})
+\item 
+\mbox{\hyperlink{doxywrite_8m_a7948edaacfd80e903c28450e97ff8b4e}{write\+String}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}, 1\})
+\item 
+\mbox{\hyperlink{m2html_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}{name}} \mbox{\hyperlink{doxywrite_8m_a7181c0778709a67d986e43ecb401ee37}{write\+String}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}, 2\})
+\item 
+\mbox{\hyperlink{doxywrite_8m_ac92031ff16551c7c9bde2b0983de9f47}{fseek}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 4, \textquotesingle{}cof\textquotesingle{})
+\item 
+\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}} \mbox{\hyperlink{doxywrite_8m_a44ec347cc59613f35e16c2733f16ba96}{fclose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{doxywrite_8m_a0cc6f7e9cccf037607e02af495a568c1}{KW}}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{doxywrite_8m_a53e96b08eeff08b914900cac9e4f23c0}{STATINFO}}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} DOCINFO writes \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} the sparse \mbox{\hyperlink{mfileparse_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} indicating the frequency of occurence of word \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} in \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} \mbox{\hyperlink{mfileparse_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} the \mbox{\hyperlink{doxyread_8m_a90435c7c125e093c927cd5a9cf5bbf15}{cell}} array(nbfile \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} 2) containing the \mbox{\hyperlink{m2html_8m_afa8db1da610ff469dcb0f53540a97691}{list}} of urls \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} \mbox{\hyperlink{mfileparse_8m_ac34d01f53a4b233951da05e685751254}{names}} \% of each file. \% \% See \mbox{\hyperlink{m2html_8m_a0d03a64b2f35c4d2a0f5aa2d886ba4f7}{also}} DOXYREAD \% \mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}}(C) 2003 Guillaume Flandin$<$ Guillaume @artefact.\+tk $>$ \% \$Revision you can redistribute \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} or modify \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} under the terms of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} as published by the Free Software \mbox{\hyperlink{doxywrite_8m_a833a45a60cb4083d97d5f6946c9d8818}{Foundation}}
+\item 
+either version of the \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}}
+\item 
+either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be \mbox{\hyperlink{doxywrite_8m_ae2a91ce949e5bdf3fc60252199ce2a8f}{useful}}
+\item 
+either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be but WITHOUT ANY \mbox{\hyperlink{doxywrite_8m_abaa9e03fa09a5779d31cad764e04a830}{WARRANTY}}
+\item 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE See the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} for more details You should have received a copy of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} along with this \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}{not}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} write to the Free Software \mbox{\hyperlink{doxywrite_8m_a833a45a60cb4083d97d5f6946c9d8818}{Foundation}} \mbox{\hyperlink{doxywrite_8m_ad3618412097151735f9acd692e15732a}{Inc}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{doxywrite_8m_a7b9c3d619ad7365ec6434713e76142e8}{fid}} == -\/1
+\item 
+\mbox{\hyperlink{doxywrite_8m_adf54215d760dbf0f9fe5627a39015333}{pos}} = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}})
+\item 
+\mbox{\hyperlink{doxywrite_8m_ae6457931b43e823831f610a2e88be896}{idx2}} = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{zeros}}(1,\mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}))
+\item 
+\mbox{\hyperlink{strtok_8m_adca67cf018a9c20d42058fe4f20d86ae}{while}} \mbox{\hyperlink{doxywrite_8m_a58defbf6fe556592007171f7a347f9d6}{s}} = \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}(1\+:2)
+\item 
+\mbox{\hyperlink{strtok_8m_adca67cf018a9c20d42058fe4f20d86ae}{while}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}$<$=\mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}) \&strmatch(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}, \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}) \mbox{\hyperlink{doxywrite_8m_a7181c0778709a67d986e43ecb401ee37}{write\+String}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\});\mbox{\hyperlink{doxywrite_8m_ae6457931b43e823831f610a2e88be896}{idx2}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}})=ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}});\mbox{\hyperlink{doxywrite_8m_a1c521aaba37442a288da8d0bc9763050}{write\+Int}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 0);\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}=\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}+1;\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{doxywrite_8m_ac4f222291b35e36cd98d52802df99371}{fwrite}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 0, \textquotesingle{}int8\textquotesingle{});\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} $>$ \mbox{\hyperlink{doxywrite_8m_ae4c8c28548258d8f1a4434e3d86108a7}{break}}
+\item 
+for \mbox{\hyperlink{doxywrite_8m_a6f6ccfcf58b31cb6412107d9d5281426}{i}} =1\+:pad
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{doxywrite_8m_a66bb979da7a82fa2fc7a960265cb1b6c}{pos2}} = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}})
+\item 
+\mbox{\hyperlink{doxywrite_8m_aee412fe05680d610c995d3328dce7a8b}{idx3}} = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{zeros}}(1,\mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}))
+\item 
+\mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}} = \mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(ia)
+\item 
+for \mbox{\hyperlink{doxywrite_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}}
+\item 
+\mbox{\hyperlink{m2html_8m_a23ce91334b64814befcac6563db68337}{freq}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{doxywrite_8m_aa5e89842f4e8b345443fb99b0017bbbf}{pos3}} = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}})
+\item 
+\mbox{\hyperlink{doxywrite_8m_a71b0b9ee95c80a2b6bfface6fbc50742}{idx4}} = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{zeros}}(1,\mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}))
+\item 
+\mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}} for \mbox{\hyperlink{doxywrite_8m_a13d2d3650326a2f5eee5736807c992b0}{m}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{doxywrite_8m_a046faf63a7251ca36d5b9802da1e8481}\label{doxywrite_8m_a046faf63a7251ca36d5b9802da1e8481}} 
+\index{doxywrite.m@{doxywrite.m}!doxywrite@{doxywrite}}
+\index{doxywrite@{doxywrite}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{doxywrite()}{doxywrite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} doxywrite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}}}]{,  }\item[{\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}}]{,  }\item[{\mbox{\hyperlink{m2html_8m_a5033d8e177591860e4b765530dd7c52f}{statinfo}}}]{,  }\item[{\mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_af83dd760f3b62561226b8e6f3c0eda36}\label{doxywrite_8m_af83dd760f3b62561226b8e6f3c0eda36}} 
+\index{doxywrite.m@{doxywrite.m}!error@{error}}
+\index{error@{error}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} error (\begin{DoxyParamCaption}\item[{errmsg}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a44ec347cc59613f35e16c2733f16ba96}\label{doxywrite_8m_a44ec347cc59613f35e16c2733f16ba96}} 
+\index{doxywrite.m@{doxywrite.m}!fclose@{fclose}}
+\index{fclose@{fclose}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fclose()}{fclose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}} fclose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{doxywrite_8m_aeb78df135b316d59219daf480ee39686}\label{doxywrite_8m_aeb78df135b316d59219daf480ee39686}} 
+\index{doxywrite.m@{doxywrite.m}!FILENAME@{FILENAME}}
+\index{FILENAME@{FILENAME}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{FILENAME()}{FILENAME()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} DOCINFO writes \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} FILENAME (\begin{DoxyParamCaption}\item[{Doxygen search.\+idx.}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_aac90da52472cbe8a96b135319fdfc738}\label{doxywrite_8m_aac90da52472cbe8a96b135319fdfc738}} 
+\index{doxywrite.m@{doxywrite.m}!fopen@{fopen}}
+\index{fopen@{fopen}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fopen()}{fopen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{openfile_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}},\textquotesingle{}\mbox{\hyperlink{doxysearch_8m_a66c8a22d6f7b094e9da8d80bb8ad63ee}{w}}\textquotesingle{},\textquotesingle{}ieee-\/be\textquotesingle{} fopen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{doxywrite_8m_ad7a92bddde5f3c3b9554d429117c036b}\label{doxywrite_8m_ad7a92bddde5f3c3b9554d429117c036b}} 
+\index{doxywrite.m@{doxywrite.m}!fseek@{fseek}}
+\index{fseek@{fseek}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fseek()}{fseek()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, \mbox{\hyperlink{doxywrite_8m_adf54215d760dbf0f9fe5627a39015333}{pos}}, \textquotesingle{}bof\textquotesingle{} fseek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{doxywrite_8m_ac92031ff16551c7c9bde2b0983de9f47}\label{doxywrite_8m_ac92031ff16551c7c9bde2b0983de9f47}} 
+\index{doxywrite.m@{doxywrite.m}!fseek@{fseek}}
+\index{fseek@{fseek}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fseek()}{fseek()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily index fseek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{4}]{,  }\item[{\textquotesingle{}cof\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a413cb17199997ac89d30eb5358cb4ffa}\label{doxywrite_8m_a413cb17199997ac89d30eb5358cb4ffa}} 
+\index{doxywrite.m@{doxywrite.m}!fseek@{fseek}}
+\index{fseek@{fseek}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fseek()}{fseek()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Write word statistics fseek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxywrite_8m_a66bb979da7a82fa2fc7a960265cb1b6c}{pos2}}}]{,  }\item[{\textquotesingle{}bof\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a009f22f71f316055b3791f16ddb36cb2}\label{doxywrite_8m_a009f22f71f316055b3791f16ddb36cb2}} 
+\index{doxywrite.m@{doxywrite.m}!fseek@{fseek}}
+\index{fseek@{fseek}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fseek()}{fseek()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} Write urls fseek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxywrite_8m_aa5e89842f4e8b345443fb99b0017bbbf}{pos3}}}]{,  }\item[{\textquotesingle{}bof\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a7001c0d965ce5208035d1e4af5dae028}\label{doxywrite_8m_a7001c0d965ce5208035d1e4af5dae028}} 
+\index{doxywrite.m@{doxywrite.m}!fwrite@{fwrite}}
+\index{fwrite@{fwrite}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fwrite()}{fwrite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}},\textquotesingle{}DOXS\textquotesingle{},\textquotesingle{}uchar\textquotesingle{} fwrite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{doxywrite_8m_ac4f222291b35e36cd98d52802df99371}\label{doxywrite_8m_ac4f222291b35e36cd98d52802df99371}} 
+\index{doxywrite.m@{doxywrite.m}!fwrite@{fwrite}}
+\index{fwrite@{fwrite}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fwrite()}{fwrite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily fwrite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{0}]{,  }\item[{\textquotesingle{}int8\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{===========================================================================}
+\DoxyCodeLine{\textcolor{keyword}{function} \mbox{\hyperlink{doxywrite_8m_a7948edaacfd80e903c28450e97ff8b4e}{writeString}}(\mbox{\hyperlink{doxywrite_8m_a7b9c3d619ad7365ec6434713e76142e8}{fid}}, \mbox{\hyperlink{doxywrite_8m_a58defbf6fe556592007171f7a347f9d6}{s}})}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \mbox{\hyperlink{doxywrite_8m_a7001c0d965ce5208035d1e4af5dae028}{fwrite}}(\mbox{\hyperlink{doxywrite_8m_a7b9c3d619ad7365ec6434713e76142e8}{fid}},\mbox{\hyperlink{doxywrite_8m_a58defbf6fe556592007171f7a347f9d6}{s}},\textcolor{stringliteral}{'uchar'})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxywrite_8m_aaa409478bb047f46bbba594122317aa3}\label{doxywrite_8m_aaa409478bb047f46bbba594122317aa3}} 
+\index{doxywrite.m@{doxywrite.m}!http:@{http:}}
+\index{http:@{http:}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{http:()}{http:()}}
+{\footnotesize\ttfamily id http\+: (\begin{DoxyParamCaption}\item[{nargchk(4, 4, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}})}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{doxywrite_8m_a35d4674e31a301e0e2ff6a64a804521a}\label{doxywrite_8m_a35d4674e31a301e0e2ff6a64a804521a}} 
+\index{doxywrite.m@{doxywrite.m}!i:@{i:}}
+\index{i:@{i:}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{i:()}{i:()}}
+{\footnotesize\ttfamily id i\+: (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxywrite_8m_ae6457931b43e823831f610a2e88be896}{idx2}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}})}]{,  }\item[{\textquotesingle{}bof\textquotesingle{}}]{fseek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{doxywrite_8m_ace7114e2121e8d0a58891f6e858647a1}\label{doxywrite_8m_ace7114e2121e8d0a58891f6e858647a1}} 
+\index{doxywrite.m@{doxywrite.m}!idx@{idx}}
+\index{idx@{idx}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{idx()}{idx()}}
+{\footnotesize\ttfamily idx (\begin{DoxyParamCaption}\item[{double(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}(2)+1)}]{,  }\item[{double(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}(1)+1)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}\label{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}} 
+\index{doxywrite.m@{doxywrite.m}!length@{length}}
+\index{length@{length}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adca67cf018a9c20d42058fe4f20d86ae}{while}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}$<$= length(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}) \& strmatch(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}, \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}) \mbox{\hyperlink{doxywrite_8m_a7181c0778709a67d986e43ecb401ee37}{write\+String}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}},\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}); \mbox{\hyperlink{doxywrite_8m_ae6457931b43e823831f610a2e88be896}{idx2}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}) = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}); \mbox{\hyperlink{doxywrite_8m_a1c521aaba37442a288da8d0bc9763050}{write\+Int}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}},0); \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} = \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} + 1; \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{doxywrite_8m_ac4f222291b35e36cd98d52802df99371}{fwrite}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 0, \textquotesingle{}int8\textquotesingle{}); \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} $>$ length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a85ac42a71267deed070754e32ab80f78}\label{doxywrite_8m_a85ac42a71267deed070754e32ab80f78}} 
+\index{doxywrite.m@{doxywrite.m}!matrix@{matrix}}
+\index{matrix@{matrix}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{matrix()}{matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} DOCINFO writes \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} the sparse matrix (\begin{DoxyParamCaption}\item[{nbword \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}}}]{nbfile }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a9f638b71c78a5d5db77f660c71113ad6}\label{doxywrite_8m_a9f638b71c78a5d5db77f660c71113ad6}} 
+\index{doxywrite.m@{doxywrite.m}!mod@{mod}}
+\index{mod@{mod}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{mod()}{mod()}}
+{\footnotesize\ttfamily 4 -\/ mod(ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}} mod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{doxywrite_8m_a28199e094153afc4df01bff9158e1a97}\label{doxywrite_8m_a28199e094153afc4df01bff9158e1a97}} 
+\index{doxywrite.m@{doxywrite.m}!writeInt@{writeInt}}
+\index{writeInt@{writeInt}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{writeInt()}{writeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}} write\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_abd00226b8f341fb45f8ad1f4f98f8d44}\label{doxywrite_8m_abd00226b8f341fb45f8ad1f4f98f8d44}} 
+\index{doxywrite.m@{doxywrite.m}!writeInt@{writeInt}}
+\index{writeInt@{writeInt}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{writeInt()}{writeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily write\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxywrite_8m_ace7114e2121e8d0a58891f6e858647a1}{idx}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a1c521aaba37442a288da8d0bc9763050}\label{doxywrite_8m_a1c521aaba37442a288da8d0bc9763050}} 
+\index{doxywrite.m@{doxywrite.m}!writeInt@{writeInt}}
+\index{writeInt@{writeInt}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{writeInt()}{writeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily write\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxywrite_8m_aee412fe05680d610c995d3328dce7a8b}{idx3}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a16a557a4c23e267128b1b99d423da13e}\label{doxywrite_8m_a16a557a4c23e267128b1b99d423da13e}} 
+\index{doxywrite.m@{doxywrite.m}!writeInt@{writeInt}}
+\index{writeInt@{writeInt}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{writeInt()}{writeInt()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily index write\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{v(\mbox{\hyperlink{mfileparse_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a7948edaacfd80e903c28450e97ff8b4e}\label{doxywrite_8m_a7948edaacfd80e903c28450e97ff8b4e}} 
+\index{doxywrite.m@{doxywrite.m}!writeString@{writeString}}
+\index{writeString@{writeString}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{writeString()}{writeString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily write\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}, 1\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_a7181c0778709a67d986e43ecb401ee37}\label{doxywrite_8m_a7181c0778709a67d986e43ecb401ee37}} 
+\index{doxywrite.m@{doxywrite.m}!writeString@{writeString}}
+\index{writeString@{writeString}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{writeString()}{writeString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{m2html_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}{name}} write\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{,  }\item[{\mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}, 2\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{doxywrite_8m_aabaaf13403a55bf6ec385c6d201b4870}\label{doxywrite_8m_aabaaf13403a55bf6ec385c6d201b4870}} 
+\index{doxywrite.m@{doxywrite.m}!zeros@{zeros}}
+\index{zeros@{zeros}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{zeros()}{zeros()}}
+{\footnotesize\ttfamily 256 zeros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{doxywrite_8m_ae4c8c28548258d8f1a4434e3d86108a7}\label{doxywrite_8m_ae4c8c28548258d8f1a4434e3d86108a7}} 
+\index{doxywrite.m@{doxywrite.m}!break@{break}}
+\index{break@{break}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{break}{break}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adca67cf018a9c20d42058fe4f20d86ae}{while}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}$<$= \mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}) \& strmatch(\mbox{\hyperlink{doxysearch_8m_ad3eec3045c8c649a6e16895cc3d017c3}{s}}, \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}) \mbox{\hyperlink{doxywrite_8m_a7181c0778709a67d986e43ecb401ee37}{write\+String}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}},\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}); \mbox{\hyperlink{doxywrite_8m_ae6457931b43e823831f610a2e88be896}{idx2}}(\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}) = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}); \mbox{\hyperlink{doxywrite_8m_a1c521aaba37442a288da8d0bc9763050}{write\+Int}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}},0); \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} = \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} + 1; \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{doxywrite_8m_ac4f222291b35e36cd98d52802df99371}{fwrite}}(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}, 0, \textquotesingle{}int8\textquotesingle{}); \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} $>$ break}
+
+\mbox{\Hypertarget{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}\label{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}} 
+\index{doxywrite.m@{doxywrite.m}!counter@{counter}}
+\index{counter@{counter}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily counter = \mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(ia)}
+
+\mbox{\Hypertarget{doxywrite_8m_a7b9c3d619ad7365ec6434713e76142e8}\label{doxywrite_8m_a7b9c3d619ad7365ec6434713e76142e8}} 
+\index{doxywrite.m@{doxywrite.m}!fid@{fid}}
+\index{fid@{fid}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{fid}{fid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} fid == -\/1}
+
+\mbox{\Hypertarget{doxywrite_8m_a833a45a60cb4083d97d5f6946c9d8818}\label{doxywrite_8m_a833a45a60cb4083d97d5f6946c9d8818}} 
+\index{doxywrite.m@{doxywrite.m}!Foundation@{Foundation}}
+\index{Foundation@{Foundation}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{Foundation}{Foundation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} DOCINFO writes \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} the sparse \mbox{\hyperlink{mfileparse_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} indicating the frequency of occurence of word \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}} in \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} \mbox{\hyperlink{mfileparse_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}} \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} the \mbox{\hyperlink{doxyread_8m_a90435c7c125e093c927cd5a9cf5bbf15}{cell}} array (nbfile \mbox{\hyperlink{mwizard2_8m_a9336ebf25087d91c818ee6e9ec29f8c1}{x}} 2) containing the \mbox{\hyperlink{m2html_8m_afa8db1da610ff469dcb0f53540a97691}{list}} of urls \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} \mbox{\hyperlink{mfileparse_8m_ac34d01f53a4b233951da05e685751254}{names}} \% of each file. \% \% See \mbox{\hyperlink{m2html_8m_a0d03a64b2f35c4d2a0f5aa2d886ba4f7}{also}} DOXYREAD \% \mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} (C) 2003 Guillaume Flandin $<$Guillaume@artefact.\+tk$>$ \% \$Revision you can redistribute \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} or modify \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} under the terms of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} as published by the Free Software Foundation}
+
+\mbox{\Hypertarget{doxywrite_8m_a6f6ccfcf58b31cb6412107d9d5281426}\label{doxywrite_8m_a6f6ccfcf58b31cb6412107d9d5281426}} 
+\index{doxywrite.m@{doxywrite.m}!i@{i}}
+\index{i@{i}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily for i =1\+:pad}
+
+\mbox{\Hypertarget{doxywrite_8m_ae6457931b43e823831f610a2e88be896}\label{doxywrite_8m_ae6457931b43e823831f610a2e88be896}} 
+\index{doxywrite.m@{doxywrite.m}!idx2@{idx2}}
+\index{idx2@{idx2}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{idx2}{idx2}}
+{\footnotesize\ttfamily idx2 = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{zeros}}(1,\mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}))}
+
+\mbox{\Hypertarget{doxywrite_8m_aee412fe05680d610c995d3328dce7a8b}\label{doxywrite_8m_aee412fe05680d610c995d3328dce7a8b}} 
+\index{doxywrite.m@{doxywrite.m}!idx3@{idx3}}
+\index{idx3@{idx3}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{idx3}{idx3}}
+{\footnotesize\ttfamily idx3 = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{zeros}}(1,\mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}))}
+
+\mbox{\Hypertarget{doxywrite_8m_a71b0b9ee95c80a2b6bfface6fbc50742}\label{doxywrite_8m_a71b0b9ee95c80a2b6bfface6fbc50742}} 
+\index{doxywrite.m@{doxywrite.m}!idx4@{idx4}}
+\index{idx4@{idx4}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{idx4}{idx4}}
+{\footnotesize\ttfamily idx4 = \mbox{\hyperlink{mfileparse_8m_ad5508e8abff96d9f9f06cc1accc29fc4}{zeros}}(1,\mbox{\hyperlink{doxywrite_8m_a89c7e82c18ea3f023639b1149f2ff677}{length}}(\mbox{\hyperlink{doxysearch_8m_aef5b5c6c9115102450436087ed95b0ac}{docinfo}}))}
+
+\mbox{\Hypertarget{doxywrite_8m_ad3618412097151735f9acd692e15732a}\label{doxywrite_8m_ad3618412097151735f9acd692e15732a}} 
+\index{doxywrite.m@{doxywrite.m}!Inc@{Inc}}
+\index{Inc@{Inc}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{Inc}{Inc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} write to the Free Software \mbox{\hyperlink{doxywrite_8m_a833a45a60cb4083d97d5f6946c9d8818}{Foundation}} Inc}
+
+\mbox{\Hypertarget{doxywrite_8m_ac86694252f8dfdb19aaeadc4b7c342c6}\label{doxywrite_8m_ac86694252f8dfdb19aaeadc4b7c342c6}} 
+\index{doxywrite.m@{doxywrite.m}!j@{j}}
+\index{j@{j}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily for j}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=1:\mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}}}
+\DoxyCodeLine{        \mbox{\hyperlink{doxywrite_8m_abd00226b8f341fb45f8ad1f4f98f8d44}{writeInt}}(\mbox{\hyperlink{doxywrite_8m_a7b9c3d619ad7365ec6434713e76142e8}{fid}},ib(\mbox{\hyperlink{doxywrite_8m_ac86694252f8dfdb19aaeadc4b7c342c6}{j}}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxywrite_8m_a0cc6f7e9cccf037607e02af495a568c1}\label{doxywrite_8m_a0cc6f7e9cccf037607e02af495a568c1}} 
+\index{doxywrite.m@{doxywrite.m}!KW@{KW}}
+\index{KW@{KW}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{KW}{KW}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} KW}
+
+\mbox{\Hypertarget{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}\label{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}} 
+\index{doxywrite.m@{doxywrite.m}!License@{License}}
+\index{License@{License}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{License}{License}}
+{\footnotesize\ttfamily either version of the License}
+
+\mbox{\Hypertarget{doxywrite_8m_a13d2d3650326a2f5eee5736807c992b0}\label{doxywrite_8m_a13d2d3650326a2f5eee5736807c992b0}} 
+\index{doxywrite.m@{doxywrite.m}!m@{m}}
+\index{m@{m}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}} for m}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=1:\mbox{\hyperlink{doxywrite_8m_a61f7b3cbcedea4bae0c663c892d5d07f}{counter}}}
+\DoxyCodeLine{        \mbox{\hyperlink{doxywrite_8m_abd00226b8f341fb45f8ad1f4f98f8d44}{writeInt}}(\mbox{\hyperlink{doxywrite_8m_a7b9c3d619ad7365ec6434713e76142e8}{fid}},\mbox{\hyperlink{doxywrite_8m_a71b0b9ee95c80a2b6bfface6fbc50742}{idx4}}(ib(\mbox{\hyperlink{doxywrite_8m_a13d2d3650326a2f5eee5736807c992b0}{m}})))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}\label{doxywrite_8m_ae6cf43db481de26465fb7c527d5d985f}} 
+\index{doxywrite.m@{doxywrite.m}!not@{not}}
+\index{not@{not}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{not}{not}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} not}
+
+\mbox{\Hypertarget{doxywrite_8m_adf54215d760dbf0f9fe5627a39015333}\label{doxywrite_8m_adf54215d760dbf0f9fe5627a39015333}} 
+\index{doxywrite.m@{doxywrite.m}!pos@{pos}}
+\index{pos@{pos}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily pos = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}})}
+
+\mbox{\Hypertarget{doxywrite_8m_a66bb979da7a82fa2fc7a960265cb1b6c}\label{doxywrite_8m_a66bb979da7a82fa2fc7a960265cb1b6c}} 
+\index{doxywrite.m@{doxywrite.m}!pos2@{pos2}}
+\index{pos2@{pos2}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{pos2}{pos2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} pos2 = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}})}
+
+\mbox{\Hypertarget{doxywrite_8m_aa5e89842f4e8b345443fb99b0017bbbf}\label{doxywrite_8m_aa5e89842f4e8b345443fb99b0017bbbf}} 
+\index{doxywrite.m@{doxywrite.m}!pos3@{pos3}}
+\index{pos3@{pos3}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{pos3}{pos3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{m2html_8m_a23ce91334b64814befcac6563db68337}{freq}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} pos3 = ftell(\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}})}
+
+\mbox{\Hypertarget{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}\label{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}} 
+\index{doxywrite.m@{doxywrite.m}!program@{program}}
+\index{program@{program}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{program}{program}}
+{\footnotesize\ttfamily without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE See the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} for more details You should have received a copy of the GNU General Public \mbox{\hyperlink{doxywrite_8m_a355539e51bed3008068dfe985e226ab8}{License}} along with this program}
+
+\mbox{\Hypertarget{doxywrite_8m_a58defbf6fe556592007171f7a347f9d6}\label{doxywrite_8m_a58defbf6fe556592007171f7a347f9d6}} 
+\index{doxywrite.m@{doxywrite.m}!s@{s}}
+\index{s@{s}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adca67cf018a9c20d42058fe4f20d86ae}{while}} s = \mbox{\hyperlink{m2html_8m_aa0a4756ea06ac52324b7c9b9174247ec}{kw}}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}(1\+:2)}
+
+\mbox{\Hypertarget{doxywrite_8m_a53e96b08eeff08b914900cac9e4f23c0}\label{doxywrite_8m_a53e96b08eeff08b914900cac9e4f23c0}} 
+\index{doxywrite.m@{doxywrite.m}!STATINFO@{STATINFO}}
+\index{STATINFO@{STATINFO}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{STATINFO}{STATINFO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} STATINFO}
+
+\mbox{\Hypertarget{doxywrite_8m_ae2a91ce949e5bdf3fc60252199ce2a8f}\label{doxywrite_8m_ae2a91ce949e5bdf3fc60252199ce2a8f}} 
+\index{doxywrite.m@{doxywrite.m}!useful@{useful}}
+\index{useful@{useful}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{useful}{useful}}
+{\footnotesize\ttfamily either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be useful}
+
+\mbox{\Hypertarget{doxywrite_8m_abaa9e03fa09a5779d31cad764e04a830}\label{doxywrite_8m_abaa9e03fa09a5779d31cad764e04a830}} 
+\index{doxywrite.m@{doxywrite.m}!WARRANTY@{WARRANTY}}
+\index{WARRANTY@{WARRANTY}!doxywrite.m@{doxywrite.m}}
+\doxysubsubsection{\texorpdfstring{WARRANTY}{WARRANTY}}
+{\footnotesize\ttfamily either version of the or \mbox{\hyperlink{m2html_8m_a6a47cdfba3b596bbf2a5a250993a32b6}{any}} later version This \mbox{\hyperlink{doxywrite_8m_ad1fcf7d480c2fceaa3fc2635af62b648}{program}} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} distributed in the hope that \mbox{\hyperlink{mfileparse_8m_abe6ae68f2bb310ea30b1fe389e0418d6}{it}} will be but WITHOUT ANY WARRANTY}
+

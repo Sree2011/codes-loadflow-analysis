@@ -1,0 +1,94 @@
+\hypertarget{parse_8m}{}\doxysection{Ybus/matlab/m2html/@template/parse.m File Reference}
+\label{parse_8m}\index{Ybus/matlab/m2html/"@template/parse.m@{Ybus/matlab/m2html/"@template/parse.m}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{parse_8m_ab554da930eccd874d923ef22bf00e7b1}{iscellstr}} (handle) for \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} elseif \mbox{\hyperlink{parse_8m_a84b4c5fe083048eff95612d984570a06}{ischar}} (handle)\mbox{[}\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{parse_8m_a1fd86d9e08fe71c58ec2acf90c3de74d}{error}} (\textquotesingle{}\mbox{[}Template\mbox{]} Badly formed handle.\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{parse_8m_a17d17be2a7d02d2c7fb17536b7a2c3ac}{function}} \mbox{[}\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}, \mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}}\mbox{]}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{parse_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}
+\item 
+\mbox{\hyperlink{parse_8m_a5d704f2369c4b48869368b63fe9dd308}{tpl}} = \mbox{\hyperlink{mwizard2_8m_a2a8f491dbf59ec65aae8a4d92f05316f}{set}}(tpl,\textquotesingle{}var\textquotesingle{},target,\mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} elseif \mbox{\hyperlink{parse_8m_a8b7ace57681b2db39c199b22c437da99}{str}} = subst(\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},handle)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{parse_8m_a1fd86d9e08fe71c58ec2acf90c3de74d}\label{parse_8m_a1fd86d9e08fe71c58ec2acf90c3de74d}} 
+\index{parse.m@{parse.m}!error@{error}}
+\index{error@{error}!parse.m@{parse.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} error (\begin{DoxyParamCaption}\item[{\textquotesingle{} Badly formed handle.\textquotesingle{}}]{\mbox{[}\+Template\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{parse_8m_ab554da930eccd874d923ef22bf00e7b1}\label{parse_8m_ab554da930eccd874d923ef22bf00e7b1}} 
+\index{parse.m@{parse.m}!iscellstr@{iscellstr}}
+\index{iscellstr@{iscellstr}!parse.m@{parse.m}}
+\doxysubsubsection{\texorpdfstring{iscellstr()}{iscellstr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} iscellstr (\begin{DoxyParamCaption}\item[{handle}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{parse_8m_a84b4c5fe083048eff95612d984570a06}\label{parse_8m_a84b4c5fe083048eff95612d984570a06}} 
+\index{parse.m@{parse.m}!ischar@{ischar}}
+\index{ischar@{ischar}!parse.m@{parse.m}}
+\doxysubsubsection{\texorpdfstring{ischar()}{ischar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} elseif ischar (\begin{DoxyParamCaption}\item[{handle}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{parse_8m_a17d17be2a7d02d2c7fb17536b7a2c3ac}\label{parse_8m_a17d17be2a7d02d2c7fb17536b7a2c3ac}} 
+\index{parse.m@{parse.m}!function@{function}}
+\index{function@{function}!parse.m@{parse.m}}
+\doxysubsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily function\mbox{[}\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}, \mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{m2html_8m_a919111e5cdc0c361bf6171f92c241893}{parse}}(\mbox{\hyperlink{parse_8m_a5d704f2369c4b48869368b63fe9dd308}{tpl}},target,handle,append)}
+\DoxyCodeLine{\%TEMPLATE/PARSE Fill in replacement fields with the \textcolor{keyword}{class }properties}
+\DoxyCodeLine{\%  [TPL, STR] = PARSE(TPL,TARGET,HANDLE) fills in the replacement field}
+\DoxyCodeLine{\%  HANDLE \textcolor{keyword}{using} previously defined variables of \textcolor{keyword}{template} TPL \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} store}
+\DoxyCodeLine{\%  \mbox{\hyperlink{m2html_8m_a4786b82c5d1154f78cfc81bc76d5882c}{it}} in field TARGET. HANDLE can \mbox{\hyperlink{m2html_8m_a0d03a64b2f35c4d2a0f5aa2d886ba4f7}{also}} be a \mbox{\hyperlink{m2html_8m_a04bb86d4a7721a59ff613b69f959dbf8}{cell}} array of field \mbox{\hyperlink{m2html_8m_a7d9df0b08f5a808d295f7a8335151070}{names}}.}
+\DoxyCodeLine{\%  Output \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} \mbox{\hyperlink{m2html_8m_a0d03a64b2f35c4d2a0f5aa2d886ba4f7}{also}} provided in output STR (content of TARGET).}
+\DoxyCodeLine{\%  [TPL, STR] = PARSE(TPL,TARGET,HANDLE,APPEND) allows to specify \textcolor{keywordflow}{if}}
+\DoxyCodeLine{\%  TARGET field \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} reseted before being filled or \textcolor{keywordflow}{if} \textcolor{keyword}{new} content \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}}}
+\DoxyCodeLine{\%  appended to the previous one.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\%  \mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} (C) 2003 Guillaume Flandin <Guillaume@artefact.tk>}
+\DoxyCodeLine{\%  \mbox{\hyperlink{strtok_8m_ac386dc3a6f038e347db2e3018aab2929}{\$Revision}}: 1.0 \$Date: 2003/05/05 22:19:51 \$}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{parse_8m_a1fd86d9e08fe71c58ec2acf90c3de74d}{error}}(nargchk(3,4,\mbox{\hyperlink{parse_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{parse_8m_aafbb9d50e573e4009d0650c645566ddd}\label{parse_8m_aafbb9d50e573e4009d0650c645566ddd}} 
+\index{parse.m@{parse.m}!nargin@{nargin}}
+\index{nargin@{nargin}!parse.m@{parse.m}}
+\doxysubsubsection{\texorpdfstring{nargin}{nargin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} nargin}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{== 3}
+\DoxyCodeLine{    append = 0}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{parse_8m_a8b7ace57681b2db39c199b22c437da99}\label{parse_8m_a8b7ace57681b2db39c199b22c437da99}} 
+\index{parse.m@{parse.m}!str@{str}}
+\index{str@{str}!parse.m@{parse.m}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} elseif str = subst(\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},handle)}
+
+\mbox{\Hypertarget{parse_8m_a5d704f2369c4b48869368b63fe9dd308}\label{parse_8m_a5d704f2369c4b48869368b63fe9dd308}} 
+\index{parse.m@{parse.m}!tpl@{tpl}}
+\index{tpl@{tpl}!parse.m@{parse.m}}
+\doxysubsubsection{\texorpdfstring{tpl}{tpl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} tpl = \mbox{\hyperlink{mwizard2_8m_a2a8f491dbf59ec65aae8a4d92f05316f}{set}}(tpl,\textquotesingle{}var\textquotesingle{},target,\mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}})}
+
