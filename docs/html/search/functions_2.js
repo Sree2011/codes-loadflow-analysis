@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['display_5fadmittance_5fmatrix_50',['display_admittance_matrix',['../Ybus__matlab_8m.html#afeba875cb0d2ddeb1e880d719fdd4d54',1,'Ybus_matlab.m']]],
-  ['divide_51',['divide',['../classComplex.html#a40bae3a87aff78dafac59495bf43ea36',1,'Complex']]]
+  ['buildwindow_370',['buildWindow',['../mwizard_8m.html#a5a81a8e965d2de5bb3bb134f54db6c21',1,'buildWindow(h):&#160;mwizard.m'],['../mwizard2_8m.html#a5a81a8e965d2de5bb3bb134f54db6c21',1,'buildWindow(h):&#160;mwizard2.m']]]
 ];

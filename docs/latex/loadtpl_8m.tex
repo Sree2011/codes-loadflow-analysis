@@ -1,0 +1,76 @@
+\hypertarget{loadtpl_8m}{}\doxysection{Ybus/matlab/m2html/@template/private/loadtpl.m File Reference}
+\label{loadtpl_8m}\index{Ybus/matlab/m2html/"@template/private/loadtpl.m@{Ybus/matlab/m2html/"@template/private/loadtpl.m}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{loadtpl_8m_abbe1457df51cfc9c215385723cbbfe38}{isempty}} (\mbox{\hyperlink{doxysearch_8m_aa1a517e3e42b3d109bc480c74e3a655c}{ind}}) \mbox{\hyperlink{openfile_8m_a679393fa3ac757c0912ace6f0dfa5218}{error}}(\textquotesingle{}\mbox{[}Template\mbox{]} No such \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} handle.\textquotesingle{})
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{loadtpl_8m_acaa60182295666b533a9e449d3aafec1}{$\sim$isempty}} (errmsg) \mbox{\hyperlink{openfile_8m_a679393fa3ac757c0912ace6f0dfa5218}{error}}(\mbox{\hyperlink{searchindex_8m_adf0cd8db3ce9bb02d4b5e45ca0db4cda}{sprintf}}(\textquotesingle{}Cannot open \mbox{\hyperlink{mwizard2_8m_a9d7ee12dc5e6485592edcb9dff1f83ef}{template}} \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} \%s.\textquotesingle{}
+\item 
+\mbox{\hyperlink{loadtpl_8m_a5e769bbbabcaddc548203741c7100228}{fclose}} (\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{loadtpl_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{loadtpl_8m_acd72f927e27276109b3dbbc3d65918d7}{ind}} = \mbox{\hyperlink{doxyread_8m_a924ea637e2d5f172e5c87e9bbc64a044}{find}}(\mbox{\hyperlink{m2html_8m_a5a57015e5ac62b11de60218e7ba57591}{ismember}}(\mbox{\hyperlink{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}{tpl.\+handles}},handle))
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{loadtpl_8m_af3723aa817dbb65282d5e1db81f08ad8}{filename}} = \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{tpl.\+file}}\{\mbox{\hyperlink{doxysearch_8m_aa1a517e3e42b3d109bc480c74e3a655c}{ind}}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{loadtpl_8m_a5e769bbbabcaddc548203741c7100228}\label{loadtpl_8m_a5e769bbbabcaddc548203741c7100228}} 
+\index{loadtpl.m@{loadtpl.m}!fclose@{fclose}}
+\index{fclose@{fclose}!loadtpl.m@{loadtpl.m}}
+\doxysubsubsection{\texorpdfstring{fclose()}{fclose()}}
+{\footnotesize\ttfamily fclose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{openfile_8m_a144f0e4f8d81c39e3fbcc80d54d8fbcb}{fid}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{loadtpl_8m_abbe1457df51cfc9c215385723cbbfe38}\label{loadtpl_8m_abbe1457df51cfc9c215385723cbbfe38}} 
+\index{loadtpl.m@{loadtpl.m}!isempty@{isempty}}
+\index{isempty@{isempty}!loadtpl.m@{loadtpl.m}}
+\doxysubsubsection{\texorpdfstring{isempty()}{isempty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} isempty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{doxysearch_8m_aa1a517e3e42b3d109bc480c74e3a655c}{ind}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{loadtpl_8m_acaa60182295666b533a9e449d3aafec1}\label{loadtpl_8m_acaa60182295666b533a9e449d3aafec1}} 
+\index{loadtpl.m@{loadtpl.m}!````~isempty@{$\sim$isempty}}
+\index{````~isempty@{$\sim$isempty}!loadtpl.m@{loadtpl.m}}
+\doxysubsubsection{\texorpdfstring{$\sim$isempty()}{~isempty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} $\sim$\mbox{\hyperlink{splitcode_8m_a656de3972b053a7a727cd58ea04f79fe}{isempty}} (\begin{DoxyParamCaption}\item[{errmsg}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{loadtpl_8m_af3723aa817dbb65282d5e1db81f08ad8}\label{loadtpl_8m_af3723aa817dbb65282d5e1db81f08ad8}} 
+\index{loadtpl.m@{loadtpl.m}!filename@{filename}}
+\index{filename@{filename}!loadtpl.m@{loadtpl.m}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} filename = \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{tpl.\+file}}\{\mbox{\hyperlink{doxysearch_8m_aa1a517e3e42b3d109bc480c74e3a655c}{ind}}\}}
+
+\mbox{\Hypertarget{loadtpl_8m_acd72f927e27276109b3dbbc3d65918d7}\label{loadtpl_8m_acd72f927e27276109b3dbbc3d65918d7}} 
+\index{loadtpl.m@{loadtpl.m}!ind@{ind}}
+\index{ind@{ind}!loadtpl.m@{loadtpl.m}}
+\doxysubsubsection{\texorpdfstring{ind}{ind}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} Callers ind = \mbox{\hyperlink{doxyread_8m_a924ea637e2d5f172e5c87e9bbc64a044}{find}}(\mbox{\hyperlink{m2html_8m_a5a57015e5ac62b11de60218e7ba57591}{ismember}}(\mbox{\hyperlink{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}{tpl.\+handles}},handle))}
+
+\mbox{\Hypertarget{loadtpl_8m_a22781e832c2ce607fb3079ebf743e8e2}\label{loadtpl_8m_a22781e832c2ce607fb3079ebf743e8e2}} 
+\index{loadtpl.m@{loadtpl.m}!tpl@{tpl}}
+\index{tpl@{tpl}!loadtpl.m@{loadtpl.m}}
+\doxysubsubsection{\texorpdfstring{tpl}{tpl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} tpl}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= loadtpl(\mbox{\hyperlink{loadtpl_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},handle)}
+\DoxyCodeLine{\%TEMPLATE/LOADTPL Read a \textcolor{keyword}{template} from \mbox{\hyperlink{mwizard_8m_a07d72e5190d76f3cfc41ea900bf8e98c}{file}}}
+\DoxyCodeLine{\%  TPL = LOADTPL(TPL,HANDLE) read the \textcolor{keyword}{template} \mbox{\hyperlink{mwizard_8m_a07d72e5190d76f3cfc41ea900bf8e98c}{file}} associated with the}
+\DoxyCodeLine{\%  handle HANDLE in the \textcolor{keyword}{template} TPL \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} store \mbox{\hyperlink{m2html_8m_a4786b82c5d1154f78cfc81bc76d5882c}{it}} in the variable HANDLE.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\%  \mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} (C) 2003 Guillaume Flandin <Guillaume@artefact.tk>}
+\DoxyCodeLine{\%  \mbox{\hyperlink{strtok_8m_ac386dc3a6f038e347db2e3018aab2929}{\$Revision}}: 1.0 \$Date: 2003/05/05 22:19:51 \$}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{if} \mbox{\hyperlink{loadtpl_8m_acaa60182295666b533a9e449d3aafec1}{\string~isempty}}(\textcolor{keyword}{get}(\mbox{\hyperlink{loadtpl_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},\textcolor{stringliteral}{'var'},handle))}
+\DoxyCodeLine{    \textcolor{keywordflow}{return}}
+
+\end{DoxyCode}

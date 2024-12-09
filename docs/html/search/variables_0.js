@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['imaginary_65',['imaginary',['../classComplex.html#a8dffa50f84dbc9d206dbbc7416f16e17',1,'Complex']]]
+  ['_24revision_494',['$Revision',['../strtok_8m.html#ac386dc3a6f038e347db2e3018aab2929',1,'strtok.m']]]
 ];

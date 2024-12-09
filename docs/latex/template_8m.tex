@@ -1,0 +1,35 @@
+\hypertarget{template_8m}{}\doxysection{Ybus/matlab/m2html/@template/template.m File Reference}
+\label{template_8m}\index{Ybus/matlab/m2html/"@template/template.m@{Ybus/matlab/m2html/"@template/template.m}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{template_8m_a2646bb9ee9b5880a5375ffdd82c8aea0}{tpl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{template_8m_a2646bb9ee9b5880a5375ffdd82c8aea0}\label{template_8m_a2646bb9ee9b5880a5375ffdd82c8aea0}} 
+\index{template.m@{template.m}!tpl@{tpl}}
+\index{tpl@{tpl}!template.m@{template.m}}
+\doxysubsubsection{\texorpdfstring{tpl}{tpl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} tpl}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{template}(root,unknowns)}
+\DoxyCodeLine{\%TEMPLATE HTML Template Toolbox Constructor}
+\DoxyCodeLine{\%  TPL = TEMPLATE returns a \textcolor{keyword}{template} \textcolor{keywordtype}{object} \textcolor{keyword}{using} \textcolor{keywordflow}{default} values \textcolor{keywordflow}{for} the}
+\DoxyCodeLine{\%  root path of the \textcolor{keyword}{template} files (\textcolor{charliteral}{'.'}) \mbox{\hyperlink{finish_8m_aff9d9b09283f8ae3f7ec279baed02d3a}{and}} \textcolor{keywordflow}{for} the way of handling unknown}
+\DoxyCodeLine{\%  replacement fields (\textcolor{keywordflow}{default} \mbox{\hyperlink{m2html_8m_a9ce53fc72aeb997a01b3173c4c487463}{is}} \textcolor{stringliteral}{'remove'}).}
+\DoxyCodeLine{\%  TPL = TEMPLATE(ROOT) allows to specify the root path of the \textcolor{keyword}{template} files}
+\DoxyCodeLine{\%  that will then be provided relative to \textcolor{keyword}{this} path.}
+\DoxyCodeLine{\%  TPL = TEMPLATE(ROOT,UNKNOWNS) \mbox{\hyperlink{m2html_8m_a0d03a64b2f35c4d2a0f5aa2d886ba4f7}{also}} allows to specify the strategy to apply}
+\DoxyCodeLine{\%  to unkown fields. UNKNOWNS may be:}
+\DoxyCodeLine{\%    * \textcolor{stringliteral}{'keep'} to \textcolor{keywordflow}{do} nothing}
+\DoxyCodeLine{\%    * \textcolor{stringliteral}{'remove'} to \textcolor{keyword}{remove} all undefined fields}
+\DoxyCodeLine{\%    * \textcolor{stringliteral}{'comment'} to replace undefined fields by a \mbox{\hyperlink{mwizard_8m_a769376f0032f014e94a804bce35ccbd5}{warning}} HTML \mbox{\hyperlink{m2html_8m_a5f5b7297a5660934a8e1bc9469064ed8}{comment}}.}
+\DoxyCodeLine{\%}
+\DoxyCodeLine{\%  The \textcolor{keyword}{template} \textcolor{keyword}{class }allows you to keep your HTML code in some external }
+\DoxyCodeLine{\%  files which are completely free of Matlab code}
+
+\end{DoxyCode}

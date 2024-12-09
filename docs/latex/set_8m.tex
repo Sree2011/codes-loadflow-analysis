@@ -1,0 +1,269 @@
+\hypertarget{set_8m}{}\doxysection{Ybus/matlab/m2html/@template/set.m File Reference}
+\label{set_8m}\index{Ybus/matlab/m2html/"@template/set.m@{Ybus/matlab/m2html/"@template/set.m}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{m2html_8m_a0fa74fd53381aafa5ce11bdae65ad680}{switch}} \mbox{\hyperlink{set_8m_a64fbc01489370fce80154aa7e02b403d}{lower}} (action) \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} \textquotesingle{}root\textquotesingle{} \mbox{\hyperlink{openfile_8m_a679393fa3ac757c0912ace6f0dfa5218}{error}}(nargchk(3
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{set_8m_a99eac9cf2aa0388c11d19f4a438f7e7e}{exist}} (\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\}, \textquotesingle{}\mbox{\hyperlink{m2html_8m_a96a994f7416199077f5fd5d911088630}{dir}}\textquotesingle{}) tpl.\+root
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{set_8m_ac11eaf8b0e724d846b3b0849be7a3568}{error}} (\textquotesingle{}\mbox{[}Template\mbox{]} No such directory.\textquotesingle{})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} unknowns \mbox{\hyperlink{set_8m_ac3a9398150e26f51682fa5b5af628e16}{error}} (nargchk(3, 3, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}))
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{set_8m_a5313b45fd7b64ac71528bdaf64e48a57}{ismember}} (\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\},\{ \textquotesingle{}remove\textquotesingle{} \textquotesingle{}\mbox{\hyperlink{splitcode_8m_a919e3d49c3857c21e113599ed4df6966}{comment}}\textquotesingle{} \textquotesingle{}keep\textquotesingle{}\}) tpl.\+unknowns
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{set_8m_a70cd82807ad95e38b1258f19e651da1e}{error}} (\textquotesingle{}\mbox{[}Template\mbox{]} Unknowns\+:\textquotesingle{} \textquotesingle{}remove\textquotesingle{}\textquotesingle{}, \textquotesingle{} \textquotesingle{}\mbox{\hyperlink{splitcode_8m_a919e3d49c3857c21e113599ed4df6966}{comment}}\textquotesingle{}\textquotesingle{} or \textquotesingle{} \textquotesingle{}keep\textquotesingle{}\textquotesingle{}.\textquotesingle{})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} \mbox{\hyperlink{set_8m_a4ba77a5456d3fc1a643adbed577dcfa5}{error}} (nargchk(4, 4, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}))
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{set_8m_acf4b27e0a41ab2b779ba795e5dc61c87}{iscellstr}} (\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\}) for \mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{set_8m_a2d75cdaaa9ef64beafaad5e749e15edf}{isempty}} (\mbox{\hyperlink{doxysearch_8m_aa1a517e3e42b3d109bc480c74e3a655c}{ind}}) \mbox{\hyperlink{mwizard2_8m_ac43bc603dfb3c49e15db8ef3c46f4316}{tpl.\+handles}}
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{set_8m_a3748c569ca5a8cd37ab8afa78d3332a6}{strcmp}} (\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}(1), filesep) \%-\/ absolute path(Unix) \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{tpl.\+file}} = \mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(tpl.\+root,\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\})
+\item 
+id \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} ()
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} elseif \mbox{\hyperlink{set_8m_a47e251482add40add226671d758bb8dd}{ischar}} (\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\}) \mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}}
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{set_8m_ad54782bf29d018b1fc648f30d6df03fa}{error}} (\textquotesingle{}\mbox{[}Template\mbox{]} Badly formed handles.\textquotesingle{})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} block \mbox{\hyperlink{set_8m_a30a90e726099d511f6947cbfc0fe4049}{error}} (nargchk(4, 5, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}))
+\item 
+keep the same number(1 \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}} ()
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{set_8m_afcd64de3069ba6c197d5a7bd037c5555}{$\sim$isempty}} (b)
+\item 
+\mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}}, reg, \mbox{[}\textquotesingle{}\{\textquotesingle{} \mbox{\hyperlink{m2html_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}{name}} \textquotesingle{}\}\textquotesingle{}\mbox{]} \mbox{\hyperlink{set_8m_af54d752c9c5ea2cafc7f2ba786deba18}{regexprep}} ()
+\item 
+\mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} \mbox{\hyperlink{set_8m_aa1e8a3e4f76c09e18b4af86e431e62c0}{$\sim$isempty}} (\mbox{\hyperlink{set_8m_a4133abb9d8ce18d56884a72185d6b107}{indbegin}}) \&$\sim$\mbox{\hyperlink{splitcode_8m_a656de3972b053a7a727cd58ea04f79fe}{isempty}}(\mbox{\hyperlink{set_8m_aac99908b6e0abe6194b1a1d4746feed1}{indend}}) \mbox{\hyperlink{set_8m_afe88e062d4f1112d55397689ab6bce7b}{blk}}
+\item 
+\mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} var \mbox{\hyperlink{set_8m_a46173d1838546b333cebb36991d70cee}{error}} (nargchk(3, 4, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}))
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{set_8m_a68917e7c68b48d9068c59973f122a91a}{error}} (\textquotesingle{}\mbox{[}Template\mbox{]} Badly formed variable names.\textquotesingle{})
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} otherwise \mbox{\hyperlink{set_8m_a88915d67ca670a098ed2f42d396e17fe}{error}} (\textquotesingle{}\mbox{[}Template\mbox{]} Unknown action to perform.\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strtok_8m_adb64e37b88db6ba4d1d18de6feb8959a}{function}} \mbox{\hyperlink{set_8m_afde86acb29d04ca7875efebcb9f68bba}{tpl}}
+\item 
+\mbox{\hyperlink{m2html_8m_a0fa74fd53381aafa5ce11bdae65ad680}{switch}} \mbox{\hyperlink{set_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{set_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}{name}} = \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{3\}
+\item 
+\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}} = get(\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},\textquotesingle{}var\textquotesingle{},\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\})
+\item 
+\mbox{\hyperlink{set_8m_afe88e062d4f1112d55397689ab6bce7b}{blk}} = \textquotesingle{}\textquotesingle{}
+\item 
+WIHTOUT REGEXP \mbox{\hyperlink{set_8m_a4133abb9d8ce18d56884a72185d6b107}{indbegin}} = \mbox{\hyperlink{splitcode_8m_a0460254cd3d3faf361d7180cc963a854}{findstr}}(\mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}},\mbox{[}\textquotesingle{}$<$!-\/-\/ BEGIN \textquotesingle{} \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\} \textquotesingle{} -\/-\/$>$\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{set_8m_aac99908b6e0abe6194b1a1d4746feed1}{indend}} = \mbox{\hyperlink{splitcode_8m_a0460254cd3d3faf361d7180cc963a854}{findstr}}(\mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}},\mbox{[}\textquotesingle{}$<$!-\/-\/ END \textquotesingle{} \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\} \textquotesingle{} -\/-\/$>$\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}} \mbox{\hyperlink{set_8m_abd5060c0b6a1ac9860ab34b30b0eca26}{varvals}} \{\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}}+1\} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{set_8m_ad54782bf29d018b1fc648f30d6df03fa}\label{set_8m_ad54782bf29d018b1fc648f30d6df03fa}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} error (\begin{DoxyParamCaption}\item[{\textquotesingle{} Badly formed handles.\textquotesingle{}}]{\mbox{[}\+Template\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a68917e7c68b48d9068c59973f122a91a}\label{set_8m_a68917e7c68b48d9068c59973f122a91a}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} error (\begin{DoxyParamCaption}\item[{\textquotesingle{} Badly formed variable names.\textquotesingle{}}]{\mbox{[}\+Template\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_ac11eaf8b0e724d846b3b0849be7a3568}\label{set_8m_ac11eaf8b0e724d846b3b0849be7a3568}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} error (\begin{DoxyParamCaption}\item[{\textquotesingle{} No such directory.\textquotesingle{}}]{\mbox{[}\+Template\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a88915d67ca670a098ed2f42d396e17fe}\label{set_8m_a88915d67ca670a098ed2f42d396e17fe}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} otherwise error (\begin{DoxyParamCaption}\item[{\textquotesingle{} Unknown action to perform.\textquotesingle{}}]{\mbox{[}\+Template\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a70cd82807ad95e38b1258f19e651da1e}\label{set_8m_a70cd82807ad95e38b1258f19e651da1e}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} error (\begin{DoxyParamCaption}\item[{\textquotesingle{} Unknowns\+:\textquotesingle{} \textquotesingle{}remove\textquotesingle{}\textquotesingle{}}]{\mbox{[}\+Template\mbox{]},  }\item[{\textquotesingle{} \textquotesingle{}\mbox{\hyperlink{splitcode_8m_a919e3d49c3857c21e113599ed4df6966}{comment}}\textquotesingle{}\textquotesingle{} or \textquotesingle{} \textquotesingle{}keep\textquotesingle{}\textquotesingle{}.\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_ac3a9398150e26f51682fa5b5af628e16}\label{set_8m_ac3a9398150e26f51682fa5b5af628e16}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} unknowns error (\begin{DoxyParamCaption}\item[{nargchk(3, 3, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a46173d1838546b333cebb36991d70cee}\label{set_8m_a46173d1838546b333cebb36991d70cee}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} var error (\begin{DoxyParamCaption}\item[{nargchk(3, 4, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a4ba77a5456d3fc1a643adbed577dcfa5}\label{set_8m_a4ba77a5456d3fc1a643adbed577dcfa5}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} \mbox{\hyperlink{set_8m_af6edcc21e2e3f6530be63e7810962dd3}{file}} error (\begin{DoxyParamCaption}\item[{nargchk(4, 4, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a30a90e726099d511f6947cbfc0fe4049}\label{set_8m_a30a90e726099d511f6947cbfc0fe4049}} 
+\index{set.m@{set.m}!error@{error}}
+\index{error@{error}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{m2html_8m_a97ee6abe7d21ae63d3399f62a2abd639}{case}} block error (\begin{DoxyParamCaption}\item[{nargchk(4, 5, \mbox{\hyperlink{searchindex_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a99eac9cf2aa0388c11d19f4a438f7e7e}\label{set_8m_a99eac9cf2aa0388c11d19f4a438f7e7e}} 
+\index{set.m@{set.m}!exist@{exist}}
+\index{exist@{exist}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{exist()}{exist()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} exist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\}}]{,  }\item[{\textquotesingle{}\mbox{\hyperlink{m2html_8m_a96a994f7416199077f5fd5d911088630}{dir}}\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_af6edcc21e2e3f6530be63e7810962dd3}\label{set_8m_af6edcc21e2e3f6530be63e7810962dd3}} 
+\index{set.m@{set.m}!file@{file}}
+\index{file@{file}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily id file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{set_8m_acf4b27e0a41ab2b779ba795e5dc61c87}\label{set_8m_acf4b27e0a41ab2b779ba795e5dc61c87}} 
+\index{set.m@{set.m}!iscellstr@{iscellstr}}
+\index{iscellstr@{iscellstr}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{iscellstr()}{iscellstr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} iscellstr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a47e251482add40add226671d758bb8dd}\label{set_8m_a47e251482add40add226671d758bb8dd}} 
+\index{set.m@{set.m}!ischar@{ischar}}
+\index{ischar@{ischar}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{ischar()}{ischar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} elseif ischar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a2d75cdaaa9ef64beafaad5e749e15edf}\label{set_8m_a2d75cdaaa9ef64beafaad5e749e15edf}} 
+\index{set.m@{set.m}!isempty@{isempty}}
+\index{isempty@{isempty}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{isempty()}{isempty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} isempty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{doxysearch_8m_aa1a517e3e42b3d109bc480c74e3a655c}{ind}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a5313b45fd7b64ac71528bdaf64e48a57}\label{set_8m_a5313b45fd7b64ac71528bdaf64e48a57}} 
+\index{set.m@{set.m}!ismember@{ismember}}
+\index{ismember@{ismember}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{ismember()}{ismember()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} ismember (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\}}]{,  }\item[{\{ \textquotesingle{}remove\textquotesingle{} \textquotesingle{}\mbox{\hyperlink{splitcode_8m_a919e3d49c3857c21e113599ed4df6966}{comment}}\textquotesingle{} \textquotesingle{}keep\textquotesingle{}\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_a64fbc01489370fce80154aa7e02b403d}\label{set_8m_a64fbc01489370fce80154aa7e02b403d}} 
+\index{set.m@{set.m}!lower@{lower}}
+\index{lower@{lower}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{lower()}{lower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{m2html_8m_a0fa74fd53381aafa5ce11bdae65ad680}{switch}} lower (\begin{DoxyParamCaption}\item[{action}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_af54d752c9c5ea2cafc7f2ba786deba18}\label{set_8m_af54d752c9c5ea2cafc7f2ba786deba18}} 
+\index{set.m@{set.m}!regexprep@{regexprep}}
+\index{regexprep@{regexprep}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{regexprep()}{regexprep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}},reg,\mbox{[}\textquotesingle{}\{\textquotesingle{} \mbox{\hyperlink{m2html_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}{name}} \textquotesingle{}\}\textquotesingle{}\mbox{]} regexprep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{set_8m_a3748c569ca5a8cd37ab8afa78d3332a6}\label{set_8m_a3748c569ca5a8cd37ab8afa78d3332a6}} 
+\index{set.m@{set.m}!strcmp@{strcmp}}
+\index{strcmp@{strcmp}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{strcmp()}{strcmp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} strcmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\}}]{1,  }\item[{filesep}]{ }\end{DoxyParamCaption}) = \mbox{\hyperlink{mwizard2_8m_a0b7343adcabca567ecdf26640cd20a35}{fullfile}}(tpl.\+root,\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\}\{\mbox{\hyperlink{mwizard2_8m_aa200a56c0e53f7b120fd4993eb1e921c}{i}}\})}
+
+\mbox{\Hypertarget{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}\label{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}} 
+\index{set.m@{set.m}!varargin@{varargin}}
+\index{varargin@{varargin}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{varargin()}{varargin()}}
+{\footnotesize\ttfamily $\ast$ varargin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{set_8m_afcd64de3069ba6c197d5a7bd037c5555}\label{set_8m_afcd64de3069ba6c197d5a7bd037c5555}} 
+\index{set.m@{set.m}!````~isempty@{$\sim$isempty}}
+\index{````~isempty@{$\sim$isempty}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{$\sim$isempty()}{~isempty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} $\sim$\mbox{\hyperlink{splitcode_8m_a656de3972b053a7a727cd58ea04f79fe}{isempty}} (\begin{DoxyParamCaption}\item[{b}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{set_8m_aa1e8a3e4f76c09e18b4af86e431e62c0}\label{set_8m_aa1e8a3e4f76c09e18b4af86e431e62c0}} 
+\index{set.m@{set.m}!````~isempty@{$\sim$isempty}}
+\index{````~isempty@{$\sim$isempty}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{$\sim$isempty()}{~isempty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} $\sim$\mbox{\hyperlink{splitcode_8m_a656de3972b053a7a727cd58ea04f79fe}{isempty}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{set_8m_a4133abb9d8ce18d56884a72185d6b107}{indbegin}}}]{ }\end{DoxyParamCaption}) \&}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{set_8m_afe88e062d4f1112d55397689ab6bce7b}\label{set_8m_afe88e062d4f1112d55397689ab6bce7b}} 
+\index{set.m@{set.m}!blk@{blk}}
+\index{blk@{blk}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{blk}{blk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} blk = \textquotesingle{}\textquotesingle{}}
+
+\mbox{\Hypertarget{set_8m_a4133abb9d8ce18d56884a72185d6b107}\label{set_8m_a4133abb9d8ce18d56884a72185d6b107}} 
+\index{set.m@{set.m}!indbegin@{indbegin}}
+\index{indbegin@{indbegin}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{indbegin}{indbegin}}
+{\footnotesize\ttfamily WIHTOUT REGEXP indbegin = \mbox{\hyperlink{splitcode_8m_a0460254cd3d3faf361d7180cc963a854}{findstr}}(\mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}},\mbox{[}\textquotesingle{}$<$!-\/-\/ BEGIN \textquotesingle{} \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\} \textquotesingle{} -\/-\/$>$\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{set_8m_aac99908b6e0abe6194b1a1d4746feed1}\label{set_8m_aac99908b6e0abe6194b1a1d4746feed1}} 
+\index{set.m@{set.m}!indend@{indend}}
+\index{indend@{indend}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{indend}{indend}}
+{\footnotesize\ttfamily indend = \mbox{\hyperlink{splitcode_8m_a0460254cd3d3faf361d7180cc963a854}{findstr}}(\mbox{\hyperlink{set_8m_a4b99ff73a8a869319570237b5c57ab03}{str}},\mbox{[}\textquotesingle{}$<$!-\/-\/ END \textquotesingle{} \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\} \textquotesingle{} -\/-\/$>$\textquotesingle{}\mbox{]})}
+
+\mbox{\Hypertarget{set_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}\label{set_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}} 
+\index{set.m@{set.m}!name@{name}}
+\index{name@{name}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} name = \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{3\}}
+
+\mbox{\Hypertarget{set_8m_aafbb9d50e573e4009d0650c645566ddd}\label{set_8m_aafbb9d50e573e4009d0650c645566ddd}} 
+\index{set.m@{set.m}!nargin@{nargin}}
+\index{nargin@{nargin}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{nargin}{nargin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{strtok_8m_ad6fec9dd0d554f19d22d8209144dab1b}{if}} nargin}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{== 4}
+\DoxyCodeLine{            \mbox{\hyperlink{set_8m_abdc1dcc6fed70c14f9b5ae237e486f4e}{name}} = \mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{2\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{set_8m_a4b99ff73a8a869319570237b5c57ab03}\label{set_8m_a4b99ff73a8a869319570237b5c57ab03}} 
+\index{set.m@{set.m}!str@{str}}
+\index{str@{str}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily str = get(\mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}},\textquotesingle{}var\textquotesingle{},\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}}\{1\})}
+
+\mbox{\Hypertarget{set_8m_afde86acb29d04ca7875efebcb9f68bba}\label{set_8m_afde86acb29d04ca7875efebcb9f68bba}} 
+\index{set.m@{set.m}!tpl@{tpl}}
+\index{tpl@{tpl}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{tpl}{tpl}}
+{\footnotesize\ttfamily tpl}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{set}(\mbox{\hyperlink{set_8m_afde86acb29d04ca7875efebcb9f68bba}{tpl}},action,\mbox{\hyperlink{set_8m_aeaebe6fb8b321d29b8250db2a3d43c0c}{varargin}})}
+\DoxyCodeLine{\%TEMPLATE/SET Edit data stored in a Template \textcolor{keywordtype}{object}}
+\DoxyCodeLine{\%  TPL = SET(TPL,ACTION,VARARGIN)}
+\DoxyCodeLine{\%     ACTION \textcolor{stringliteral}{'root'}}
+\DoxyCodeLine{\%     ACTION \textcolor{stringliteral}{'unknowns'}}
+\DoxyCodeLine{\%     ACTION \textcolor{stringliteral}{'file'}}
+\DoxyCodeLine{\%     ACTION \textcolor{stringliteral}{'block'}}
+\DoxyCodeLine{\%     ACTION \textcolor{stringliteral}{'var'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\%  \mbox{\hyperlink{mexexts_8m_a6d19623498db800ad124adf71fc6025b}{Copyright}} (C) 2003 Guillaume Flandin <Guillaume@artefact.tk>}
+\DoxyCodeLine{\%  \mbox{\hyperlink{strtok_8m_ac386dc3a6f038e347db2e3018aab2929}{\$Revision}}: 1.0 \$Date: 2003/05/05 22:19:51 \$}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{set_8m_ac11eaf8b0e724d846b3b0849be7a3568}{error}}(nargchk(3,5,\mbox{\hyperlink{set_8m_aafbb9d50e573e4009d0650c645566ddd}{nargin}}))}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{set_8m_abd5060c0b6a1ac9860ab34b30b0eca26}\label{set_8m_abd5060c0b6a1ac9860ab34b30b0eca26}} 
+\index{set.m@{set.m}!varvals@{varvals}}
+\index{varvals@{varvals}!set.m@{set.m}}
+\doxysubsubsection{\texorpdfstring{varvals}{varvals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}} \mbox{\hyperlink{splitcode_8m_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{m2html_8m_a22781e832c2ce607fb3079ebf743e8e2}{tpl}} varvals \{\mbox{\hyperlink{mfileparse_8m_a4061727d992682bbc71661cbf3c7abcf}{end}}+1\} = \textquotesingle{}\textquotesingle{}}
+
