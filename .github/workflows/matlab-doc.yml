@@ -24,7 +24,7 @@ jobs:
     - name: Generate Documentation
       run: |
         cd ./Ybus/matlab
-        octave --eval "addpath(genpath('./Ybus/matlab/m2html')); m2html('Ybus_matlab', 'm2html', 'htmldir', 'doc');"
+        octave --eval "publish('Ybus_matlab.m','html')"
 
     - name: Configure git
       run: |
