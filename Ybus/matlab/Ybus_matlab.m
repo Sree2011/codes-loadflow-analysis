@@ -47,6 +47,7 @@ function YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
         end
     end
     
+    
     for n = 1:nbus
         for k = 1:nbr
             if nl(k) == n || nr(k) == n
