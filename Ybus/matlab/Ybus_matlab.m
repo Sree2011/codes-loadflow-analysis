@@ -1,4 +1,4 @@
-%> Linedata Matrix
+%% Linedata Matrix
 zdata = [
     1   2   0.02  0.06;
     1   3   0.08  0.24;
@@ -9,32 +9,34 @@ zdata = [
     4   5   0.08  0.24;
 ];
 
+%% *Extract data*
 
-%> Number of branches
+
+%% Number of branches
 nbr = size(zdata, 1);
 
-% Starting bus numbers
+%% Starting bus numbers
 nl = zdata(:, 1);
 
-% Ending bus numbers
+%% Ending bus numbers
 nr = zdata(:, 2);
 
-% Resistance
+%% Resistance
 R = zdata(:, 3);
 
-% Reactance
+%% Reactance
 X = zdata(:, 4);
 
-% Total number of buses
+%% Total number of buses
 nbus = max(max(nl), max(nr));
 
-% Impedance matrix
+%% Impedance matrix
 Z = R + 1j * X;
 
-% Placeholder admittance matrix
+%% Placeholder admittance matrix
 y = 1 ./ Z;
 
-%% Initialize the bus admittance matrix
+%% *Initialize the bus admittance matrix*
 Ybus = zeros(nbus, nbus);
 
 
@@ -47,7 +49,7 @@ function YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
         end
     end
     
-    
+
     for n = 1:nbus
         for k = 1:nbr
             if nl(k) == n || nr(k) == n
@@ -72,3 +74,4 @@ end
 %% Call the functions to create and display the matrix
 YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
 display_admittance_matrix(YBUS, nbus);
+

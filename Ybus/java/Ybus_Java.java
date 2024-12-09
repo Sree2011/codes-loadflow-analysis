@@ -28,7 +28,6 @@ public class Ybus_Java {
                 {4, 5, 0.08f, 0.24f}
         };
 
-        
         // Extract data
 
         /**
