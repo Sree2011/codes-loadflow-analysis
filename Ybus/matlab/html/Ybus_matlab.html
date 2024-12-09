@@ -115,6 +115,7 @@ y = 1 ./ Z;</pre>
         <span class="keyword">end</span>
     <span class="keyword">end</span>
 
+
     <span class="keyword">for</span> n = 1:nbus
         <span class="keyword">for</span> k = 1:nbr
             <span class="keyword">if</span> nl(k) == n || nr(k) == n
@@ -200,6 +201,7 @@ function YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
             Ybus(nr(k), nl(k)) = Ybus(nl(k), nr(k));
         end
     end
+
 
     for n = 1:nbus
         for k = 1:nbr
