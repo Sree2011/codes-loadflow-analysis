@@ -4,6 +4,7 @@
  * Functions:
  * - {@code main()}: The main function that executes the formation of the Ybus matrix.
  */
+import java.util.*;
 public class Ybus_Java {
 
     /**
@@ -11,91 +12,65 @@ public class Ybus_Java {
      * 
      * @param args Command line arguments.
      */
+
+     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        /**
-         * "Example linedata matrix for IEEE-30 Bus system"
-         *  Replace this with your own linedata matrix. 
-         *  Ensure the format is: Bus1, Bus2, Resistance (pu), Reactance (pu)
-         * 
-         */
-        float[][] zdata = {
-                {1, 2, 0.02f, 0.06f},
-                {1, 3, 0.08f, 0.24f},
-                {2, 3, 0.06f, 0.25f},
-                {2, 4, 0.06f, 0.18f},
-                {2, 5, 0.04f, 0.12f},
-                {3, 4, 0.01f, 0.03f},
-                {4, 5, 0.08f, 0.24f}
-        };
+        System.out.println("Enter the no.of buses:");
+        int n = sc.nextInt();
+        sc.nextLine();
 
-        // Extract data
+        System.out.println("Enter 1 for impedance and 2 for admittance: ");
+        int choice = sc.nextInt();
+        sc.nextLine();
 
-        /**
-         * The starting bus numbers.
-         */
-        int[] nl = new int[zdata.length]; // Starting bus numbers
+        Complex[][] Ybus = create_admittance_matrix(choice, n);
+        display_admittance_matrix(Ybus, n);
 
-        /**
-         * The ending bus numbers.
-         */
-        int[] nr = new int[zdata.length]; // Ending bus numbers
-        float[] R = new float[zdata.length]; // Resistance (pu)
-        float[] X = new float[zdata.length]; // Reactance (pu)
 
-        for (int i = 0; i < zdata.length; i++) {
-            nl[i] = (int) zdata[i][0];
-            nr[i] = (int) zdata[i][1];
-            R[i] = zdata[i][2];
-            X[i] = zdata[i][3];
-        }
+    }
 
-        // Total number of buses (considering max bus number)
-        int nbus = Math.max(Complex.findMax(nl), Complex.findMax(nr));
-
-        // Initialize matrices
-        Complex[] Z = new Complex[zdata.length];
-        Complex[] y = new Complex[zdata.length];
+    public static Complex[][] create_admittance_matrix(int choice,int nbus){
+        Complex[][] y = new Complex[nbus][nbus];
         Complex[][] Ybus = new Complex[nbus][nbus];
 
-        for (int i = 0; i < zdata.length; i++) {
-            y[i] = new Complex(0, 0);
-        }
+        // INITIALISE Ybus with zeros
 
-        for (int i = 0; i < nbus; i++) {
-            for (int j = 0; j < nbus; j++) {
-                Ybus[i][j] = new Complex(0, 0);
-            }
-        }
+        
 
-        for (int i = 0; i < zdata.length; i++) {
-            Z[i] = new Complex(R[i], X[i]);
-            y[i] = Z[i].reciprocal();
-        }
-
-        // Form Bus Admittance matrix
-        // Formation of off-diagonal elements
-        for (int k = 0; k < zdata.length; k++) {
-            int i = nl[k] - 1; // Start bus index (zero-based)
-            int j = nr[k] - 1; // End bus index (zero-based)
-            if (i >= 0 && j >= 0) {
-                // Off-diagonal elements are the negative of the admittances
-                Ybus[i][j] = Ybus[i][j].subtract(y[k]);
-                Ybus[j][i] = Ybus[i][j]; // Symmetrical
-            }
-        }
-
-        // Formation of diagonal elements
-        for (int n = 0; n < nbus; n++) {
-            for (int k = 0; k < zdata.length; k++) {
-                int i = nl[k] - 1; // Start bus index (zero-based)
-                int j = nr[k] - 1; // End bus index (zero-based)
-                if (i == n || j == n) {
-                    // Diagonal elements are the sum of the admittances
-                    Ybus[n][n] = Ybus[n][n].add(y[k]);
+        switch(choice){
+            case 1:
+                for(int i=0;i<nbus;i++){
+                    for(int j=0;j<nbus;j++){
+                        System.out.println("Enter the impedance between bus "+(i+1) +" and bus "+ (j+1)+" : ");
+                        Complex yij = Complex.fromString(sc.nextLine());
+                        y[i][j] = yij.reciprocal();
+                    }
                 }
-            }
+
+            case 2:
+                for(int i=0;i<nbus;i++){
+                    for(int j=0;j<nbus;j++){
+                        System.out.println("Enter the admittance between bus "+(i+1) +" and bus "+ (j+1)+" : ");
+                        y[i][j] = Complex.fromString(sc.nextLine());
+                    }
+                }
+            default:
+                System.out.println("Invalid input!");
         }
 
+        
+        // Formation of Ybus
+
+
+
+
+
+        
+        return Ybus;
+        
+    }
+
+    public static void display_admittance_matrix(Complex[][] Ybus,int nbus) {
         System.out.println("Bus Admittance Matrix is:");
         for (int i = 0; i < nbus; i++) {
             for (int j = 0; j < nbus; j++) {
