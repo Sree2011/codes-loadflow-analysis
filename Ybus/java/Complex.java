@@ -10,6 +10,9 @@ import java.util.regex.Pattern;
  */
 public class Complex {
 
+    /**
+     * Real part of the complex number
+     */
     private float real;
     private float imaginary;
 
@@ -25,6 +28,7 @@ public class Complex {
 
     /**
      * Returns the real part of the complex number.
+     * {@link Complex#real}
      * @return the real part of the complex number.
      */
     public float getReal() {
@@ -33,6 +37,7 @@ public class Complex {
 
     /**
      * Returns the imaginary part of the complex number.
+     * {@link Complex#real}
      * @return the imaginary part of the complex number.
      */
     public float getImag() {
@@ -131,6 +136,11 @@ public class Complex {
         return new Complex(newReal, newImaginary);
     }
 
+
+    /**
+     * Returns the string form of the complex number
+     * @return String
+     */
     @Override
     public String toString() {
         return String.format("%.2f + %.2fj", real, imaginary);
