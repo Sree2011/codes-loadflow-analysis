@@ -75,4 +75,3 @@ end
 YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
 display_admittance_matrix(YBUS, nbus);
 
-

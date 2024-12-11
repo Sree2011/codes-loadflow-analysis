@@ -14,6 +14,10 @@ public class Complex {
      * Real part of the complex number
      */
     private float real;
+
+    /**
+     * Imaginary part of the complex number
+     */
     private float imaginary;
 
     /**
