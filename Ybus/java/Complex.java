@@ -37,7 +37,7 @@ public class Complex {
 
     /**
      * Returns the imaginary part of the complex number.
-     * {@link Complex#real}
+     * {@link Complex#imaginary}
      * @return the imaginary part of the complex number.
      */
     public float getImag() {
