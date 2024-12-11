@@ -1,12 +1,90 @@
 ## Generate Bus Admittance Matrix
 
 ## Algorithm
+1. Start
+
+2. Take Input:
+   - Line data (Bus1, Bus2, Resistance, Reactance)
+
+3. Preprocess Line Data:
+   - Extract the number of branches (nbr) from line data
+   - Extract starting bus numbers (nl) from line data
+   - Extract ending bus numbers (nr) from line data
+   - Extract resistance values (R) from line data
+   - Extract reactance values (X) from line data
+   - Determine the number of buses (nbus) from the maximum bus number in line data
+
+4. Calculate Admittance:
+   - For each branch:
+     - Calculate impedance (Z) = R + jX
+     - Calculate admittance (y) = 1 / Z
+
+5. Initialize Admittance Matrix:
+   - Create an empty complex matrix Ybus of size nbus x nbus
+
+6. Populate Admittance Matrix:
+   - For each branch:
+     - Update off-diagonal elements:
+       - Ybus[nl-1, nr-1] -= y
+       - Ybus[nr-1, nl-1] -= y
+     - Update diagonal elements:
+       - Ybus[nl-1, nl-1] += y
+       - Ybus[nr-1, nr-1] += y
+
+7. Print Admittance Matrix:
+   - Print the real and imaginary parts of each element in Ybus
 
 
 ## Pseudocode
 
 ```pseudocode
 
+INPUT MATRIX zdata
+ASSIGN FIRST COLUMN of zdata to nl
+ASSIGN SECOND COLUMN of zdata to nr
+ASSIGN THIRD COLUMN of zdata to R
+ASSIGN FOURTH COLUMN of zdata to X
+CALCULATE nbus as MAX(MAX(nl,MAX(nr)))
+CALCULATE MATRIX Z as (MATRIX R +j*(MATRIX X))
+CALCULATE MATRIX y as RECIPROCAL(MATRIX Z)
+INITIALIZE MATRIX ybus WITH ZEROS
+
+FUNCTION create_admittance_matrix(nl,nr,nbr,nbus,y)
+    INITIALIZE MATRIX ybus WITH ZEROS // ONLY IF REQUIRED
+
+    // FORMATION OF OFF-DIAGONAL ELEMENTS
+    FOR k FROM 1 TO nbr
+        IF nl[k] > 0 AND nr[k] > 0 (>= for zero-indexed languages like java)
+            Ybus[nl[k],nr[k]] = Ybus[nl[k],nr[k]] - y[k]
+            Ybus[nr[k],nl[k]] = Ybus[nl[k],nr[k]]
+        ENDIF
+    ENDFOR
+
+    // FORMATION OF DIAGONAL ELEMENTS
+    FOR n FROM 1 TO nbus
+        FOR k FROM 1 TO nbr
+            IF nl[k] == n OR nr[k] == n
+                Ybus[n,n] = Ybus[n,n] + y[k]
+            ENDIF
+        ENDFOR
+    ENDFOR
+    RETURN Ybus
+ENDFUNCTION
+
+
+FUNCTION display_admittance_matrix(Ybus, nbus)
+    DISPLAY 'Bus Admittance Matrix:'
+    FOR i FROM 1 TO nbus
+        FOR j FROM 1TO nbus
+            DISPLAY Ybus[i,j]
+        ENDFOR
+        DISPLAY NEWLINE
+    ENDFOR
+ENDFUNCTION
+
+// DRIVER CODE
+YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
+display_admittance_matrix(YBUS, nbus);
 ```
 
 ## The Actual Code
