@@ -60,92 +60,145 @@ h2 a, h2 a:visited {
 <body>
 <h1>Ybus_matlab</h1>
 
-<h2>Contents</h2>
-<ul>
-<li><a href="#node1">Linedata Matrix</a></li>
-<li><a href="#node2"><b>Extract data</b></a></li>
-<li><a href="#node3">Number of branches</a></li>
-<li><a href="#node4">Starting bus numbers</a></li>
-<li><a href="#node5">Ending bus numbers</a></li>
-<li><a href="#node6">Resistance</a></li>
-<li><a href="#node7">Reactance</a></li>
-<li><a href="#node8">Total number of buses</a></li>
-<li><a href="#node9">Impedance matrix</a></li>
-<li><a href="#node10">Placeholder admittance matrix</a></li>
-<li><a href="#node11"><b>Initialize the bus admittance matrix</b></a></li>
-<li><a href="#node12">Display the bus admittance matrix function</a></li>
-<li><a href="#node13">Call the functions to create and display the matrix</a></li>
-</ul>
-<h2><a id="node1">Linedata Matrix</a></h2>
-<pre class="oct-code">zdata = [
-    1   2   0.02  0.06;
-    1   3   0.08  0.24;
-    2   3   0.06  0.25;
-    2   4   0.06  0.18;
-    2   5   0.04  0.12;
-    3   4   0.01  0.03;
-    4   5   0.08  0.24;
-];</pre>
-<h2><a id="node2"><b>Extract data</b></a></h2><h2><a id="node3">Number of branches</a></h2>
-<pre class="oct-code">nbr = size(zdata, 1);</pre>
-<h2><a id="node4">Starting bus numbers</a></h2>
-<pre class="oct-code">nl = zdata(:, 1);</pre>
-<h2><a id="node5">Ending bus numbers</a></h2>
-<pre class="oct-code">nr = zdata(:, 2);</pre>
-<h2><a id="node6">Resistance</a></h2>
-<pre class="oct-code">R = zdata(:, 3);</pre>
-<h2><a id="node7">Reactance</a></h2>
-<pre class="oct-code">X = zdata(:, 4);</pre>
-<h2><a id="node8">Total number of buses</a></h2>
-<pre class="oct-code">nbus = max(max(nl), max(nr));</pre>
-<h2><a id="node9">Impedance matrix</a></h2>
-<pre class="oct-code">Z = R + 1j * X;</pre>
-<h2><a id="node10">Placeholder admittance matrix</a></h2>
-<pre class="oct-code">y = 1 ./ Z;</pre>
-<h2><a id="node11"><b>Initialize the bus admittance matrix</b></a></h2>
-<pre class="oct-code">Ybus = zeros(nbus, nbus);
+
+<pre class="oct-code"><span class="comment">% Get the number of buses from the user</span>
+n = input(<span class="string">'Enter the number of buses: '</span>);
 
 
-<span class="keyword">function</span> YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
-    Ybus = zeros(nbus, nbus);
-    <span class="keyword">for</span> k = 1:nbr
-        <span class="keyword">if</span> nl(k) &gt; 0 &amp;&amp; nr(k) &gt; 0
-            Ybus(nl(k), nr(k)) = Ybus(nl(k), nr(k)) - y(k);
-            Ybus(nr(k), nl(k)) = Ybus(nl(k), nr(k));
+
+<span class="comment">% Get user's input for impedance or admittance</span>
+choice = input(<span class="string">'Enter 1 for impedance and 2 for admittance:'</span>);
+
+<span class="keyword">function</span> yp = get_input(choice,n)
+    <span class="comment">% Initialize the placeholder matrix with zeros</span>
+    y = zeros(n, n);
+
+    <span class="comment">% Case 1: User provides impedance values</span>
+    <span class="keyword">if</span> choice == 1
+        <span class="keyword">for</span> i = 1:n
+            <span class="keyword">for</span> j = 1:n
+                fprintf(<span class="string">"Enter the impedance between bus %d and %d: "</span>, i, j);
+                yij = input(<span class="string">''</span>);
+                y(i, j) = 1/yij; <span class="comment">% Calculate admittance from impedance</span>
+            <span class="keyword">end</span>
         <span class="keyword">end</span>
-    <span class="keyword">end</span>
-
-
-    <span class="keyword">for</span> n = 1:nbus
-        <span class="keyword">for</span> k = 1:nbr
-            <span class="keyword">if</span> nl(k) == n || nr(k) == n
-                Ybus(n, n) = Ybus(n, n) + y(k);
+    <span class="comment">% Case 2: User provides admittance values</span>
+    <span class="keyword">elseif</span> choice == 2
+        <span class="keyword">for</span> i = 1:n
+            <span class="keyword">for</span> j = 1:n
+                fprintf(<span class="string">"Enter the admittance between bus %d and %d: "</span>, i, j);
+                y(i, j) = input(<span class="string">''</span>); <span class="comment">% Input complex admittance</span>
             <span class="keyword">end</span>
         <span class="keyword">end</span>
     <span class="keyword">end</span>
-    YBUS = Ybus;
-<span class="keyword">end</span></pre>
-<h2><a id="node12">Display the bus admittance matrix function</a></h2>
-<pre class="oct-code"><span class="keyword">function</span> display_admittance_matrix(Ybus, nbus)
+
+<span class="keyword">end</span>
+<span class="comment">% Function to calculate the bus admittance matrix</span>
+<span class="keyword">function</span> YBus = calculate_admittance_matrix(y,n)
+    <span class="comment">% Initialize the admittance matrix with zeros</span>
+    Ybus = zeros(n, n);
+
+    <span class="comment">% Form the bus admittance matrix</span>
+    <span class="keyword">for</span> i = 1:n
+        <span class="keyword">for</span> j = 1:n
+            <span class="keyword">if</span> i == j <span class="comment">% Diagonal elements</span>
+                <span class="keyword">for</span> k = 1:n
+                    Ybus(i, j) = Ybus(i, j) + y(i, k);
+                <span class="keyword">end</span>
+            <span class="keyword">else</span>
+                Ybus(i, j) = -y(i, j);
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+
+    YBus = Ybus;
+<span class="keyword">end</span>
+
+<span class="comment">% Function to display the bus admittance matrix</span>
+<span class="keyword">function</span> display_admittance_matrix(Ybus, nbus)
     disp(<span class="string">'Bus Admittance Matrix:'</span>)
     <span class="keyword">for</span> i = 1:nbus
         <span class="keyword">for</span> j = 1:nbus
-            fprintf(<span class="string">'%.2f + %.2fj  '</span>, real(Ybus(i, j)), imag(Ybus(i, j)));
+            fprintf(<span class="string">'%.2f + %.2fj\t'</span>, real(Ybus(i, j)), imag(Ybus(i, j)));
         <span class="keyword">end</span>
         fprintf(<span class="string">'\n'</span>);
     <span class="keyword">end</span>
-<span class="keyword">end</span></pre>
-<h2><a id="node13">Call the functions to create and display the matrix</a></h2>
-<pre class="oct-code">YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
-display_admittance_matrix(YBUS, nbus);</pre>
+<span class="keyword">end</span>
 
-<pre class="oct-code-output">Bus Admittance Matrix:
-6.25 + -18.75j  -5.00 + 15.00j  -1.25 + 3.75j  0.00 + 0.00j  0.00 + 0.00j  
--5.00 + 15.00j  10.07 + -31.28j  -0.91 + 3.78j  -1.67 + 5.00j  -2.50 + 7.50j  
--1.25 + 3.75j  -0.91 + 3.78j  12.16 + -37.53j  -10.00 + 30.00j  0.00 + 0.00j  
-0.00 + 0.00j  -1.67 + 5.00j  -10.00 + 30.00j  12.92 + -38.75j  -1.25 + 3.75j  
-0.00 + 0.00j  -2.50 + 7.50j  0.00 + 0.00j  -1.25 + 3.75j  3.75 + -11.25j  
-</pre>
+<span class="comment">% Call the functions to create and display the matrix</span>
+YBUS = calculate_admittance_matrix(choice, n);
+display_admittance_matrix(YBUS, n);</pre>
+
+<pre class="oct-code-output">error: input: reading user-input failed!
+	in:
+
+% Get the number of buses from the user
+n = input('Enter the number of buses: ');
+
+
+
+% Get user's input for impedance or admittance
+choice = input('Enter 1 for impedance and 2 for admittance:');
+
+function yp = get_input(choice,n)
+    % Initialize the placeholder matrix with zeros
+    y = zeros(n, n);
+
+    % Case 1: User provides impedance values
+    if choice == 1
+        for i = 1:n
+            for j = 1:n
+                fprintf("Enter the impedance between bus %d and %d: ", i, j);
+                yij = input('');
+                y(i, j) = 1/yij; % Calculate admittance from impedance
+            end
+        end
+    % Case 2: User provides admittance values
+    elseif choice == 2
+        for i = 1:n
+            for j = 1:n
+                fprintf("Enter the admittance between bus %d and %d: ", i, j);
+                y(i, j) = input(''); % Input complex admittance
+            end
+        end
+    end
+
+end
+% Function to calculate the bus admittance matrix
+function YBus = calculate_admittance_matrix(y,n)
+    % Initialize the admittance matrix with zeros
+    Ybus = zeros(n, n);
+
+    % Form the bus admittance matrix
+    for i = 1:n
+        for j = 1:n
+            if i == j % Diagonal elements
+                for k = 1:n
+                    Ybus(i, j) = Ybus(i, j) + y(i, k);
+                end
+            else
+                Ybus(i, j) = -y(i, j);
+            end
+        end
+    end
+
+    YBus = Ybus;
+end
+
+% Function to display the bus admittance matrix
+function display_admittance_matrix(Ybus, nbus)
+    disp('Bus Admittance Matrix:')
+    for i = 1:nbus
+        for j = 1:nbus
+            fprintf('%.2f + %.2fj\t', real(Ybus(i, j)), imag(Ybus(i, j)));
+        end
+        fprintf('\n');
+    end
+end
+
+% Call the functions to create and display the matrix
+YBUS = calculate_admittance_matrix(choice, n);
+display_admittance_matrix(YBUS, n);</pre>
 
 <footer>
 <hr>
@@ -153,83 +206,73 @@ display_admittance_matrix(YBUS, nbus);</pre>
 </footer>
 <!--
 ##### SOURCE BEGIN #####
-%% Linedata Matrix
-zdata = [
-    1   2   0.02  0.06;
-    1   3   0.08  0.24;
-    2   3   0.06  0.25;
-    2   4   0.06  0.18;
-    2   5   0.04  0.12;
-    3   4   0.01  0.03;
-    4   5   0.08  0.24;
-];
-
-%% *Extract data*
+% Get the number of buses from the user
+n = input('Enter the number of buses: ');
 
 
-%% Number of branches
-nbr = size(zdata, 1);
 
-%% Starting bus numbers
-nl = zdata(:, 1);
+% Get user's input for impedance or admittance
+choice = input('Enter 1 for impedance and 2 for admittance:');
 
-%% Ending bus numbers
-nr = zdata(:, 2);
+function yp = get_input(choice,n)
+    % Initialize the placeholder matrix with zeros
+    y = zeros(n, n);
 
-%% Resistance
-R = zdata(:, 3);
-
-%% Reactance
-X = zdata(:, 4);
-
-%% Total number of buses
-nbus = max(max(nl), max(nr));
-
-%% Impedance matrix
-Z = R + 1j * X;
-
-%% Placeholder admittance matrix
-y = 1 ./ Z;
-
-%% *Initialize the bus admittance matrix*
-Ybus = zeros(nbus, nbus);
-
-
-function YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y)
-    Ybus = zeros(nbus, nbus);
-    for k = 1:nbr
-        if nl(k) > 0 && nr(k) > 0
-            Ybus(nl(k), nr(k)) = Ybus(nl(k), nr(k)) - y(k);
-            Ybus(nr(k), nl(k)) = Ybus(nl(k), nr(k));
+    % Case 1: User provides impedance values
+    if choice == 1
+        for i = 1:n
+            for j = 1:n
+                fprintf("Enter the impedance between bus %d and %d: ", i, j);
+                yij = input('');
+                y(i, j) = 1/yij; % Calculate admittance from impedance
+            end
         end
-    end
-
-
-    for n = 1:nbus
-        for k = 1:nbr
-            if nl(k) == n || nr(k) == n
-                Ybus(n, n) = Ybus(n, n) + y(k);
+    % Case 2: User provides admittance values
+    elseif choice == 2
+        for i = 1:n
+            for j = 1:n
+                fprintf("Enter the admittance between bus %d and %d: ", i, j);
+                y(i, j) = input(''); % Input complex admittance
             end
         end
     end
-    YBUS = Ybus;
+
+end
+% Function to calculate the bus admittance matrix
+function YBus = calculate_admittance_matrix(y,n)
+    % Initialize the admittance matrix with zeros
+    Ybus = zeros(n, n);
+
+    % Form the bus admittance matrix
+    for i = 1:n
+        for j = 1:n
+            if i == j % Diagonal elements
+                for k = 1:n
+                    Ybus(i, j) = Ybus(i, j) + y(i, k);
+                end
+            else
+                Ybus(i, j) = -y(i, j);
+            end
+        end
+    end
+
+    YBus = Ybus;
 end
 
-%% Display the bus admittance matrix function
+% Function to display the bus admittance matrix
 function display_admittance_matrix(Ybus, nbus)
     disp('Bus Admittance Matrix:')
     for i = 1:nbus
         for j = 1:nbus
-            fprintf('%.2f + %.2fj  ', real(Ybus(i, j)), imag(Ybus(i, j)));
+            fprintf('%.2f + %.2fj\t', real(Ybus(i, j)), imag(Ybus(i, j)));
         end
         fprintf('\n');
     end
 end
 
-%% Call the functions to create and display the matrix
-YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
-display_admittance_matrix(YBUS, nbus);
-
+% Call the functions to create and display the matrix
+YBUS = calculate_admittance_matrix(choice, n);
+display_admittance_matrix(YBUS, n);
 ##### SOURCE END #####
 -->
 </body>
