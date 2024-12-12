@@ -52,8 +52,7 @@ function YBus = calculate_admittance_matrix(y,n)
         % * @brief Initialise the bus admittance matrix
         % */
         Ybus = zeros(n, n);
-    
-    
+        
     for i = 1:n
         for j = 1:n
             if i == j
