@@ -21,11 +21,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y octave
 
-        
     - name: Generate Documentation
       run: |
         cd ./Ybus/matlab
-        octave --eval "publish('Ybus_matlab.m','html')"
+        octave --eval "m2html('mfiles', './', 'htmldir', './html/');"
 
     - name: Configure git
       run: |
