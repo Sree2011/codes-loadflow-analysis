@@ -60,14 +60,22 @@ h2 a, h2 a:visited {
 <body>
 <h1>Ybus_matlab</h1>
 
+<h2>Contents</h2>
+<ul>
+<li><a href="#node1">Get the number of buses from the user</a></li>
+<li><a href="#node2">Get user's input for impedance or admittance</a></li>
+<li><a href="#node3">Function to calculate the bus admittance matrix</a></li>
+</ul>
+<h2><a id="node1">Get the number of buses from the user</a></h2>
+<pre class="oct-code">n = input(<span class="string">'Enter the number of buses: '</span>);</pre>
 
-<pre class="oct-code"><span class="comment">% Get the number of buses from the user</span>
-n = input(<span class="string">'Enter the number of buses: '</span>);
+<pre class="oct-code-output">error: input: reading user-input failed!
+	in:
 
-
-
-<span class="comment">% Get user's input for impedance or admittance</span>
-choice = input(<span class="string">'Enter 1 for impedance and 2 for admittance:'</span>);
+n = input('Enter the number of buses: ');
+</pre>
+<h2><a id="node2">Get user's input for impedance or admittance</a></h2>
+<pre class="oct-code">choice = input(<span class="string">'Enter 1 for impedance and 2 for admittance:'</span>);
 
 <span class="keyword">function</span> yp = get_input(choice,n)
     <span class="comment">% Initialize the placeholder matrix with zeros</span>
@@ -91,10 +99,41 @@ choice = input(<span class="string">'Enter 1 for impedance and 2 for admittance:
             <span class="keyword">end</span>
         <span class="keyword">end</span>
     <span class="keyword">end</span>
+    yp = y;
+<span class="keyword">end</span></pre>
 
-<span class="keyword">end</span>
-<span class="comment">% Function to calculate the bus admittance matrix</span>
-<span class="keyword">function</span> YBus = calculate_admittance_matrix(y,n)
+<pre class="oct-code-output">error: input: reading user-input failed!
+	in:
+
+choice = input('Enter 1 for impedance and 2 for admittance:');
+
+function yp = get_input(choice,n)
+    % Initialize the placeholder matrix with zeros
+    y = zeros(n, n);
+
+    % Case 1: User provides impedance values
+    if choice == 1
+        for i = 1:n
+            for j = 1:n
+                fprintf("Enter the impedance between bus %d and %d: ", i, j);
+                yij = input('');
+                y(i, j) = 1/yij; % Calculate admittance from impedance
+            end
+        end
+    % Case 2: User provides admittance values
+    elseif choice == 2
+        for i = 1:n
+            for j = 1:n
+                fprintf("Enter the admittance between bus %d and %d: ", i, j);
+                y(i, j) = input(''); % Input complex admittance
+            end
+        end
+    end
+    yp = y;
+end
+</pre>
+<h2><a id="node3">Function to calculate the bus admittance matrix</a></h2>
+<pre class="oct-code"><span class="keyword">function</span> YBus = calculate_admittance_matrix(y,n)
     <span class="comment">% Initialize the admittance matrix with zeros</span>
     Ybus = zeros(n, n);
 
@@ -126,45 +165,13 @@ choice = input(<span class="string">'Enter 1 for impedance and 2 for admittance:
 <span class="keyword">end</span>
 
 <span class="comment">% Call the functions to create and display the matrix</span>
-YBUS = calculate_admittance_matrix(choice, n);
+y = get_input(choice,n);
+YBUS = calculate_admittance_matrix(y, n);
 display_admittance_matrix(YBUS, n);</pre>
 
-<pre class="oct-code-output">error: input: reading user-input failed!
+<pre class="oct-code-output">error: 'choice' undefined near line 2, column 2
 	in:
 
-% Get the number of buses from the user
-n = input('Enter the number of buses: ');
-
-
-
-% Get user's input for impedance or admittance
-choice = input('Enter 1 for impedance and 2 for admittance:');
-
-function yp = get_input(choice,n)
-    % Initialize the placeholder matrix with zeros
-    y = zeros(n, n);
-
-    % Case 1: User provides impedance values
-    if choice == 1
-        for i = 1:n
-            for j = 1:n
-                fprintf("Enter the impedance between bus %d and %d: ", i, j);
-                yij = input('');
-                y(i, j) = 1/yij; % Calculate admittance from impedance
-            end
-        end
-    % Case 2: User provides admittance values
-    elseif choice == 2
-        for i = 1:n
-            for j = 1:n
-                fprintf("Enter the admittance between bus %d and %d: ", i, j);
-                y(i, j) = input(''); % Input complex admittance
-            end
-        end
-    end
-
-end
-% Function to calculate the bus admittance matrix
 function YBus = calculate_admittance_matrix(y,n)
     % Initialize the admittance matrix with zeros
     Ybus = zeros(n, n);
@@ -197,7 +204,8 @@ function display_admittance_matrix(Ybus, nbus)
 end
 
 % Call the functions to create and display the matrix
-YBUS = calculate_admittance_matrix(choice, n);
+y = get_input(choice,n);
+YBUS = calculate_admittance_matrix(y, n);
 display_admittance_matrix(YBUS, n);</pre>
 
 <footer>
@@ -206,12 +214,10 @@ display_admittance_matrix(YBUS, n);</pre>
 </footer>
 <!--
 ##### SOURCE BEGIN #####
-% Get the number of buses from the user
+%% Get the number of buses from the user
 n = input('Enter the number of buses: ');
 
-
-
-% Get user's input for impedance or admittance
+%% Get user's input for impedance or admittance
 choice = input('Enter 1 for impedance and 2 for admittance:');
 
 function yp = get_input(choice,n)
@@ -236,9 +242,10 @@ function yp = get_input(choice,n)
             end
         end
     end
-
+    yp = y;
 end
-% Function to calculate the bus admittance matrix
+
+%% Function to calculate the bus admittance matrix
 function YBus = calculate_admittance_matrix(y,n)
     % Initialize the admittance matrix with zeros
     Ybus = zeros(n, n);
@@ -271,7 +278,8 @@ function display_admittance_matrix(Ybus, nbus)
 end
 
 % Call the functions to create and display the matrix
-YBUS = calculate_admittance_matrix(choice, n);
+y = get_input(choice,n);
+YBUS = calculate_admittance_matrix(y, n);
 display_admittance_matrix(YBUS, n);
 ##### SOURCE END #####
 -->
