@@ -1,10 +1,17 @@
-%% Get the number of buses from the user
+% /**
+% * @brief Get the number of buses from the user
+% */
 n = input('Enter the number of buses: ');
 
 %% Get user's input for impedance or admittance
 choice = input('Enter 1 for impedance and 2 for admittance:');
 
-
+% /**
+% * @brief Get impedance or admittance input from the user
+% * @param choice The user's choice for input type (1 for impedance, 2 for admittance)
+% * @param n The number of buses
+% * @return yp The admittance matrix
+% */
 function yp = get_input(choice,n)
     % Initialize the placeholder matrix with zeros
     y = zeros(n, n);
@@ -31,6 +38,12 @@ function yp = get_input(choice,n)
 end
 
 %% Function to calculate the bus admittance matrix
+% /**
+% * @brief Calculate the bus admittance matrix
+% * @param y The input admittance matrix
+% * @param n The number of buses
+% * @return YBus The calculated bus admittance matrix
+% */
 function YBus = calculate_admittance_matrix(y,n)
     % Initialize the admittance matrix with zeros
     Ybus = zeros(n, n);
@@ -51,7 +64,11 @@ function YBus = calculate_admittance_matrix(y,n)
     YBus = Ybus;
 end
 
-% Function to display the bus admittance matrix
+% /**
+% * @brief Display the bus admittance matrix
+% * @param Ybus The bus admittance matrix
+% * @param nbus The number of buses
+% */
 function display_admittance_matrix(Ybus, nbus)
     disp('Bus Admittance Matrix:')
     for i = 1:nbus
