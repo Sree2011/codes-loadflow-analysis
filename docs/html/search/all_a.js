@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['print_5fadmittance_5fmatrix_23',['print_admittance_matrix',['../namespaceYbus__Python.html#a36997eff40ce42c24fdf980b6fba21c4',1,'Ybus_Python']]]
+  ['subtract_23',['subtract',['../classComplex.html#ad552a93c53be71388e817329c3be0e94',1,'Complex']]]
 ];
