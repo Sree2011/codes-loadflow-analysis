@@ -8,6 +8,17 @@ Ybus = np.array([[0+0j for i in range(n)] for j in range(n)])
 y = np.zeros((n,n),dtype=complex)
 
 def get_input(choice,n):
+    """
+    Gets the input from the user based on the choice of impedance or
+    admittance , calculates admittance values and returns them
+
+    Args:
+        choice(int) : the choice of the user(1 for impedance and 2 for admittance)
+        n(int) : Total no.of buses in the system
+
+    Returns:
+        y(np.array) : Line Admittance matrix
+    """
     ## Case 1: if the user knows impedance(Z) value
     if choice == 1:
         # Calculate Admittance
@@ -22,8 +33,18 @@ def get_input(choice,n):
             for j in range(n):
                 print("Enter the admittance between bus", i+1, "and", j+1, ":")
                 y[i][j] = complex(input())
+    return y
     
-def calculate_admittance_matrix(choice):
+def calculate_admittance_matrix(y):
+    """
+    Forms admittance matrix using the admittance value matrix y
+
+    Args:
+        y(np.array): Line Admittance Matrix
+    
+    Returns:
+        Ybus(np.array) : Bus Admittance Matrix
+    """
     # Form Bus Admittance Matrix
     for i in range(n):
         for j in range(n):
@@ -47,10 +68,10 @@ def print_admittance_matrix(Ybus):
             print(f"{element.real:+0.02f} {element.imag:+0.02f}j", end="  ")
         print()
 
-
 # Calculate and print the admittance matrix
 print("Enter 1 for impedance and 2 for admittance")
 choice = int(input())  # Get the choice of input type (impedance or admittance)
-Ybus = calculate_admittance_matrix(choice)
+y = get_input(choice,n)
+Ybus = calculate_admittance_matrix(y)
 print_admittance_matrix(Ybus)
 

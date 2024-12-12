@@ -1,9 +1,7 @@
-% Get the number of buses from the user
+%% Get the number of buses from the user
 n = input('Enter the number of buses: ');
 
-
-
-% Get user's input for impedance or admittance
+%% Get user's input for impedance or admittance
 choice = input('Enter 1 for impedance and 2 for admittance:');
 
 function yp = get_input(choice,n)
@@ -28,9 +26,10 @@ function yp = get_input(choice,n)
             end
         end
     end
-
+    yp = y;
 end
-% Function to calculate the bus admittance matrix
+
+%% Function to calculate the bus admittance matrix
 function YBus = calculate_admittance_matrix(y,n)
     % Initialize the admittance matrix with zeros
     Ybus = zeros(n, n);
@@ -63,5 +62,6 @@ function display_admittance_matrix(Ybus, nbus)
 end
 
 % Call the functions to create and display the matrix
-YBUS = calculate_admittance_matrix(choice, n);
+y = get_input(choice,n);
+YBUS = calculate_admittance_matrix(y, n);
 display_admittance_matrix(YBUS, n);
