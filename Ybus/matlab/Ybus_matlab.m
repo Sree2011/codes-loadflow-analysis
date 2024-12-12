@@ -1,6 +1,4 @@
-% /**!
-% * \brief Get the number of buses from the user
-% */
+% \brief Get the number of buses from the user
 n = input('Enter the number of buses: ');
 
 % /**!
@@ -8,12 +6,12 @@ n = input('Enter the number of buses: ');
 % */
 choice = input('Enter 1 for impedance and 2 for admittance:');
 
-% /**!
-% * \brief Get impedance or admittance input from the user
-% * \param choice The user's choice for input type (1 for impedance, 2 for admittance)
-% * \param n The number of buses
-% * \return yp The admittance matrix
-% */
+%%
+% \brief Get impedance or admittance input from the user
+% \param choice The user's choice for input type (1 for impedance, 2 for admittance)
+% \param n The number of buses
+% \return yp The admittance matrix
+%%
 function yp = get_input(choice,n)
     % /**!
     % * \brief Initialise the line admittance matrix
