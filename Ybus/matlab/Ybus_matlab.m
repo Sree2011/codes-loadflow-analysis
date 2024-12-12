@@ -1,22 +1,22 @@
-% /**
-% * @brief Get the number of buses from the user
+% /**!
+% * \brief Get the number of buses from the user
 % */
 n = input('Enter the number of buses: ');
 
-% /**
-% * @brief Get the choice from the user ( 1 for impedance and 2 for admittance)
+% /**!
+% * \brief Get the choice from the user ( 1 for impedance and 2 for admittance)
 % */
 choice = input('Enter 1 for impedance and 2 for admittance:');
 
-% /**
-% * @brief Get impedance or admittance input from the user
-% * @param choice The user's choice for input type (1 for impedance, 2 for admittance)
-% * @param n The number of buses
-% * @return yp The admittance matrix
+% /**!
+% * \brief Get impedance or admittance input from the user
+% * \param choice The user's choice for input type (1 for impedance, 2 for admittance)
+% * \param n The number of buses
+% * \return yp The admittance matrix
 % */
 function yp = get_input(choice,n)
-    % /**
-    % * @brief Initialise the line admittance matrix
+    % /**!
+    % * \brief Initialise the line admittance matrix
     % */
     y = zeros(n, n);
 
@@ -41,18 +41,18 @@ function yp = get_input(choice,n)
     yp = y;
 end
 
-% /**
-% * @brief Calculate the bus admittance matrix
-% * @param y The input admittance matrix
-% * @param n The number of buses
-% * @return YBus The calculated bus admittance matrix
+% /**!
+% * \brief Calculate the bus admittance matrix
+% * \param y The input admittance matrix
+% * \param n The number of buses
+% * \return YBus The calculated bus admittance matrix
 % */
 function YBus = calculate_admittance_matrix(y,n)
-        % /**
-        % * @brief Initialise the bus admittance matrix
+        % /**!
+        % * \brief Initialise the bus admittance matrix
         % */
         Ybus = zeros(n, n);
-        
+
     for i = 1:n
         for j = 1:n
             if i == j
@@ -68,10 +68,10 @@ function YBus = calculate_admittance_matrix(y,n)
     YBus = Ybus;
 end
 
-% /**
-% * @brief Display the bus admittance matrix
-% * @param Ybus The bus admittance matrix
-% * @param nbus The number of buses
+% /**!
+% * \brief Display the bus admittance matrix
+% * \param Ybus The bus admittance matrix
+% * \param nbus The number of buses
 % */
 function display_admittance_matrix(Ybus, nbus)
     disp('Bus Admittance Matrix:')
@@ -83,8 +83,8 @@ function display_admittance_matrix(Ybus, nbus)
     end
 end
 
-% /**
-% * @brief Driver code
+% /**!
+% * \brief Driver code
 % */
 y = get_input(choice,n);
 YBUS = calculate_admittance_matrix(y, n);
