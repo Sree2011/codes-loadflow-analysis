@@ -4,6 +4,7 @@ n = input('Enter the number of buses: ');
 %% Get user's input for impedance or admittance
 choice = input('Enter 1 for impedance and 2 for admittance:');
 
+
 function yp = get_input(choice,n)
     % Initialize the placeholder matrix with zeros
     y = zeros(n, n);

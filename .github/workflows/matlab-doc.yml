@@ -1,12 +1,6 @@
 name: Generate and Commit MATLAB Documentation
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [push]
 
 jobs:
   build:
@@ -21,21 +15,23 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y octave
 
+    - name: Add m2html to Octave path
+      run: |
+        octave --eval "addpath('./makehtmldoc/'); savepath;"
+
+    - name: Verify m2html installation
+      run: |
+        octave --eval "which m2html"
+
     - name: Generate Documentation
       run: |
         cd ./Ybus/matlab
         octave --eval "m2html('mfiles', './', 'htmldir', './html/');"
 
-    - name: Configure git
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
     - name: Commit and Push changes
       run: |
-        git pull
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
         git add .
-        git commit -m "Update MATLAB documentation"
-        git push origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git commit -m 'Generate and commit MATLAB documentation'
+        git push

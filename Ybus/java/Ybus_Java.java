@@ -13,7 +13,7 @@ public class Ybus_Java {
      * @param args Command line arguments.
      */
 
-     static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter the no.of buses:");
         int n = sc.nextInt();
