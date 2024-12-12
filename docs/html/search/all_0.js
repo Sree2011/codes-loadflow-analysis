@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5f_5fpad0_5f_5f_0',['__pad0__',['../Ybus__matlab_8m.html#a49af3675a48fc7cd7bee91872e6de175',1,'Ybus_matlab.m']]]
+  ['add_0',['add',['../classComplex.html#a1686868a414a28b02e799e05641becae',1,'Complex']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['n_21',['n',['../Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e',1,'n():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#afa31de73c280c552d58213a2947ded4e',1,'Ybus_Python.n()']]],
-  ['negate_22',['negate',['../classComplex.html#a63ce0a55d8a970161830e4dffc43bcd4',1,'Complex']]]
+  ['real_21',['real',['../classComplex.html#a345da274bb05610ff7d549028bc6d510',1,'Complex']]],
+  ['reciprocal_22',['reciprocal',['../classComplex.html#a3abc78c5a8c36a75d16bd964e7e5cdca',1,'Complex']]]
 ];
