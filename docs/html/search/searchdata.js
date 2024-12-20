@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "acdfgimnprsty",
   1: "cy",
   2: "y",
-  3: "cy",
+  3: "cdgy",
   4: "acdfgmnprsty",
   5: "cinry"
 };
