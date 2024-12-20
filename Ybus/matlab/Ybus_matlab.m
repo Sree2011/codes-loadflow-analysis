@@ -70,9 +70,13 @@ end
 
 
 function display_admittance_matrix(Ybus, nbus)
-    % \brief Display the bus admittance matrix
-    % \param Ybus The bus admittance matrix
-    % \param nbus The number of buses
+    %{
+    \brief Display the bus admittance matrix
+    \param Ybus The bus admittance matrix
+    \param nbus The number of buses
+    %}
+
+
     disp('Bus Admittance Matrix:')
     for i = 1:nbus
         % \brief external loop
