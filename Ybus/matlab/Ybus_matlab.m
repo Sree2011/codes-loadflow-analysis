@@ -41,10 +41,12 @@ end
 
 
 function YBus = calculate_admittance_matrix(y,n)
-        % \brief Calculate the bus admittance matrix
-        % \param y The input admittance matrix
-        % \param n The number of buses
-        % \return YBus The calculated bus admittance matrix
+        %{
+        \brief Calculate the bus admittance matrix
+        \arg y The input admittance matrix
+        \arg n The number of buses
+        \return YBus The calculated bus admittance matrix
+        %}
 
         
         Ybus = zeros(n, n);
