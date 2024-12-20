@@ -19,7 +19,6 @@ choice = input('Enter 1 for impedance and 2 for admittance:');
 y = get_input(choice,n);
 
 %{
-    \fn calculate_matrix(y,n)
     \brief Calculate the bus admittance matrix
     \arg y The input admittance matrix
     \arg n The number of buses
