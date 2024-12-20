@@ -84,21 +84,22 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8f9bc5ff2d41822467a086388655227a" id="r_a8f9bc5ff2d41822467a086388655227a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a8f9bc5ff2d41822467a086388655227a">display_matrix</a> (<a class="el" href="Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be">YBUS</a>, <a class="el" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
-<tr class="memdesc:a8f9bc5ff2d41822467a086388655227a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Form the bus admittance matrix based on the input.  <br /></td></tr>
+<tr class="memdesc:a8f9bc5ff2d41822467a086388655227a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the bus admittance matrix.  <br /></td></tr>
 <tr class="separator:a8f9bc5ff2d41822467a086388655227a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aeab71244afb687f16d8c4f5ee9d6ef0e" id="r_aeab71244afb687f16d8c4f5ee9d6ef0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a> = input('Enter the number of buses: ')</td></tr>
+<tr class="memdesc:aeab71244afb687f16d8c4f5ee9d6ef0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of buses from the user.  <br /></td></tr>
 <tr class="separator:aeab71244afb687f16d8c4f5ee9d6ef0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd05e88e13762e173d9d20fe3596216f" id="r_afd05e88e13762e173d9d20fe3596216f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#afd05e88e13762e173d9d20fe3596216f">choice</a> = input('Enter 1 for impedance and 2 for admittance:')</td></tr>
-<tr class="memdesc:afd05e88e13762e173d9d20fe3596216f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of buses from the user.  <br /></td></tr>
+<tr class="memdesc:afd05e88e13762e173d9d20fe3596216f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the choice from the user - 1 for impedance and 2 for admittance.  <br /></td></tr>
 <tr class="separator:afd05e88e13762e173d9d20fe3596216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb1c5cf58867b5bbc9a1b145a86f3a0" id="r_a2fb1c5cf58867b5bbc9a1b145a86f3a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> = get_input(<a class="el" href="get__input_8m.html#a1f127bad7a541fed1afa2568db2e13a1">choice</a>,<a class="el" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
-<tr class="memdesc:a2fb1c5cf58867b5bbc9a1b145a86f3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the choice from the user - 1 for impedance and 2 for admittance.  <br /></td></tr>
+<tr class="memdesc:a2fb1c5cf58867b5bbc9a1b145a86f3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">get input from the user and calculate line admittances  <br /></td></tr>
 <tr class="separator:a2fb1c5cf58867b5bbc9a1b145a86f3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23fa726a74b27a90f812a94575b772be" id="r_a23fa726a74b27a90f812a94575b772be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be">YBUS</a> = calculate_matrix(<a class="el" href="get__input_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, <a class="el" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
-<tr class="memdesc:a23fa726a74b27a90f812a94575b772be"><td class="mdescLeft">&#160;</td><td class="mdescRight">get input from the user and calculate line admittances  <br /></td></tr>
+<tr class="memdesc:a23fa726a74b27a90f812a94575b772be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Form the bus admittance matrix based on the input.  <br /></td></tr>
 <tr class="separator:a23fa726a74b27a90f812a94575b772be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -128,8 +129,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Form the bus admittance matrix based on the input. </p>
-<p><a class="el" href="calculate__matrix_8m.html">calculate_matrix </a> </p>
+<p>Display the bus admittance matrix. </p>
+<p><a class="el" href="display__matrix_8m.html">display_matrix </a> </p>
 
 </div>
 </div>
@@ -146,7 +147,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of buses from the user. </p>
+<p>Get the choice from the user - 1 for impedance and 2 for admittance. </p>
 
 </div>
 </div>
@@ -162,6 +163,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the number of buses from the user. </p>
+
 </div>
 </div>
 <a id="a2fb1c5cf58867b5bbc9a1b145a86f3a0" name="a2fb1c5cf58867b5bbc9a1b145a86f3a0"></a>
@@ -176,7 +179,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the choice from the user - 1 for impedance and 2 for admittance. </p>
+<p>get input from the user and calculate line admittances </p>
+<p><a class="el" href="get__input_8m.html">get_input </a> </p>
 
 </div>
 </div>
@@ -192,8 +196,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>get input from the user and calculate line admittances </p>
-<p><a class="el" href="get__input_8m.html">get_input </a> </p>
+<p>Form the bus admittance matrix based on the input. </p>
+<p><a class="el" href="calculate__matrix_8m.html">calculate_matrix </a> </p>
 
 </div>
 </div>
