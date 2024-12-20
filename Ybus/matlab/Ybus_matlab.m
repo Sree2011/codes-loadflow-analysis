@@ -6,6 +6,30 @@ n = input('Enter the number of buses: ');
 choice = input('Enter 1 for impedance and 2 for admittance:');
 % \brief Get the choice from the user - 1 for impedance and 2 for admittance
 
+
+%{
+    \fn get_input(choice,n)
+    \brief Calculate the bus admittance matrix
+    \arg y The input admittance matrix
+    \arg n The number of buses
+    \return YBus The calculated bus admittance matrix
+%}
 y = get_input(choice,n);
+
+%{
+    \fn calculate_matrix(y,n)
+    \brief Calculate the bus admittance matrix
+    \arg y The input admittance matrix
+    \arg n The number of buses
+    \return YBus The calculated bus admittance matrix
+%}
 YBUS = calculate_matrix(y, n);
+
+%{
+    \fn display_matrix(ybus,n)
+    \brief Calculate the bus admittance matrix
+    \arg y The input admittance matrix
+    \arg n The number of buses
+    \return YBus The calculated bus admittance matrix
+%}
 display_matrix(YBUS, n);
