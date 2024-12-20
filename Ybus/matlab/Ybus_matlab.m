@@ -28,12 +28,7 @@ y = get_input(choice,n);
 %}
 YBUS = calculate_matrix(y, n);
 
-%{
-    \fn display_matrix(ybus,n)
-    \brief Calculate the bus admittance matrix
-    \arg y The input admittance matrix
-    \arg n The number of buses
-    \return YBus The calculated bus admittance matrix
-    \link display_matrix.m
-%}
+
+
+% \link display_matrix.m
 display_matrix(YBUS, n);
