@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['y_0',['y',['../get__input_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;get_input.m'],['../namespaceYbus__Python.html#ab45f07f249f3e7d329509cb2510fe56f',1,'Ybus_Python.y'],['../get__input_8m.html#adcc2ccb3bbdd9d22a9734d8219914e73',1,'y(i, j):&#160;get_input.m']]],
-  ['ybus_1',['ybus',['../calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m'],['../Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be',1,'YBUS:&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a3d2f2cd307353a609df5ed6f361efda0',1,'Ybus_Python.Ybus'],['../calculate__matrix_8m.html#ae5a5eee66749bf5128939e55db6f81c1',1,'Ybus(i, j):&#160;calculate_matrix.m']]],
+  ['y_0',['y',['../get__input_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;get_input.m'],['../Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab45f07f249f3e7d329509cb2510fe56f',1,'Ybus_Python.y'],['../get__input_8m.html#adcc2ccb3bbdd9d22a9734d8219914e73',1,'y(i, j):&#160;get_input.m']]],
+  ['ybus_1',['ybus',['../calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m'],['../namespaceYbus__Python.html#a3d2f2cd307353a609df5ed6f361efda0',1,'Ybus_Python.Ybus'],['../calculate__matrix_8m.html#ae5a5eee66749bf5128939e55db6f81c1',1,'Ybus(i, j):&#160;calculate_matrix.m']]],
   ['ybus_5fjava_2',['Ybus_Java',['../classYbus__Java.html',1,'']]],
   ['ybus_5fjava_2ejava_3',['Ybus_Java.java',['../Ybus__Java_8java.html',1,'']]],
   ['ybus_5fmatlab_2em_4',['Ybus_matlab.m',['../Ybus__matlab_8m.html',1,'']]],
