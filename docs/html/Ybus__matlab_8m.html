@@ -335,8 +335,8 @@ Variables</h2></td></tr>
 <div class="line">            <span class="keywordflow">if</span> <a class="code hl_variable" href="Ybus__matlab_8m.html#ac5871b40d457b4125459e0b358ae3a7d">i</a> == j</div>
 <div class="line">                <span class="keywordflow">for</span> k = 1:<a class="code hl_variable" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a></div>
 <div class="line">                    <a class="code hl_function" href="Ybus__matlab_8m.html#ae5a5eee66749bf5128939e55db6f81c1">Ybus</a>(<a class="code hl_variable" href="Ybus__matlab_8m.html#ac5871b40d457b4125459e0b358ae3a7d">i</a>, j) = <a class="code hl_function" href="Ybus__matlab_8m.html#ae5a5eee66749bf5128939e55db6f81c1">Ybus</a>(<a class="code hl_variable" href="Ybus__matlab_8m.html#ac5871b40d457b4125459e0b358ae3a7d">i</a>, j) + <a class="code hl_variable" href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>(<a class="code hl_variable" href="Ybus__matlab_8m.html#ac5871b40d457b4125459e0b358ae3a7d">i</a>, k)</div>
-<div class="ttc" id="aYbus__matlab_8m_html_a2fb1c5cf58867b5bbc9a1b145a86f3a0"><div class="ttname"><a href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a></div><div class="ttdeci">end end y</div><div class="ttdef"><b>Definition</b> Ybus_matlab.m:92</div></div>
-<div class="ttc" id="aYbus__matlab_8m_html_ac5871b40d457b4125459e0b358ae3a7d"><div class="ttname"><a href="Ybus__matlab_8m.html#ac5871b40d457b4125459e0b358ae3a7d">i</a></div><div class="ttdeci">brief Initialise the bus admittance matrix for i</div><div class="ttdef"><b>Definition</b> Ybus_matlab.m:54</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_a2fb1c5cf58867b5bbc9a1b145a86f3a0"><div class="ttname"><a href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a></div><div class="ttdeci">end end y</div><div class="ttdef"><b>Definition</b> Ybus_matlab.m:94</div></div>
+<div class="ttc" id="aYbus__matlab_8m_html_ac5871b40d457b4125459e0b358ae3a7d"><div class="ttname"><a href="Ybus__matlab_8m.html#ac5871b40d457b4125459e0b358ae3a7d">i</a></div><div class="ttdeci">brief Initialise the bus admittance matrix for i</div><div class="ttdef"><b>Definition</b> Ybus_matlab.m:56</div></div>
 <div class="ttc" id="aYbus__matlab_8m_html_ae5a5eee66749bf5128939e55db6f81c1"><div class="ttname"><a href="Ybus__matlab_8m.html#ae5a5eee66749bf5128939e55db6f81c1">Ybus</a></div><div class="ttdeci">end else Ybus(i, j)</div></div>
 <div class="ttc" id="aYbus__matlab_8m_html_aeab71244afb687f16d8c4f5ee9d6ef0e"><div class="ttname"><a href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a></div><div class="ttdeci">n</div><div class="ttdef"><b>Definition</b> Ybus_matlab.m:2</div></div>
 </div><!-- fragment -->
@@ -382,10 +382,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= calculate_admittance_matrix(<a class="code hl_variable" href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>,<a class="code hl_variable" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</div>
-<div class="line">        % \brief Calculate the bus admittance matrix</div>
-<div class="line">        % \param <a class="code hl_variable" href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> The input admittance matrix</div>
-<div class="line">        % \param <a class="code hl_variable" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a> The number of buses</div>
-<div class="line">        % \<span class="keywordflow">return</span> <a class="code hl_variable" href="Ybus__matlab_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d">YBus</a> The calculated bus admittance matrix</div>
+<div class="line">        %{</div>
+<div class="line">        \brief Calculate the bus admittance matrix</div>
+<div class="line">        \arg <a class="code hl_variable" href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> The input admittance matrix</div>
+<div class="line">        \arg <a class="code hl_variable" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a> The number of buses</div>
+<div class="line">        \return <a class="code hl_variable" href="Ybus__matlab_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d">YBus</a> The calculated bus admittance matrix</div>
+<div class="line">        %}</div>
 <div class="line"> </div>
 <div class="line">        </div>
 <div class="line">        <a class="code hl_function" href="Ybus__matlab_8m.html#ae5a5eee66749bf5128939e55db6f81c1">Ybus</a> = zeros(<a class="code hl_variable" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="code hl_variable" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</div>
