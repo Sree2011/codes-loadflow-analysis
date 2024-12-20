@@ -9,9 +9,7 @@
 \begin{DoxyCompactItemize}
 \item 
 function \mbox{\hyperlink{get__input_8m_abe3d4ee08a6d6a5b2db763330b532ea6}{yp}}
-\item 
-function for admittance param \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}} The number of buses return \mbox{\hyperlink{get__input_8m_abe3d4ee08a6d6a5b2db763330b532ea6}{yp}} The admittance matrix \mbox{\hyperlink{get__input_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}} = zeros(\mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
-\item 
+\begin{DoxyCompactList}\small\item\em Get impedance or admittance input from the user. \end{DoxyCompactList}\item 
 if \mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}
 \item 
 \mbox{\hyperlink{get__input_8m_a524e6c6a36397088e56b9ff1b3c614d1}{yij}} = input(\textquotesingle{}\textquotesingle{})
@@ -42,12 +40,6 @@ if \mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{display__matrix_8m_abb5d16a996bbdbdfe4dd32ca1b967784}{fprintf}}(\textcolor{stringliteral}{"{}Enter\ the\ impedance\ between\ bus\ \%d\ and\ \%d:\ "{}},\ \mbox{\hyperlink{calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d}{i}},\ j)}
 
 \end{DoxyCode}
-\Hypertarget{get__input_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}\label{get__input_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0} 
-\index{get\_input.m@{get\_input.m}!y@{y}}
-\index{y@{y}!get\_input.m@{get\_input.m}}
-\doxysubsubsection{\texorpdfstring{y}{y}}
-{\footnotesize\ttfamily y = zeros(\mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
-
 \Hypertarget{get__input_8m_a524e6c6a36397088e56b9ff1b3c614d1}\label{get__input_8m_a524e6c6a36397088e56b9ff1b3c614d1} 
 \index{get\_input.m@{get\_input.m}!yij@{yij}}
 \index{yij@{yij}!get\_input.m@{get\_input.m}}
@@ -63,7 +55,22 @@ if \mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=\ get\_input(\mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}},\mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
-\DoxyCodeLine{\ \ \ \ \%\ \(\backslash\)brief\ Get\ impedance\ or\ admittance\ input\ from\ the\ user}
-\DoxyCodeLine{\ \ \ \ \%\ \(\backslash\)param\ \mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}\ The\ user\textcolor{stringliteral}{'s\ choice\ for\ input\ type\ :\ 1\ for\ impedance}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}\ =\ zeros(\mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}},\ \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
 
 \end{DoxyCode}
+
+
+Get impedance or admittance input from the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & The user\textquotesingle{}s choice for input type \+: 1 for impedance, 2 for admittance \\
+\hline
+{\em n} & The number of buses \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+yp The admittance matrix 
+\end{DoxyReturn}
