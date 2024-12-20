@@ -39,45 +39,6 @@
 
 ```pseudocode
 
-INPUT MATRIX zdata
-
-
-FUNCTION create_admittance_matrix(nl,nr,nbr,nbus,y)
-    INITIALIZE MATRIX ybus WITH ZEROS // ONLY IF REQUIRED
-
-    // FORMATION OF OFF-DIAGONAL ELEMENTS
-    FOR k FROM 1 TO nbr
-        IF nl[k] > 0 AND nr[k] > 0 (>= for zero-indexed languages like java)
-            Ybus[nl[k],nr[k]] = Ybus[nl[k],nr[k]] - y[k]
-            Ybus[nr[k],nl[k]] = Ybus[nl[k],nr[k]]
-        ENDIF
-    ENDFOR
-
-    // FORMATION OF DIAGONAL ELEMENTS
-    FOR n FROM 1 TO nbus
-        FOR k FROM 1 TO nbr
-            IF nl[k] == n OR nr[k] == n
-                Ybus[n,n] = Ybus[n,n] + y[k]
-            ENDIF
-        ENDFOR
-    ENDFOR
-    RETURN Ybus
-ENDFUNCTION
-
-
-FUNCTION display_admittance_matrix(Ybus, nbus)
-    DISPLAY 'Bus Admittance Matrix:'
-    FOR i FROM 1 TO nbus
-        FOR j FROM 1TO nbus
-            DISPLAY Ybus[i,j]
-        ENDFOR
-        DISPLAY NEWLINE
-    ENDFOR
-ENDFUNCTION
-
-// DRIVER CODE
-YBUS = create_admittance_matrix(nl, nr, nbr, nbus, y);
-display_admittance_matrix(YBUS, nbus);
 ```
 
 ## Documentation
