@@ -93,6 +93,49 @@ END
 
 ```
 
+
+## Class Diagram
+
+```mermaid
+classDiagram
+class Complex{
+   - float real
+   - float imaginary
+   + Complex(float real,float imaginary) Complex
+   + getReal() float
+   + getImag() float
+   + fromString(String s) Complex
+   + findMax(int[] array) int
+   + add(Complex other) Complex
+   + subtract(Complex other) Complex
+   + multiply(Complex other) Complex
+   + divide(Complex other) Complex
+   + negate(Complex other) Complex
+   + reciprocal(Complex other) Complex
+   + toString() String
+}
+
+class Ybus_Java{
+   - Scanner sc
+   + main(String args[]) void
+   + get_input(int choice, int n) Complex[][]
+   + calculate_matrix(Complex[][] y, int n) Complex[][]
+   + display_matrix(Complex[][] ybus, int n) void
+}
+
+
+Ybus_Java --> Complex: uses
+
+end
+
+```
+> Adding annotations for MATLAB and Python implementations:\ 
+note for Complex:\
+In MATLAB and Python, inbuilt libraries are used instead of this custom Complex class.\
+note for YbusJava:\
+The MATLAB and Python versions implement similar functionality using inbuilt functions and data structures.
+
+
 ## Flowchart
 
 ```mermaid

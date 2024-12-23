@@ -28,7 +28,7 @@ public class Ybus_Java {
         sc.nextLine();
         Complex[][] y = get_input(choice,n);
         Complex[][] Ybus = calculate_matrix(y, n);
-        display_admittance_matrix(Ybus, n);
+        display_matrix(Ybus, n);
 
 
     }
@@ -119,7 +119,7 @@ public class Ybus_Java {
      * @param Ybus Bus admittance matrix
      * @param n Total no.of buses in the system
      */
-    public static void display_admittance_matrix(Complex[][] Ybus,int nbus) {
+    public static void display_matrix(Complex[][] Ybus,int nbus) {
         System.out.println("Bus Admittance Matrix is:");
         for (int i = 0; i < nbus; i++) {
             for (int j = 0; j < nbus; j++) {
