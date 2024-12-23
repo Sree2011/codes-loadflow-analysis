@@ -5,7 +5,9 @@
 \item 
 static void \mbox{\hyperlink{classYbus__Java_ac90297417d2db3f47056a73c29636427}{main}} (String\mbox{[}$\,$\mbox{]} args)
 \item 
-static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classYbus__Java_add919cbe4a503022d7593f1f8a3acead}{create\+\_\+admittance\+\_\+matrix}} (int \mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}, int nbus)
+static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classYbus__Java_a68383503a48ee84d0ba9df8f3dbc8b58}{get\+\_\+input}} (int \mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}, int nbus)
+\item 
+static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classYbus__Java_adaf5396a1610aee559bb5f750fd9b46f}{calculate\+\_\+matrix}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, int \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \item 
 static void \mbox{\hyperlink{classYbus__Java_a1bc92f8fa736aeab9840fdc16b681800}{display\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}{Ybus}}, int nbus)
 \end{DoxyCompactItemize}
@@ -18,24 +20,68 @@ This class creates a bus admittance matrix (Ybus). Functions\+:
 \end{DoxyItemize}
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classYbus__Java_add919cbe4a503022d7593f1f8a3acead}\label{classYbus__Java_add919cbe4a503022d7593f1f8a3acead} 
-\index{Ybus\_Java@{Ybus\_Java}!create\_admittance\_matrix@{create\_admittance\_matrix}}
-\index{create\_admittance\_matrix@{create\_admittance\_matrix}!Ybus\_Java@{Ybus\_Java}}
-\doxysubsubsection{\texorpdfstring{create\_admittance\_matrix()}{create\_admittance\_matrix()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Ybus\+\_\+\+Java.\+create\+\_\+admittance\+\_\+matrix (\begin{DoxyParamCaption}\item[{int}]{choice,  }\item[{int}]{nbus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{classYbus__Java_adaf5396a1610aee559bb5f750fd9b46f}\label{classYbus__Java_adaf5396a1610aee559bb5f750fd9b46f} 
+\index{Ybus\_Java@{Ybus\_Java}!calculate\_matrix@{calculate\_matrix}}
+\index{calculate\_matrix@{calculate\_matrix}!Ybus\_Java@{Ybus\_Java}}
+\doxysubsubsection{\texorpdfstring{calculate\_matrix()}{calculate\_matrix()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Ybus\+\_\+\+Java.\+calculate\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{y\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classYbus__Java_a1bc92f8fa736aeab9840fdc16b681800}\label{classYbus__Java_a1bc92f8fa736aeab9840fdc16b681800} 
+This function calculates the bus admittance matrix. 
+\begin{DoxyParams}{Parameters}
+{\em y} & Line admittance matrix \\
+\hline
+{\em n} & Total no.\+of buses in the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ybus Bus admittance matrix 
+\end{DoxyReturn}
+Initialize the bus admittance matrix
+
+External loop
+
+Internal loop\Hypertarget{classYbus__Java_a1bc92f8fa736aeab9840fdc16b681800}\label{classYbus__Java_a1bc92f8fa736aeab9840fdc16b681800} 
 \index{Ybus\_Java@{Ybus\_Java}!display\_admittance\_matrix@{display\_admittance\_matrix}}
 \index{display\_admittance\_matrix@{display\_admittance\_matrix}!Ybus\_Java@{Ybus\_Java}}
 \doxysubsubsection{\texorpdfstring{display\_admittance\_matrix()}{display\_admittance\_matrix()}}
 {\footnotesize\ttfamily static void Ybus\+\_\+\+Java.\+display\+\_\+admittance\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{Ybus\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{nbus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classYbus__Java_ac90297417d2db3f47056a73c29636427}\label{classYbus__Java_ac90297417d2db3f47056a73c29636427} 
+This function displays the bus admittance matrix. 
+\begin{DoxyParams}{Parameters}
+{\em Ybus} & Bus admittance matrix \\
+\hline
+{\em n} & Total no.\+of buses in the system \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classYbus__Java_a68383503a48ee84d0ba9df8f3dbc8b58}\label{classYbus__Java_a68383503a48ee84d0ba9df8f3dbc8b58} 
+\index{Ybus\_Java@{Ybus\_Java}!get\_input@{get\_input}}
+\index{get\_input@{get\_input}!Ybus\_Java@{Ybus\_Java}}
+\doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Ybus\+\_\+\+Java.\+get\+\_\+input (\begin{DoxyParamCaption}\item[{int}]{choice,  }\item[{int}]{nbus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This function takes the input from the user. 
+\begin{DoxyParams}{Parameters}
+{\em choice} & User choice\+: 1 for impedance and 2 for admittance \\
+\hline
+{\em nbus} & Total no.\+of buses in the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+y line admittance matrix 
+\end{DoxyReturn}
+Initialize the line admittance matrix\Hypertarget{classYbus__Java_ac90297417d2db3f47056a73c29636427}\label{classYbus__Java_ac90297417d2db3f47056a73c29636427} 
 \index{Ybus\_Java@{Ybus\_Java}!main@{main}}
 \index{main@{main}!Ybus\_Java@{Ybus\_Java}}
 \doxysubsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily static void Ybus\+\_\+\+Java.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+Main function that executes the formation of the Ybus matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Command line arguments. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

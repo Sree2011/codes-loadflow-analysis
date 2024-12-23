@@ -81,8 +81,10 @@ $(function() {
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac90297417d2db3f47056a73c29636427" id="r_ac90297417d2db3f47056a73c29636427"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classYbus__Java.html#ac90297417d2db3f47056a73c29636427">main</a> (String[] args)</td></tr>
 <tr class="separator:ac90297417d2db3f47056a73c29636427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add919cbe4a503022d7593f1f8a3acead" id="r_add919cbe4a503022d7593f1f8a3acead"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComplex.html">Complex</a>[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classYbus__Java.html#add919cbe4a503022d7593f1f8a3acead">create_admittance_matrix</a> (int <a class="el" href="get__input_8m.html#a1f127bad7a541fed1afa2568db2e13a1">choice</a>, int nbus)</td></tr>
-<tr class="separator:add919cbe4a503022d7593f1f8a3acead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68383503a48ee84d0ba9df8f3dbc8b58" id="r_a68383503a48ee84d0ba9df8f3dbc8b58"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComplex.html">Complex</a>[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classYbus__Java.html#a68383503a48ee84d0ba9df8f3dbc8b58">get_input</a> (int <a class="el" href="get__input_8m.html#a1f127bad7a541fed1afa2568db2e13a1">choice</a>, int nbus)</td></tr>
+<tr class="separator:a68383503a48ee84d0ba9df8f3dbc8b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf5396a1610aee559bb5f750fd9b46f" id="r_adaf5396a1610aee559bb5f750fd9b46f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classComplex.html">Complex</a>[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classYbus__Java.html#adaf5396a1610aee559bb5f750fd9b46f">calculate_matrix</a> (<a class="el" href="classComplex.html">Complex</a>[][] <a class="el" href="Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>, int <a class="el" href="Ybus__matlab_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="separator:adaf5396a1610aee559bb5f750fd9b46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc92f8fa736aeab9840fdc16b681800" id="r_a1bc92f8fa736aeab9840fdc16b681800"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classYbus__Java.html#a1bc92f8fa736aeab9840fdc16b681800">display_admittance_matrix</a> (<a class="el" href="classComplex.html">Complex</a>[][] <a class="el" href="calculate__matrix_8m.html#ae5a5eee66749bf5128939e55db6f81c1">Ybus</a>, int nbus)</td></tr>
 <tr class="separator:a1bc92f8fa736aeab9840fdc16b681800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -91,8 +93,8 @@ Static Public Member Functions</h2></td></tr>
 <li><code class="JavaDocCode">main()</code>: The main function that executes the formation of the Ybus matrix. </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="add919cbe4a503022d7593f1f8a3acead" name="add919cbe4a503022d7593f1f8a3acead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add919cbe4a503022d7593f1f8a3acead">&#9670;&#160;</a></span>create_admittance_matrix()</h2>
+<a id="adaf5396a1610aee559bb5f750fd9b46f" name="adaf5396a1610aee559bb5f750fd9b46f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf5396a1610aee559bb5f750fd9b46f">&#9670;&#160;</a></span>calculate_matrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -101,16 +103,16 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classComplex.html">Complex</a>[][] Ybus_Java.create_admittance_matrix </td>
+          <td class="memname">static <a class="el" href="classComplex.html">Complex</a>[][] Ybus_Java.calculate_matrix </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>choice</em>, </td>
+          <td class="paramtype"><a class="el" href="classComplex.html">Complex</a>&#160;</td>
+          <td class="paramname"><em>y</em>[][], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nbus</em>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -124,6 +126,17 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This function calculates the bus admittance matrix. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>Line admittance matrix </td></tr>
+    <tr><td class="paramname">n</td><td>Total no.of buses in the system </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Ybus Bus admittance matrix </dd></dl>
+<p>Initialize the bus admittance matrix</p>
+<p>External loop</p>
+<p>Internal loop</p>
 
 </div>
 </div>
@@ -160,6 +173,58 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>This function displays the bus admittance matrix. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Ybus</td><td>Bus admittance matrix </td></tr>
+    <tr><td class="paramname">n</td><td>Total no.of buses in the system </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68383503a48ee84d0ba9df8f3dbc8b58" name="a68383503a48ee84d0ba9df8f3dbc8b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68383503a48ee84d0ba9df8f3dbc8b58">&#9670;&#160;</a></span>get_input()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classComplex.html">Complex</a>[][] Ybus_Java.get_input </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>choice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This function takes the input from the user. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">choice</td><td>User choice: 1 for impedance and 2 for admittance </td></tr>
+    <tr><td class="paramname">nbus</td><td>Total no.of buses in the system </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>y line admittance matrix </dd></dl>
+<p>Initialize the line admittance matrix</p>
 
 </div>
 </div>
@@ -186,6 +251,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Main function that executes the formation of the Ybus matrix.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>Command line arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
