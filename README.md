@@ -1,45 +1,136 @@
 ## Generate Bus Admittance Matrix
 
 ## Algorithm
-1. Start
 
-2. Take Input:
-   - Line data (Bus1, Bus2, Resistance, Reactance)
+1. **Initialize Variables**:
+   - Get the number of buses from the user.
+   - Initialize the line admittance matrix and bus admittance matrix with zeros.
 
-3. Preprocess Line Data:
-   - Extract the number of branches (nbr) from line data
-   - Extract starting bus numbers (nl) from line data
-   - Extract ending bus numbers (nr) from line data
-   - Extract resistance values (R) from line data
-   - Extract reactance values (X) from line data
-   - Determine the number of buses (nbus) from the maximum bus number in line data
+2. **Define Functions**:
+   - **Function 1: get_input**
+     - Input: User choice (impedance or admittance) and number of buses.
+     - Output: Line Admittance Matrix.
+     - Description: Gets the input from the user based on the choice and calculates admittance values.
 
-4. Calculate Admittance:
-   - For each branch:
-     - Calculate impedance (Z) = R + jX
-     - Calculate admittance (y) = 1 / Z
+   - **Function 2: calculate_admittance_matrix**
+     - Input: Line Admittance Matrix.
+     - Output: Bus Admittance Matrix.
+     - Description: Forms the bus admittance matrix using the admittance value matrix.
 
-5. Initialize Admittance Matrix:
-   - Create an empty complex matrix Ybus of size nbus x nbus
+   - **Function 3: print_admittance_matrix**
+     - Input: Bus Admittance Matrix.
+     - Output: None (prints the matrix to the console).
+     - Description: Prints the bus admittance matrix.
 
-6. Populate Admittance Matrix:
-   - For each branch:
-     - Update off-diagonal elements:
-       - Ybus[nl-1, nr-1] -= y
-       - Ybus[nr-1, nl-1] -= y
-     - Update diagonal elements:
-       - Ybus[nl-1, nl-1] += y
-       - Ybus[nr-1, nr-1] += y
-
-7. Print Admittance Matrix:
-   - Print the real and imaginary parts of each element in Ybus
-
+3. **Main Function**:
+   - Step 1: Ask the user to enter the number of buses.
+   - Step 2: Ask the user to choose between impedance or admittance.
+   - Step 3: Call `get_input` to get the line admittance matrix.
+   - Step 4: Call `calculate_admittance_matrix` to form the bus admittance matrix.
+   - Step 5: Call `print_admittance_matrix` to display the bus admittance matrix.
 
 ## Pseudocode
 
 ```pseudocode
+BEGIN
+    INITIALIZE Ybus matrix of size (n x n) with 0+0j
+    INITIALIZE y matrix of size (n x n) with 0+0j
+
+    FUNCTION get_input(choice, n)
+        IF choice == 1 THEN
+            FOR each bus i from 1 to n DO
+                FOR each bus j from 1 to n DO
+                    PRINT "Enter the impedance between bus i and bus j:"
+                    yij = INPUT complex number
+                    y[i][j] = 1 / yij
+                END FOR
+            END FOR
+        ELSE IF choice == 2 THEN
+            FOR each bus i from 1 to n DO
+                FOR each bus j from 1 to n DO
+                    PRINT "Enter the admittance between bus i and bus j:"
+                    y[i][j] = INPUT complex number
+                END FOR
+            END FOR
+        END IF
+        RETURN y
+    END FUNCTION
+
+    FUNCTION calculate_admittance_matrix(y, n)
+        FOR each bus i from 1 to n DO
+            FOR each bus j from 1 to n DO
+                IF i == j THEN
+                    FOR each bus k from 1 to n DO
+                        Ybus[i][j] = Ybus[i][j] + y[i][k]
+                    END FOR
+                ELSE
+                    Ybus[i][j] = -y[i][j]
+                END IF
+            END FOR
+        END FOR
+        RETURN Ybus
+    END FUNCTION
+
+    FUNCTION print_admittance_matrix(Ybus)
+        PRINT "Bus Admittance Matrix:"
+        FOR each row in Ybus DO
+            FOR each element in row DO
+                PRINT element
+            END FOR
+            PRINT new line
+        END FOR
+    END FUNCTION
+   
+   PRINT "Enter the number of buses:"
+   n = INPUT integer
+   PRINT "Enter 1 for impedance and 2 for admittance"
+   choice = INPUT integer
+
+    y = get_input(choice, n)
+    Ybus = calculate_admittance_matrix(y, n)
+    print_admittance_matrix(Ybus)
+END
 
 ```
+
+## Flowchart
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Enter the number of buses]
+    B --> C[Initialize Ybus matrix with 0+0j]
+    C --> D[Initialize y matrix with 0+0j]
+    D --> E[Enter 1 for impedance and 2 for admittance]
+    E --> F{Choice}
+    F -->|1| G[Call get_input(choice, n) to get admittance matrix]
+    F -->|2| G[Call get_input(choice, n) to get admittance matrix]
+    F --> |Other Input| AB[Invalid Input]
+    G --> H[Call calculate_admittance_matrix(y, n)]
+    H --> I[Call print_admittance_matrix(Ybus)]
+    I --> J[End]
+    AB --> J
+    subgraph Function get_input(choice, n)
+        K[If choice == 1] --> L[For each bus i and j]
+        L --> M[Enter impedance and calculate admittance]
+        K --> N[Else If choice == 2]
+        N --> O[For each bus i and j]
+        O --> P[Enter admittance]
+        P --> Q[Return y]
+    end
+    subgraph Function calculate_admittance_matrix(y, n)
+        R[For each bus i and j] --> S[If i == j]
+        S --> T[Calculate diagonal elements]
+        S --> U[Else]
+        U --> V[Calculate off-diagonal elements]
+        V --> W[Return Ybus]
+    end
+    subgraph Function print_admittance_matrix(Ybus)
+        X[Print "Bus Admittance Matrix"] --> Y[For each row in Ybus]
+        Y --> Z[Print each element]
+        Z --> AA[Print new line]
+    end
+```
+
 
 ## Documentation
 

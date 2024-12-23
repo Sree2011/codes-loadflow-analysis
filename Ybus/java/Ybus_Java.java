@@ -3,6 +3,9 @@
  * This class creates a bus admittance matrix (Ybus).
  * Functions:
  * - {@code main()}: The main function that executes the formation of the Ybus matrix.
+ * - {@code get_input()}: This function takes the input from the user.
+ * - {@code calculate_matrix()}: This function calculates the bus admittance matrix.
+ * - {@code display_admittance_matrix()}: This function displays the bus admittance matrix.
  */
 import java.util.*;
 public class Ybus_Java {
