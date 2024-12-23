@@ -96,39 +96,54 @@ END
 ## Flowchart
 
 ```mermaid
-flowchart TD
-    A[Start] --> B[Enter the number of buses]
-    B --> C[Initialize Ybus matrix with 0+0j]
-    C --> D[Initialize y matrix with 0+0j]
-    D --> E[Enter 1 for impedance and 2 for admittance]
-    E --> F{Choice}
-    F -->|1| G[Call "get_input(choice, n)" to get admittance matrix]
-    F -->|2| G[Call "get_input(choice, n)" to get admittance matrix]
-    F --> |Other Input| AB[Invalid Input]
-    G --> H[Call calculate_admittance_matrix(y, n)]
-    H --> I[Call print_admittance_matrix(Ybus)]
-    I --> J[End]
-    AB --> J
-    subgraph Function get_input(choice, n)
-        K[If choice == 1] --> L[For each bus i and j]
-        L --> M[Enter impedance and calculate admittance]
-        K --> N[Else If choice == 2]
-        N --> O[For each bus i and j]
-        O --> P[Enter admittance]
-        P --> Q[Return y]
-    end
-    subgraph Function calculate_admittance_matrix(y, n)
-        R[For each bus i and j] --> S[If i == j]
-        S --> T[Calculate diagonal elements]
-        S --> U[Else]
-        U --> V[Calculate off-diagonal elements]
-        V --> W[Return Ybus]
-    end
-    subgraph Function print_admittance_matrix(Ybus)
-        X[Print "Bus Admittance Matrix"] --> Y[For each row in Ybus]
-        Y --> Z[Print each element]
-        Z --> AA[Print new line]
-    end
+graph LR
+   subgraph "FUNCTION main()"
+      A([Start]) --> B[Enter the number of buses]
+      B --> C[Initialize Ybus matrix with 0+0j]
+      C --> D[Initialize y matrix with 0+0j]
+      D --> E[Enter 1 for impedance and 2 for admittance]
+      E --> F{Choice}
+      F -->|1| G["Call get_input(choice, n) to get admittance matrix from impedances"]
+      F -->|2| H["Call get_input(choice, n) to get admittance matrix from admittances"]
+      F --> |Other Input| AB[Invalid Input]
+      G --> I["Call calculate_admittance_matrix(y, n)"]
+      H --> I
+      I --> J["Call print_admittance_matrix(Ybus)"]
+      J --> K[End]
+      AB --> K
+   end
+   subgraph "FUNCTION get_input(choice,n)"     
+      V[Start] --> K2{Choice}
+      K2 --> |1| L1{For each bus i and j}
+      L1 --> M1[Enter impedance, calculate admittance and store into y]
+      M1 --> L1
+      
+      K2 --> |2| O1[For each bus i and j]
+      O1 --> P1[Enter admittance and store into y]
+      P1 --> Q1[Return y]
+      M1 --> Q1
+   end
+
+   subgraph "FUNCTION calculate_admittance_matrix(y,n)"
+
+      R1[For each bus i and j] --> S1[If i == j]
+      S1 --> T1[Calculate diagonal elements]
+      S1 --> U1[Else]
+      U1 --> V1[Calculate off-diagonal elements]
+      V1 --> W1[Return Ybus]
+   end
+
+   subgraph "FUNCTION print_admittance_matrix(ybus,n)"
+
+      X1[Print Bus Admittance Matrix]
+      X1 --> Y1[For each row in Ybus]
+      Y1 --> Z1[Print each element]
+      Z1 --> AA1[Print new line]
+      AA1 --> Y1
+   end
+
+
+
 ```
 
 
