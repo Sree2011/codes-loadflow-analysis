@@ -102,8 +102,8 @@ flowchart TD
     C --> D[Initialize y matrix with 0+0j]
     D --> E[Enter 1 for impedance and 2 for admittance]
     E --> F{Choice}
-    F -->|1| G[Call get_input(choice, n) to get admittance matrix]
-    F -->|2| G[Call get_input(choice, n) to get admittance matrix]
+    F -->|1| G[Call "get_input(choice, n)" to get admittance matrix]
+    F -->|2| G[Call "get_input(choice, n)" to get admittance matrix]
     F --> |Other Input| AB[Invalid Input]
     G --> H[Call calculate_admittance_matrix(y, n)]
     H --> I[Call print_admittance_matrix(Ybus)]
