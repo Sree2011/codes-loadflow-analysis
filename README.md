@@ -98,11 +98,11 @@ END
 ```mermaid
 graph LR
    subgraph "FUNCTION main()"
-      A([Start]) --> B[Enter the number of buses]
-      B --> C[Initialize Ybus matrix with 0+0j]
-      C --> D[Initialize y matrix with 0+0j]
-      D --> E[Enter 1 for impedance and 2 for admittance]
-      E --> F{Choice}
+      A([Start]) --> B[Enter the number of buses]@{shape: lean-right}
+      B --> C[[Initialize Ybus matrix with 0+0j]]
+      C --> D[[Initialize y matrix with 0+0j]]
+      D --> E[Enter 1 for impedance and 2 for admittance]@{shape: lean-left}
+      E --> F[Choice]@{shape: hex}
       F -->|1| G["Call get_input(choice, n) to get admittance matrix from impedances"]
       F -->|2| H["Call get_input(choice, n) to get admittance matrix from admittances"]
       F --> |Other Input| AB[Invalid Input]
@@ -114,19 +114,24 @@ graph LR
    end
    subgraph "FUNCTION get_input(choice,n)"     
       V[Start] --> K2{Choice}
-      K2 --> |1| L1{For each bus i and j}
-      L1 --> M1[Enter impedance, calculate admittance and store into y]
-      M1 --> L1
+      K2 --> |1| L1{For each bus i}@{shape: notch-pent}
+      L1 --> L2{For each bus j}@{shape: notch-pent}
+      L2 --> M1[Enter impedance]@{shape: lean-left}
+      M1 --> M2[calculate admittance]@{shape: }
+      M2 --> M3[store into y]
+      M3 --> L1
       
-      K2 --> |2| O1[For each bus i and j]
-      O1 --> P1[Enter admittance and store into y]
+      K2 --> |2| O1{For each bus i}@{shape: notch-pent}
+      O1 --> O2{For each bus j}@{shape: notch-pent}
+      O2 --> P1[Enter admittance and store into y]
+      P1 --> O1
       P1 --> Q1[Return y]
       M1 --> Q1
    end
 
    subgraph "FUNCTION calculate_admittance_matrix(y,n)"
 
-      R1[For each bus i and j] --> S1[If i == j]
+      R1[For each bus i and j]@{shape: notch-pent} --> S1[If i == j]
       S1 --> T1[Calculate diagonal elements]
       S1 --> U1[Else]
       U1 --> V1[Calculate off-diagonal elements]
@@ -135,7 +140,7 @@ graph LR
 
    subgraph "FUNCTION print_admittance_matrix(ybus,n)"
 
-      X1[Print Bus Admittance Matrix]
+      X1[[Print Bus Admittance Matrix]]
       X1 --> Y1[For each row in Ybus]
       Y1 --> Z1[Print each element]
       Z1 --> AA1[Print new line]
