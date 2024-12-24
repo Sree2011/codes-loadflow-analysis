@@ -129,10 +129,10 @@ Ybus_Java --> Complex: uses
 end
 
 ```
-> Adding annotations for MATLAB and Python implementations:\ 
-note for Complex:\
+**Adding annotations for MATLAB and Python implementations:**
+- **note for Complex**:\
 In MATLAB and Python, inbuilt libraries are used instead of this custom Complex class.\
-note for YbusJava:\
+- **note for Ybus_Java**:\
 The MATLAB and Python versions implement similar functionality using inbuilt functions and data structures.
 
 
@@ -141,48 +141,56 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 ```mermaid
 graph LR
    subgraph "FUNCTION main()"
-      A([Start]) --> B[Enter the number of buses]@{shape: lean-right}
-      B --> C[[Initialize Ybus matrix with 0+0j]]
-      C --> D[[Initialize y matrix with 0+0j]]
-      D --> E[Enter 1 for impedance and 2 for admittance]@{shape: lean-left}
-      E --> F[Choice]@{shape: hex}
-      F -->|1| G["Call get_input(choice, n) to get admittance matrix from impedances"]
-      F -->|2| H["Call get_input(choice, n) to get admittance matrix from admittances"]
-      F --> |Other Input| AB[Invalid Input]
-      G --> I["Call calculate_admittance_matrix(y, n)"]
+   direction LR
+      A([Start]) --> B[Display 'Enter the number of buses']@{shape: lean-right}
+      B --> B1[Input n]@{shape: lean-left}
+      B1 --> C[Initialize Ybus matrix with 0+0j]
+      C --> D[Initialize y matrix with 0+0j]
+      D --> E[Display 'Enter 1 for impedance and 2 for admittance']@{shape: lean-right}
+      E --> E1[Input choice]@{shape: lean-left}
+      E1 --> F[Choice]@{shape: hex}
+      F -->|1| G[["Call get_input(choice, n) to get admittance matrix from impedances"]]
+      F -->|2| H[["Call get_input(choice, n) to get admittance matrix from admittances"]]
+      F --> |Else| AB[Display 'Invalid Input']@{shape: lean-right}
+      G --> I[["Call calculate_admittance_matrix(y, n)"]]
       H --> I
-      I --> J["Call print_admittance_matrix(Ybus)"]
+      I --> J[["Call print_admittance_matrix(Ybus)"]]
       J --> K[End]
       AB --> K
    end
-   subgraph "FUNCTION get_input(choice,n)"     
-      V[Start] --> K2{Choice}
+   subgraph "FUNCTION get_input(choice,n)"
+   direction LR   
+      V[Start]@{shape: stadium} --> K2{Choice}
       K2 --> |1| L1{For each bus i}@{shape: notch-pent}
       L1 --> L2{For each bus j}@{shape: notch-pent}
-      L2 --> M1[Enter impedance]@{shape: lean-left}
-      M1 --> M2[calculate admittance]@{shape: }
-      M2 --> M3[store into y]
+      L2 --> M1[Take impedance as input]@{shape: lean-left}
+      M1 --> M2[[Calculate admittance]]
+      M2 --> M3[store into y]@{shape: lean-left}
       M3 --> L1
+      M3 --> Q1
       
       K2 --> |2| O1{For each bus i}@{shape: notch-pent}
       O1 --> O2{For each bus j}@{shape: notch-pent}
-      O2 --> P1[Enter admittance and store into y]
-      P1 --> O1
-      P1 --> Q1[Return y]
-      M1 --> Q1
+      O2 --> P1[Take admittance as input]@{shape: lean-left}
+      P1 --> P2[store into y]@{shape: lean-left}
+      P2 --> O1
+      P2 --> Q1[Return y to main]@{shape: stadium}
+   
+     
    end
 
    subgraph "FUNCTION calculate_admittance_matrix(y,n)"
-
-      R1[For each bus i and j]@{shape: notch-pent} --> S1[If i == j]
+   direction LR
+      R[Start]@{shape: stadium} --> R1[For each bus i and j]@{shape: notch-pent}
+      R1 --> S1[If i == j]
       S1 --> T1[Calculate diagonal elements]
       S1 --> U1[Else]
       U1 --> V1[Calculate off-diagonal elements]
-      V1 --> W1[Return Ybus]
+      V1 --> W1[Return Ybus to main]@{shape: stadium}
    end
 
    subgraph "FUNCTION print_admittance_matrix(ybus,n)"
-
+   direction LR
       X1[[Print Bus Admittance Matrix]]
       X1 --> Y1[For each row in Ybus]
       Y1 --> Z1[Print each element]
