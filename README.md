@@ -142,8 +142,8 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 graph TD
    subgraph main["main()"]
    direction TB
-      A([Start])@{shape:stadium} --> B[Display 'Enter the number of buses']
-      B --> B1[Input n]
+      A([Start]) --> B[Display 'Enter the number of buses']
+      B --> B1[\Input n\]
       B1 --> C[Initialize Ybus matrix with 0+0j]
       C --> D[Initialize y matrix with 0+0j]
       D --> E[Display 'Enter 1 for impedance and 2 for admittance']
@@ -155,12 +155,12 @@ graph TD
       G --> I["Call calculate_matrix(y, n)"]
       H --> I
       I --> J["Call display_matrix(Ybus)"]
-      J --> K[End]@{shape:stadium}
+      J --> K([End])
       AB --> K
    end
    subgraph "get_input(choice,n)"
    direction TB
-      V[Start]@{shape:stadium} --> K2{Choice}
+      V([Start]) --> K2{Choice}
       K2 --> |1| L1{For each bus i}
       L1 --> L2{For each bus j}
       L2 --> M1[Take impedance as input]
@@ -174,39 +174,44 @@ graph TD
       O2 --> P1[Take admittance as input]
       P1 --> P2[store into y]
       P2 --> O1
-      P2 --> Q1[Return y to main]@{shape:stadium}
+      P2 --> Q1([Return y to main])
    
      
    end
 
    subgraph "calculate_matrix(y,n)"
    direction TB
-      R[Start]@{shape:stadium} --> R1{For each bus i and j}
+      R([Start]) --> R1{For each bus i and j}
       R1 --> S1[i == j]@{shape: diam}
       S1 --> |Yes| T1[Calculate diagonal elements]
       S1 --> |No|V1[Calculate off-diagonal elements]
       V1 --> U1[Next Iteration]
       U1 --> R1
-      U1 --> W1[Return Ybus to main]@{shape:stadium}
+      U1 --> W1([Return Ybus to main])
    end
 
    subgraph "display_matrix(ybus,n)"
    direction TB
-      X[Start]@{shape:stadium} --> X1[Print Bus Admittance Matrix]
+      X([Start]) --> X1[Print Bus Admittance Matrix]
       X1 --> Y1[For each row in Ybus]
       Y1 --> Z1[Print each element]
       Z1 --> AA1[Print new line]
       AA1 --> Y1
-      Y1 --> Z3[Return to main]@{shape:stadium}
+      Y1 --> Z3([Return to main])
    end
 
    %% Define custom styles for different shapes 
-   classDef startEnd fill:#f9f,stroke:#333,stroke-width:2px; 
-   classDef decision fill:#bbf,stroke:#333,stroke-width:2px; 
-   classDef process1 fill:#b2f7ef,stroke:#333,stroke-width:2px; 
-   classDef process2 fill:#ffb7c5,stroke:#333,stroke-width:2px;
+   classDef startEnd fill:#BFD641,stroke:#333,stroke-width:2px,font-size:14px;
+   classDef decision fill:#bbf,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
+   classDef initial fill:#b2f7ef,stroke:#333,stroke-width:2px,stroke-linecap:round,font-weight:bold;
+   classDef process2 fill:#ffb7c5,stroke:#333,stroke-width:2px,text-align:center;
+   classDef input fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
+   classDef output fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
 
    class A,V,R,X,Z3,W1,Q1,K startEnd
+   class B1,E1,M1,P1 input
+   class C,D initial
+   class 
 
 ```
 
