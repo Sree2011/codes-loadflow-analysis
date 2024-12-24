@@ -56,7 +56,7 @@ BEGIN
         RETURN y
     END FUNCTION
 
-    FUNCTION calculate_admittance_matrix(y, n)
+    FUNCTION calculate_matrix(y, n)
         FOR each bus i from 1 to n DO
             FOR each bus j from 1 to n DO
                 IF i == j THEN
@@ -71,7 +71,7 @@ BEGIN
         RETURN Ybus
     END FUNCTION
 
-    FUNCTION print_admittance_matrix(Ybus)
+    FUNCTION display_matrix(Ybus)
         PRINT "Bus Admittance Matrix:"
         FOR each row in Ybus DO
             FOR each element in row DO
@@ -87,8 +87,8 @@ BEGIN
    choice = INPUT integer
 
     y = get_input(choice, n)
-    Ybus = calculate_admittance_matrix(y, n)
-    print_admittance_matrix(Ybus)
+    Ybus = calculate_matrix(y, n)
+    display_matrix(Ybus)
 END
 
 ```
@@ -140,7 +140,7 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 
 ```mermaid
 graph TD
-   subgraph "FUNCTION main()"
+   subgraph "main()"
    direction TB
       A([Start]) --> B[Display 'Enter the number of buses']@{shape: lean-right}
       B --> B1[Input n]@{shape: lean-left}
@@ -152,13 +152,13 @@ graph TD
       F -->|1| G[["Call get_input(choice, n) to get admittance matrix from impedances"]]
       F -->|2| H[["Call get_input(choice, n) to get admittance matrix from admittances"]]
       F --> |Else| AB[Display 'Invalid Input']@{shape: lean-right}
-      G --> I[["Call calculate_admittance_matrix(y, n)"]]
+      G --> I[["Call calculate_matrix(y, n)"]]
       H --> I
-      I --> J[["Call print_admittance_matrix(Ybus)"]]
+      I --> J[["Call display_matrix(Ybus)"]]
       J --> K[End]
       AB --> K
    end
-   subgraph "FUNCTION get_input(choice,n)"
+   subgraph "get_input(choice,n)"
    direction TB
       V[Start]@{shape: stadium} --> K2{Choice}
       K2 --> |1| L1{For each bus i}@{shape: notch-pent}
@@ -179,7 +179,7 @@ graph TD
      
    end
 
-   subgraph "FUNCTION calculate_admittance_matrix(y,n)"
+   subgraph "calculate_matrix(y,n)"
    direction TB
       R[Start]@{shape: stadium} --> R1[For each bus i and j]@{shape: notch-pent}
       R1 --> S1[If i == j]
@@ -189,7 +189,7 @@ graph TD
       V1 --> W1[Return Ybus to main]@{shape: stadium}
    end
 
-   subgraph "FUNCTION print_admittance_matrix(ybus,n)"
+   subgraph "display_matrix(ybus,n)"
    direction TB
       X1[[Print Bus Admittance Matrix]]
       X1 --> Y1[For each row in Ybus]
