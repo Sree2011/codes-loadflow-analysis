@@ -5,6 +5,13 @@ View this on github:\
 
 # Generate Bus Admittance Matrix
 
+![A sample bus system](https://github.com/user-attachments/assets/5e8a3816-cd88-49b9-abd2-7cedb479baed)
+
+Consider a power system like in the above diagram.
+
+## Formulas for Calculation
+
+
 
 # Algorithm
 
