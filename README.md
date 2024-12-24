@@ -1,6 +1,12 @@
-## Generate Bus Admittance Matrix
 
-## Algorithm
+View this on github:\
+[Github - Bus Admittance Matrix](https://github.com/Sree2011/bus-admittance-matrix/)
+--------------------------------
+
+# Generate Bus Admittance Matrix
+
+
+# Algorithm
 
 1. **Initialize Variables**:
    - Get the number of buses from the user.
@@ -28,111 +34,6 @@
    - Step 3: Call `get_input` to get the line admittance matrix.
    - Step 4: Call `calculate_admittance_matrix` to form the bus admittance matrix.
    - Step 5: Call `print_admittance_matrix` to display the bus admittance matrix.
-
-## Pseudocode
-
-```pseudocode
-BEGIN
-    INITIALIZE Ybus matrix of size (n x n) with 0+0j
-    INITIALIZE y matrix of size (n x n) with 0+0j
-
-    FUNCTION get_input(choice, n)
-        IF choice == 1 THEN
-            FOR each bus i from 1 to n DO
-                FOR each bus j from 1 to n DO
-                    PRINT "Enter the impedance between bus i and bus j:"
-                    yij = INPUT complex number
-                    y[i][j] = 1 / yij
-                END FOR
-            END FOR
-        ELSE IF choice == 2 THEN
-            FOR each bus i from 1 to n DO
-                FOR each bus j from 1 to n DO
-                    PRINT "Enter the admittance between bus i and bus j:"
-                    y[i][j] = INPUT complex number
-                END FOR
-            END FOR
-        END IF
-        RETURN y
-    END FUNCTION
-
-    FUNCTION calculate_matrix(y, n)
-        FOR each bus i from 1 to n DO
-            FOR each bus j from 1 to n DO
-                IF i == j THEN
-                    FOR each bus k from 1 to n DO
-                        Ybus[i][j] = Ybus[i][j] + y[i][k]
-                    END FOR
-                ELSE
-                    Ybus[i][j] = -y[i][j]
-                END IF
-            END FOR
-        END FOR
-        RETURN Ybus
-    END FUNCTION
-
-    FUNCTION display_matrix(Ybus)
-        PRINT "Bus Admittance Matrix:"
-        FOR each row in Ybus DO
-            FOR each element in row DO
-                PRINT element
-            END FOR
-            PRINT new line
-        END FOR
-    END FUNCTION
-   
-   PRINT "Enter the number of buses:"
-   n = INPUT integer
-   PRINT "Enter 1 for impedance and 2 for admittance"
-   choice = INPUT integer
-
-    y = get_input(choice, n)
-    Ybus = calculate_matrix(y, n)
-    display_matrix(Ybus)
-END
-
-```
-
-
-## Class Diagram
-
-```mermaid
-classDiagram
-class Complex{
-   - float real
-   - float imaginary
-   + Complex(float real,float imaginary) Complex
-   + getReal() float
-   + getImag() float
-   + fromString(String s) Complex
-   + findMax(int[] array) int
-   + add(Complex other) Complex
-   + subtract(Complex other) Complex
-   + multiply(Complex other) Complex
-   + divide(Complex other) Complex
-   + negate(Complex other) Complex
-   + reciprocal(Complex other) Complex
-   + toString() String
-}
-
-class Ybus_Java{
-   - Scanner sc
-   + main(String args[]) void
-   + get_input(int choice, int n) Complex[][]
-   + calculate_matrix(Complex[][] y, int n) Complex[][]
-   + display_matrix(Complex[][] ybus, int n) void
-}
-
-
-Ybus_Java --> Complex: uses
-
-
-```
-**Adding annotations for MATLAB and Python implementations:**
-- **note for Complex**:\
-In MATLAB and Python, inbuilt libraries are used instead of this custom Complex class.\
-- **note for Ybus_Java**:\
-The MATLAB and Python versions implement similar functionality using inbuilt functions and data structures.
 
 
 ## Flowchart
@@ -215,6 +116,113 @@ graph TD
    class L1,L2,O1,O2,R1,Y1,Z1 loop
 ```
 
+
+## Class Diagram
+
+```mermaid
+classDiagram
+class Complex{
+   - float real
+   - float imaginary
+   + Complex(float real,float imaginary) Complex
+   + getReal() float
+   + getImag() float
+   + fromString(String s) Complex
+   + findMax(int[] array) int
+   + add(Complex other) Complex
+   + subtract(Complex other) Complex
+   + multiply(Complex other) Complex
+   + divide(Complex other) Complex
+   + negate(Complex other) Complex
+   + reciprocal(Complex other) Complex
+   + toString() String
+}
+
+class Ybus_Java{
+   - Scanner sc
+   + main(String args[]) void
+   + get_input(int choice, int n) Complex[][]
+   + calculate_matrix(Complex[][] y, int n) Complex[][]
+   + display_matrix(Complex[][] ybus, int n) void
+}
+
+
+Ybus_Java --> Complex: uses
+
+
+```
+**Adding annotations for MATLAB and Python implementations:**
+- **note for Complex**:\
+In MATLAB and Python, inbuilt libraries are used instead of this custom Complex class.\
+- **note for Ybus_Java**:\
+The MATLAB and Python versions implement similar functionality using inbuilt functions and data structures.
+
+
+
+
+## Pseudocode
+
+```pseudocode
+BEGIN
+    INITIALIZE Ybus matrix of size (n x n) with 0+0j
+    INITIALIZE y matrix of size (n x n) with 0+0j
+
+    FUNCTION get_input(choice, n)
+        IF choice == 1 THEN
+            FOR each bus i from 1 to n DO
+                FOR each bus j from 1 to n DO
+                    PRINT "Enter the impedance between bus i and bus j:"
+                    yij = INPUT complex number
+                    y[i][j] = 1 / yij
+                END FOR
+            END FOR
+        ELSE IF choice == 2 THEN
+            FOR each bus i from 1 to n DO
+                FOR each bus j from 1 to n DO
+                    PRINT "Enter the admittance between bus i and bus j:"
+                    y[i][j] = INPUT complex number
+                END FOR
+            END FOR
+        END IF
+        RETURN y
+    END FUNCTION
+
+    FUNCTION calculate_matrix(y, n)
+        FOR each bus i from 1 to n DO
+            FOR each bus j from 1 to n DO
+                IF i == j THEN
+                    FOR each bus k from 1 to n DO
+                        Ybus[i][j] = Ybus[i][j] + y[i][k]
+                    END FOR
+                ELSE
+                    Ybus[i][j] = -y[i][j]
+                END IF
+            END FOR
+        END FOR
+        RETURN Ybus
+    END FUNCTION
+
+    FUNCTION display_matrix(Ybus)
+        PRINT "Bus Admittance Matrix:"
+        FOR each row in Ybus DO
+            FOR each element in row DO
+                PRINT element
+            END FOR
+            PRINT new line
+        END FOR
+    END FUNCTION
+   
+   PRINT "Enter the number of buses:"
+   n = INPUT integer
+   PRINT "Enter 1 for impedance and 2 for admittance"
+   choice = INPUT integer
+
+    y = get_input(choice, n)
+    Ybus = calculate_matrix(y, n)
+    display_matrix(Ybus)
+END
+
+```
 
 ## Documentation
 
