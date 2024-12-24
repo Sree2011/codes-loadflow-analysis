@@ -190,14 +190,16 @@ graph TD
         direction TB
         X([Start]) --> X1[\Print Bus Admittance Matrix\]
         X1 --> Y1{For each row in Ybus}
-        Y1 --> Z1[\Print each element\]
-        Z1 --> AA1[\Print new line\]
-        AA1 --> Y1
-        Y1 --> Z3([Return to main])
+        Y1 --> Z1{For each element in row}
+        Z1 --> AA1[\Print each element\]
+        AA1 --> AB1[\Print new line\]
+        Z1 --> Z2[[Next Iteration]]
+        Z2 --> Y1
+        Y1 --> W2([Return Ybus to main])
     end
    
 
-   classDef input fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
+   classDef input fill:#98F5F9,stroke:#333,stroke-width:2px,text-align:center;
    classDef process fill:#7DDA58,stroke:#333,stroke-width:2px,text-align:center;
    classDef output fill:#FE9900,stroke:#333,stroke-width:2px,text-align:center;
    classDef loop fill:#AD840E,stroke:#333,stroke-width:2px,text-align:center;
@@ -206,11 +208,11 @@ graph TD
 
 
    class B1,E1,M1,P1,M3,P2 input
-   class C,D,G,H,I,J,M2,T1,V1,U1 process
-   class B,E,AB,X1,Z1,AA1 output
+   class C,D,G,H,I,J,M2,T1,V1,U1,Z2 process
+   class B,E,AB,X1,Z1,AA1,AB1 output
    class F,K2,S1 decision
-   class A,K,V,Q1,W1,R,X,Z3 startEnd
-   class L1,L2,O1,O2,R1,Y1 loop
+   class A,K,V,Q1,W1,W2,R,X,Z3 startEnd
+   class L1,L2,O1,O2,R1,Y1,Z1 loop
 ```
 
 
