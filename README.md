@@ -202,7 +202,7 @@ graph TD
    classDef output fill:#FE9900,stroke:#333,stroke-width:2px,text-align:center;
    classDef loop fill:#AD840E,stroke:#333,stroke-width:2px,text-align:center;
    classDef decision fill:#BFD641,stroke:#333,stroke-width:2px,text-align:center;
-   classDef startEnd fill:#652B75,font-color:#ffffff,stroke:#333,stroke-width:2px,text-align:center;
+   classDef startEnd fill:#BA62D1,stroke:#333,stroke-width:2px,text-align:center;
 
 
    class B1,E1,M1,P1,M3,P2 input
