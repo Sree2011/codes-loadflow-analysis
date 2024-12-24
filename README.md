@@ -200,11 +200,15 @@ graph TD
    classDef input fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
    classDef process fill:#7DDA58,stroke:#333,stroke-width:2px,text-align:center;
    classDef output fill:#FE9900,stroke:#333,stroke-width:2px,text-align:center;
-   classDef decision fill:##BFD641,stroke:#333,stroke-width:2px,text-align:center;
+   classDef decision fill:#BFD641,stroke:#333,stroke-width:2px,text-align:center;
+   classDef startEnd fill:#652B75,stroke:#333,stroke-width:2px,text-align:center;
+
+
    class B1,E1,M1,P1 input
-   class C,D,H,I,J,M2,T1,V1 process
+   class C,D,G,H,I,J,M2,T1,V1 process
    class B,E,AB output
    class F,K2,S1 decision
+   class A,K,V,Q1 startEnd
 
 ```
 
