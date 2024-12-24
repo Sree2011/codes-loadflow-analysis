@@ -140,78 +140,63 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 
 ```mermaid
 graph TD
-   subgraph main["main()"]
-   direction TB
-      A([Start]) --> B[Display 'Enter the number of buses']
-      B --> B1[\Input n\]
-      B1 --> C[Initialize Ybus matrix with 0+0j]
-      C --> D[Initialize y matrix with 0+0j]
-      D --> E[Display 'Enter 1 for impedance and 2 for admittance']
-      E --> E1[Input choice]
-      E1 --> F{Choice}
-      F -->|1| G["Call get_input(choice, n) to get admittance matrix from impedances"]
-      F -->|2| H["Call get_input(choice, n) to get admittance matrix from admittances"]
-      F --> |Else| AB[Display 'Invalid Input']
-      G --> I["Call calculate_matrix(y, n)"]
-      H --> I
-      I --> J["Call display_matrix(Ybus)"]
-      J --> K([End])
-      AB --> K
-   end
-   subgraph "get_input(choice,n)"
-   direction TB
-      V([Start]) --> K2{Choice}
-      K2 --> |1| L1{For each bus i}
-      L1 --> L2{For each bus j}
-      L2 --> M1[Take impedance as input]
-      M1 --> M2[Calculate admittance]
-      M2 --> M3[store into y]
-      M3 --> L1
-      M3 --> Q1
-      
-      K2 --> |2| O1{For each bus i}
-      O1 --> O2{For each bus j}
-      O2 --> P1[Take admittance as input]
-      P1 --> P2[store into y]
-      P2 --> O1
-      P2 --> Q1([Return y to main])
-   
-     
-   end
+    subgraph main["main()"]
+        direction TB
+        A([Start]) --> B[Display 'Enter the number of buses']
+        B --> B1[/Input n/]
+        B1 --> C[Initialize Ybus matrix with 0+0j]
+        C --> D[Initialize y matrix with 0+0j]
+        D --> E[Display 'Enter 1 for impedance and 2 for admittance']
+        E --> E1[/Input choice/]
+        E1 --> F{Choice}
+        F -- 1 --> G["Call get_input(choice, n) to get admittance matrix from impedances"]
+        F -- 2 --> H["Call get_input(choice, n) to get admittance matrix from admittances"]
+        F -- Else --> AB[Display 'Invalid Input']
+        G --> I["Call calculate_matrix(y, n)"]
+        H --> I
+        I --> J["Call display_matrix(Ybus)"]
+        J --> K([End])
+        AB --> K
+    end
+    subgraph "get_input(choice,n)"
+        direction TB
+        V([Start]) --> K2{Choice}
+        K2 -- 1 --> L1{For each bus i}
+        L1 --> L2{For each bus j}
+        L2 --> M1[/Take impedance as input/]
+        M1 --> M2[Calculate admittance]
+        M2 --> M3[store into y]
+        M3 --> L1
+        M3 --> Q1([Return y to main])
+        K2 -- 2 --> O1{For each bus i}
+        O1 --> O2{For each bus j}
+        O2 --> P1[/Take admittance as input/]
+        P1 --> P2[store into y]
+        P2 --> O1
+        P2 --> Q1
+    end
 
-   subgraph "calculate_matrix(y,n)"
-   direction TB
-      R([Start]) --> R1{For each bus i and j}
-      R1 --> S1[i == j]@{shape: diam}
-      S1 --> |Yes| T1[Calculate diagonal elements]
-      S1 --> |No|V1[Calculate off-diagonal elements]
-      V1 --> U1[Next Iteration]
-      U1 --> R1
-      U1 --> W1([Return Ybus to main])
-   end
+    subgraph "calculate_matrix(y,n)"
+        direction TB
+        R([Start]) --> R1{For each bus i and j}
+        R1 --> S1{i == j}
+        S1 -- Yes --> T1[Calculate diagonal elements]
+        S1 -- No --> V1[Calculate off-diagonal elements]
+        V1 --> U1[Next Iteration]
+        U1 --> R1
+        U1 --> W1([Return Ybus to main])
+    end
 
-   subgraph "display_matrix(ybus,n)"
-   direction TB
-      X([Start]) --> X1[Print Bus Admittance Matrix]
-      X1 --> Y1[For each row in Ybus]
-      Y1 --> Z1[Print each element]
-      Z1 --> AA1[Print new line]
-      AA1 --> Y1
-      Y1 --> Z3([Return to main])
-   end
-
-   %% Define custom styles for different shapes 
-   classDef startEnd fill:#BFD641,stroke:#333,stroke-width:2px,font-size:14px;
-   classDef decision fill:#bbf,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5;
-   classDef initial fill:#b2f7ef,stroke:#333,stroke-width:2px,stroke-linecap:round,font-weight:bold;
-   classDef process2 fill:#ffb7c5,stroke:#333,stroke-width:2px,text-align:center;
-   classDef input fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
-   classDef output fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
-
-   class A,V,R,X,Z3,W1,Q1,K startEnd
-   class B1,E1,M1,P1 input
-   class C,D initial
-   class 
+    subgraph "display_matrix(ybus,n)"
+        direction TB
+        X([Start]) --> X1[Print Bus Admittance Matrix]
+        X1 --> Y1{For each row in Ybus}
+        Y1 --> Z1[Print each element]
+        Z1 --> AA1[Print new line]
+        AA1 --> Y1
+        Y1 --> Z3([Return to main])
+    end
+    style S1 fill:#ccf,stroke:#888,stroke-width:2px
 
 ```
 
