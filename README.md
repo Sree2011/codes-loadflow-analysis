@@ -126,7 +126,6 @@ class Ybus_Java{
 
 Ybus_Java --> Complex: uses
 
-end
 
 ```
 **Adding annotations for MATLAB and Python implementations:**
@@ -142,19 +141,19 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 graph TD
     subgraph main["main()"]
         direction TB
-        A([Start]) --> B[Display 'Enter the number of buses']
+        A([Start]) --> B[\Display 'Enter the number of buses'\]
         B --> B1[/Input n/]
-        B1 --> C[Initialize Ybus matrix with 0+0j]
-        C --> D[Initialize y matrix with 0+0j]
-        D --> E[Display 'Enter 1 for impedance and 2 for admittance']
+        B1 --> C[[Initialize Ybus matrix with 0+0j]]
+        C --> D[[Initialize y matrix with 0+0j]]
+        D --> E[\Display 'Enter 1 for impedance and 2 for admittance'\]
         E --> E1[/Input choice/]
         E1 --> F{Choice}
-        F -- 1 --> G["Call get_input(choice, n) to get admittance matrix from impedances"]
-        F -- 2 --> H["Call get_input(choice, n) to get admittance matrix from admittances"]
-        F -- Else --> AB[Display 'Invalid Input']
-        G --> I["Call calculate_matrix(y, n)"]
+        F -- 1 --> G[["Call get_input(choice, n) to get admittance matrix from impedances"]]
+        F -- 2 --> H[["Call get_input(choice, n) to get admittance matrix from admittances"]]
+        F -- Else --> AB[\Display 'Invalid Input'\]
+        G --> I[["Call calculate_matrix(y, n)"]]
         H --> I
-        I --> J["Call display_matrix(Ybus)"]
+        I --> J[["Call display_matrix(Ybus)"]]
         J --> K([End])
         AB --> K
     end
@@ -164,14 +163,14 @@ graph TD
         K2 -- 1 --> L1{For each bus i}
         L1 --> L2{For each bus j}
         L2 --> M1[/Take impedance as input/]
-        M1 --> M2[Calculate admittance]
-        M2 --> M3[store into y]
+        M1 --> M2[[Calculate admittance]]
+        M2 --> M3[/store into y/]
         M3 --> L1
         M3 --> Q1([Return y to main])
         K2 -- 2 --> O1{For each bus i}
         O1 --> O2{For each bus j}
         O2 --> P1[/Take admittance as input/]
-        P1 --> P2[store into y]
+        P1 --> P2[/store into y/]
         P2 --> O1
         P2 --> Q1
     end
@@ -180,9 +179,9 @@ graph TD
         direction TB
         R([Start]) --> R1{For each bus i and j}
         R1 --> S1{i == j}
-        S1 -- Yes --> T1[Calculate diagonal elements]
-        S1 -- No --> V1[Calculate off-diagonal elements]
-        V1 --> U1[Next Iteration]
+        S1 -- Yes --> T1[[Calculate diagonal elements]]
+        S1 -- No --> V1[[Calculate off-diagonal elements]]
+        V1 --> U1[[Next Iteration]]
         U1 --> R1
         U1 --> W1([Return Ybus to main])
     end
@@ -191,12 +190,21 @@ graph TD
         direction TB
         X([Start]) --> X1[Print Bus Admittance Matrix]
         X1 --> Y1{For each row in Ybus}
-        Y1 --> Z1[Print each element]
-        Z1 --> AA1[Print new line]
+        Y1 --> Z1[\Print each element\]
+        Z1 --> AA1[\Print new line\]
         AA1 --> Y1
         Y1 --> Z3([Return to main])
     end
-    style S1 fill:#ccf,stroke:#888,stroke-width:2px
+   
+
+   classDef input fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
+   classDef process fill:#7DDA58,stroke:#333,stroke-width:2px,text-align:center;
+   classDef output fill:#FE9900,stroke:#333,stroke-width:2px,text-align:center;
+   classDef decision fill:##BFD641,stroke:#333,stroke-width:2px,text-align:center;
+   class B1,E1,M1,P1 input
+   class C,D,H,I,J,M2,T1,V1 process
+   class B,E,AB output
+   class F,K2,S1 decision
 
 ```
 
