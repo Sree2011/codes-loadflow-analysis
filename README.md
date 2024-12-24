@@ -139,9 +139,9 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 ## Flowchart
 
 ```mermaid
-graph LR
+graph TD
    subgraph "FUNCTION main()"
-   direction LR
+   direction TB
       A([Start]) --> B[Display 'Enter the number of buses']@{shape: lean-right}
       B --> B1[Input n]@{shape: lean-left}
       B1 --> C[Initialize Ybus matrix with 0+0j]
@@ -159,7 +159,7 @@ graph LR
       AB --> K
    end
    subgraph "FUNCTION get_input(choice,n)"
-   direction LR   
+   direction TB
       V[Start]@{shape: stadium} --> K2{Choice}
       K2 --> |1| L1{For each bus i}@{shape: notch-pent}
       L1 --> L2{For each bus j}@{shape: notch-pent}
@@ -180,7 +180,7 @@ graph LR
    end
 
    subgraph "FUNCTION calculate_admittance_matrix(y,n)"
-   direction LR
+   direction TB
       R[Start]@{shape: stadium} --> R1[For each bus i and j]@{shape: notch-pent}
       R1 --> S1[If i == j]
       S1 --> T1[Calculate diagonal elements]
@@ -190,7 +190,7 @@ graph LR
    end
 
    subgraph "FUNCTION print_admittance_matrix(ybus,n)"
-   direction LR
+   direction TB
       X1[[Print Bus Admittance Matrix]]
       X1 --> Y1[For each row in Ybus]
       Y1 --> Z1[Print each element]
