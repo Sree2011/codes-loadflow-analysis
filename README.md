@@ -182,11 +182,12 @@ graph TD
    subgraph "calculate_matrix(y,n)"
    direction TB
       R[Start]@{shape:stadium} --> R1{For each bus i and j}
-      R1 --> S1[If i == j]
-      S1 --> T1[Calculate diagonal elements]
-      S1 --> U1[Else]
-      U1 --> V1[Calculate off-diagonal elements]
-      V1 --> W1[Return Ybus to main]@{shape:stadium}
+      R1 --> S1[i == j]@{shape: diam}
+      S1 --> |Yes| T1[Calculate diagonal elements]
+      S1 --> |No|V1[Calculate off-diagonal elements]
+      V1 --> U1[Next Iteration]
+      U1 --> R1
+      U1 --> W1[Return Ybus to main]@{shape:stadium}
    end
 
    subgraph "display_matrix(ybus,n)"
@@ -196,7 +197,7 @@ graph TD
       Y1 --> Z1[Print each element]
       Z1 --> AA1[Print new line]
       AA1 --> Y1
-      Y1 --> Z3[Return to main]
+      Y1 --> Z3[Return to main]@{shape:stadium}
    end
 
    %% Define custom styles for different shapes 
@@ -205,7 +206,7 @@ graph TD
    classDef process1 fill:#b2f7ef,stroke:#333,stroke-width:2px; 
    classDef process2 fill:#ffb7c5,stroke:#333,stroke-width:2px;
 
-   class A,V,R,X startEnd
+   class A,V,R,X,Z3,W1,Q1,K startEnd
 
 ```
 
