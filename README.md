@@ -188,7 +188,7 @@ graph TD
 
     subgraph "display_matrix(ybus,n)"
         direction TB
-        X([Start]) --> X1[Print Bus Admittance Matrix]
+        X([Start]) --> X1[\Print Bus Admittance Matrix\]
         X1 --> Y1{For each row in Ybus}
         Y1 --> Z1[\Print each element\]
         Z1 --> AA1[\Print new line\]
@@ -200,16 +200,17 @@ graph TD
    classDef input fill:#CC6CE7,stroke:#333,stroke-width:2px,text-align:center;
    classDef process fill:#7DDA58,stroke:#333,stroke-width:2px,text-align:center;
    classDef output fill:#FE9900,stroke:#333,stroke-width:2px,text-align:center;
+   classDef loop fill:#AD840E,stroke:#333,stroke-width:2px,text-align:center;
    classDef decision fill:#BFD641,stroke:#333,stroke-width:2px,text-align:center;
    classDef startEnd fill:#652B75,stroke:#333,stroke-width:2px,text-align:center;
 
 
-   class B1,E1,M1,P1 input
-   class C,D,G,H,I,J,M2,T1,V1 process
-   class B,E,AB output
+   class B1,E1,M1,P1,M3,P2 input
+   class C,D,G,H,I,J,M2,T1,V1,U1 process
+   class B,E,AB,X1,Z1,AA1 output
    class F,K2,S1 decision
-   class A,K,V,Q1 startEnd
-
+   class A,K,V,Q1,W1,R,X,Z3 startEnd
+   class L1,L2,O1,O2,R1,Y1 loop
 ```
 
 
@@ -225,14 +226,15 @@ Here are the links to the implementations:
 
 Here are the links to the documentation tools I used:
 
-|Tool|Link|Description|
-|:--:|:--:|:--:|
-|Doxygen|[Link to doxygen](https://doxygen.nl/index.html)|Used to generate documentation for java and python files|
-|Octave Publish Command|  [Octave documentation](https://www.gnu.org/software/octave/doc/interpreter/Publishing-Markdown.html)|Utilized to convert MATLAB scripts into documentation with integrated code, comments, and results|
-|GitHub Actions|[GitHub Actions documentation](https://docs.github.com/en/actions)|Automated the generation and deployment of documentation. GitHub Actions helped streamline our CI/CD pipeline.|
+| Tool             | Link                                                                 | Description                                                                 |
+|:----------------:|:--------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
+| Doxygen          | [Link to doxygen](https://doxygen.nl/index.html)                     | Used to generate documentation for java and python files                    |
+| Octave Publish Command | [Octave documentation](https://www.gnu.org/software/octave/doc/interpreter/Publishing-Markdown.html) | Utilized to convert MATLAB scripts into documentation with integrated code, comments, and results |
+| GitHub Actions   | [GitHub Actions documentation](https://docs.github.com/en/actions)   | Automated the generation and deployment of documentation. GitHub Actions helped streamline our CI/CD pipeline. |
 
 
 ## References
 
 [1] Hadi Saadat, *"Power System Analysis"*. Psa Pub, United States, 2010.\
 [2] Mohammad Shahidehpour; Yaoyu Wang, "Appendix C: IEEE30 Bus System Data," in Communication and Control in Electric Power Systems: Applications of Parallel and Distributed Processing , IEEE, 2003, pp.493-495, doi: 10.1002/0471462926.app3.
+
