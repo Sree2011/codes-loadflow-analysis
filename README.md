@@ -5,8 +5,8 @@ View this on github:\
 
 # Generate Bus Admittance Matrix
 
-![A sample bus system](![image](https://github.com/user-attachments/assets/c329b720-75a9-430d-abc5-488bc20ad48a)
-)
+![image](https://github.com/user-attachments/assets/fd57ea30-2da9-4bd4-97d2-6cb7f2f50a08)
+
 
 Consider a power system like in the above diagram.
 
