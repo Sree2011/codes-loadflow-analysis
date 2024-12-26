@@ -1,5 +1,4 @@
-## View this project on github:\
-## [Github - Bus Admittance Matrix](https://github.com/Sree2011/bus-admittance-matrix/)
+## View this project on github:[Github - Bus Admittance Matrix](https://github.com/Sree2011/bus-admittance-matrix/)
 
 # Generate Bus Admittance Matrix
 
@@ -7,16 +6,35 @@
 
 $$
 \begin{bmatrix} 
-I_1 \\ I_2 \\ \vdots \\ I_i \\ \vdots \\ I_n \end{bmatrix} 
+I_1 \\
+I_2 \\ 
+\vdots \\ 
+I_i \\ 
+\vdots 
+\\ I_n 
+\end{bmatrix} 
 = 
 \begin{bmatrix} 
-Y_{11} & Y_{12} & \cdots & Y_{1i} & \cdots & Y_{1n} \\ Y_{21} & Y_{22} & \cdots & Y_{2i} & \cdots & Y_{2n} \\ \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ Y_{i1} & Y_{i2} & \cdots & Y_{ii} & \cdots & Y_{in} \\ \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ Y_{n1} & Y_{n2} & \cdots & Y_{ni} & \cdots & Y_{nn} \end{bmatrix} \begin{bmatrix} V_1 \\ V_2 \\ \vdots \\ V_i \\ \vdots \\ V_n 
+Y_{11} & Y_{12} & \cdots & Y_{1i} & \cdots & Y_{1n} \\ 
+Y_{21} & Y_{22} & \cdots & Y_{2i} & \cdots & Y_{2n} \\ \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ 
+Y_{i1} & Y_{i2} & \cdots & Y_{ii} & \cdots & Y_{in} \\ \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ 
+Y_{n1} & Y_{n2} & \cdots & Y_{ni} & \cdots & Y_{nn} 
+\end{bmatrix} 
+\begin{bmatrix} 
+V_1 \\ 
+V_2 \\ 
+\vdots \\ 
+V_i \\ 
+\vdots \\ 
+V_n 
 \end{bmatrix}
 $$
 
 $$
 [I_{bus}] = [Y_{bus}][V_{bus}]
 $$
+
+**Formulas for calculation:**
 
 For diagonal elements,\
 $Y_{ii} = \sum_{j=0}^{n}y_{ij}$\
