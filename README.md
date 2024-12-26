@@ -5,19 +5,16 @@
 # Formulas for calculation
 
 $$
-
-\begin{bmatrix} 
+\begin{bmatrix}
 I_1 \\
 I_2 \\ 
+\vdots \\
+I_i \\
 \vdots \\ 
-I_i \\ 
-\vdots 
-\\ I_n 
+I_n
 \end{bmatrix}
-
 =
-
-\begin{bmatrix} 
+\begin{bmatrix}
 Y_{11} & Y_{12} & \cdots & Y_{1i} & \cdots & Y_{1n} \\
 Y_{21} & Y_{22} & \cdots & Y_{2i} & \cdots & Y_{2n} \\
 \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ 
