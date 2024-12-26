@@ -5,6 +5,7 @@
 # Formulas for calculation
 
 $$
+
 \begin{bmatrix} 
 I_1 \\
 I_2 \\ 
@@ -12,14 +13,18 @@ I_2 \\
 I_i \\ 
 \vdots 
 \\ I_n 
-\end{bmatrix} 
-= 
+\end{bmatrix}
+
+=
+
 \begin{bmatrix} 
-Y_{11} & Y_{12} & \cdots & Y_{1i} & \cdots & Y_{1n} \\ 
-Y_{21} & Y_{22} & \cdots & Y_{2i} & \cdots & Y_{2n} \\ \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ 
+Y_{11} & Y_{12} & \cdots & Y_{1i} & \cdots & Y_{1n} \\
+Y_{21} & Y_{22} & \cdots & Y_{2i} & \cdots & Y_{2n} \\
+\vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ 
 Y_{i1} & Y_{i2} & \cdots & Y_{ii} & \cdots & Y_{in} \\ \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\ 
 Y_{n1} & Y_{n2} & \cdots & Y_{ni} & \cdots & Y_{nn} 
-\end{bmatrix} 
+\end{bmatrix}
+
 \begin{bmatrix} 
 V_1 \\ 
 V_2 \\ 
@@ -28,6 +33,7 @@ V_i \\
 \vdots \\ 
 V_n 
 \end{bmatrix}
+
 $$
 
 $$
