@@ -5,11 +5,13 @@ View this on github:\
 
 # Generate Bus Admittance Matrix
 
-![A sample bus system](https://github.com/user-attachments/assets/5e8a3816-cd88-49b9-abd2-7cedb479baed)
+![A sample bus system](![image](https://github.com/user-attachments/assets/c329b720-75a9-430d-abc5-488bc20ad48a)
+)
 
 Consider a power system like in the above diagram.
 
 ## Formulas for Calculation
+Apply KCL at node 1:
 
 
 
