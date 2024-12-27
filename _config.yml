@@ -19,7 +19,7 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-remote_theme: yk-liu/PointingToTheMoon
+remote_theme: uva-math/uva-math-code
 
 mermaid:
   version: 11.4.1
@@ -29,4 +29,7 @@ kramdown:
   input: GFM
   auto_ids: true
 
+mathjax:
+  enable: true
+  use_preview: true
 usemathjax: true
