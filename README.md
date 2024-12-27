@@ -3,7 +3,6 @@
 
 # Generate Bus Admittance Matrix
 
-# Formulas for calculation
 
 $$
 
@@ -56,6 +55,7 @@ $$
 Y_{ij} = Y_{ji} = -y_{ij}
 $$
 
+where $y_{ij}$ is the admittance of the line between bus i and bus j.
 
 
 # Algorithm
@@ -299,7 +299,3 @@ Here are the links to the documentation tools I used:
 
 [1] Hadi Saadat, *"Power System Analysis"*. Psa Pub, United States, 2010.\
 [2] Mohammad Shahidehpour; Yaoyu Wang, "Appendix C: IEEE30 Bus System Data," in Communication and Control in Electric Power Systems: Applications of Parallel and Distributed Processing , IEEE, 2003, pp.493-495, doi: 10.1002/0471462926.app3.
-
-
-
-
