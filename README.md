@@ -10,7 +10,7 @@
 
 pre{
     background-color: orange;
-    color: blue;
+   
 }
 </style>
 # Generate Bus Admittance Matrix
