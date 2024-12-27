@@ -46,10 +46,15 @@ $$
 
 **Formulas for calculation:**
 
-For diagonal elements,\
-$Y_{ii} = \sum_{j=0}^{n}y_{ij}$\
-For off-diagonal elements,\
-$Y_{ij} = Y_{ji} = -y_{ij}$
+For diagonal elements,
+$$
+Y_{ii} = \sum_{j=0}^{n}y_{ij}
+$$
+
+For off-diagonal elements,
+$$
+Y_{ij} = Y_{ji} = -y_{ij}
+$$
 
 
 
