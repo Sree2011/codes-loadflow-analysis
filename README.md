@@ -1,6 +1,13 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ## View this project on github:[Github - Bus Admittance Matrix](https://github.com/Sree2011/bus-admittance-matrix/)
-
+<style>
+.frame-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px; 
+}
+</style>
 # Generate Bus Admittance Matrix
 
 
@@ -213,11 +220,21 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 
 
 ## Pseudocode
-
-```pseudocode
-BEGIN
+<div class="frame-box">
+<code class="language-java">
+FUNCTION main()
     INITIALIZE Ybus matrix of size (n x n) with 0+0j
     INITIALIZE y matrix of size (n x n) with 0+0j
+    PRINT "Enter the number of buses:"
+    n = INPUT integer
+    PRINT "Enter 1 for impedance and 2 for admittance"
+    choice = INPUT integer
+    y = get_input(choice, n)
+    Ybus = calculate_matrix(y, n)
+    display_matrix(Ybus)
+END FUNCTION
+</code>
+</div>
 
     FUNCTION get_input(choice, n)
         IF choice == 1 THEN
@@ -263,18 +280,9 @@ BEGIN
             PRINT new line
         END FOR
     END FUNCTION
-   
-   PRINT "Enter the number of buses:"
-   n = INPUT integer
-   PRINT "Enter 1 for impedance and 2 for admittance"
-   choice = INPUT integer
-
-    y = get_input(choice, n)
-    Ybus = calculate_matrix(y, n)
-    display_matrix(Ybus)
 END
-
-```
+\end{verbatim}
+$$
 
 ## Documentation
 
