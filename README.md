@@ -1,18 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-## View this project on github:[Github - Bus Admittance Matrix](https://github.com/Sree2011/bus-admittance-matrix/)
-<style>
-.frame-box {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px; 
-}
 
-pre{
-    background-color: orange;
-   
-}
-</style>
+## View this project on github:[Github - Bus Admittance Matrix](https://github.com/Sree2011/bus-admittance-matrix/)
+
 # Generate Bus Admittance Matrix
 
 
