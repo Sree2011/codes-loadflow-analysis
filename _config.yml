@@ -28,3 +28,5 @@ markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
+
+usemathjax: true
