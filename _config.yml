@@ -19,7 +19,7 @@ include:
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
 
-remote_theme: uva-math/uva-math-code
+remote_theme: mmistakes/minimal-mistakes
 
 mermaid:
   version: 11.4.1
@@ -32,4 +32,3 @@ kramdown:
 mathjax:
   enable: true
   use_preview: true
-usemathjax: true
