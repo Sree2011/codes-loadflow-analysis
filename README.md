@@ -169,6 +169,5 @@ Here are the links to the documentation tools I used:
 ## References
 $
 \addbibresource{ref.bib}
-
-\printbibiliography
+\printbibliography
 $
