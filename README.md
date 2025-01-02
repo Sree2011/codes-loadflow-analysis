@@ -1,5 +1,11 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'light'
+	});
+</script>
 # Generate Bus Admittance Matrix
 
 
@@ -89,7 +95,7 @@ where $y_{ij}$ is the admittance of the line between bus i and bus j.
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 classDiagram
 class Complex{
    - float real
@@ -120,7 +126,7 @@ class Ybus_Java{
 Ybus_Java --> Complex: uses
 
 
-```
+</pre>
 **Adding annotations for MATLAB and Python implementations:**
 - **note for Complex**:\
 In MATLAB and Python, inbuilt libraries are used instead of this custom Complex class.\
