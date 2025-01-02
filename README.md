@@ -168,21 +168,7 @@ Here are the links to the documentation tools I used:
 
 ## References
 $
-@book{Saadat2010,
-  author    = {Hadi Saadat},
-  title     = {Power System Analysis},
-  year      = {2010},
-  publisher = {Psa Pub},
-  address   = {United States}
-}
+\addbibresource{ref.bib}
 
-@inbook{Shahidehpour2003,
-  author    = {Mohammad Shahidehpour and Yaoyu Wang},
-  title     = {Appendix C: IEEE30 Bus System Data},
-  booktitle = {Communication and Control in Electric Power Systems: Applications of Parallel and Distributed Processing},
-  pages     = {493-495},
-  year      = {2003},
-  publisher = {IEEE},
-  doi       = {10.1002/0471462926.app3}
-}
+\printbibiliography
 $
