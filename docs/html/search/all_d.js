@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s_0',['s',['../lineflow__loss_8m.html#abbc147540562dae804633fb3316491ba',1,'S:&#160;lineflow_loss.m'],['../calculate__lineflow__loss_8m.html#a6d6214bbf7d41b3618d109d3d3c905b4',1,'S(j, i):&#160;calculate_lineflow_loss.m']]],
-  ['sl_1',['SL',['../calculate__lineflow__loss_8m.html#a72f66ef44772677922a5a0961fd223f5',1,'calculate_lineflow_loss.m']]],
-  ['subtract_2',['subtract',['../classComplex.html#ad552a93c53be71388e817329c3be0e94',1,'Complex.subtract(Complex other)'],['../classComplex.html#ad552a93c53be71388e817329c3be0e94',1,'Complex.subtract(Complex other)']]]
+  ['real_0',['real',['../classComplex.html#a3bfb3459c9884f4e9d2e4daacb72c4f2',1,'Complex.real'],['../classComplex.html#a345da274bb05610ff7d549028bc6d510',1,'Complex.real']]],
+  ['reciprocal_1',['reciprocal',['../classComplex.html#a3abc78c5a8c36a75d16bd964e7e5cdca',1,'Complex.reciprocal()'],['../classComplex.html#a3abc78c5a8c36a75d16bd964e7e5cdca',1,'Complex.reciprocal()']]],
+  ['result_2',['result',['../display__output_8m.html#a937d4dd628a8858b443a399410d2600b',1,'display_output.m']]]
 ];

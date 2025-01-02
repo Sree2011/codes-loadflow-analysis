@@ -1,20 +1,12 @@
 var searchData=
 [
-  ['p_211',['p',['../m2html_8m.html#ac483f6ce851c9ecd9fb835ff7551737c',1,'p():&#160;m2html.m'],['../mwizard_8m.html#ac483f6ce851c9ecd9fb835ff7551737c',1,'p():&#160;mwizard.m'],['../mwizard2_8m.html#ac483f6ce851c9ecd9fb835ff7551737c',1,'p():&#160;mwizard2.m']]],
-  ['paramlist_212',['paramlist',['../m2html_8m.html#ae0093efffad5ec3543650ffda9d2a960',1,'m2html.m']]],
-  ['parse_213',['parse',['../m2html_8m.html#a919111e5cdc0c361bf6171f92c241893',1,'m2html.m']]],
-  ['parse_2em_214',['parse.m',['../parse_8m.html',1,'']]],
-  ['pause_215',['pause',['../m2html_8m.html#afd7d49e17b69bd6bf3d7a649856c1067',1,'pause():&#160;m2html.m'],['../mwizard_8m.html#acc5bb4b19a8a4a4716e8201b272fcef7',1,'pause(0.02):&#160;mwizard.m'],['../mwizard2_8m.html#acc5bb4b19a8a4a4716e8201b272fcef7',1,'pause(0.02):&#160;mwizard2.m']]],
-  ['php_5fsearch_216',['php_search',['../m2html_8m.html#a541689ce136cae9b6c53557835c14223',1,'m2html.m']]],
-  ['platform_217',['platform',['../mexexts_8m.html#adc3a21ccb616231a81529950cab007f4',1,'mexexts.m']]],
-  ['pos_218',['pos',['../doxywrite_8m.html#adf54215d760dbf0f9fe5627a39015333',1,'doxywrite.m']]],
-  ['pos2_219',['pos2',['../doxywrite_8m.html#a66bb979da7a82fa2fc7a960265cb1b6c',1,'doxywrite.m']]],
-  ['pos3_220',['pos3',['../doxywrite_8m.html#aa5e89842f4e8b345443fb99b0017bbbf',1,'doxywrite.m']]],
-  ['print_5fadmittance_5fmatrix_221',['print_admittance_matrix',['../namespaceYbus__Python.html#a36997eff40ce42c24fdf980b6fba21c4',1,'Ybus_Python']]],
-  ['prnbline_222',['prnbline',['../m2html_8m.html#a61f828fd3d3f666fd34f41dc5fd84c28',1,'m2html.m']]],
-  ['program_223',['program',['../m2html_8m.html#ad1fcf7d480c2fceaa3fc2635af62b648',1,'program():&#160;m2html.m'],['../mwizard_8m.html#ad1fcf7d480c2fceaa3fc2635af62b648',1,'program():&#160;mwizard.m'],['../mwizard2_8m.html#ad1fcf7d480c2fceaa3fc2635af62b648',1,'program():&#160;mwizard2.m'],['../doxyread_8m.html#ad1fcf7d480c2fceaa3fc2635af62b648',1,'program():&#160;doxyread.m'],['../doxysearch_8m.html#ad1fcf7d480c2fceaa3fc2635af62b648',1,'program():&#160;doxysearch.m'],['../doxywrite_8m.html#ad1fcf7d480c2fceaa3fc2635af62b648',1,'program():&#160;doxywrite.m']]],
-  ['propertyname2_224',['PropertyName2',['../m2html_8m.html#abcf22f6e12910f4e12a2c93df1af82d4',1,'m2html.m']]],
-  ['propertyvalue1_225',['PropertyValue1',['../m2html_8m.html#aacb21034f10a7f407f12ea832cd6454d',1,'m2html.m']]],
-  ['propertyvalue2_226',['PropertyValue2',['../m2html_8m.html#a05fc710cb7a5196fd0bd6a16fda1f46e',1,'m2html.m']]],
-  ['pvalue_227',['pvalue',['../m2html_8m.html#a50f9131cbfa167cc7fa77a39006857f6',1,'m2html.m']]]
+  ['y_0',['y',['../lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;lineflow_loss.m'],['../Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab45f07f249f3e7d329509cb2510fe56f',1,'Ybus_Python.y'],['../Line_01Flows_01and_01Losses_2MATLAB_2get__input_8m.html#a2214d045a9d9c755750330a130ce15ff',1,'y(i, j):&#160;get_input.m'],['../Ybus_2matlab_2get__input_8m.html#adcc2ccb3bbdd9d22a9734d8219914e73',1,'y(i, j):&#160;get_input.m']]],
+  ['ybus_1',['ybus',['../namespaceYbus__Python.html#a3d2f2cd307353a609df5ed6f361efda0',1,'Ybus_Python.Ybus'],['../calculate__matrix_8m.html#ae5a5eee66749bf5128939e55db6f81c1',1,'Ybus(i, j):&#160;calculate_matrix.m'],['../Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be',1,'YBUS:&#160;Ybus_matlab.m'],['../calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m']]],
+  ['ybus_5fjava_2',['Ybus_Java',['../classYbus__Java.html',1,'']]],
+  ['ybus_5fjava_2ejava_3',['Ybus_Java.java',['../Ybus__Java_8java.html',1,'']]],
+  ['ybus_5fmatlab_2em_4',['Ybus_matlab.m',['../Ybus__matlab_8m.html',1,'']]],
+  ['ybus_5fpython_5',['Ybus_Python',['../namespaceYbus__Python.html',1,'']]],
+  ['ybus_5fpython_2epy_6',['Ybus_Python.py',['../Ybus__Python_8py.html',1,'']]],
+  ['yij_7',['yij',['../Ybus_2matlab_2get__input_8m.html#a524e6c6a36397088e56b9ff1b3c614d1',1,'get_input.m']]],
+  ['yp_8',['yp',['../Ybus_2matlab_2get__input_8m.html#abe3d4ee08a6d6a5b2db763330b532ea6',1,'get_input.m']]]
 ];
