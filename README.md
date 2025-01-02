@@ -168,7 +168,7 @@ Here are the links to the documentation tools I used:
 
 ## References
 
-```latex
+$$
 \addbibresource{ref.bib}
 \printbibliography
-```
+$$
