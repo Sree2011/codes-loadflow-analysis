@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['print_5fadmittance_5fmatrix_0',['print_admittance_matrix',['../namespaceYbus__Python.html#ac60a972c14d84aaacf8336414da709ed',1,'Ybus_Python']]]
+  ['output_0',['output',['../lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0',1,'lineflow_loss.m']]]
 ];
