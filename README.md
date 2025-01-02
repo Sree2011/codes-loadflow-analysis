@@ -160,5 +160,5 @@ Here are the links to the documentation tools I used:
 {% cite Saadat2010 %}
 }
 
-{% bibliography %}
-{% cite Shahidehpour2003 %}
+{{% bibliography %}
+{% cite Shahidehpour2003 %}}
