@@ -137,11 +137,11 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 
 ## Documentation
 
-Here are the links to the implementations:
+Here are the links to the documentations:
 
-1. [Python](./docs/html/namespaceYbus__Python.html)
-2. [Java](./docs/html/classes.html)
-3. [MATLAB](./docs/html/Ybus__matlab_8m.html)
+1. [Ybus - Python](./docs/html/namespaceYbus__Python.html)
+2. [Ybus - Java](./docs/html/classes.html)
+3. [Ybus - MATLAB](./docs/html/Ybus__matlab_8m.html)
 
 ## Documentation Tools
 
