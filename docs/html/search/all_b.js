@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tostring_0',['toString',['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex']]]
+  ['print_5fadmittance_5fmatrix_0',['print_admittance_matrix',['../namespaceYbus__Python.html#ac60a972c14d84aaacf8336414da709ed',1,'Ybus_Python']]]
 ];

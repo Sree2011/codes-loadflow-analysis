@@ -1,0 +1,102 @@
+\doxysection{lineflow\+\_\+loss Class Reference}
+\hypertarget{classlineflow__loss}{}\label{classlineflow__loss}\index{lineflow\_loss@{lineflow\_loss}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classlineflow__loss_ab78a592b1e9fda6b85591cd682f2829f}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classlineflow__loss_a7fadc166f5d9bf488616930df7e3925d}{get\+\_\+input}} (int \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})
+\item 
+static Array\+List$<$ \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}$>$ \mbox{\hyperlink{classlineflow__loss_a1bccd937bb8509195f7733f9c9b15b72}{calculate\+\_\+lineflow\+\_\+loss}} (int \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})
+\item 
+static void \mbox{\hyperlink{classlineflow__loss_aab23f4dc7c279365e49a2a2a122ff92e}{display\+\_\+output}} (int \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_abbc147540562dae804633fb3316491ba}{S}}, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{calculate__lineflow__loss_8m_a72f66ef44772677922a5a0961fd223f5}{SL}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main class to calculate line flows and losses
+
+Functions\+:
+\begin{DoxyEnumerate}
+\item get\+\_\+input(n,\+V,\+I,\+Y)\+: Takes input from the user
+\item calculate\+\_\+lineflow\+\_\+loss(n,\+V,\+I,y)\+: Calculates line flows and losses
+\item \doxylink{display__output_8m_aa1eecc4c035471a252c8277167266251}{display\+\_\+output(n,\+V,\+I,\+S,\+SL)}\+: Displays the output
+\item \doxylink{namespacelineflow__loss_af488cafbf0da4693966092b4fed81528}{main()}\+: Main function to run the program 
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlineflow__loss_a1bccd937bb8509195f7733f9c9b15b72}\label{classlineflow__loss_a1bccd937bb8509195f7733f9c9b15b72} 
+\index{lineflow\_loss@{lineflow\_loss}!calculate\_lineflow\_loss@{calculate\_lineflow\_loss}}
+\index{calculate\_lineflow\_loss@{calculate\_lineflow\_loss}!lineflow\_loss@{lineflow\_loss}}
+\doxysubsubsection{\texorpdfstring{calculate\_lineflow\_loss()}{calculate\_lineflow\_loss()}}
+{\footnotesize\ttfamily static Array\+List$<$ \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}$>$ lineflow\+\_\+loss.\+calculate\+\_\+lineflow\+\_\+loss (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{V\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{I\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{y\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function to calculate line flows and losses 
+\begin{DoxyParams}{Parameters}
+{\em n} & total no.\+of buses \\
+\hline
+{\em V} & voltage matrix \\
+\hline
+{\em I} & current matrix \\
+\hline
+{\em y} & line admittance matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array\+List of matrices S,SL 
+\end{DoxyReturn}
+\Hypertarget{classlineflow__loss_aab23f4dc7c279365e49a2a2a122ff92e}\label{classlineflow__loss_aab23f4dc7c279365e49a2a2a122ff92e} 
+\index{lineflow\_loss@{lineflow\_loss}!display\_output@{display\_output}}
+\index{display\_output@{display\_output}!lineflow\_loss@{lineflow\_loss}}
+\doxysubsubsection{\texorpdfstring{display\_output()}{display\_output()}}
+{\footnotesize\ttfamily static void lineflow\+\_\+loss.\+display\+\_\+output (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{V\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{I\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{S\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{SL\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function to display the output 
+\begin{DoxyParams}{Parameters}
+{\em n} & total no.\+of buses \\
+\hline
+{\em V} & voltage matrix \\
+\hline
+{\em I} & current matrix \\
+\hline
+{\em S} & line flow matrix \\
+\hline
+{\em SL} & line loss matrix \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlineflow__loss_a7fadc166f5d9bf488616930df7e3925d}\label{classlineflow__loss_a7fadc166f5d9bf488616930df7e3925d} 
+\index{lineflow\_loss@{lineflow\_loss}!get\_input@{get\_input}}
+\index{get\_input@{get\_input}!lineflow\_loss@{lineflow\_loss}}
+\doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
+{\footnotesize\ttfamily static Array\+List$<$ \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}$>$ lineflow\+\_\+loss.\+get\+\_\+input (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{V\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{I\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{y\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Function to take input from the user 
+\begin{DoxyParams}{Parameters}
+{\em n} & total no.\+of buses \\
+\hline
+{\em V} & voltage matrix \\
+\hline
+{\em I} & current matrix \\
+\hline
+{\em y} & line admittance matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array\+List of matrices V,I,y 
+\end{DoxyReturn}
+\Hypertarget{classlineflow__loss_ab78a592b1e9fda6b85591cd682f2829f}\label{classlineflow__loss_ab78a592b1e9fda6b85591cd682f2829f} 
+\index{lineflow\_loss@{lineflow\_loss}!main@{main}}
+\index{main@{main}!lineflow\_loss@{lineflow\_loss}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void lineflow\+\_\+loss.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Main function to run the program 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+codes/\+Line Flows and Losses/java/\mbox{\hyperlink{lineflow__loss_8java}{lineflow\+\_\+loss.\+java}}\end{DoxyCompactItemize}
