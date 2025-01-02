@@ -150,9 +150,9 @@ Here are the links to the documentations:
 
 |Language|Link|
 |:---:|:---:|
-|Python|[Lineflows_python](./docs/html/namespaces.html)|
-|Java|[Lineflows_java](./docs/html/Ybus__Java_8java.html)|
-|MATLAB|[Lineflows_matlab](./docs/html/Ybus__matlab_8m.html)|
+|Python|[Lineflows_python](./docs/html/namespacelineflow__loss.html)|
+|Java|[Lineflows_java](./docs/html/lineflow__loss_8java.html)|
+|MATLAB|[Lineflows_matlab](./docs/html/lineflow__loss_8m.html)|
 
 ## Documentation Tools
 
