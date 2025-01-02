@@ -139,9 +139,20 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 
 Here are the links to the documentations:
 
-1. [Ybus - Python](./docs/html/namespaceYbus__Python.html)
-2. [Ybus - Java](./docs/html/classes.html)
-3. [Ybus - MATLAB](./docs/html/Ybus__matlab_8m.html)
+### Ybus:
+|Language|Link|
+|:---:|:---:|
+|Python|[Ybus_python](./docs/html/namespaceYbus__Python.html)|
+|Java|[Ybus_java](./docs/html/Ybus__Java_8java.html)|
+|MATLAB|[Ybus_matlab](./docs/html/Ybus__matlab_8m.html)|
+
+### Line flows and Line losses:
+
+|Language|Link|
+|:---:|:---:|
+|Python|[Lineflows_python](./docs/html/namespaces.html)|
+|Java|[Lineflows_java](./docs/html/Ybus__Java_8java.html)|
+|MATLAB|[Lineflows_matlab](./docs/html/Ybus__matlab_8m.html)|
 
 ## Documentation Tools
 
