@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['findmax_0',['findMax',['../classComplex.html#a02613088714ee3c7a489b25532856050',1,'Complex']]],
-  ['fprintf_1',['fprintf',['../display__matrix_8m.html#abb5d16a996bbdbdfe4dd32ca1b967784',1,'display_matrix.m']]],
-  ['fromstring_2',['fromString',['../classComplex.html#a32cf17d402f8f5b7289462f011627673',1,'Complex']]]
+  ['elseif_0',['elseif',['../Line_01Flows_01and_01Losses_2MATLAB_2get__input_8m.html#ac8b4c2edd6396079d962321126d40a2d',1,'get_input.m']]],
+  ['endlink_1',['endlink',['../lineflow__loss_8m.html#acb230247bcfeb5193ebda7b6418bdd4c',1,'lineflow_loss.m']]]
 ];

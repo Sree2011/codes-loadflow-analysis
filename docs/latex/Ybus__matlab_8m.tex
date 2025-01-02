@@ -1,9 +1,9 @@
-\doxysection{Ybus/matlab/\+Ybus\+\_\+matlab.m File Reference}
-\hypertarget{Ybus__matlab_8m}{}\label{Ybus__matlab_8m}\index{Ybus/matlab/Ybus\_matlab.m@{Ybus/matlab/Ybus\_matlab.m}}
+\doxysection{codes/\+Ybus/matlab/\+Ybus\+\_\+matlab.m File Reference}
+\hypertarget{Ybus__matlab_8m}{}\label{Ybus__matlab_8m}\index{codes/Ybus/matlab/Ybus\_matlab.m@{codes/Ybus/matlab/Ybus\_matlab.m}}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{Ybus__matlab_8m_a8f9bc5ff2d41822467a086388655227a}{display\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}{YBUS}}, \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\mbox{\hyperlink{Ybus__matlab_8m_a8f9bc5ff2d41822467a086388655227a}{display\+\_\+matrix}} (\mbox{\hyperlink{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}{YBUS}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \begin{DoxyCompactList}\small\item\em Display the bus admittance matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -12,9 +12,9 @@
 \begin{DoxyCompactList}\small\item\em Get the number of buses from the user. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{Ybus__matlab_8m_afd05e88e13762e173d9d20fe3596216f}{choice}} = input(\textquotesingle{}Enter 1 for impedance and 2 for admittance\+:\textquotesingle{})
 \begin{DoxyCompactList}\small\item\em Get the choice from the user -\/ 1 for impedance and 2 for admittance. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}} = get\+\_\+input(\mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}},\mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}} = get\+\_\+input(\mbox{\hyperlink{Ybus_2matlab_2get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}},\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \begin{DoxyCompactList}\small\item\em get input from the user and calculate line admittances \end{DoxyCompactList}\item 
-\mbox{\hyperlink{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}{YBUS}} = calculate\+\_\+matrix(\mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\mbox{\hyperlink{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}{YBUS}} = calculate\+\_\+matrix(\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \begin{DoxyCompactList}\small\item\em Form the bus admittance matrix based on the input. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -23,7 +23,7 @@
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!display\_matrix@{display\_matrix}}
 \index{display\_matrix@{display\_matrix}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{display\_matrix()}{display\_matrix()}}
-{\footnotesize\ttfamily display\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}{YBUS}}}]{,  }\item[{\mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily display\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}{YBUS}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}]{ }\end{DoxyParamCaption})}
 
 
 
@@ -56,17 +56,17 @@ Get the number of buses from the user.
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!y@{y}}
 \index{y@{y}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{y}{y}}
-{\footnotesize\ttfamily y = get\+\_\+input(\mbox{\hyperlink{get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}},\mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+{\footnotesize\ttfamily y = get\+\_\+input(\mbox{\hyperlink{Ybus_2matlab_2get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}},\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
 
 
 
 get input from the user and calculate line admittances 
 
-\doxylink{get__input_8m}{get\+\_\+input } \Hypertarget{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}\label{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be} 
+\doxylink{Ybus_2matlab_2get__input_8m}{get\+\_\+input } \Hypertarget{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be}\label{Ybus__matlab_8m_a23fa726a74b27a90f812a94575b772be} 
 \index{Ybus\_matlab.m@{Ybus\_matlab.m}!YBUS@{YBUS}}
 \index{YBUS@{YBUS}!Ybus\_matlab.m@{Ybus\_matlab.m}}
 \doxysubsubsection{\texorpdfstring{YBUS}{YBUS}}
-{\footnotesize\ttfamily YBUS = calculate\+\_\+matrix(\mbox{\hyperlink{Ybus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, \mbox{\hyperlink{Ybus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+{\footnotesize\ttfamily YBUS = calculate\+\_\+matrix(\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
 
 
 

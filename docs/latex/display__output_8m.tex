@@ -1,0 +1,94 @@
+\doxysection{codes/\+Line Flows and Losses/\+MATLAB/display\+\_\+output.m File Reference}
+\hypertarget{display__output_8m}{}\label{display__output_8m}\index{codes/Line Flows and Losses/MATLAB/display\_output.m@{codes/Line Flows and Losses/MATLAB/display\_output.m}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} \mbox{\hyperlink{display__output_8m_aa1eecc4c035471a252c8277167266251}{display\+\_\+output}} (\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}, \mbox{\hyperlink{lineflow__loss_8m_abbc147540562dae804633fb3316491ba}{S}}, \mbox{\hyperlink{calculate__lineflow__loss_8m_a72f66ef44772677922a5a0961fd223f5}{SL}}) \% Display results(Optional
+\begin{DoxyCompactList}\small\item\em Display the output results in a tabular format. \end{DoxyCompactList}\item 
+Print the table header \mbox{\hyperlink{display__output_8m_a12eb6e08d3ea09c18dd82444ede3e150}{fprintf}} (\textquotesingle{}\%-\/10s \%-\/20s \%-\/20s \%-\/20s \%-\/20s\textbackslash{}n\textquotesingle{}, \mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{1\}, \mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{2\}, \mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{3\}, \mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{4\}, \mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{5\})
+\item 
+\mbox{\hyperlink{display__output_8m_aa60cff69c36de8d06790f237de2aa381}{fprintf}} (\textquotesingle{}\%\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{s\textbackslash{}n}}\textquotesingle{}, repmat(\textquotesingle{}-\/\textquotesingle{}, 1, 90))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} remove \mbox{\hyperlink{Line_01Flows_01and_01Losses_2MATLAB_2get__input_8m_a885f3c58878e09d518f9bd6392d6ff2c}{if}} you want no output at all \mbox{\hyperlink{display__output_8m_a4cff81bd1ec3523d9da8bad8d56d696e}{data}} = \{\}
+\item 
+Initialize an empty cell array for storing \mbox{\hyperlink{display__output_8m_a4cff81bd1ec3523d9da8bad8d56d696e}{data}} for \mbox{\hyperlink{display__output_8m_aabac7539db5526e2a4918543000404f9}{i}}
+\item 
+Line Loss end end Display the table with headers \mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}} = \{\textquotesingle{}Bus Pair\textquotesingle{}, \textquotesingle{}Voltage\textquotesingle{}, \textquotesingle{}Current\textquotesingle{}, \textquotesingle{}Line Flow\textquotesingle{}, \textquotesingle{}Line Loss\textquotesingle{}\}
+\item 
+\mbox{\hyperlink{display__output_8m_a937d4dd628a8858b443a399410d2600b}{result}} = \mbox{[}\mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{display__output_8m_aa1eecc4c035471a252c8277167266251}\label{display__output_8m_aa1eecc4c035471a252c8277167266251} 
+\index{display\_output.m@{display\_output.m}!display\_output@{display\_output}}
+\index{display\_output@{display\_output}!display\_output.m@{display\_output.m}}
+\doxysubsubsection{\texorpdfstring{display\_output()}{display\_output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} display\+\_\+output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_abbc147540562dae804633fb3316491ba}{S}}}]{,  }\item[{\mbox{\hyperlink{calculate__lineflow__loss_8m_a72f66ef44772677922a5a0961fd223f5}{SL}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Display the output results in a tabular format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of buses in the system. \\
+\hline
+{\em V} & The voltage matrix. \\
+\hline
+{\em I} & The current matrix. \\
+\hline
+{\em S} & The line flow matrix. \\
+\hline
+{\em SL} & The line loss matrix. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{display__output_8m_a12eb6e08d3ea09c18dd82444ede3e150}\label{display__output_8m_a12eb6e08d3ea09c18dd82444ede3e150} 
+\index{display\_output.m@{display\_output.m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!display\_output.m@{display\_output.m}}
+\doxysubsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Print the table header fprintf (\begin{DoxyParamCaption}\item[{\textquotesingle{}\%-\/10s \%-\/20s \%-\/20s \%-\/20s \%-\/20s\textbackslash{}n\textquotesingle{}}]{,  }\item[{\mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{1\}}]{,  }\item[{\mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{2\}}]{,  }\item[{\mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{3\}}]{,  }\item[{\mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{4\}}]{,  }\item[{\mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}\{5\}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{display__output_8m_aa60cff69c36de8d06790f237de2aa381}\label{display__output_8m_aa60cff69c36de8d06790f237de2aa381} 
+\index{display\_output.m@{display\_output.m}!fprintf@{fprintf}}
+\index{fprintf@{fprintf}!display\_output.m@{display\_output.m}}
+\doxysubsubsection{\texorpdfstring{fprintf()}{fprintf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily fprintf (\begin{DoxyParamCaption}\item[{\textquotesingle{}\%\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{s\textbackslash{}n}}\textquotesingle{}}]{,  }\item[{repmat(\textquotesingle{}-\/\textquotesingle{}, 1, 90)}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{display__output_8m_a4cff81bd1ec3523d9da8bad8d56d696e}\label{display__output_8m_a4cff81bd1ec3523d9da8bad8d56d696e} 
+\index{display\_output.m@{display\_output.m}!data@{data}}
+\index{data@{data}!display\_output.m@{display\_output.m}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily Line Flow data = \{\}}
+
+\Hypertarget{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}\label{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7} 
+\index{display\_output.m@{display\_output.m}!headers@{headers}}
+\index{headers@{headers}!display\_output.m@{display\_output.m}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily Line Loss end end Display the table with headers headers = \{\textquotesingle{}Bus Pair\textquotesingle{}, \textquotesingle{}Voltage\textquotesingle{}, \textquotesingle{}Current\textquotesingle{}, \textquotesingle{}Line Flow\textquotesingle{}, \textquotesingle{}Line Loss\textquotesingle{}\}}
+
+\Hypertarget{display__output_8m_aabac7539db5526e2a4918543000404f9}\label{display__output_8m_aabac7539db5526e2a4918543000404f9} 
+\index{display\_output.m@{display\_output.m}!i@{i}}
+\index{i@{i}!display\_output.m@{display\_output.m}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily Print a separator line Print the table rows for i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ j\ =\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{display__output_8m_a4cff81bd1ec3523d9da8bad8d56d696e}{data}}\{end+1,\ 1\}\ =\ sprintf('\%d-\/\%d',\ \mbox{\hyperlink{display__output_8m_aabac7539db5526e2a4918543000404f9}{i}},\ j)}
+
+\end{DoxyCode}
+\Hypertarget{display__output_8m_a937d4dd628a8858b443a399410d2600b}\label{display__output_8m_a937d4dd628a8858b443a399410d2600b} 
+\index{display\_output.m@{display\_output.m}!result@{result}}
+\index{result@{result}!display\_output.m@{display\_output.m}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily result = \mbox{[}\mbox{\hyperlink{display__output_8m_a3f6cc0e8067fc2b06ac71fba4e6332c7}{headers}}}
+

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['z_37',['Z',['../Ybus__matlab_8m.html#aa30cc5d0245a5d69d8f10afae5560945',1,'Ybus_matlab.m']]],
-  ['zdata_38',['zdata',['../Ybus__matlab_8m.html#a8878f775609579f72569e1d60770b2fa',1,'zdata():&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#a7090c9ce28ddaed32c5bdd92d78347fe',1,'Ybus_Python.zdata()']]]
+  ['v_0',['v',['../lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359',1,'V:&#160;lineflow_loss.m'],['../calculate__lineflow__loss_8m.html#a60dca37bcc90951b6f43d7c9628c9a37',1,'V(j, i):&#160;calculate_lineflow_loss.m']]],
+  ['voltages_1',['voltages',['../lineflow__loss_8m.html#a69fab0c925ecdc3db6ffeb7402b17a52',1,'lineflow_loss.m']]]
 ];

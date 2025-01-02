@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ybus_5fjava_0',['Ybus_Java',['../classYbus__Java.html',1,'']]]
+  ['lineflow_5floss_0',['lineflow_loss',['../classlineflow__loss.html',1,'']]]
 ];

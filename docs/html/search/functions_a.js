@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tostring_0',['toString',['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex']]]
+  ['reciprocal_0',['reciprocal',['../classComplex.html#a3abc78c5a8c36a75d16bd964e7e5cdca',1,'Complex.reciprocal()'],['../classComplex.html#a3abc78c5a8c36a75d16bd964e7e5cdca',1,'Complex.reciprocal()']]]
 ];

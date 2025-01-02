@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['k_564',['k',['../m2html_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac',1,'k():&#160;m2html.m'],['../doxyread_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac',1,'k():&#160;doxyread.m'],['../doxysearch_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac',1,'k():&#160;doxysearch.m'],['../Ybus__matlab_8m.html#a1c73327b2882639bc9f5e416bb3cc7ac',1,'k():&#160;Ybus_matlab.m']]],
-  ['keyboard_565',['keyboard',['../m2html_8m.html#a9976f3faad68f981f425583e48b03252',1,'m2html.m']]],
-  ['kw_566',['kw',['../m2html_8m.html#aa0a4756ea06ac52324b7c9b9174247ec',1,'m2html.m']]],
-  ['kw_567',['KW',['../doxywrite_8m.html#a0cc6f7e9cccf037607e02af495a568c1',1,'doxywrite.m']]]
+  ['y_0',['y',['../lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;lineflow_loss.m'],['../Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab45f07f249f3e7d329509cb2510fe56f',1,'Ybus_Python.y']]],
+  ['ybus_1',['ybus',['../namespaceYbus__Python.html#a3d2f2cd307353a609df5ed6f361efda0',1,'Ybus_Python.Ybus'],['../Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be',1,'YBUS:&#160;Ybus_matlab.m'],['../calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m']]],
+  ['yij_2',['yij',['../Ybus_2matlab_2get__input_8m.html#a524e6c6a36397088e56b9ff1b3c614d1',1,'get_input.m']]],
+  ['yp_3',['yp',['../Ybus_2matlab_2get__input_8m.html#abe3d4ee08a6d6a5b2db763330b532ea6',1,'get_input.m']]]
 ];

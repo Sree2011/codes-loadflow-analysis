@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['subtract_0',['subtract',['../classComplex.html#ad552a93c53be71388e817329c3be0e94',1,'Complex']]]
+  ['print_5fadmittance_5fmatrix_0',['print_admittance_matrix',['../namespaceYbus__Python.html#ac60a972c14d84aaacf8336414da709ed',1,'Ybus_Python']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_5finput_0',['get_input',['../classYbus__Java.html#a68383503a48ee84d0ba9df8f3dbc8b58',1,'Ybus_Java.get_input()'],['../namespaceYbus__Python.html#aab790c2a74ad0544f4ea8c021ca0e0ed',1,'Ybus_Python.get_input()']]],
-  ['getimag_1',['getImag',['../classComplex.html#a874cd609fc70d1a80e5d2cd2b6565c0e',1,'Complex']]],
-  ['getreal_2',['getReal',['../classComplex.html#a4d797850f2dc802a81632b5dad6658d5',1,'Complex']]]
+  ['findmax_0',['findMax',['../classComplex.html#a02613088714ee3c7a489b25532856050',1,'Complex']]],
+  ['fprintf_1',['fprintf',['../display__output_8m.html#a12eb6e08d3ea09c18dd82444ede3e150',1,'fprintf(&apos;%-10s %-20s %-20s %-20s %-20s\n&apos;, headers{1}, headers{2}, headers{3}, headers{4}, headers{5}):&#160;display_output.m'],['../display__output_8m.html#aa60cff69c36de8d06790f237de2aa381',1,'fprintf(&apos;%s\n&apos;, repmat(&apos;-&apos;, 1, 90)):&#160;display_output.m'],['../lineflow__loss_8m.html#a6f7de9c5a8edf2d3a1a2980ecba1415c',1,'fprintf(&apos;Enter the number of buses:&apos;):&#160;lineflow_loss.m'],['../display__matrix_8m.html#abb5d16a996bbdbdfe4dd32ca1b967784',1,'fprintf(&apos;\n&apos;):&#160;display_matrix.m']]],
+  ['fromstring_2',['fromstring',['../classComplex.html#a32cf17d402f8f5b7289462f011627673',1,'Complex.fromString(String s)'],['../classComplex.html#a32cf17d402f8f5b7289462f011627673',1,'Complex.fromString(String s)']]]
 ];

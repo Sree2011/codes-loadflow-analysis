@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['y_64',['y',['../Ybus__matlab_8m.html#adcc2ccb3bbdd9d22a9734d8219914e73',1,'Ybus_matlab.m']]],
-  ['ybus_65',['Ybus',['../Ybus__matlab_8m.html#ae5a5eee66749bf5128939e55db6f81c1',1,'Ybus_matlab.m']]]
+  ['tostring_0',['tostring',['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex.toString()'],['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex.toString()']]],
+  ['type_1',['type',['../Line_01Flows_01and_01Losses_2MATLAB_2get__input_8m.html#ab109faaab8ca95ce134fc9471f1e3043',1,'get_input.m']]]
 ];
