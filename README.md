@@ -6,9 +6,11 @@
 		theme: 'light'
 	});
 </script>
+
+
 # Generate Bus Admittance Matrix
 
-
+For any power system containing n buses,
 $$
 
 \begin{equation*}
@@ -92,10 +94,9 @@ where $y_{ij}$ is the admittance of the line between bus i and bus j.
    - Step 4: Call `calculate_admittance_matrix` to form the bus admittance matrix.
    - Step 5: Call `print_admittance_matrix` to display the bus admittance matrix.
 
-
 ## Class Diagram
 
-<pre class="mermaid">
+```mermaid
 classDiagram
 class Complex{
    - float real
@@ -126,7 +127,7 @@ class Ybus_Java{
 Ybus_Java --> Complex: uses
 
 
-</pre>
+```
 **Adding annotations for MATLAB and Python implementations:**
 - **note for Complex**:\
 In MATLAB and Python, inbuilt libraries are used instead of this custom Complex class.\
@@ -155,5 +156,4 @@ Here are the links to the documentation tools I used:
 
 ## References
 
-[1] Hadi Saadat, *"Power System Analysis"*. Psa Pub, United States, 2010.\
-[2] Mohammad Shahidehpour; Yaoyu Wang, "Appendix C: IEEE30 Bus System Data," in Communication and Control in Electric Power Systems: Applications of Parallel and Distributed Processing , IEEE, 2003, pp.493-495, doi: 10.1002/0471462926.app3.
+[@Saadat2010;@Shahidehpour2003]
