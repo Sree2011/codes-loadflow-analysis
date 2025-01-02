@@ -16,8 +16,7 @@ y = zeros(n, n);  % No output
 
 % /// Calculate lineflows and line losses
 % /// \link calculate_lineflow_loss.m calculate_lineflow_loss \endlink
-[S,SL] = calculate_lineflow_loss(n,V,I,y);  % Calculate lineflows and line losses
-
+[S,SL] = calculate_lineflow_loss(n,V,I,y);
 % /// Display the output
 % /// \link display_output.m display_output \endlink
-display_output(n,V,I,S,SL);  % Display the output
+display_output(n,V,I,S,SL);
