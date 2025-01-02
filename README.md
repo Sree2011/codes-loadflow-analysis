@@ -167,9 +167,4 @@ Here are the links to the documentation tools I used:
 
 ## References
 
-{% bibliography %}
-{% cite Saadat2010 %}
 
-
-{% bibliography %}
-{% cite Shahidehpour2003 %}
