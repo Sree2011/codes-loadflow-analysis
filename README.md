@@ -140,6 +140,7 @@ The MATLAB and Python versions implement similar functionality using inbuilt fun
 Here are the links to the documentations:
 
 ### Ybus:
+
 |Language|Link|
 |:---:|:---:|
 |Python|[Ybus_python](./docs/html/namespaceYbus__Python.html)|
