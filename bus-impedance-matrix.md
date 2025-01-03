@@ -79,11 +79,6 @@ classDiagram
 
 Here are the links to the documentation:
 
-## Documentation
-
-Here are the links to the documentations:
-
-
 |Language|Link|
 |:---:|:---:|
 |Python|[Zbus_python](./docs/html/namespaceZbus__Python.html)|
