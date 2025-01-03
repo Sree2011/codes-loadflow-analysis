@@ -4,7 +4,6 @@ description: This project implements the creation of bus admittance matrix in Ja
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme
-  - jekyll-scholar
 
 relative_links:
   enabled: true
@@ -33,9 +32,3 @@ mathjax:
   enable: true
   use_preview: true
 
-scholar:
-  style: ieee
-  locale: en-US
-  source: _bibliography/papers.bib
-  sort_by: year
-  order: descending

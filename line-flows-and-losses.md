@@ -1,6 +1,6 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script type="module">
-	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4/dist/mermaid.esm.min.mjs';
 	mermaid.initialize({
 		startOnLoad: true,
 		theme: 'light'
@@ -132,12 +132,12 @@ class Complex{
    + subtract(Complex other) Complex
    + multiply(Complex other) Complex
    + divide(Complex other) Complex
-   + negate(Complex other) Complex
-   + reciprocal(Complex other) Complex
+   + negate() Complex
+   + reciprocal() Complex
    + toString() String
 }
 
-class lineflow_loss{
+class Lineflow_Loss{
     - Scanner sc
     + main(String args[]) void
     + get_input(int n, Complex[][] V, Complex[][] I, Complex[][] y) (ArrayList<Complex[][]>)
@@ -145,7 +145,7 @@ class lineflow_loss{
     + display_output(int n, Complex[][] V, Complex[][] I, Complex[][] S, Complex[][] SL) void
 }
 
-lineflow_loss --> Complex: uses
+Lineflow_Loss --> Complex: uses
 ```
 
 ## Documentation
