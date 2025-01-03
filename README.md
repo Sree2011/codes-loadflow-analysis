@@ -168,22 +168,6 @@ Here are the links to the documentation tools I used:
 
 ## References
 
-```bibtex
-@book{Saadat2010,
-  author    = {Hadi Saadat},
-  title     = {Power System Analysis},
-  year      = {2010},
-  publisher = {Psa Pub},
-  address   = {United States}
-}
+[1] H. Saadat, *Power System Analysis*, 2nd ed. United States: McGraw, 2004, ISBN: 978-0071239554.
 
-@inbook{Shahidehpour2003,
-  author    = {Mohammad Shahidehpour and Yaoyu Wang},
-  title     = {Appendix C: IEEE30 Bus System Data},
-  booktitle = {Communication and Control in Electric Power Systems: Applications of Parallel and Distributed Processing},
-  pages     = {493-495},
-  year      = {2003},
-  publisher = {IEEE},
-  doi       = {10.1002/0471462926.app3}
-}
-```
+[2] M. Shahidehpour and Y. Wang, "Appendix C: IEEE30 Bus System Data," in *Communication and Control in Electric Power Systems: Applications of Parallel and Distributed Processing*, IEEE, 2003, pp. 493-495, doi: 10.1002/0471462926.app3.
