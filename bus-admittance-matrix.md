@@ -11,10 +11,9 @@
 # Generate Bus Admittance Matrix
 
 For any power system containing n buses,
+
 $$
-
 \begin{equation*}
-
     \begin{bmatrix} 
     I_1 \\
     I_2 \\ 
@@ -42,7 +41,6 @@ $$
     \vdots \\ 
     V_n 
     \end{bmatrix}
-
 \end{equation*}
 $$
 

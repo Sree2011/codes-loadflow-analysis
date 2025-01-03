@@ -20,7 +20,6 @@ $$
 \begin{equation}
 Q_i = -\text{Im}\left(V_i^* \left( V_i Y_{ii} + \sum_{j=1, j \neq i}^{n} V_j Y_{ij} \right) \right)
 \end{equation}
-
 $$
 
 Apparent power,
@@ -34,7 +33,10 @@ $$
 
 1. Start
 2. Input P,Q,V,y
-3. Form Ybus , store into Y
+3. * **Form Ybus:**
+        * **Form diagonal elements:** 
+            
+
 4. calculate real power
 5. calculate reactive power
 6. Apparent power, S = P - jQ or complex(P,-Q)
