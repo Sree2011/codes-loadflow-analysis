@@ -66,12 +66,13 @@ classDiagram
     class Zbus_java{
         - Scanner sc
         + get_input(int choice, int n) Complex[][]
-        + calculate_matrix(y,n) Complex[][]
-        + calculate_zbus(ybus) Complex[][]
-        + display_output(zbus) void
+        + calculate_matrix(Complex[][] y,int n) Complex[][]
+        + calculate_zbus(Complex[][] ybus) Complex[][]
+        + display_output(Complex[][] zbus) void
     }
 
     Zbus_java --> Complex : uses
+
 </pre>
 
 ## Documentation
