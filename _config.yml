@@ -4,6 +4,7 @@ description: Codes, equations and algorithms for load flow analysis in power sys
 plugins:
   - jekyll-relative-links
   - jekyll-remote-theme
+  - jekyll-include-cache
 
 relative_links:
   enabled: true
