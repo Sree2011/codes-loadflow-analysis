@@ -1,3 +1,12 @@
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'light'
+	});
+</script>
+
 # Static Load flow Equations
 Real Power,
 $$
@@ -31,3 +40,4 @@ $$
 6. Apparent power, S = P - jQ or complex(P,-Q)
 7. Display results
 8. Stop
+
