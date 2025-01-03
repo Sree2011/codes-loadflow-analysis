@@ -1,0 +1,49 @@
+\doxysection{codes/\+Zbus/\+MATLAB/calculate\+\_\+matrix.m File Reference}
+\hypertarget{Zbus_2MATLAB_2calculate__matrix_8m}{}\label{Zbus_2MATLAB_2calculate__matrix_8m}\index{codes/Zbus/MATLAB/calculate\_matrix.m@{codes/Zbus/MATLAB/calculate\_matrix.m}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+end else \mbox{\hyperlink{Zbus_2MATLAB_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}{Ybus}} (\mbox{\hyperlink{calculate__lineflow__loss_8m_aabac7539db5526e2a4918543000404f9}{i}}, j)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+brief Initialise the bus admittance matrix for \mbox{\hyperlink{Zbus_2MATLAB_2calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d}{i}}
+\item 
+end end end \mbox{\hyperlink{Zbus_2MATLAB_2calculate__matrix_8m_ab4c00bd68801d3e0053bf4e62517ee7d}{YBus}} = \mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}{Ybus}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Zbus_2MATLAB_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}\label{Zbus_2MATLAB_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1} 
+\index{calculate\_matrix.m@{calculate\_matrix.m}!Ybus@{Ybus}}
+\index{Ybus@{Ybus}!calculate\_matrix.m@{calculate\_matrix.m}}
+\doxysubsubsection{\texorpdfstring{Ybus()}{Ybus()}}
+{\footnotesize\ttfamily end else Ybus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{calculate__lineflow__loss_8m_aabac7539db5526e2a4918543000404f9}{i}}}]{,  }\item[{j}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{Zbus_2MATLAB_2calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d}\label{Zbus_2MATLAB_2calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d} 
+\index{calculate\_matrix.m@{calculate\_matrix.m}!i@{i}}
+\index{i@{i}!calculate\_matrix.m@{calculate\_matrix.m}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily brief Initialise the bus admittance matrix for i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \%\ \(\backslash\)brief\ external\ loop}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ j\ =\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \%\ \(\backslash\)brief\ \textcolor{keyword}{internal}\ loop}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d}{i}}\ ==\ j}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ k\ =\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}{Ybus}}(\mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d}{i}},\ j)\ =\ \mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}{Ybus}}(\mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d}{i}},\ j)\ +\ \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}(\mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ac5871b40d457b4125459e0b358ae3a7d}{i}},\ k)}
+
+\end{DoxyCode}
+\Hypertarget{Zbus_2MATLAB_2calculate__matrix_8m_ab4c00bd68801d3e0053bf4e62517ee7d}\label{Zbus_2MATLAB_2calculate__matrix_8m_ab4c00bd68801d3e0053bf4e62517ee7d} 
+\index{calculate\_matrix.m@{calculate\_matrix.m}!YBus@{YBus}}
+\index{YBus@{YBus}!calculate\_matrix.m@{calculate\_matrix.m}}
+\doxysubsubsection{\texorpdfstring{YBus}{YBus}}
+{\footnotesize\ttfamily end end end YBus = \mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}{Ybus}}}
+

@@ -3,7 +3,7 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classComplex_af93a7965d4f9976d24901efb583a28b4}{Complex}} (double \mbox{\hyperlink{classComplex_a3bfb3459c9884f4e9d2e4daacb72c4f2}{real}}, double \mbox{\hyperlink{classComplex_a52f10596b0e0c4466be22bbb37b7bdf7}{imaginary}})
+\mbox{\hyperlink{classComplex_af93a7965d4f9976d24901efb583a28b4}{Complex}} (double \mbox{\hyperlink{classComplex_a077ee5b14945485e970f47cd3476215c}{real}}, double \mbox{\hyperlink{classComplex_a18e469aeb091e5130f05721b89cf3b8d}{imaginary}})
 \item 
 \mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a1686868a414a28b02e799e05641becae}{add}} (\mbox{\hyperlink{classComplex}{Complex}} other)
 \item 
@@ -21,7 +21,27 @@
 \item 
 String \mbox{\hyperlink{classComplex_a5a14ebec63aae370f2a05522e2c45453}{to\+String}} ()
 \item 
-\mbox{\hyperlink{classComplex_aa3ad102258dba549bd6d81c198a824b1}{Complex}} (float \mbox{\hyperlink{classComplex_a3bfb3459c9884f4e9d2e4daacb72c4f2}{real}}, float \mbox{\hyperlink{classComplex_a52f10596b0e0c4466be22bbb37b7bdf7}{imaginary}})
+\mbox{\hyperlink{classComplex_aa3ad102258dba549bd6d81c198a824b1}{Complex}} (float \mbox{\hyperlink{classComplex_a077ee5b14945485e970f47cd3476215c}{real}}, float \mbox{\hyperlink{classComplex_a18e469aeb091e5130f05721b89cf3b8d}{imaginary}})
+\item 
+float \mbox{\hyperlink{classComplex_a4d797850f2dc802a81632b5dad6658d5}{get\+Real}} ()
+\item 
+float \mbox{\hyperlink{classComplex_a874cd609fc70d1a80e5d2cd2b6565c0e}{get\+Imag}} ()
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a1686868a414a28b02e799e05641becae}{add}} (\mbox{\hyperlink{classComplex}{Complex}} other)
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_ad552a93c53be71388e817329c3be0e94}{subtract}} (\mbox{\hyperlink{classComplex}{Complex}} other)
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a8ec653650f97d75bed0cd8d924ba4ef2}{multiply}} (\mbox{\hyperlink{classComplex}{Complex}} other)
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a3abc78c5a8c36a75d16bd964e7e5cdca}{reciprocal}} ()
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a63ce0a55d8a970161830e4dffc43bcd4}{negate}} ()
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a40bae3a87aff78dafac59495bf43ea36}{divide}} (\mbox{\hyperlink{classComplex}{Complex}} other)
+\item 
+String \mbox{\hyperlink{classComplex_a5a14ebec63aae370f2a05522e2c45453}{to\+String}} ()
+\item 
+\mbox{\hyperlink{classComplex_aa3ad102258dba549bd6d81c198a824b1}{Complex}} (float \mbox{\hyperlink{classComplex_a077ee5b14945485e970f47cd3476215c}{real}}, float \mbox{\hyperlink{classComplex_a18e469aeb091e5130f05721b89cf3b8d}{imaginary}})
 \item 
 float \mbox{\hyperlink{classComplex_a4d797850f2dc802a81632b5dad6658d5}{get\+Real}} ()
 \item 
@@ -49,13 +69,17 @@ static \mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a3
 static \mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a32cf17d402f8f5b7289462f011627673}{from\+String}} (String s)
 \item 
 static int \mbox{\hyperlink{classComplex_a02613088714ee3c7a489b25532856050}{find\+Max}} (int\mbox{[}$\,$\mbox{]} array)
+\item 
+static \mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classComplex_a32cf17d402f8f5b7289462f011627673}{from\+String}} (String s)
+\item 
+static int \mbox{\hyperlink{classComplex_a02613088714ee3c7a489b25532856050}{find\+Max}} (int\mbox{[}$\,$\mbox{]} array)
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-double \mbox{\hyperlink{classComplex_a3bfb3459c9884f4e9d2e4daacb72c4f2}{real}}
+double \mbox{\hyperlink{classComplex_a077ee5b14945485e970f47cd3476215c}{real}}
 \item 
-double \mbox{\hyperlink{classComplex_a52f10596b0e0c4466be22bbb37b7bdf7}{imaginary}}
+double \mbox{\hyperlink{classComplex_a18e469aeb091e5130f05721b89cf3b8d}{imaginary}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -78,13 +102,26 @@ This class defines utility functions for handling complex numbers. Functions\+:
 \Hypertarget{classComplex_af93a7965d4f9976d24901efb583a28b4}\label{classComplex_af93a7965d4f9976d24901efb583a28b4} 
 \index{Complex@{Complex}!Complex@{Complex}}
 \index{Complex@{Complex}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{Complex()}{Complex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{Complex()}{Complex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Complex.\+Complex (\begin{DoxyParamCaption}\item[{double}]{real,  }\item[{double}]{imaginary }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_aa3ad102258dba549bd6d81c198a824b1}\label{classComplex_aa3ad102258dba549bd6d81c198a824b1} 
 \index{Complex@{Complex}!Complex@{Complex}}
 \index{Complex@{Complex}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{Complex()}{Complex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{Complex()}{Complex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Complex.\+Complex (\begin{DoxyParamCaption}\item[{float}]{real,  }\item[{float}]{imaginary }\end{DoxyParamCaption})}
+
+Constructor of complex class. 
+\begin{DoxyParams}{Parameters}
+{\em real} & Real part of the complex number. \\
+\hline
+{\em imaginary} & Imaginary part of the complex number. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComplex_aa3ad102258dba549bd6d81c198a824b1}\label{classComplex_aa3ad102258dba549bd6d81c198a824b1} 
+\index{Complex@{Complex}!Complex@{Complex}}
+\index{Complex@{Complex}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{Complex()}{Complex()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily Complex.\+Complex (\begin{DoxyParamCaption}\item[{float}]{real,  }\item[{float}]{imaginary }\end{DoxyParamCaption})}
 
 Constructor of complex class. 
@@ -100,13 +137,27 @@ Constructor of complex class.
 \Hypertarget{classComplex_a1686868a414a28b02e799e05641becae}\label{classComplex_a1686868a414a28b02e799e05641becae} 
 \index{Complex@{Complex}!add@{add}}
 \index{add@{add}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_a1686868a414a28b02e799e05641becae}\label{classComplex_a1686868a414a28b02e799e05641becae} 
 \index{Complex@{Complex}!add@{add}}
 \index{add@{add}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
+
+Adds this complex number to another. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the complex number to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sum of this complex number and the other. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a1686868a414a28b02e799e05641becae}\label{classComplex_a1686868a414a28b02e799e05641becae} 
+\index{Complex@{Complex}!add@{add}}
+\index{add@{add}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 Adds this complex number to another. 
@@ -126,13 +177,27 @@ the sum of this complex number and the other.
 \Hypertarget{classComplex_a40bae3a87aff78dafac59495bf43ea36}\label{classComplex_a40bae3a87aff78dafac59495bf43ea36} 
 \index{Complex@{Complex}!divide@{divide}}
 \index{divide@{divide}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{divide()}{divide()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+divide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_a40bae3a87aff78dafac59495bf43ea36}\label{classComplex_a40bae3a87aff78dafac59495bf43ea36} 
 \index{Complex@{Complex}!divide@{divide}}
 \index{divide@{divide}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{divide()}{divide()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+divide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
+
+Divides this complex number by another. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the complex number to divide by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the quotient of this complex number and the other. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a40bae3a87aff78dafac59495bf43ea36}\label{classComplex_a40bae3a87aff78dafac59495bf43ea36} 
+\index{Complex@{Complex}!divide@{divide}}
+\index{divide@{divide}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+divide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 Divides this complex number by another. 
@@ -146,7 +211,21 @@ the quotient of this complex number and the other.
 \Hypertarget{classComplex_a02613088714ee3c7a489b25532856050}\label{classComplex_a02613088714ee3c7a489b25532856050} 
 \index{Complex@{Complex}!findMax@{findMax}}
 \index{findMax@{findMax}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{findMax()}{findMax()}}
+\doxysubsubsection{\texorpdfstring{findMax()}{findMax()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int Complex.\+find\+Max (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds the maximum number in the array. 
+\begin{DoxyParams}{Parameters}
+{\em array} & the array to find the maximum number in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the maximum number in the array. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a02613088714ee3c7a489b25532856050}\label{classComplex_a02613088714ee3c7a489b25532856050} 
+\index{Complex@{Complex}!findMax@{findMax}}
+\index{findMax@{findMax}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{findMax()}{findMax()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static int Complex.\+find\+Max (\begin{DoxyParamCaption}\item[{int\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Finds the maximum number in the array. 
@@ -160,13 +239,32 @@ the maximum number in the array.
 \Hypertarget{classComplex_a32cf17d402f8f5b7289462f011627673}\label{classComplex_a32cf17d402f8f5b7289462f011627673} 
 \index{Complex@{Complex}!fromString@{fromString}}
 \index{fromString@{fromString}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}} Complex.\+from\+String (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 \Hypertarget{classComplex_a32cf17d402f8f5b7289462f011627673}\label{classComplex_a32cf17d402f8f5b7289462f011627673} 
 \index{Complex@{Complex}!fromString@{fromString}}
 \index{fromString@{fromString}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}} Complex.\+from\+String (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an object of complex class using the input string. The input string should be in the form {\ttfamily a+bj} where \textquotesingle{}a\textquotesingle{} and \textquotesingle{}b\textquotesingle{} are floats. 
+\begin{DoxyParams}{Parameters}
+{\em s} & Input string of the form a+bj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \doxylink{classComplex}{Complex} object representing the complex number. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the input string is not in the correct format. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classComplex_a32cf17d402f8f5b7289462f011627673}\label{classComplex_a32cf17d402f8f5b7289462f011627673} 
+\index{Complex@{Complex}!fromString@{fromString}}
+\index{fromString@{fromString}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}} Complex.\+from\+String (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 Creates an object of complex class using the input string. The input string should be in the form {\ttfamily a+bj} where \textquotesingle{}a\textquotesingle{} and \textquotesingle{}b\textquotesingle{} are floats. 
@@ -185,31 +283,63 @@ a \doxylink{classComplex}{Complex} object representing the complex number.
 \Hypertarget{classComplex_a874cd609fc70d1a80e5d2cd2b6565c0e}\label{classComplex_a874cd609fc70d1a80e5d2cd2b6565c0e} 
 \index{Complex@{Complex}!getImag@{getImag}}
 \index{getImag@{getImag}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{getImag()}{getImag()}}
+\doxysubsubsection{\texorpdfstring{getImag()}{getImag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily float Complex.\+get\+Imag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the imaginary part of the complex number. {\ttfamily \doxylink{classComplex_a52f10596b0e0c4466be22bbb37b7bdf7}{Complex\#imaginary}} \begin{DoxyReturn}{Returns}
+Returns the imaginary part of the complex number. {\ttfamily \doxylink{classComplex_a18e469aeb091e5130f05721b89cf3b8d}{Complex\#imaginary}} \begin{DoxyReturn}{Returns}
+the imaginary part of the complex number. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a874cd609fc70d1a80e5d2cd2b6565c0e}\label{classComplex_a874cd609fc70d1a80e5d2cd2b6565c0e} 
+\index{Complex@{Complex}!getImag@{getImag}}
+\index{getImag@{getImag}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{getImag()}{getImag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Complex.\+get\+Imag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the imaginary part of the complex number. {\ttfamily \doxylink{classComplex_a18e469aeb091e5130f05721b89cf3b8d}{Complex\#imaginary}} \begin{DoxyReturn}{Returns}
 the imaginary part of the complex number. 
 \end{DoxyReturn}
 \Hypertarget{classComplex_a4d797850f2dc802a81632b5dad6658d5}\label{classComplex_a4d797850f2dc802a81632b5dad6658d5} 
 \index{Complex@{Complex}!getReal@{getReal}}
 \index{getReal@{getReal}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{getReal()}{getReal()}}
+\doxysubsubsection{\texorpdfstring{getReal()}{getReal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily float Complex.\+get\+Real (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the real part of the complex number. {\ttfamily \doxylink{classComplex_a3bfb3459c9884f4e9d2e4daacb72c4f2}{Complex\#real}} \begin{DoxyReturn}{Returns}
+Returns the real part of the complex number. {\ttfamily \doxylink{classComplex_a077ee5b14945485e970f47cd3476215c}{Complex\#real}} \begin{DoxyReturn}{Returns}
+the real part of the complex number. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a4d797850f2dc802a81632b5dad6658d5}\label{classComplex_a4d797850f2dc802a81632b5dad6658d5} 
+\index{Complex@{Complex}!getReal@{getReal}}
+\index{getReal@{getReal}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{getReal()}{getReal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Complex.\+get\+Real (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the real part of the complex number. {\ttfamily \doxylink{classComplex_a077ee5b14945485e970f47cd3476215c}{Complex\#real}} \begin{DoxyReturn}{Returns}
 the real part of the complex number. 
 \end{DoxyReturn}
 \Hypertarget{classComplex_a8ec653650f97d75bed0cd8d924ba4ef2}\label{classComplex_a8ec653650f97d75bed0cd8d924ba4ef2} 
 \index{Complex@{Complex}!multiply@{multiply}}
 \index{multiply@{multiply}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+multiply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_a8ec653650f97d75bed0cd8d924ba4ef2}\label{classComplex_a8ec653650f97d75bed0cd8d924ba4ef2} 
 \index{Complex@{Complex}!multiply@{multiply}}
 \index{multiply@{multiply}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+multiply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
+
+Multiplies this complex number by another. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the complex number to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the product of this complex number and the other. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a8ec653650f97d75bed0cd8d924ba4ef2}\label{classComplex_a8ec653650f97d75bed0cd8d924ba4ef2} 
+\index{Complex@{Complex}!multiply@{multiply}}
+\index{multiply@{multiply}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+multiply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 Multiplies this complex number by another. 
@@ -223,13 +353,22 @@ the product of this complex number and the other.
 \Hypertarget{classComplex_a63ce0a55d8a970161830e4dffc43bcd4}\label{classComplex_a63ce0a55d8a970161830e4dffc43bcd4} 
 \index{Complex@{Complex}!negate@{negate}}
 \index{negate@{negate}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{negate()}{negate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+negate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_a63ce0a55d8a970161830e4dffc43bcd4}\label{classComplex_a63ce0a55d8a970161830e4dffc43bcd4} 
 \index{Complex@{Complex}!negate@{negate}}
 \index{negate@{negate}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{negate()}{negate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+negate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Negates this complex number. \begin{DoxyReturn}{Returns}
+the negation of this complex number. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a63ce0a55d8a970161830e4dffc43bcd4}\label{classComplex_a63ce0a55d8a970161830e4dffc43bcd4} 
+\index{Complex@{Complex}!negate@{negate}}
+\index{negate@{negate}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{negate()}{negate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+negate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Negates this complex number. \begin{DoxyReturn}{Returns}
@@ -238,13 +377,22 @@ the negation of this complex number.
 \Hypertarget{classComplex_a3abc78c5a8c36a75d16bd964e7e5cdca}\label{classComplex_a3abc78c5a8c36a75d16bd964e7e5cdca} 
 \index{Complex@{Complex}!reciprocal@{reciprocal}}
 \index{reciprocal@{reciprocal}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{reciprocal()}{reciprocal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{reciprocal()}{reciprocal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+reciprocal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_a3abc78c5a8c36a75d16bd964e7e5cdca}\label{classComplex_a3abc78c5a8c36a75d16bd964e7e5cdca} 
 \index{Complex@{Complex}!reciprocal@{reciprocal}}
 \index{reciprocal@{reciprocal}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{reciprocal()}{reciprocal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{reciprocal()}{reciprocal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+reciprocal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates the reciprocal of this complex number. \begin{DoxyReturn}{Returns}
+the reciprocal of this complex number. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a3abc78c5a8c36a75d16bd964e7e5cdca}\label{classComplex_a3abc78c5a8c36a75d16bd964e7e5cdca} 
+\index{Complex@{Complex}!reciprocal@{reciprocal}}
+\index{reciprocal@{reciprocal}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{reciprocal()}{reciprocal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+reciprocal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Calculates the reciprocal of this complex number. \begin{DoxyReturn}{Returns}
@@ -253,13 +401,27 @@ the reciprocal of this complex number.
 \Hypertarget{classComplex_ad552a93c53be71388e817329c3be0e94}\label{classComplex_ad552a93c53be71388e817329c3be0e94} 
 \index{Complex@{Complex}!subtract@{subtract}}
 \index{subtract@{subtract}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_ad552a93c53be71388e817329c3be0e94}\label{classComplex_ad552a93c53be71388e817329c3be0e94} 
 \index{Complex@{Complex}!subtract@{subtract}}
 \index{subtract@{subtract}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
+
+Subtracts another complex number from this one. 
+\begin{DoxyParams}{Parameters}
+{\em other} & the complex number to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference between this complex number and the other. 
+\end{DoxyReturn}
+\Hypertarget{classComplex_ad552a93c53be71388e817329c3be0e94}\label{classComplex_ad552a93c53be71388e817329c3be0e94} 
+\index{Complex@{Complex}!subtract@{subtract}}
+\index{subtract@{subtract}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} Complex.\+subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{other }\end{DoxyParamCaption})}
 
 Subtracts another complex number from this one. 
@@ -273,13 +435,22 @@ the difference between this complex number and the other.
 \Hypertarget{classComplex_a5a14ebec63aae370f2a05522e2c45453}\label{classComplex_a5a14ebec63aae370f2a05522e2c45453} 
 \index{Complex@{Complex}!toString@{toString}}
 \index{toString@{toString}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily String Complex.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \Hypertarget{classComplex_a5a14ebec63aae370f2a05522e2c45453}\label{classComplex_a5a14ebec63aae370f2a05522e2c45453} 
 \index{Complex@{Complex}!toString@{toString}}
 \index{toString@{toString}!Complex@{Complex}}
-\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily String Complex.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the string form of the complex number \begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\Hypertarget{classComplex_a5a14ebec63aae370f2a05522e2c45453}\label{classComplex_a5a14ebec63aae370f2a05522e2c45453} 
+\index{Complex@{Complex}!toString@{toString}}
+\index{toString@{toString}!Complex@{Complex}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily String Complex.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returns the string form of the complex number \begin{DoxyReturn}{Returns}
@@ -288,25 +459,25 @@ String
 
 
 \doxysubsection{Member Data Documentation}
-\Hypertarget{classComplex_a52f10596b0e0c4466be22bbb37b7bdf7}\label{classComplex_a52f10596b0e0c4466be22bbb37b7bdf7} 
+\Hypertarget{classComplex_a18e469aeb091e5130f05721b89cf3b8d}\label{classComplex_a18e469aeb091e5130f05721b89cf3b8d} 
 \index{Complex@{Complex}!imaginary@{imaginary}}
 \index{imaginary@{imaginary}!Complex@{Complex}}
 \doxysubsubsection{\texorpdfstring{imaginary}{imaginary}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily double Complex.\+imaginary}
+{\footnotesize\ttfamily float Complex.\+imaginary}
 
-\Hypertarget{classComplex_a8dffa50f84dbc9d206dbbc7416f16e17}\label{classComplex_a8dffa50f84dbc9d206dbbc7416f16e17} 
+Imaginary part of the complex number \Hypertarget{classComplex_a8dffa50f84dbc9d206dbbc7416f16e17}\label{classComplex_a8dffa50f84dbc9d206dbbc7416f16e17} 
 \index{Complex@{Complex}!imaginary@{imaginary}}
 \index{imaginary@{imaginary}!Complex@{Complex}}
 \doxysubsubsection{\texorpdfstring{imaginary}{imaginary}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily float Complex.\+imaginary\hspace{0.3cm}{\ttfamily [private]}}
 
-Imaginary part of the complex number \Hypertarget{classComplex_a3bfb3459c9884f4e9d2e4daacb72c4f2}\label{classComplex_a3bfb3459c9884f4e9d2e4daacb72c4f2} 
+Imaginary part of the complex number \Hypertarget{classComplex_a077ee5b14945485e970f47cd3476215c}\label{classComplex_a077ee5b14945485e970f47cd3476215c} 
 \index{Complex@{Complex}!real@{real}}
 \index{real@{real}!Complex@{Complex}}
 \doxysubsubsection{\texorpdfstring{real}{real}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily double Complex.\+real}
+{\footnotesize\ttfamily float Complex.\+real}
 
-\Hypertarget{classComplex_a345da274bb05610ff7d549028bc6d510}\label{classComplex_a345da274bb05610ff7d549028bc6d510} 
+Real part of the complex number \Hypertarget{classComplex_a345da274bb05610ff7d549028bc6d510}\label{classComplex_a345da274bb05610ff7d549028bc6d510} 
 \index{Complex@{Complex}!real@{real}}
 \index{real@{real}!Complex@{Complex}}
 \doxysubsubsection{\texorpdfstring{real}{real}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
@@ -317,4 +488,5 @@ Real part of the complex number
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 codes/\+Line Flows and Losses/java/\mbox{\hyperlink{Line_01Flows_01and_01Losses_2java_2Complex_8java}{Complex.\+java}}\item 
-codes/\+Ybus/java/\mbox{\hyperlink{Ybus_2java_2Complex_8java}{Complex.\+java}}\end{DoxyCompactItemize}
+codes/\+Ybus/java/\mbox{\hyperlink{Ybus_2java_2Complex_8java}{Complex.\+java}}\item 
+codes/\+Zbus/java/\mbox{\hyperlink{Zbus_2java_2Complex_8java}{Complex.\+java}}\end{DoxyCompactItemize}
