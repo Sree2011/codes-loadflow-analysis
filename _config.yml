@@ -1,5 +1,5 @@
 title: Codes - Load flow Analysis
-description: Tools and scripts for load flow analysis in power systems, including bus admittance matrix calculation, line flows, and losses. Documentation generated using Doxygen for Java/Python and Octave for MATLAB. Automated CI/CD with GitHub Actions.
+description: Codes, equations and algorithms for load flow analysis in power systems.
 
 plugins:
   - jekyll-relative-links

@@ -1,5 +1,7 @@
 # Load flow Analysis
 
+This repository contains codes, equations and algorithms for performing load flow analysis in power systems. The documentation is generated using Doxygen for Java, Python and MATLAB files. Automated CI/CD pipeline is set up using GitHub Actions. References include key textbooks and IEEE standards for power system analysis.
+
 ## Table of contents
 
 |S.No.|Topic|Page|
