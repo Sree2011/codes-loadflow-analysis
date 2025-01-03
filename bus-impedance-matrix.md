@@ -8,12 +8,12 @@
 
 ### Step 1: Get Input from the User
 
-    #### Input:
+    **Input:**
     - `choice`: Integer (1 for impedance, 2 for admittance)
     - `n`: Number of buses
     - Impedance or admittance values between each pair of buses
 
-    #### Process:
+    **Process:**
     - Define a function `get_input(choice, n)`:
         - If `choice` is 1:
             - For each bus `i` from 1 to `n`:
@@ -26,16 +26,16 @@
                     - Prompt the user to enter the admittance between bus `i` and bus `j`.
                     - Store the entered admittance in `y[i][j]`.
 
-    #### Output:
+    **Output:**
     - Return the matrix `y`.
 
 ### Step 2: Calculate the Bus Admittance Matrix
 
-    #### Input:
+    **Input:**
     - `y`: Matrix of admittance values
     - `n`: Number of buses
 
-    #### Process:
+    **Process:**
     - Define a function `calculate_matrix(y, n)`:
         - For each bus `i` from 1 to `n`:
             - For each bus `j` from 1 to `n`:
@@ -45,15 +45,15 @@
                 - Else:
                     - Set `Ybus[i][j]` to `-y[i][j]`.
 
-    #### Output:
+    **Output:**
     - Return the matrix `Ybus`.
 
 ### Step 3: Calculate the Bus Impedance Matrix
 
-    #### Input:
+    **Input:**
     - `ybus`: Bus admittance matrix
 
-    #### Process:
+    **Process:**
     - Define a function `calculate_zbus(ybus)`:
         - Calculate the determinant of `ybus` and store it in `Det`.
         - If `Det` is 0:
@@ -64,5 +64,5 @@
             - For each element `i` in `Inv`:
                 - Display the element `i`.
 
-    #### Output:
+    **Output:**
     - Display the bus impedance matrix or a message indicating that the matrix is singular.
