@@ -1,5 +1,5 @@
-title: Bus Admittance Matrix
-description: This project implements the creation of bus admittance matrix in Java, Python and MATLAB
+title: Codes - Load flow Analysis
+description: Tools and scripts for load flow analysis in power systems, including bus admittance matrix calculation, line flows, and losses. Documentation generated using Doxygen for Java/Python and Octave for MATLAB. Automated CI/CD with GitHub Actions.
 
 plugins:
   - jekyll-relative-links
