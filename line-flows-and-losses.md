@@ -140,9 +140,9 @@ class Complex{
 class lineflow_loss{
     - Scanner sc
     + main(String args[]) void
-    + get_input(int n, Complex[][] V, Complex[][] I, Complex[][] y) ArrayList<Complex[][]>
-    + calculate_lineflow_loss(int n, Complex[][] V, Complex[][] I, Complex[][] y) ArrayList<Complex[][]>
-    + display_output(int n, Complex[][] V, Complex[][] I, Complex[][] S, Complex[][] SL) ArrayList<Complex[][]>
+    + get_input(int n, Complex[][] V, Complex[][] I, Complex[][] y) (ArrayList<Complex[][]>)
+    + calculate_lineflow_loss(int n, Complex[][] V, Complex[][] I, Complex[][] y) (ArrayList<Complex[][]>)
+    + display_output(int n, Complex[][] V, Complex[][] I, Complex[][] S, Complex[][] SL) void
 }
 
 lineflow_loss --> Complex: uses
