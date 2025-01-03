@@ -6,10 +6,6 @@
 
 ## Algorithm
 
-Sure! Here's the algorithm for the given pseudocode:
-
-### Algorithm
-
 1. **Get Input from the User:**
     - Define a function `get_input(choice, n)`:
         - If `choice` is 1:
@@ -45,3 +41,50 @@ Sure! Here's the algorithm for the given pseudocode:
             - Calculate the inverse of `ybus` and store it in `Inv`.
             - For each element `i` in `Inv`:
                 - Display the element `i`.
+
+## Class Diagram
+
+<pre class="mermaid">
+classDiagram
+    class Complex{
+        - float real
+        - float imaginary
+        + Complex(float real,float imaginary) Complex
+        + getReal() float
+        + getImag() float
+        + fromString(String s) Complex
+        + findMax(int[] array) int
+        + add(Complex other) Complex
+        + subtract(Complex other) Complex
+        + multiply(Complex other) Complex
+        + divide(Complex other) Complex
+        + negate(Complex other) Complex
+        + reciprocal(Complex other) Complex
+        + toString() String
+    }
+
+    class Zbus_java{
+        - Scanner sc
+        + get_input(int choice, int n) Complex[][]
+        + calculate_matrix(y,n) Complex[][]
+        + calculate_zbus(ybus) Complex[][]
+        + display_output(zbus) void
+    }
+
+    Zbus_java --> Complex : uses
+</pre>
+
+## Documentation
+
+Here are the links to the documentation:
+
+## Documentation
+
+Here are the links to the documentations:
+
+
+|Language|Link|
+|:---:|:---:|
+|Python|[Zbus_python](./docs/html/namespaceZbus__Python.html)|
+|Java|[Zbus_java](./docs/html/Zbus__Java_8java.html)|
+|MATLAB|[Zbus_matlab](./docs/html/Zbus__matlab_8m.html)|
