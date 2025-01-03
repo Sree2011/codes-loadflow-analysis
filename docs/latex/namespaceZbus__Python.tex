@@ -1,0 +1,110 @@
+\doxysection{Zbus\+\_\+\+Python Namespace Reference}
+\hypertarget{namespaceZbus__Python}{}\label{namespaceZbus__Python}\index{Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_a5dd0fc2fbb6bd22d000d7feb07dc3205}{get\+\_\+input}} (\mbox{\hyperlink{Ybus_2matlab_2get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}, \mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}})
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_ae812926101be1c84a5614eded60d5748}{calculate\+\_\+admittance\+\_\+matrix}} (\mbox{\hyperlink{namespaceZbus__Python_aba6581a6af570d53104cbf5efaa50798}{y}})
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_ab7064c08ed2439da47bdd8295197fa1c}{calculate\+\_\+zbus}} (\mbox{\hyperlink{namespaceZbus__Python_a852b2d134ae52add3e9b04c4dbe3f6ce}{Ybus}})
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_ace6b778f3fd5b4e586b6e13a7240b34e}{display\+\_\+matrix}} (matrix)
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_a3bd5b119d10fd67442ee7fef7b45b820}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}} = int(input())
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_a852b2d134ae52add3e9b04c4dbe3f6ce}{Ybus}} = np.\+array(\mbox{[}\mbox{[}0+0j for \mbox{\hyperlink{calculate__lineflow__loss_8m_aabac7539db5526e2a4918543000404f9}{i}} in range(\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}})\mbox{]} for j in range(\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}})\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceZbus__Python_aba6581a6af570d53104cbf5efaa50798}{y}} = np.\+zeros((\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}},\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}}),dtype=complex)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceZbus__Python_ae812926101be1c84a5614eded60d5748}\label{namespaceZbus__Python_ae812926101be1c84a5614eded60d5748} 
+\index{Zbus\_Python@{Zbus\_Python}!calculate\_admittance\_matrix@{calculate\_admittance\_matrix}}
+\index{calculate\_admittance\_matrix@{calculate\_admittance\_matrix}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{calculate\_admittance\_matrix()}{calculate\_admittance\_matrix()}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+calculate\+\_\+admittance\+\_\+matrix (\begin{DoxyParamCaption}\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forms admittance matrix using the admittance value matrix y
+
+Args:
+    y(np.array): Line Admittance Matrix
+
+Returns:
+    Ybus(np.array) : Bus Admittance Matrix
+\end{DoxyVerb}
+ \Hypertarget{namespaceZbus__Python_ab7064c08ed2439da47bdd8295197fa1c}\label{namespaceZbus__Python_ab7064c08ed2439da47bdd8295197fa1c} 
+\index{Zbus\_Python@{Zbus\_Python}!calculate\_zbus@{calculate\_zbus}}
+\index{calculate\_zbus@{calculate\_zbus}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{calculate\_zbus()}{calculate\_zbus()}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+calculate\+\_\+zbus (\begin{DoxyParamCaption}\item[{}]{Ybus }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the bus impedance matrix from the bus admittance matrix
+
+Args:
+    Ybus(np.array): Bus Admittance Matrix
+
+Returns:
+    Zbus(np.array) : Bus Impedance Matrix
+\end{DoxyVerb}
+ \Hypertarget{namespaceZbus__Python_ace6b778f3fd5b4e586b6e13a7240b34e}\label{namespaceZbus__Python_ace6b778f3fd5b4e586b6e13a7240b34e} 
+\index{Zbus\_Python@{Zbus\_Python}!display\_matrix@{display\_matrix}}
+\index{display\_matrix@{display\_matrix}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{display\_matrix()}{display\_matrix()}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+display\+\_\+matrix (\begin{DoxyParamCaption}\item[{}]{matrix }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Displays the matrix to the console
+
+Args:
+    matrix(np.array): The matrix to be displayed
+\end{DoxyVerb}
+ \Hypertarget{namespaceZbus__Python_a5dd0fc2fbb6bd22d000d7feb07dc3205}\label{namespaceZbus__Python_a5dd0fc2fbb6bd22d000d7feb07dc3205} 
+\index{Zbus\_Python@{Zbus\_Python}!get\_input@{get\_input}}
+\index{get\_input@{get\_input}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+get\+\_\+input (\begin{DoxyParamCaption}\item[{}]{choice,  }\item[{}]{n }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the input from the user based on the choice of impedance or
+admittance , calculates admittance values and returns them
+
+Args:
+    choice(int) : the choice of the user(1 for impedance and 2 for admittance)
+    n(int) : Total no.of buses in the system
+
+Returns:
+    y(np.array) : Line Admittance matrix
+\end{DoxyVerb}
+ \Hypertarget{namespaceZbus__Python_a3bd5b119d10fd67442ee7fef7b45b820}\label{namespaceZbus__Python_a3bd5b119d10fd67442ee7fef7b45b820} 
+\index{Zbus\_Python@{Zbus\_Python}!main@{main}}
+\index{main@{main}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main function\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}\label{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b} 
+\index{Zbus\_Python@{Zbus\_Python}!n@{n}}
+\index{n@{n}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+n = int(input())}
+
+\Hypertarget{namespaceZbus__Python_aba6581a6af570d53104cbf5efaa50798}\label{namespaceZbus__Python_aba6581a6af570d53104cbf5efaa50798} 
+\index{Zbus\_Python@{Zbus\_Python}!y@{y}}
+\index{y@{y}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+y = np.\+zeros((\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}},\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}}),dtype=complex)}
+
+\Hypertarget{namespaceZbus__Python_a852b2d134ae52add3e9b04c4dbe3f6ce}\label{namespaceZbus__Python_a852b2d134ae52add3e9b04c4dbe3f6ce} 
+\index{Zbus\_Python@{Zbus\_Python}!Ybus@{Ybus}}
+\index{Ybus@{Ybus}!Zbus\_Python@{Zbus\_Python}}
+\doxysubsubsection{\texorpdfstring{Ybus}{Ybus}}
+{\footnotesize\ttfamily Zbus\+\_\+\+Python.\+Ybus = np.\+array(\mbox{[}\mbox{[}0+0j for \mbox{\hyperlink{calculate__lineflow__loss_8m_aabac7539db5526e2a4918543000404f9}{i}} in range(\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}})\mbox{]} for j in range(\mbox{\hyperlink{namespaceZbus__Python_ad90d7c7430beea627bf3256cc1c30c3b}{n}})\mbox{]})}
+

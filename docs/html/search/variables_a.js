@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['y_0',['y',['../lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;lineflow_loss.m'],['../Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab45f07f249f3e7d329509cb2510fe56f',1,'Ybus_Python.y']]],
-  ['ybus_1',['ybus',['../namespaceYbus__Python.html#a3d2f2cd307353a609df5ed6f361efda0',1,'Ybus_Python.Ybus'],['../Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be',1,'YBUS:&#160;Ybus_matlab.m'],['../calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m']]],
+  ['y_0',['y',['../lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;lineflow_loss.m'],['../Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab45f07f249f3e7d329509cb2510fe56f',1,'Ybus_Python.y'],['../namespaceZbus__Python.html#aba6581a6af570d53104cbf5efaa50798',1,'Zbus_Python.y']]],
+  ['ybus_1',['ybus',['../calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m'],['../namespaceYbus__Python.html#a3d2f2cd307353a609df5ed6f361efda0',1,'Ybus_Python.Ybus'],['../namespaceZbus__Python.html#a852b2d134ae52add3e9b04c4dbe3f6ce',1,'Zbus_Python.Ybus'],['../Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be',1,'YBUS:&#160;Ybus_matlab.m']]],
   ['yij_2',['yij',['../Ybus_2matlab_2get__input_8m.html#a524e6c6a36397088e56b9ff1b3c614d1',1,'get_input.m']]],
   ['yp_3',['yp',['../Ybus_2matlab_2get__input_8m.html#abe3d4ee08a6d6a5b2db763330b532ea6',1,'get_input.m']]]
 ];
