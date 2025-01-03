@@ -153,5 +153,5 @@ Lineflow_Loss --> Complex: uses
 |Language|Link|
 |:---:|:---:|
 |Python|[Lineflows_python](./docs/html/namespacelineflow__loss.html)|
-|Java|[Lineflows_java](./docs/html/classlineflowloss.html)|
+|Java|[Lineflows_java](./docs/html/classlineflow__loss.html)|
 |MATLAB|[Lineflows_matlab](./docs/html/lineflow__loss_8m.html)|
