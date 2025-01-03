@@ -94,38 +94,38 @@ where $y_{ij}$ is the admittance of the line between bus i and bus j.
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 classDiagram
-class Complex{
-   - float real
-   - float imaginary
-   + Complex(float real,float imaginary) Complex
-   + getReal() float
-   + getImag() float
-   + fromString(String s) Complex
-   + findMax(int[] array) int
-   + add(Complex other) Complex
-   + subtract(Complex other) Complex
-   + multiply(Complex other) Complex
-   + divide(Complex other) Complex
-   + negate(Complex other) Complex
-   + reciprocal(Complex other) Complex
-   + toString() String
-}
+   class Complex{
+      - float real
+      - float imaginary
+      + Complex(float real,float imaginary) Complex
+      + getReal() float
+      + getImag() float
+      + fromString(String s) Complex
+      + findMax(int[] array) int
+      + add(Complex other) Complex
+      + subtract(Complex other) Complex
+      + multiply(Complex other) Complex
+      + divide(Complex other) Complex
+      + negate(Complex other) Complex
+      + reciprocal(Complex other) Complex
+      + toString() String
+   }
 
-class Ybus_Java{
-   - Scanner sc
-   + main(String args[]) void
-   + get_input(int choice, int n) Complex[][]
-   + calculate_matrix(Complex[][] y, int n) Complex[][]
-   + display_matrix(Complex[][] ybus, int n) void
-}
-
-
-Ybus_Java --> Complex: uses
+   class Ybus_Java{
+      - Scanner sc
+      + main(String args[]) void
+      + get_input(int choice, int n) Complex[][]
+      + calculate_matrix(Complex[][] y, int n) Complex[][]
+      + display_matrix(Complex[][] ybus, int n) void
+   }
 
 
-```
+   Ybus_Java --> Complex : uses
+
+
+</pre>
 **Adding annotations for MATLAB and Python implementations:**
 - **note for Complex**:\
 In MATLAB and Python, inbuilt libraries are used instead of this custom Complex class.\

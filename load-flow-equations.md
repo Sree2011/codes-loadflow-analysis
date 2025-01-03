@@ -43,7 +43,7 @@ $$
         - **Description:** Calculates real power for each bus
 5. - **Function 3: Calculate reactive power:**
         - **Input:** Voltage matrix, Bus admittance matrix
-        - **Output:** Real power matrix
+        - **Output:** Reactive power matrix
         - **Description:** Calculates reactive power for each bus
 6. - **Function 4: Calculate apparent power:**
         - **Input:** Real power matrix, Reactive power matrix
@@ -57,3 +57,38 @@ $$
         - **Input:** Command line args(Optional)
         - **Output:** DIsplay the results
         - **Description:** Main program for execution
+9. Stop
+
+## Class Diagram
+<pre class="mermaid">
+classDiagram
+        class Complex{
+        - float real
+        - float imaginary
+        + Complex(float real,float imaginary) Complex
+        + getReal() float
+        + getImag() float
+        + fromString(String s) Complex
+        + findMax(int[] array) int
+        + add(Complex other) Complex
+        + subtract(Complex other) Complex
+        + multiply(Complex other) Complex
+        + divide(Complex other) Complex
+        + negate(Complex other) Complex
+        + reciprocal(Complex other) Complex
+        + toString() String
+        }
+
+        class Load_flow_Eqns{
+                - Scanner sc
+                + main(String args[]) void
+                + calculate_ybus(Complex[][] y, int n) Complex[][]
+                + calculate_real_power(Complex[][] ybus, Complex[][] V, int n) Complex[][]
+                + calculate_reactive_power(Complex[][] ybus, Complex[][] V, int n) Complex[][]
+                + calculate_apparent_power(Complex[][] P, Complex[][] Q, int n) Complex[][]
+                + display_results(Complex[][] V,Complex[][] ybus,Complex[][] P,Complex[][] Q,Complex[][] S) void
+
+        }
+
+        Load_flow_Eqns --> Complex : uses
+</pre>
