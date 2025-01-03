@@ -118,7 +118,7 @@ Finding line flows and line losses in a power system.
 
 ## Class Diagram
 
-```mermaid
+<pre class="mermaid">
 classDiagram
 class Complex{
    - float real
@@ -146,7 +146,7 @@ class Lineflow_Loss{
 }
 
 Lineflow_Loss --> Complex: uses
-```
+</pre>
 
 ## Documentation
 
