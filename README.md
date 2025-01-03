@@ -8,6 +8,9 @@ This repository contains codes, equations and algorithms for performing load flo
 |:---|:---|:---|
 |1|Bus Admittance Matrix|[1](./bus-admittance-matrix.md)|
 |2|Line flows and line losses|[2](./line-flows-and-losses.md)|
+|3|Load flow Equations|[3](./load-flow-equations.md)|
+|4|Bus impedance matrix|[4](./bus-impedance-matrix.md)|
+
 
 
 
