@@ -1,6 +1,5 @@
 import java.util.*;
 
-import org.apache.commons.math3.linear.MatrixUtils;
 
 public class Zbus_Java {
     static Scanner sc = new Scanner(System.in);
@@ -107,16 +106,7 @@ public class Zbus_Java {
     public static Complex[][] calculate_zbus(Complex[][] Ybus, int nbus){
         Complex[][] Zbus = new Complex[nbus][nbus];
 
-        /// \brief Initialize the bus impedance matrix
-        for (int i = 0; i < nbus; i++) {
-            for (int j = 0; j < nbus; j++) {
-                Zbus[i][j] = new Complex(0, 0); // Initialize all elements
-            }
-        }
-
-        double det = 0.0;
-
-        det = Ybus[0][0].multiply(Ybus[1][1]).subtract(Ybus[0][1].multiply(Ybus[1][0])).getReal() - Ybus[0][0].multiply(Ybus[1][1]).subtract(Ybus[0][1].multiply(Ybus[1][0])).getImag();
+        int status = 0;
         
         return Zbus;
     }
@@ -128,7 +118,7 @@ public class Zbus_Java {
      * @param n Total no.of buses in the system
      */
     public static void display_matrix(Complex[][] Zbus,int nbus) {
-        System.out.println("Bus Admittance Matrix is:");
+        System.out.println("Bus Impedance Matrix is:");
         for (int i = 0; i < nbus; i++) {
             for (int j = 0; j < nbus; j++) {
                 System.out.print(Zbus[i][j].toString() + " ");

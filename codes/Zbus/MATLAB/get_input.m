@@ -6,15 +6,16 @@
 function yp = get_input(choice,n)
 
     % /// \brief Initialise the admittance matrix    
-    y = zeros(n, n);
+    z = zeros(n,n);
     if choice == 1
 
         % /// \brief Get the impedance between buses from the user
         for i = 1:n
             for j = 1:n
                 fprintf("Enter the impedance between bus %d and %d: ", i, j);
-                yij = input('');
-                y(i, j) = 1/yij;
+                zij = input('');
+                z(i,j) = 1/zij;
+                
             end
         end
     
@@ -23,10 +24,13 @@ function yp = get_input(choice,n)
         for i = 1:n
             for j = 1:n
                 fprintf("Enter the admittance between bus %d and %d: ", i, j);
-                y(i, j) = input('');
+                z(i,j) = input('');
             end
         end
     end
-    yp = y;
+    
+    yp = z;
+
+
 end
  

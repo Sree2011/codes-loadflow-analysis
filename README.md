@@ -30,3 +30,5 @@ Here are the links to the documentation tools I used:
 [1] H. Saadat, *Power System Analysis*, 2nd ed. United States: McGraw, 2004, ISBN: 978-0071239554.
 
 [2] M. Shahidehpour and Y. Wang, "Appendix C: IEEE30 Bus System Data," in *Communication and Control in Electric Power Systems: Applications of Parallel and Distributed Processing*, IEEE, 2003, pp. 493-495, doi: 10.1002/0471462926.app3.
+
+[3] Muthiah Viswanathan (2025). [Zbus using bus building algorithm](https://www.mathworks.com/matlabcentral/fileexchange/126275-zbus-using-bus-building-algorithm), MATLAB Central File Exchange. Retrieved January 4, 2025.

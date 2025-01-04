@@ -11,12 +11,9 @@ choice = input('Enter 1 for impedance and 2 for admittance:');
 % /// \link get_input.m get_input \endlink
 y = get_input(choice,n);
 
-
-
 % /// Form the bus admittance matrix based on the input
 % /// \link calculate_matrix.m calculate_matrix \endlink
 ybus = calculate_matrix(y, n);
-
 
 
 % /// Form the bus impedance matrix by taking inverse of ybus matrix
