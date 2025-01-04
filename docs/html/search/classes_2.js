@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ybus_5fjava_0',['Ybus_Java',['../classYbus__Java.html',1,'']]]
+  ['matrix_5ffunctions_0',['Matrix_Functions',['../classMatrix__Functions.html',1,'']]]
 ];
