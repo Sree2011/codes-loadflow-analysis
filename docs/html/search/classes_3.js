@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zbus_5fjava_0',['Zbus_Java',['../classZbus__Java.html',1,'']]]
+  ['ybus_5fjava_0',['Ybus_Java',['../classYbus__Java.html',1,'']]]
 ];
