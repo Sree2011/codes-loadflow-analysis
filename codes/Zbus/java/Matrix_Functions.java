@@ -1,111 +1,81 @@
-
 public class Matrix_Functions {
-    
-
-    public static Complex[][] add(Complex[][] A, Complex[][] B) {
-        int rows = A.length;
-        int cols = A[0].length;
-        Complex[][] result = new Complex[rows][cols];
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                result[i][j] = A[i][j].add(B[i][j]);
-            }
-        }
-        return result;
-    }
-
-    public static Complex[][] subtract(Complex[][] A, Complex[][] B) {
-        int rows = A.length;
-        int cols = A[0].length;
-        Complex[][] result = new Complex[rows][cols];
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                result[i][j] = A[i][j].subtract(B[i][j]);
-            }
-        }
-        return result;
-    }
-
-    public static Complex[][] multiply(Complex[][] A, Complex[][] B) {
-        int rowsA = A.length;
-        int colsA = A[0].length;
-        int colsB = B[0].length;
-        Complex[][] result = new Complex[rowsA][colsB];
-        for (int i = 0; i < rowsA; i++) {
-            for (int j = 0; j < colsB; j++) {
-                result[i][j] = new Complex(0, 0);
-                for (int k = 0; k < colsA; k++) {
-                    result[i][j] = result[i][j].add(A[i][k].multiply(B[k][j]));
-                }
-            }
-        }
-        return result;
-    }
-
-    public static Complex[][] transpose(Complex[][] A) {
-        int rows = A.length;
-        int cols = A[0].length;
-        Complex[][] result = new Complex[cols][rows];
-        for (int i = 0; i < cols; i++) {
-            for (int j = 0; j < rows; j++) {
-                result[i][j] = A[j][i];
-            }
-        }
-        return result;
-    }
-
-    public static Complex[][] inverse(Complex[][] A) {
-        int n = A.length;
-        Complex[][] result = new Complex[n][n];
-        Complex[][] augmentedMatrix = new Complex[n][2 * n];
-
-        // Create the augmented matrix [A|I]
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                augmentedMatrix[i][j] = A[i][j];
-            }
-            augmentedMatrix[i][i + n] = new Complex(1,0);
-        }
-
-        // Perform Gaussian elimination
-        for (int i = 0; i < n; i++) {
-            // Make the diagonal element 1
-            Complex diagElement = augmentedMatrix[i][i];
-            if (diagElement == new Complex(0,0)) {
-                System.out.println("Matrix is singular");
-                return null;
-            }
-            for (int j = 0; j < 2 * n; j++) {
-                augmentedMatrix[i][j].divide(diagElement);
-            }
-
-            // Make the other elements in the column 0
-            for (int k = 0; k < n; k++) {
-                if (k != i) {
-                    Complex factor = augmentedMatrix[k][i];
-                    for (int j = 0; j < 2 * n; j++) {
-                        augmentedMatrix[k][j] = augmentedMatrix[k][j].subtract(factor.multiply(augmentedMatrix[i][j]));
+    // Function to get the cofactor matrix
+    public static void getCofactor(Complex[][] A, Complex[][] temp, int p, int q, int n) {
+        int i = 0, j = 0;
+        
+        for (int row = 0; row < n; row++) {
+            for (int col = 0; col < n; col++) {
+                if (row != p && col != q) {
+                    temp[i][j++] = A[row][col];
+                    
+                    if (j == n - 1) {
+                        j = 0;
+                        i++;
                     }
                 }
             }
         }
+    }
 
-        // Extract the inverse matrix from the augmented matrix
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                result[i][j] = augmentedMatrix[i][j + n];
+    // Function to find determinant of a matrix
+    public static Complex determinant(Complex[][] A, int n) {
+        Complex D = new Complex(0, 0);
+        
+        if (n == 1)
+            return A[0][0];
+        
+        Complex[][] temp = new Complex[n][n];
+        int sign = 1;
+        
+        for (int f = 0; f < n; f++) {
+            getCofactor(A, temp, 0, f, n);
+            D = D.add(A[0][f].multiply(determinant(temp, n - 1)).multiply(new Complex(sign, 0)));
+            sign = -sign;
+        }
+        
+        return D;
+    }
+
+    // Function to find adjoint of a matrix
+    public static void adjoint(Complex[][] A, Complex[][] adj) {
+        int N = A.length;
+        
+        if (N == 1) {
+            adj[0][0] = new Complex(1, 0);
+            return;
+        }
+        
+        int sign = 1;
+        Complex[][] temp = new Complex[N][N];
+        
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                getCofactor(A, temp, i, j, N);
+                sign = ((i + j) % 2 == 0) ? 1 : -1;
+                adj[j][i] = determinant(temp, N - 1).multiply(new Complex(sign, 0));
             }
         }
-
-        return result;
     }
 
-    @Override
-    public String toString() {
-        return "Matrix_Functions []";
+    // Function to find inverse of a matrix
+    public static Complex[][] inverse(Complex[][] A, Complex[][] inverse) {
+        int N = A.length;
+        Complex det = determinant(A, N);
+        
+        if (det.getReal() == 0 && det.getImag() == 0) {
+            System.out.println("Singular matrix, can't find its inverse");
+            return null;
+        }
+        
+        Complex[][] adj = new Complex[N][N];
+        adjoint(A, adj);
+        
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                inverse[i][j] = adj[i][j].divide(det);  // Adjust if determinant is complex
+            }
+        }
+        
+        return inverse;
     }
-
-    
-
-
 }

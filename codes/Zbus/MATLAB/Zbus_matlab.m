@@ -20,7 +20,7 @@ ybus = calculate_matrix(y, n);
 % /// \link calculate_zbus.m calculate_matrix \endlink
 ZBUS = calculate_zbus(ybus);
 
-% /// Display the bus admittance matrix
+% /// Display the bus impedance matrix
 % /// \link display_matrix.m display_matrix \endlink
 display_matrix(ZBUS, n);
 

@@ -40,6 +40,7 @@ public class Zbus_Java {
                         System.out.println("Enter the impedance between bus "+(i+1) +" and bus "+ (j+1)+" : ");
                         Complex yij = Complex.fromString(sc.nextLine());
                         y[i][j] = yij.reciprocal();
+                        break;
                     }
                 }
 
@@ -48,10 +49,12 @@ public class Zbus_Java {
                     for(int j=0;j<nbus;j++){
                         System.out.println("Enter the admittance between bus "+(i+1) +" and bus "+ (j+1)+" : ");
                         y[i][j] = Complex.fromString(sc.nextLine());
+                        break;
                     }
                 }
             default:
                 System.out.println("Invalid input!");
+                break;
         }
 
     
@@ -106,8 +109,8 @@ public class Zbus_Java {
     public static Complex[][] calculate_zbus(Complex[][] Ybus, int nbus){
         Complex[][] Zbus = new Complex[nbus][nbus];
 
-        int status = 0;
-        
+        Zbus = Matrix_Functions.inverse(Ybus, Zbus);
+
         return Zbus;
     }
 
