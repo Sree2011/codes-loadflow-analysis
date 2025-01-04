@@ -1,61 +1,42 @@
 \doxysection{Matrix\+\_\+\+Functions Class Reference}
 \hypertarget{classMatrix__Functions}{}\label{classMatrix__Functions}\index{Matrix\_Functions@{Matrix\_Functions}}
-\doxysubsubsection*{Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-String \mbox{\hyperlink{classMatrix__Functions_a84082ef9742348e519f913df47645945}{to\+String}} ()
-\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classMatrix__Functions_afe9b266b10e604c90b37513b7c6f9446}{add}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} B)
+static void \mbox{\hyperlink{classMatrix__Functions_a91c465d690a595c819f68c9858341278}{get\+Cofactor}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} temp, int p, int q, int \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \item 
-static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classMatrix__Functions_ac34212c7949473e53db85493ebf6d8ae}{subtract}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} B)
+static \mbox{\hyperlink{classComplex}{Complex}} \mbox{\hyperlink{classMatrix__Functions_af0fd127182fc223f10297bd0d2203ee0}{determinant}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A, int \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \item 
-static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classMatrix__Functions_ab393b2ace8f1469a74b48fc6b115ef23}{multiply}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} B)
+static void \mbox{\hyperlink{classMatrix__Functions_a94ae2ffb91c67067a9939929fbd76ae9}{adjoint}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} adj)
 \item 
-static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classMatrix__Functions_a2e2872a8326f9c63d9b1f539b4aec650}{transpose}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A)
-\item 
-static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classMatrix__Functions_a717c7aed300a0ee56c3ef188704777ac}{inverse}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A)
+static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classMatrix__Functions_abec4373f9e1ce16e6e0240e2289dd1c6}{inverse}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} A, \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} inverse)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classMatrix__Functions_afe9b266b10e604c90b37513b7c6f9446}\label{classMatrix__Functions_afe9b266b10e604c90b37513b7c6f9446} 
-\index{Matrix\_Functions@{Matrix\_Functions}!add@{add}}
-\index{add@{add}!Matrix\_Functions@{Matrix\_Functions}}
-\doxysubsubsection{\texorpdfstring{add()}{add()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Matrix\+\_\+\+Functions.\+add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{B\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\Hypertarget{classMatrix__Functions_a94ae2ffb91c67067a9939929fbd76ae9}\label{classMatrix__Functions_a94ae2ffb91c67067a9939929fbd76ae9} 
+\index{Matrix\_Functions@{Matrix\_Functions}!adjoint@{adjoint}}
+\index{adjoint@{adjoint}!Matrix\_Functions@{Matrix\_Functions}}
+\doxysubsubsection{\texorpdfstring{adjoint()}{adjoint()}}
+{\footnotesize\ttfamily static void Matrix\+\_\+\+Functions.\+adjoint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{adj\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\Hypertarget{classMatrix__Functions_a717c7aed300a0ee56c3ef188704777ac}\label{classMatrix__Functions_a717c7aed300a0ee56c3ef188704777ac} 
+\Hypertarget{classMatrix__Functions_af0fd127182fc223f10297bd0d2203ee0}\label{classMatrix__Functions_af0fd127182fc223f10297bd0d2203ee0} 
+\index{Matrix\_Functions@{Matrix\_Functions}!determinant@{determinant}}
+\index{determinant@{determinant}!Matrix\_Functions@{Matrix\_Functions}}
+\doxysubsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}} Matrix\+\_\+\+Functions.\+determinant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classMatrix__Functions_a91c465d690a595c819f68c9858341278}\label{classMatrix__Functions_a91c465d690a595c819f68c9858341278} 
+\index{Matrix\_Functions@{Matrix\_Functions}!getCofactor@{getCofactor}}
+\index{getCofactor@{getCofactor}!Matrix\_Functions@{Matrix\_Functions}}
+\doxysubsubsection{\texorpdfstring{getCofactor()}{getCofactor()}}
+{\footnotesize\ttfamily static void Matrix\+\_\+\+Functions.\+get\+Cofactor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{temp\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{p,  }\item[{int}]{q,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classMatrix__Functions_abec4373f9e1ce16e6e0240e2289dd1c6}\label{classMatrix__Functions_abec4373f9e1ce16e6e0240e2289dd1c6} 
 \index{Matrix\_Functions@{Matrix\_Functions}!inverse@{inverse}}
 \index{inverse@{inverse}!Matrix\_Functions@{Matrix\_Functions}}
 \doxysubsubsection{\texorpdfstring{inverse()}{inverse()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Matrix\+\_\+\+Functions.\+inverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\Hypertarget{classMatrix__Functions_ab393b2ace8f1469a74b48fc6b115ef23}\label{classMatrix__Functions_ab393b2ace8f1469a74b48fc6b115ef23} 
-\index{Matrix\_Functions@{Matrix\_Functions}!multiply@{multiply}}
-\index{multiply@{multiply}!Matrix\_Functions@{Matrix\_Functions}}
-\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Matrix\+\_\+\+Functions.\+multiply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{B\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\Hypertarget{classMatrix__Functions_ac34212c7949473e53db85493ebf6d8ae}\label{classMatrix__Functions_ac34212c7949473e53db85493ebf6d8ae} 
-\index{Matrix\_Functions@{Matrix\_Functions}!subtract@{subtract}}
-\index{subtract@{subtract}!Matrix\_Functions@{Matrix\_Functions}}
-\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Matrix\+\_\+\+Functions.\+subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{B\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-\Hypertarget{classMatrix__Functions_a84082ef9742348e519f913df47645945}\label{classMatrix__Functions_a84082ef9742348e519f913df47645945} 
-\index{Matrix\_Functions@{Matrix\_Functions}!toString@{toString}}
-\index{toString@{toString}!Matrix\_Functions@{Matrix\_Functions}}
-\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
-{\footnotesize\ttfamily String Matrix\+\_\+\+Functions.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\Hypertarget{classMatrix__Functions_a2e2872a8326f9c63d9b1f539b4aec650}\label{classMatrix__Functions_a2e2872a8326f9c63d9b1f539b4aec650} 
-\index{Matrix\_Functions@{Matrix\_Functions}!transpose@{transpose}}
-\index{transpose@{transpose}!Matrix\_Functions@{Matrix\_Functions}}
-\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
-{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Matrix\+\_\+\+Functions.\+transpose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Matrix\+\_\+\+Functions.\+inverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{A\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{inverse\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
