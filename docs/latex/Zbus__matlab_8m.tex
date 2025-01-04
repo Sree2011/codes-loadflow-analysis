@@ -1,0 +1,87 @@
+\doxysection{codes/\+Zbus/\+MATLAB/\+Zbus\+\_\+matlab.m File Reference}
+\hypertarget{Zbus__matlab_8m}{}\label{Zbus__matlab_8m}\index{codes/Zbus/MATLAB/Zbus\_matlab.m@{codes/Zbus/MATLAB/Zbus\_matlab.m}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Zbus__matlab_8m_a9cb83d6b914cfb7657845649cba67ebf}{display\+\_\+matrix}} (\mbox{\hyperlink{Zbus__matlab_8m_a17415d3d72a658150e8988f132aff0e9}{ZBUS}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\begin{DoxyCompactList}\small\item\em Display the bus admittance matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Zbus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}} = input(\textquotesingle{}Enter the number of buses\+: \textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Get the number of buses from the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Zbus__matlab_8m_afd05e88e13762e173d9d20fe3596216f}{choice}} = input(\textquotesingle{}Enter 1 for impedance and 2 for admittance\+:\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Get the choice from the user -\/ 1 for impedance and 2 for admittance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Zbus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}} = get\+\_\+input(\mbox{\hyperlink{Ybus_2matlab_2get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}},\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\begin{DoxyCompactList}\small\item\em get input from the user and calculate line admittances \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Zbus__matlab_8m_afa48da4dfb292a0ca1a998b5b2ea2941}{ybus}} = calculate\+\_\+matrix(\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\begin{DoxyCompactList}\small\item\em Form the bus admittance matrix based on the input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Zbus__matlab_8m_a17415d3d72a658150e8988f132aff0e9}{ZBUS}} = calculate\+\_\+zbus(\mbox{\hyperlink{Zbus__matlab_8m_afa48da4dfb292a0ca1a998b5b2ea2941}{ybus}})
+\begin{DoxyCompactList}\small\item\em Form the bus impedance matrix by taking inverse of ybus matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Zbus__matlab_8m_a9cb83d6b914cfb7657845649cba67ebf}\label{Zbus__matlab_8m_a9cb83d6b914cfb7657845649cba67ebf} 
+\index{Zbus\_matlab.m@{Zbus\_matlab.m}!display\_matrix@{display\_matrix}}
+\index{display\_matrix@{display\_matrix}!Zbus\_matlab.m@{Zbus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{display\_matrix()}{display\_matrix()}}
+{\footnotesize\ttfamily display\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Zbus__matlab_8m_a17415d3d72a658150e8988f132aff0e9}{ZBUS}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Display the bus admittance matrix. 
+
+\doxylink{Zbus_2MATLAB_2display__matrix_8m}{display\+\_\+matrix } 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{Zbus__matlab_8m_afd05e88e13762e173d9d20fe3596216f}\label{Zbus__matlab_8m_afd05e88e13762e173d9d20fe3596216f} 
+\index{Zbus\_matlab.m@{Zbus\_matlab.m}!choice@{choice}}
+\index{choice@{choice}!Zbus\_matlab.m@{Zbus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{choice}{choice}}
+{\footnotesize\ttfamily choice = input(\textquotesingle{}Enter 1 for impedance and 2 for admittance\+:\textquotesingle{})}
+
+
+
+Get the choice from the user -\/ 1 for impedance and 2 for admittance. 
+
+\Hypertarget{Zbus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}\label{Zbus__matlab_8m_aeab71244afb687f16d8c4f5ee9d6ef0e} 
+\index{Zbus\_matlab.m@{Zbus\_matlab.m}!n@{n}}
+\index{n@{n}!Zbus\_matlab.m@{Zbus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily n = input(\textquotesingle{}Enter the number of buses\+: \textquotesingle{})}
+
+
+
+Get the number of buses from the user. 
+
+\Hypertarget{Zbus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}\label{Zbus__matlab_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0} 
+\index{Zbus\_matlab.m@{Zbus\_matlab.m}!y@{y}}
+\index{y@{y}!Zbus\_matlab.m@{Zbus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily y = get\+\_\+input(\mbox{\hyperlink{Ybus_2matlab_2get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}},\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+
+
+get input from the user and calculate line admittances 
+
+\doxylink{Zbus_2MATLAB_2get__input_8m}{get\+\_\+input } \Hypertarget{Zbus__matlab_8m_afa48da4dfb292a0ca1a998b5b2ea2941}\label{Zbus__matlab_8m_afa48da4dfb292a0ca1a998b5b2ea2941} 
+\index{Zbus\_matlab.m@{Zbus\_matlab.m}!ybus@{ybus}}
+\index{ybus@{ybus}!Zbus\_matlab.m@{Zbus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{ybus}{ybus}}
+{\footnotesize\ttfamily ybus = calculate\+\_\+matrix(\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+
+
+Form the bus admittance matrix based on the input. 
+
+\doxylink{Zbus_2MATLAB_2calculate__matrix_8m}{calculate\+\_\+matrix } \Hypertarget{Zbus__matlab_8m_a17415d3d72a658150e8988f132aff0e9}\label{Zbus__matlab_8m_a17415d3d72a658150e8988f132aff0e9} 
+\index{Zbus\_matlab.m@{Zbus\_matlab.m}!ZBUS@{ZBUS}}
+\index{ZBUS@{ZBUS}!Zbus\_matlab.m@{Zbus\_matlab.m}}
+\doxysubsubsection{\texorpdfstring{ZBUS}{ZBUS}}
+{\footnotesize\ttfamily ZBUS = calculate\+\_\+zbus(\mbox{\hyperlink{Zbus__matlab_8m_afa48da4dfb292a0ca1a998b5b2ea2941}{ybus}})}
+
+
+
+Form the bus impedance matrix by taking inverse of ybus matrix. 
+
+\doxylink{calculate__zbus_8m}{calculate\+\_\+matrix } 

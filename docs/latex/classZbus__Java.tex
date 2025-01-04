@@ -1,0 +1,94 @@
+\doxysection{Zbus\+\_\+\+Java Class Reference}
+\hypertarget{classZbus__Java}{}\label{classZbus__Java}\index{Zbus\_Java@{Zbus\_Java}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classZbus__Java_a87f7fcf9c1c832361b257b8c3bba2ea2}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\item 
+static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classZbus__Java_aa7616154cf970c70875a5482b6a78e60}{get\+\_\+input}} (int \mbox{\hyperlink{Ybus_2matlab_2get__input_8m_a1f127bad7a541fed1afa2568db2e13a1}{choice}}, int nbus)
+\item 
+static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classZbus__Java_ab772347abfbb7e48cfd72654159a964b}{calculate\+\_\+matrix}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}, int \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classZbus__Java_a0c742a677c6b47bcfe610c54de13391a}{calculate\+\_\+zbus}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{Ybus_2matlab_2calculate__matrix_8m_ae5a5eee66749bf5128939e55db6f81c1}{Ybus}}, int nbus)
+\item 
+static void \mbox{\hyperlink{classZbus__Java_a2fc8e3b824828cb97a51c77c61763a0b}{display\+\_\+matrix}} (\mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{calculate__zbus_8m_add8776c71af3911c2c298129f1c068f0}{Zbus}}, int nbus)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classZbus__Java_ab772347abfbb7e48cfd72654159a964b}\label{classZbus__Java_ab772347abfbb7e48cfd72654159a964b} 
+\index{Zbus\_Java@{Zbus\_Java}!calculate\_matrix@{calculate\_matrix}}
+\index{calculate\_matrix@{calculate\_matrix}!Zbus\_Java@{Zbus\_Java}}
+\doxysubsubsection{\texorpdfstring{calculate\_matrix()}{calculate\_matrix()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Zbus\+\_\+\+Java.\+calculate\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{y\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This function calculates the bus admittance matrix. 
+\begin{DoxyParams}{Parameters}
+{\em y} & Line admittance matrix \\
+\hline
+{\em n} & Total no.\+of buses in the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ybus Bus admittance matrix 
+\end{DoxyReturn}
+Initialize the bus admittance matrix
+
+External loop
+
+Internal loop\Hypertarget{classZbus__Java_a0c742a677c6b47bcfe610c54de13391a}\label{classZbus__Java_a0c742a677c6b47bcfe610c54de13391a} 
+\index{Zbus\_Java@{Zbus\_Java}!calculate\_zbus@{calculate\_zbus}}
+\index{calculate\_zbus@{calculate\_zbus}!Zbus\_Java@{Zbus\_Java}}
+\doxysubsubsection{\texorpdfstring{calculate\_zbus()}{calculate\_zbus()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Zbus\+\_\+\+Java.\+calculate\+\_\+zbus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{Ybus\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{nbus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This function calculates the bus impedance matrix. 
+\begin{DoxyParams}{Parameters}
+{\em Ybus} & Bus admittance matrix \\
+\hline
+{\em n} & Total no.\+of buses in the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zbus Bus impedance matrix 
+\end{DoxyReturn}
+Initialize the bus impedance matrix\Hypertarget{classZbus__Java_a2fc8e3b824828cb97a51c77c61763a0b}\label{classZbus__Java_a2fc8e3b824828cb97a51c77c61763a0b} 
+\index{Zbus\_Java@{Zbus\_Java}!display\_matrix@{display\_matrix}}
+\index{display\_matrix@{display\_matrix}!Zbus\_Java@{Zbus\_Java}}
+\doxysubsubsection{\texorpdfstring{display\_matrix()}{display\_matrix()}}
+{\footnotesize\ttfamily static void Zbus\+\_\+\+Java.\+display\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComplex}{Complex}}}]{Zbus\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]},  }\item[{int}]{nbus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This function displays the bus admittance matrix. 
+\begin{DoxyParams}{Parameters}
+{\em Zbus} & Bus impedance matrix \\
+\hline
+{\em n} & Total no.\+of buses in the system \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classZbus__Java_aa7616154cf970c70875a5482b6a78e60}\label{classZbus__Java_aa7616154cf970c70875a5482b6a78e60} 
+\index{Zbus\_Java@{Zbus\_Java}!get\_input@{get\_input}}
+\index{get\_input@{get\_input}!Zbus\_Java@{Zbus\_Java}}
+\doxysubsubsection{\texorpdfstring{get\_input()}{get\_input()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classComplex}{Complex}}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} Zbus\+\_\+\+Java.\+get\+\_\+input (\begin{DoxyParamCaption}\item[{int}]{choice,  }\item[{int}]{nbus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This function takes the input from the user. 
+\begin{DoxyParams}{Parameters}
+{\em choice} & User choice\+: 1 for impedance and 2 for admittance \\
+\hline
+{\em nbus} & Total no.\+of buses in the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+y line admittance matrix 
+\end{DoxyReturn}
+Initialize the line admittance matrix\Hypertarget{classZbus__Java_a87f7fcf9c1c832361b257b8c3bba2ea2}\label{classZbus__Java_a87f7fcf9c1c832361b257b8c3bba2ea2} 
+\index{Zbus\_Java@{Zbus\_Java}!main@{main}}
+\index{main@{main}!Zbus\_Java@{Zbus\_Java}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Zbus\+\_\+\+Java.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+codes/\+Zbus/java/\mbox{\hyperlink{Zbus__Java_8java}{Zbus\+\_\+\+Java.\+java}}\end{DoxyCompactItemize}
