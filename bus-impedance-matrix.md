@@ -71,6 +71,14 @@ classDiagram
         + toString() String
     }
 
+    class Matrix_Functions{
+        + getCofactor(Complex[][] A, Complex[][] temp, int p, int q, int n) void
+        + determinant(Complex[][] A, int n) Complex
+        + adjoint(Complex[][] A, Complex[][] adj) void
+        + inverse(Complex[][] A) Complex[][]
+
+    }
+
     class Zbus_java{
         - Scanner sc
         + get_input(int choice, int n) Complex[][]
@@ -80,6 +88,8 @@ classDiagram
     }
 
     Zbus_java --> Complex : uses
+    Zbus_java --> Matrix_Functions : uses
+    Matrix_Functions --> Complex : uses
 
 </pre>
 
