@@ -1,3 +1,11 @@
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'light'
+	});
+</script>
+
 # Bus impedance matrix(Zbus)
 
 - The Zbus matrix is usually built using the Zbus building algorithm.
