@@ -58,7 +58,7 @@ public class Matrix_Functions {
     }
 
     // Function to find inverse of a matrix
-    public static Complex[][] inverse(Complex[][] A, Complex[][] inverse) {
+    public static Complex[][] inverse(Complex[][] A) {
         int N = A.length;
         Complex det = determinant(A, N);
         
@@ -70,12 +70,13 @@ public class Matrix_Functions {
         Complex[][] adj = new Complex[N][N];
         adjoint(A, adj);
         
+        Complex[][] inv = new Complex[N][N];
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                inverse[i][j] = adj[i][j].divide(det);  // Adjust if determinant is complex
+                inv[i][j] = adj[i][j].divide(det);  // Adjust if determinant is complex
             }
         }
         
-        return inverse;
+        return inv;
     }
 }
