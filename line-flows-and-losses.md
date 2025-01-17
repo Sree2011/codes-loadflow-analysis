@@ -58,65 +58,6 @@ Finding line flows and line losses in a power system.
   S_{L_{ij}} = S_{ij} + S_{ji}
   $$
 
-## Algorithm
-
-### **Main Program:**
-**Input:**
-- Number of buses, `n`
-- User choice for impedance or admittance
-
-**Process:**
-- Initialize matrices `V`, `I`, and `y`
-- Get input for voltage and current at each bus
-- Depending on the user choice, input impedance or admittance values and update `y` matrix
-- Calculate line flows and line losses
-
-**Output:**
-- Display line flows and line losses for each bus pair
-
-### **Get Input from the User:**
-**Input:**
-- User choice (1 for impedance, 2 for admittance)
-- Voltage at each bus, ` V[i, i] `
-- Current at each bus, ` I[i, i] `
-- Impedance or admittance values between buses
-
-**Process:**
-- For each bus, input voltage and current values
-- If choice is impedance, input impedance values, calculate admittance, and update ` y ` matrix
-- If choice is admittance, input admittance values and update ` y ` matrix
-
-**Output:**
-- Return matrices ` V `, ` I `, and ` y `
-
-### **Calculate Line Flows and Line Losses:**
-**Input:**
-- Number of buses, ` n `
-- Matrices ` V `, ` I `, and ` y `
-
-**Process:**
-- Initialize matrices ` S ` and ` SL `
-- For each bus pair, calculate voltage differences
-- For each bus pair, calculate current values using admittance and voltage differences
-- For each bus pair, calculate line flows and line losses
-
-**Output:**
-- Return matrices ` S ` and ` SL `
-
-### **Display the Line Flows and Line Losses:**
-**Input:**
-- Matrices ` V `, ` I `, ` S `, and ` SL `
-- Number of buses, ` n `
-
-**Process:**
-- Create a list named `data`
-- For each bus pair, add bus pair information, voltage, current, line flow, and line loss to `data`
-- Declare headers and display them
-- Display data for each bus pair
-
-**Output:**
-- Display line flows and line losses for each bus pair
-
 
 ## Class Diagram
 

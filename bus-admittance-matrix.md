@@ -64,35 +64,6 @@ $$
 where $y_{ij}$ is the admittance of the line between bus i and bus j.
 
 
-# Algorithm
-
-1. **Initialize Variables**:
-   - Get the number of buses from the user.
-   - Initialize the line admittance matrix and bus admittance matrix with zeros.
-
-2. **Define Functions**:
-   - **Function 1: get_input**
-     - Input: User choice (impedance or admittance) and number of buses.
-     - Output: Line Admittance Matrix.
-     - Description: Gets the input from the user based on the choice and calculates admittance values.
-
-   - **Function 2: calculate_admittance_matrix**
-     - Input: Line Admittance Matrix.
-     - Output: Bus Admittance Matrix.
-     - Description: Forms the bus admittance matrix using the admittance value matrix.
-
-   - **Function 3: print_admittance_matrix**
-     - Input: Bus Admittance Matrix.
-     - Output: None (prints the matrix to the console).
-     - Description: Prints the bus admittance matrix.
-
-3. **Main Function**:
-   - Step 1: Ask the user to enter the number of buses.
-   - Step 2: Ask the user to choose between impedance or admittance.
-   - Step 3: Call `get_input` to get the line admittance matrix.
-   - Step 4: Call `calculate_admittance_matrix` to form the bus admittance matrix.
-   - Step 5: Call `print_admittance_matrix` to display the bus admittance matrix.
-
 ## Class Diagram
 
 <pre class="mermaid">
