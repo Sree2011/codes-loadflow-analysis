@@ -7,6 +7,8 @@
 	});
 </script>
 
+[Home](./README.md)
+
 # Line Flows and Line Losses
 
 Finding line flows and line losses in a power system.
