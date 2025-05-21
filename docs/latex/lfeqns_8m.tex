@@ -1,0 +1,80 @@
+\doxysection{codes/\+Load\+FLow Equations/\+MATLAB/lfeqns.m File Reference}
+\hypertarget{lfeqns_8m}{}\label{lfeqns_8m}\index{codes/LoadFLow Equations/MATLAB/lfeqns.m@{codes/LoadFLow Equations/MATLAB/lfeqns.m}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Number of buses \mbox{\hyperlink{lfeqns_8m_aedfd4badb1248e58e5dd243f0bef44f6}{V}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a703ed39f67d9dabcf36ff963551b95ea}{voltages}} \mbox{\hyperlink{lfeqns_8m_ada95fa0911a04fd6ec1adcf2f8bb381a}{I}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a233db53fac565dc7d483296faaff9684}{currents}} \mbox{\hyperlink{lfeqns_8m_adb56bb894d0e1ef5f7c141dae43a8743}{y}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Bus \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} \mbox{\hyperlink{lfeqns_8m_ae5f3f23dd8e5c44027ff663a0a49e0a6}{S}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} power \mbox{\hyperlink{lfeqns_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Line losses file get\+\_\+input m brief Get input from the user This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} prompts the user to enter bus \mbox{\hyperlink{lfeqns_8m_af82585663e43cc1340eb4d8141382fd1}{voltages}}
+\item 
+Line losses file get\+\_\+input m brief Get input from the user This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} prompts the user to enter bus \mbox{\hyperlink{lfeqns_8m_ab979df2f15f6268fbc5c0fc2a9d65fae}{currents}}
+\item 
+Line losses file get\+\_\+input m brief Get input from the user This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} prompts the user to enter bus and \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} \mbox{[}\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}\mbox{]} = get\+\_\+input(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})
+\item 
+file calculate\+\_\+load\+\_\+flow m brief Calculate load flow equations This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} calculates the load flow equations based on the input \mbox{\hyperlink{lfeqns_8m_ac6ab3a67acb293af1278a8b1ab5c4336}{values}} \mbox{[}\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}}, \mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}}\mbox{]} = calculate\+\_\+load\+\_\+flow(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}\label{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b} 
+\index{lfeqns.m@{lfeqns.m}!admittances@{admittances}}
+\index{admittances@{admittances}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{admittances}{admittances}}
+{\footnotesize\ttfamily Line losses file get\+\_\+input m brief Get input from the user This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} prompts the user to enter bus and admittances\mbox{[}\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}\mbox{]} = get\+\_\+input(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})}
+
+\Hypertarget{lfeqns_8m_ab979df2f15f6268fbc5c0fc2a9d65fae}\label{lfeqns_8m_ab979df2f15f6268fbc5c0fc2a9d65fae} 
+\index{lfeqns.m@{lfeqns.m}!currents@{currents}}
+\index{currents@{currents}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{currents}{currents}}
+{\footnotesize\ttfamily Line losses file get\+\_\+input m brief Get input from the user This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} prompts the user to enter bus currents}
+
+\Hypertarget{lfeqns_8m_ada95fa0911a04fd6ec1adcf2f8bb381a}\label{lfeqns_8m_ada95fa0911a04fd6ec1adcf2f8bb381a} 
+\index{lfeqns.m@{lfeqns.m}!I@{I}}
+\index{I@{I}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{I}{I}}
+{\footnotesize\ttfamily Bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a703ed39f67d9dabcf36ff963551b95ea}{voltages}} I = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\Hypertarget{lfeqns_8m_ae5f3f23dd8e5c44027ff663a0a49e0a6}\label{lfeqns_8m_ae5f3f23dd8e5c44027ff663a0a49e0a6} 
+\index{lfeqns.m@{lfeqns.m}!S@{S}}
+\index{S@{S}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily Bus \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} S = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\Hypertarget{lfeqns_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}\label{lfeqns_8m_ae4a1a55499f36d66a3ceff9bfbf211b2} 
+\index{lfeqns.m@{lfeqns.m}!SL@{SL}}
+\index{SL@{SL}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{SL}{SL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} power SL = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\Hypertarget{lfeqns_8m_aedfd4badb1248e58e5dd243f0bef44f6}\label{lfeqns_8m_aedfd4badb1248e58e5dd243f0bef44f6} 
+\index{lfeqns.m@{lfeqns.m}!V@{V}}
+\index{V@{V}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily Number of buses V = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\Hypertarget{lfeqns_8m_ac6ab3a67acb293af1278a8b1ab5c4336}\label{lfeqns_8m_ac6ab3a67acb293af1278a8b1ab5c4336} 
+\index{lfeqns.m@{lfeqns.m}!values@{values}}
+\index{values@{values}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily file calculate\+\_\+load\+\_\+flow m brief Calculate load flow equations This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} calculates the load flow equations based on the input values\mbox{[}\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}}, \mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}}\mbox{]} = calculate\+\_\+load\+\_\+flow(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})}
+
+\Hypertarget{lfeqns_8m_af82585663e43cc1340eb4d8141382fd1}\label{lfeqns_8m_af82585663e43cc1340eb4d8141382fd1} 
+\index{lfeqns.m@{lfeqns.m}!voltages@{voltages}}
+\index{voltages@{voltages}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{voltages}{voltages}}
+{\footnotesize\ttfamily Line losses file get\+\_\+input m brief Get input from the user This \mbox{\hyperlink{calculate__lineflow__loss_8m_a618baa0e68ac7ff8e21ae8c9803e1cf8}{function}} prompts the user to enter bus voltages}
+
+\Hypertarget{lfeqns_8m_adb56bb894d0e1ef5f7c141dae43a8743}\label{lfeqns_8m_adb56bb894d0e1ef5f7c141dae43a8743} 
+\index{lfeqns.m@{lfeqns.m}!y@{y}}
+\index{y@{y}!lfeqns.m@{lfeqns.m}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily Bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a233db53fac565dc7d483296faaff9684}{currents}} y = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+

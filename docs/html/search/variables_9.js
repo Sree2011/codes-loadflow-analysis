@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['v_0',['V',['../lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359',1,'lineflow_loss.m']]]
+  ['q_0',['Q',['../calculate__load__flow_8m.html#a7e56035a736d269ad670f312496a0846',1,'calculate_load_flow.m']]]
 ];

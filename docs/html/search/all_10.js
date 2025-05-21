@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['v_0',['v',['../lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359',1,'V:&#160;lineflow_loss.m'],['../calculate__lineflow__loss_8m.html#a60dca37bcc90951b6f43d7c9628c9a37',1,'V(j, i):&#160;calculate_lineflow_loss.m']]]
+  ['tostring_0',['tostring',['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex.toString()'],['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex.toString()'],['../classComplex.html#a5a14ebec63aae370f2a05522e2c45453',1,'Complex.toString()']]],
+  ['type_1',['type',['../Line_01Flows_01and_01Losses_2MATLAB_2get__input_8m.html#ab109faaab8ca95ce134fc9471f1e3043',1,'get_input.m']]]
 ];

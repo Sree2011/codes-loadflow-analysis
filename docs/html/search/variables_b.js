@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['zbus_0',['zbus',['../Zbus__matlab_8m.html#a17415d3d72a658150e8988f132aff0e9',1,'ZBUS:&#160;Zbus_matlab.m'],['../calculate__zbus_8m.html#add8776c71af3911c2c298129f1c068f0',1,'Zbus:&#160;calculate_zbus.m']]],
-  ['zij_1',['zij',['../Zbus_2MATLAB_2get__input_8m.html#a3be2cb1473a20afbcc5ef44ea0efd9f7',1,'get_input.m']]]
+  ['s_0',['s',['../lineflow__loss_8m.html#a4a5a1d12c40b2437f4beab9257897615',1,'S:&#160;lineflow_loss.m'],['../lfeqns_8m.html#ae5f3f23dd8e5c44027ff663a0a49e0a6',1,'S:&#160;lfeqns.m']]],
+  ['sl_1',['sl',['../calculate__load__flow_8m.html#ae4a1a55499f36d66a3ceff9bfbf211b2',1,'SL:&#160;calculate_load_flow.m'],['../lfeqns_8m.html#ae4a1a55499f36d66a3ceff9bfbf211b2',1,'SL:&#160;lfeqns.m']]],
+  ['sli_2',['SLI',['../calculate__load__flow_8m.html#ad3d212e03404ec2def578af46165ac80',1,'calculate_load_flow.m']]],
+  ['slr_3',['SLR',['../calculate__load__flow_8m.html#ac33b0614df163dcd2e2d56018b570cfe',1,'calculate_load_flow.m']]]
 ];

@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['z_0',['z',['../Zbus_2MATLAB_2get__input_8m.html#aeafa4dc3ae9bc38ed0586b627a834e8e',1,'get_input.m']]],
-  ['zbus_1',['zbus',['../Zbus__matlab_8m.html#a17415d3d72a658150e8988f132aff0e9',1,'ZBUS:&#160;Zbus_matlab.m'],['../calculate__zbus_8m.html#add8776c71af3911c2c298129f1c068f0',1,'Zbus:&#160;calculate_zbus.m']]],
-  ['zbus_5fjava_2',['Zbus_Java',['../classZbus__Java.html',1,'']]],
-  ['zbus_5fjava_2ejava_3',['Zbus_Java.java',['../Zbus__Java_8java.html',1,'']]],
-  ['zbus_5fmatlab_2em_4',['Zbus_matlab.m',['../Zbus__matlab_8m.html',1,'']]],
-  ['zbus_5fpython_5',['Zbus_Python',['../namespaceZbus__Python.html',1,'']]],
-  ['zbus_5fpython_2epy_6',['Zbus_Python.py',['../Zbus__Python_8py.html',1,'']]],
-  ['zij_7',['zij',['../Zbus_2MATLAB_2get__input_8m.html#a3be2cb1473a20afbcc5ef44ea0efd9f7',1,'get_input.m']]]
+  ['y_0',['y',['../lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;lineflow_loss.m'],['../LoadFLow_01Equations_2MATLAB_2get__input_8m.html#a78751dfe7b2c12f2af13bec11110d6d2',1,'y:&#160;get_input.m'],['../lfeqns_8m.html#adb56bb894d0e1ef5f7c141dae43a8743',1,'y:&#160;lfeqns.m'],['../Ybus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;Ybus_matlab.m'],['../namespaceYbus__Python.html#ab45f07f249f3e7d329509cb2510fe56f',1,'Ybus_Python.y'],['../Zbus__matlab_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0',1,'y:&#160;Zbus_matlab.m'],['../namespaceZbus__Python.html#aba6581a6af570d53104cbf5efaa50798',1,'Zbus_Python.y'],['../Line_01Flows_01and_01Losses_2MATLAB_2get__input_8m.html#a2214d045a9d9c755750330a130ce15ff',1,'y(i, j):&#160;get_input.m'],['../Ybus_2matlab_2get__input_8m.html#adcc2ccb3bbdd9d22a9734d8219914e73',1,'y(i, j):&#160;get_input.m']]],
+  ['ybus_1',['ybus',['../Zbus_2MATLAB_2calculate__matrix_8m.html#ae5a5eee66749bf5128939e55db6f81c1',1,'Ybus(i, j):&#160;calculate_matrix.m'],['../Ybus_2matlab_2calculate__matrix_8m.html#ae5a5eee66749bf5128939e55db6f81c1',1,'Ybus(i, j):&#160;calculate_matrix.m'],['../namespaceZbus__Python.html#a852b2d134ae52add3e9b04c4dbe3f6ce',1,'Zbus_Python.Ybus'],['../namespaceYbus__Python.html#a3d2f2cd307353a609df5ed6f361efda0',1,'Ybus_Python.Ybus'],['../Ybus__matlab_8m.html#a23fa726a74b27a90f812a94575b772be',1,'YBUS:&#160;Ybus_matlab.m'],['../Zbus_2MATLAB_2calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m'],['../Ybus_2matlab_2calculate__matrix_8m.html#ab4c00bd68801d3e0053bf4e62517ee7d',1,'YBus:&#160;calculate_matrix.m'],['../Zbus__matlab_8m.html#afa48da4dfb292a0ca1a998b5b2ea2941',1,'ybus:&#160;Zbus_matlab.m']]],
+  ['ybus_5fjava_2',['Ybus_Java',['../classYbus__Java.html',1,'']]],
+  ['ybus_5fjava_2ejava_3',['Ybus_Java.java',['../Ybus__Java_8java.html',1,'']]],
+  ['ybus_5fmatlab_2em_4',['Ybus_matlab.m',['../Ybus__matlab_8m.html',1,'']]],
+  ['ybus_5fpython_5',['Ybus_Python',['../namespaceYbus__Python.html',1,'']]],
+  ['ybus_5fpython_2epy_6',['Ybus_Python.py',['../Ybus__Python_8py.html',1,'']]],
+  ['yij_7',['yij',['../Ybus_2matlab_2get__input_8m.html#a524e6c6a36397088e56b9ff1b3c614d1',1,'get_input.m']]],
+  ['yp_8',['yp',['../Ybus_2matlab_2get__input_8m.html#abe3d4ee08a6d6a5b2db763330b532ea6',1,'yp:&#160;get_input.m'],['../Zbus_2MATLAB_2get__input_8m.html#abe3d4ee08a6d6a5b2db763330b532ea6',1,'yp:&#160;get_input.m']]]
 ];

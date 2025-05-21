@@ -86,7 +86,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a3e3a90429b321d2edca618080ba38955" id="r_a3e3a90429b321d2edca618080ba38955"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a3e3a90429b321d2edca618080ba38955">fprintf</a> ('Enter the number of buses:')</td></tr>
 <tr class="memdesc:a3e3a90429b321d2edca618080ba38955"><td class="mdescLeft">&#160;</td><td class="mdescRight">This program calculates lineflows and line losses of a power system by taking line voltages, currents,.  <br /></td></tr>
 <tr class="separator:a3e3a90429b321d2edca618080ba38955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b29b266f350b0b9a9e58055870ae4c" id="r_a53b29b266f350b0b9a9e58055870ae4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a53b29b266f350b0b9a9e58055870ae4c">display_output</a> (<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359">V</a>, <a class="el" href="lineflow__loss_8m.html#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">I</a>, <a class="el" href="lineflow__loss_8m.html#a4a5a1d12c40b2437f4beab9257897615">S</a>, <a class="el" href="calculate__lineflow__loss_8m.html#a72f66ef44772677922a5a0961fd223f5">SL</a>)</td></tr>
+<tr class="memitem:a53b29b266f350b0b9a9e58055870ae4c" id="r_a53b29b266f350b0b9a9e58055870ae4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a53b29b266f350b0b9a9e58055870ae4c">display_output</a> (<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeb91f193c36a4cecd12137e1bab93177">V</a>, <a class="el" href="lineflow__loss_8m.html#a3182463df3478438aa2f6878047457f0">I</a>, <a class="el" href="lineflow__loss_8m.html#a4a5a1d12c40b2437f4beab9257897615">S</a>, <a class="el" href="calculate__load__flow_8m.html#ae4a1a55499f36d66a3ceff9bfbf211b2">SL</a>)</td></tr>
 <tr class="memdesc:a53b29b266f350b0b9a9e58055870ae4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate lineflows and line losses.  <br /></td></tr>
 <tr class="separator:a53b29b266f350b0b9a9e58055870ae4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -97,13 +97,13 @@ Variables</h2></td></tr>
 <tr class="memitem:a4a5a1d12c40b2437f4beab9257897615" id="r_a4a5a1d12c40b2437f4beab9257897615"><td class="memItemLeft" align="right" valign="top">Prompt the user for input&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a4a5a1d12c40b2437f4beab9257897615">S</a> = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="memdesc:a4a5a1d12c40b2437f4beab9257897615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize matrices.  <br /></td></tr>
 <tr class="separator:a4a5a1d12c40b2437f4beab9257897615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6e6892dd8d3388a4a3bee5412fc359" id="r_afc6e6892dd8d3388a4a3bee5412fc359"><td class="memItemLeft" align="right" valign="top">No <a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359">V</a> = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
-<tr class="separator:afc6e6892dd8d3388a4a3bee5412fc359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b8d1df7ee89c1e7cd2a7ad17e4cae9a" id="r_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a"><td class="memItemLeft" align="right" valign="top">No <a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">I</a> = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
-<tr class="separator:a5b8d1df7ee89c1e7cd2a7ad17e4cae9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb91f193c36a4cecd12137e1bab93177" id="r_aeb91f193c36a4cecd12137e1bab93177"><td class="memItemLeft" align="right" valign="top">No <a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#aeb91f193c36a4cecd12137e1bab93177">V</a> = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="separator:aeb91f193c36a4cecd12137e1bab93177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3182463df3478438aa2f6878047457f0" id="r_a3182463df3478438aa2f6878047457f0"><td class="memItemLeft" align="right" valign="top">No <a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a3182463df3478438aa2f6878047457f0">I</a> = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
+<tr class="separator:a3182463df3478438aa2f6878047457f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb1c5cf58867b5bbc9a1b145a86f3a0" id="r_a2fb1c5cf58867b5bbc9a1b145a86f3a0"><td class="memItemLeft" align="right" valign="top">No <a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a> = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td></tr>
 <tr class="separator:a2fb1c5cf58867b5bbc9a1b145a86f3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bbbcc2a5d901d792c7db1cf3577bac0" id="r_a1bbbcc2a5d901d792c7db1cf3577bac0"><td class="memItemLeft" align="right" valign="top">No&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a> [<a class="el" href="lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359">V</a>, <a class="el" href="lineflow__loss_8m.html#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">I</a>, <a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>] = get_input(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>,<a class="el" href="lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359">V</a>,<a class="el" href="lineflow__loss_8m.html#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">I</a>,<a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>)</td></tr>
+<tr class="memitem:a1bbbcc2a5d901d792c7db1cf3577bac0" id="r_a1bbbcc2a5d901d792c7db1cf3577bac0"><td class="memItemLeft" align="right" valign="top">No&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a> [<a class="el" href="lineflow__loss_8m.html#aeb91f193c36a4cecd12137e1bab93177">V</a>, <a class="el" href="lineflow__loss_8m.html#a3182463df3478438aa2f6878047457f0">I</a>, <a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>] = get_input(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>,<a class="el" href="lineflow__loss_8m.html#aeb91f193c36a4cecd12137e1bab93177">V</a>,<a class="el" href="lineflow__loss_8m.html#a3182463df3478438aa2f6878047457f0">I</a>,<a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>)</td></tr>
 <tr class="memdesc:a1bbbcc2a5d901d792c7db1cf3577bac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get input from the user.  <br /></td></tr>
 <tr class="separator:a1bbbcc2a5d901d792c7db1cf3577bac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -123,13 +123,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359">V</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="lineflow__loss_8m.html#aeb91f193c36a4cecd12137e1bab93177">V</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="lineflow__loss_8m.html#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">I</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="lineflow__loss_8m.html#a3182463df3478438aa2f6878047457f0">I</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -141,7 +141,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="calculate__lineflow__loss_8m.html#a72f66ef44772677922a5a0961fd223f5">SL</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="calculate__load__flow_8m.html#ae4a1a55499f36d66a3ceff9bfbf211b2">SL</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -190,14 +190,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a5b8d1df7ee89c1e7cd2a7ad17e4cae9a" name="a5b8d1df7ee89c1e7cd2a7ad17e4cae9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">&#9670;&#160;</a></span>I</h2>
+<a id="a3182463df3478438aa2f6878047457f0" name="a3182463df3478438aa2f6878047457f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3182463df3478438aa2f6878047457f0">&#9670;&#160;</a></span>I</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">No <a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a> I = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td>
+          <td class="memname">end Return the bus and <a class="el" href="lfeqns_8m.html#aebc40718d42ecc0fc957447bfbf8b68b">admittances</a> return I = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -225,7 +225,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">No output[<a class="el" href="lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359">V</a>, <a class="el" href="lineflow__loss_8m.html#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">I</a>, <a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>] = get_input(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>,<a class="el" href="lineflow__loss_8m.html#afc6e6892dd8d3388a4a3bee5412fc359">V</a>,<a class="el" href="lineflow__loss_8m.html#a5b8d1df7ee89c1e7cd2a7ad17e4cae9a">I</a>,<a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>)</td>
+          <td class="memname">No output[<a class="el" href="lineflow__loss_8m.html#aeb91f193c36a4cecd12137e1bab93177">V</a>, <a class="el" href="lineflow__loss_8m.html#a3182463df3478438aa2f6878047457f0">I</a>, <a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>] = get_input(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>,<a class="el" href="lineflow__loss_8m.html#aeb91f193c36a4cecd12137e1bab93177">V</a>,<a class="el" href="lineflow__loss_8m.html#a3182463df3478438aa2f6878047457f0">I</a>,<a class="el" href="lineflow__loss_8m.html#a2fb1c5cf58867b5bbc9a1b145a86f3a0">y</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,14 +251,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afc6e6892dd8d3388a4a3bee5412fc359" name="afc6e6892dd8d3388a4a3bee5412fc359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc6e6892dd8d3388a4a3bee5412fc359">&#9670;&#160;</a></span>V</h2>
+<a id="aeb91f193c36a4cecd12137e1bab93177" name="aeb91f193c36a4cecd12137e1bab93177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb91f193c36a4cecd12137e1bab93177">&#9670;&#160;</a></span>V</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">No <a class="el" href="lineflow__loss_8m.html#a1bbbcc2a5d901d792c7db1cf3577bac0">output</a> V = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td>
+          <td class="memname">end Return the bus and <a class="el" href="lfeqns_8m.html#aebc40718d42ecc0fc957447bfbf8b68b">admittances</a> return V = zeros(<a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>, <a class="el" href="lineflow__loss_8m.html#aeab71244afb687f16d8c4f5ee9d6ef0e">n</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">

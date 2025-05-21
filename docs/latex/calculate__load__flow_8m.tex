@@ -1,0 +1,196 @@
+\doxysection{codes/\+Load\+FLow Equations/\+MATLAB/calculate\+\_\+load\+\_\+flow.m File Reference}
+\hypertarget{calculate__load__flow_8m}{}\label{calculate__load__flow_8m}\index{codes/LoadFLow Equations/MATLAB/calculate\_load\_flow.m@{codes/LoadFLow Equations/MATLAB/calculate\_load\_flow.m}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_abc2fe207de76b59f192ca7ed33d7aa35}{S}} (j, \mbox{\hyperlink{calculate__lineflow__loss_8m_a1b6ee4d78d053853d408188836e0a3c3}{i}})
+\item 
+Display results \mbox{\hyperlink{calculate__load__flow_8m_a961ab5e6fc8fa093d91f67da3c6d10d6}{disp}} (\textquotesingle{}\mbox{\hyperlink{classComplex}{Complex}} Power(\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}})\+:\textquotesingle{})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a5f8a959a63d4cff96e44e1317b06873d}{disp}} (\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a678a2460d6145d86ed26eac2b32d8d38}{disp}} (\textquotesingle{}Line Losses(\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})\+:\textquotesingle{})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_aa4ee6fa37ffeb5199e1bf3b37fb1cc41}{disp}} (\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a7e3da4745103d4e013e97f059d93cc25}{disp}} (\textquotesingle{}Real Power(\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}})\+:\textquotesingle{})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a57ef454fbfef8027125cacf6beaf2183}{disp}} (\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a8dbfaa82793ca62fad756e81c5dd872e}{disp}} (\textquotesingle{}Reactive Power(\mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}})\+:\textquotesingle{})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a26c1822d69cc5730a4791053dbfd5dd4}{disp}} (\mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a0610fef2f65bfe41cdeaad816f20a0bf}{disp}} (\textquotesingle{}Real Line Losses(\mbox{\hyperlink{calculate__load__flow_8m_ac33b0614df163dcd2e2d56018b570cfe}{SLR}})\+:\textquotesingle{})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a363f9e13bb5424d7849df5d1a476151c}{disp}} (\mbox{\hyperlink{calculate__load__flow_8m_ac33b0614df163dcd2e2d56018b570cfe}{SLR}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a86e2c57851d85c977f2d9af35bc3dda1}{disp}} (\textquotesingle{}Reactive Line Losses(\mbox{\hyperlink{calculate__load__flow_8m_ad3d212e03404ec2def578af46165ac80}{SLI}})\+:\textquotesingle{})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a2e5049f249c46e3dc9ea21e6850abfc1}{disp}} (\mbox{\hyperlink{calculate__load__flow_8m_ad3d212e03404ec2def578af46165ac80}{SLI}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a23d2172e269f82d08b72383359da2cd7}{function}} \mbox{[}\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}}, \mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}}\mbox{]}
+\item 
+\mbox{\hyperlink{classComplex}{Complex}} power \mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Line losses Calculate complex power for \mbox{\hyperlink{calculate__load__flow_8m_a3359ed5f123e10953f77a90207beaa1b}{i}}
+\item 
+No losses on the diagonal else \mbox{\hyperlink{calculate__load__flow_8m_a20bc38a391003332373d2b228d712fb1}{continue}}
+\item 
+end end Calculate load flow equations \mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}} = real(\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}} = imag(\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_ac33b0614df163dcd2e2d56018b570cfe}{SLR}} = real(\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})
+\item 
+\mbox{\hyperlink{calculate__load__flow_8m_ad3d212e03404ec2def578af46165ac80}{SLI}} = imag(\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{calculate__load__flow_8m_a961ab5e6fc8fa093d91f67da3c6d10d6}\label{calculate__load__flow_8m_a961ab5e6fc8fa093d91f67da3c6d10d6} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/12]}}
+{\footnotesize\ttfamily Display results disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}\mbox{\hyperlink{classComplex}{Complex}} Power(\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}})\+:\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a678a2460d6145d86ed26eac2b32d8d38}\label{calculate__load__flow_8m_a678a2460d6145d86ed26eac2b32d8d38} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}Line Losses(\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})\+:\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a86e2c57851d85c977f2d9af35bc3dda1}\label{calculate__load__flow_8m_a86e2c57851d85c977f2d9af35bc3dda1} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}Reactive Line Losses(\mbox{\hyperlink{calculate__load__flow_8m_ad3d212e03404ec2def578af46165ac80}{SLI}})\+:\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a8dbfaa82793ca62fad756e81c5dd872e}\label{calculate__load__flow_8m_a8dbfaa82793ca62fad756e81c5dd872e} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [4/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}Reactive Power(\mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}})\+:\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a0610fef2f65bfe41cdeaad816f20a0bf}\label{calculate__load__flow_8m_a0610fef2f65bfe41cdeaad816f20a0bf} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [5/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}Real Line Losses(\mbox{\hyperlink{calculate__load__flow_8m_ac33b0614df163dcd2e2d56018b570cfe}{SLR}})\+:\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a7e3da4745103d4e013e97f059d93cc25}\label{calculate__load__flow_8m_a7e3da4745103d4e013e97f059d93cc25} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [6/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\textquotesingle{}Real Power(\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}})\+:\textquotesingle{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a57ef454fbfef8027125cacf6beaf2183}\label{calculate__load__flow_8m_a57ef454fbfef8027125cacf6beaf2183} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [7/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a26c1822d69cc5730a4791053dbfd5dd4}\label{calculate__load__flow_8m_a26c1822d69cc5730a4791053dbfd5dd4} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [8/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a5f8a959a63d4cff96e44e1317b06873d}\label{calculate__load__flow_8m_a5f8a959a63d4cff96e44e1317b06873d} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [9/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_aa4ee6fa37ffeb5199e1bf3b37fb1cc41}\label{calculate__load__flow_8m_aa4ee6fa37ffeb5199e1bf3b37fb1cc41} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [10/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a2e5049f249c46e3dc9ea21e6850abfc1}\label{calculate__load__flow_8m_a2e5049f249c46e3dc9ea21e6850abfc1} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [11/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{calculate__load__flow_8m_ad3d212e03404ec2def578af46165ac80}{SLI}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_a363f9e13bb5424d7849df5d1a476151c}\label{calculate__load__flow_8m_a363f9e13bb5424d7849df5d1a476151c} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!disp@{disp}}
+\index{disp@{disp}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{disp()}{disp()}\hspace{0.1cm}{\footnotesize\ttfamily [12/12]}}
+{\footnotesize\ttfamily disp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{calculate__load__flow_8m_ac33b0614df163dcd2e2d56018b570cfe}{SLR}}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{calculate__load__flow_8m_abc2fe207de76b59f192ca7ed33d7aa35}\label{calculate__load__flow_8m_abc2fe207de76b59f192ca7ed33d7aa35} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!S@{S}}
+\index{S@{S}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{S()}{S()}}
+{\footnotesize\ttfamily S (\begin{DoxyParamCaption}\item[{j}]{,  }\item[{\mbox{\hyperlink{calculate__lineflow__loss_8m_a1b6ee4d78d053853d408188836e0a3c3}{i}}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{calculate__load__flow_8m_a20bc38a391003332373d2b228d712fb1}\label{calculate__load__flow_8m_a20bc38a391003332373d2b228d712fb1} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!continue@{continue}}
+\index{continue@{continue}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{continue}{continue}}
+{\footnotesize\ttfamily No losses on the diagonal else continue}
+
+\Hypertarget{calculate__load__flow_8m_a23d2172e269f82d08b72383359da2cd7}\label{calculate__load__flow_8m_a23d2172e269f82d08b72383359da2cd7} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!function@{function}}
+\index{function@{function}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily function\mbox{[}\mbox{\hyperlink{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}{P}}, \mbox{\hyperlink{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}{Q}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ calculate\_load\_flow(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}},\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}},\mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}},\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})}
+\DoxyCodeLine{\ \ \ \ \%\ Initialize\ matrices}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}}\ =\ zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}},\ \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\end{DoxyCode}
+\Hypertarget{calculate__load__flow_8m_a3359ed5f123e10953f77a90207beaa1b}\label{calculate__load__flow_8m_a3359ed5f123e10953f77a90207beaa1b} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!i@{i}}
+\index{i@{i}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Line_01Flows_01and_01Losses_2MATLAB_2get__input_8m_a885f3c58878e09d518f9bd6392d6ff2c}{if}} i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ j\ =\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}}(\mbox{\hyperlink{calculate__load__flow_8m_a3359ed5f123e10953f77a90207beaa1b}{i}},j)\ =\ \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}(\mbox{\hyperlink{calculate__load__flow_8m_a3359ed5f123e10953f77a90207beaa1b}{i}},j)\ *\ conj(\mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}(\mbox{\hyperlink{calculate__load__flow_8m_a3359ed5f123e10953f77a90207beaa1b}{i}},j))}
+
+\end{DoxyCode}
+\Hypertarget{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629}\label{calculate__load__flow_8m_a32535947801f66ada7d493dbab371629} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!P@{P}}
+\index{P@{P}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily end end Calculate load flow equations P = real(\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}})}
+
+\Hypertarget{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846}\label{calculate__load__flow_8m_a7e56035a736d269ad670f312496a0846} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!Q@{Q}}
+\index{Q@{Q}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{Q}{Q}}
+{\footnotesize\ttfamily Q = imag(\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}})}
+
+\Hypertarget{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}\label{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!SL@{SL}}
+\index{SL@{SL}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{SL}{SL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComplex}{Complex}} power SL = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\Hypertarget{calculate__load__flow_8m_ad3d212e03404ec2def578af46165ac80}\label{calculate__load__flow_8m_ad3d212e03404ec2def578af46165ac80} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!SLI@{SLI}}
+\index{SLI@{SLI}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{SLI}{SLI}}
+{\footnotesize\ttfamily SLI = imag(\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})}
+
+\Hypertarget{calculate__load__flow_8m_ac33b0614df163dcd2e2d56018b570cfe}\label{calculate__load__flow_8m_ac33b0614df163dcd2e2d56018b570cfe} 
+\index{calculate\_load\_flow.m@{calculate\_load\_flow.m}!SLR@{SLR}}
+\index{SLR@{SLR}!calculate\_load\_flow.m@{calculate\_load\_flow.m}}
+\doxysubsubsection{\texorpdfstring{SLR}{SLR}}
+{\footnotesize\ttfamily SLR = real(\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})}
+

@@ -1,0 +1,62 @@
+\doxysection{codes/\+Load\+FLow Equations/\+MATLAB/get\+\_\+input.m File Reference}
+\hypertarget{LoadFLow_01Equations_2MATLAB_2get__input_8m}{}\label{LoadFLow_01Equations_2MATLAB_2get__input_8m}\index{codes/LoadFLow Equations/MATLAB/get\_input.m@{codes/LoadFLow Equations/MATLAB/get\_input.m}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_aeb91f193c36a4cecd12137e1bab93177}{V}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a703ed39f67d9dabcf36ff963551b95ea}{voltages}} \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a3182463df3478438aa2f6878047457f0}{I}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a233db53fac565dc7d483296faaff9684}{currents}} \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a78751dfe7b2c12f2af13bec11110d6d2}{y}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+\item 
+Bus \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} Get bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a703ed39f67d9dabcf36ff963551b95ea}{voltages}} for \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a1b6ee4d78d053853d408188836e0a3c3}{i}}
+\item 
+end Return the bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a703ed39f67d9dabcf36ff963551b95ea}{voltages}}
+\item 
+end Return the bus \mbox{\hyperlink{LoadFLow_01Equations_2MATLAB_2get__input_8m_a233db53fac565dc7d483296faaff9684}{currents}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{LoadFLow_01Equations_2MATLAB_2get__input_8m_a233db53fac565dc7d483296faaff9684}\label{LoadFLow_01Equations_2MATLAB_2get__input_8m_a233db53fac565dc7d483296faaff9684} 
+\index{get\_input.m@{get\_input.m}!currents@{currents}}
+\index{currents@{currents}!get\_input.m@{get\_input.m}}
+\doxysubsubsection{\texorpdfstring{currents}{currents}}
+{\footnotesize\ttfamily end Return the bus currents}
+
+\Hypertarget{LoadFLow_01Equations_2MATLAB_2get__input_8m_a3182463df3478438aa2f6878047457f0}\label{LoadFLow_01Equations_2MATLAB_2get__input_8m_a3182463df3478438aa2f6878047457f0} 
+\index{get\_input.m@{get\_input.m}!I@{I}}
+\index{I@{I}!get\_input.m@{get\_input.m}}
+\doxysubsubsection{\texorpdfstring{I}{I}}
+{\footnotesize\ttfamily end Return the bus and \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} return I = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\Hypertarget{LoadFLow_01Equations_2MATLAB_2get__input_8m_a1b6ee4d78d053853d408188836e0a3c3}\label{LoadFLow_01Equations_2MATLAB_2get__input_8m_a1b6ee4d78d053853d408188836e0a3c3} 
+\index{get\_input.m@{get\_input.m}!i@{i}}
+\index{i@{i}!get\_input.m@{get\_input.m}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily end Get bus \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} for i}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ 1:\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}(\mbox{\hyperlink{calculate__lineflow__loss_8m_a1b6ee4d78d053853d408188836e0a3c3}{i}},\ :)\ =\ input([\textcolor{stringliteral}{'Enter\ the\ voltage\ for\ bus\ '}\ num2str(\mbox{\hyperlink{calculate__lineflow__loss_8m_a1b6ee4d78d053853d408188836e0a3c3}{i}})\ \textcolor{stringliteral}{':\ '}])}
+
+\end{DoxyCode}
+\Hypertarget{LoadFLow_01Equations_2MATLAB_2get__input_8m_aeb91f193c36a4cecd12137e1bab93177}\label{LoadFLow_01Equations_2MATLAB_2get__input_8m_aeb91f193c36a4cecd12137e1bab93177} 
+\index{get\_input.m@{get\_input.m}!V@{V}}
+\index{V@{V}!get\_input.m@{get\_input.m}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily end Return the bus and \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} return V = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+
+\Hypertarget{LoadFLow_01Equations_2MATLAB_2get__input_8m_a703ed39f67d9dabcf36ff963551b95ea}\label{LoadFLow_01Equations_2MATLAB_2get__input_8m_a703ed39f67d9dabcf36ff963551b95ea} 
+\index{get\_input.m@{get\_input.m}!voltages@{voltages}}
+\index{voltages@{voltages}!get\_input.m@{get\_input.m}}
+\doxysubsubsection{\texorpdfstring{voltages}{voltages}}
+{\footnotesize\ttfamily end Return the bus voltages}
+
+\Hypertarget{LoadFLow_01Equations_2MATLAB_2get__input_8m_a78751dfe7b2c12f2af13bec11110d6d2}\label{LoadFLow_01Equations_2MATLAB_2get__input_8m_a78751dfe7b2c12f2af13bec11110d6d2} 
+\index{get\_input.m@{get\_input.m}!y@{y}}
+\index{y@{y}!get\_input.m@{get\_input.m}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily end Return the bus and \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} return y = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+

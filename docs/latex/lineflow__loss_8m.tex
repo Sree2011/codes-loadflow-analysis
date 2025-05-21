@@ -5,7 +5,7 @@
 \item 
 \mbox{\hyperlink{lineflow__loss_8m_a3e3a90429b321d2edca618080ba38955}{fprintf}} (\textquotesingle{}Enter the number of buses\+:\textquotesingle{})
 \begin{DoxyCompactList}\small\item\em This program calculates lineflows and line losses of a power system by taking line voltages, currents,. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{lineflow__loss_8m_a53b29b266f350b0b9a9e58055870ae4c}{display\+\_\+output}} (\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}}, \mbox{\hyperlink{calculate__lineflow__loss_8m_a72f66ef44772677922a5a0961fd223f5}{SL}})
+\mbox{\hyperlink{lineflow__loss_8m_a53b29b266f350b0b9a9e58055870ae4c}{display\+\_\+output}} (\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}}, \mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}})
 \begin{DoxyCompactList}\small\item\em Calculate lineflows and line losses. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
@@ -14,13 +14,13 @@
 \item 
 Prompt the user for input \mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \begin{DoxyCompactList}\small\item\em Initialize matrices. \end{DoxyCompactList}\item 
-No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} \mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} \mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \item 
-No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
+No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \item 
 No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}} = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})
 \item 
-No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} \mbox{[}\mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}\mbox{]} = get\+\_\+input(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}},\mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}},\mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}},\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})
+No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} \mbox{[}\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}\mbox{]} = get\+\_\+input(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}},\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}},\mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}},\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})
 \begin{DoxyCompactList}\small\item\em Get input from the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -29,7 +29,7 @@ No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}
 \index{lineflow\_loss.m@{lineflow\_loss.m}!display\_output@{display\_output}}
 \index{display\_output@{display\_output}!lineflow\_loss.m@{lineflow\_loss.m}}
 \doxysubsubsection{\texorpdfstring{display\_output()}{display\_output()}}
-{\footnotesize\ttfamily display\+\_\+output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}}}]{,  }\item[{\mbox{\hyperlink{calculate__lineflow__loss_8m_a72f66ef44772677922a5a0961fd223f5}{SL}}}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily display\+\_\+output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}}]{,  }\item[{\mbox{\hyperlink{lineflow__loss_8m_a4a5a1d12c40b2437f4beab9257897615}{S}}}]{,  }\item[{\mbox{\hyperlink{calculate__load__flow_8m_ae4a1a55499f36d66a3ceff9bfbf211b2}{SL}}}]{ }\end{DoxyParamCaption})}
 
 
 
@@ -65,11 +65,11 @@ This program calculates lineflows and line losses of a power system by taking li
 and Line admittances as input from the user. 
 
 \doxysubsection{Variable Documentation}
-\Hypertarget{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}\label{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a} 
+\Hypertarget{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}\label{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0} 
 \index{lineflow\_loss.m@{lineflow\_loss.m}!I@{I}}
 \index{I@{I}!lineflow\_loss.m@{lineflow\_loss.m}}
 \doxysubsubsection{\texorpdfstring{I}{I}}
-{\footnotesize\ttfamily No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} I = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+{\footnotesize\ttfamily end Return the bus and \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} return I = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
 
 \Hypertarget{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}\label{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e} 
 \index{lineflow\_loss.m@{lineflow\_loss.m}!n@{n}}
@@ -81,7 +81,7 @@ and Line admittances as input from the user.
 \index{lineflow\_loss.m@{lineflow\_loss.m}!output@{output}}
 \index{output@{output}!lineflow\_loss.m@{lineflow\_loss.m}}
 \doxysubsubsection{\texorpdfstring{output}{output}}
-{\footnotesize\ttfamily No output\mbox{[}\mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}\mbox{]} = get\+\_\+input(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}},\mbox{\hyperlink{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}{V}},\mbox{\hyperlink{lineflow__loss_8m_a5b8d1df7ee89c1e7cd2a7ad17e4cae9a}{I}},\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})}
+{\footnotesize\ttfamily No output\mbox{[}\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}}, \mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}}, \mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}}\mbox{]} = get\+\_\+input(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}},\mbox{\hyperlink{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}{V}},\mbox{\hyperlink{lineflow__loss_8m_a3182463df3478438aa2f6878047457f0}{I}},\mbox{\hyperlink{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}{y}})}
 
 
 
@@ -97,11 +97,11 @@ Get input from the user.
 
 Initialize matrices. 
 
-\Hypertarget{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359}\label{lineflow__loss_8m_afc6e6892dd8d3388a4a3bee5412fc359} 
+\Hypertarget{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177}\label{lineflow__loss_8m_aeb91f193c36a4cecd12137e1bab93177} 
 \index{lineflow\_loss.m@{lineflow\_loss.m}!V@{V}}
 \index{V@{V}!lineflow\_loss.m@{lineflow\_loss.m}}
 \doxysubsubsection{\texorpdfstring{V}{V}}
-{\footnotesize\ttfamily No \mbox{\hyperlink{lineflow__loss_8m_a1bbbcc2a5d901d792c7db1cf3577bac0}{output}} V = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
+{\footnotesize\ttfamily end Return the bus and \mbox{\hyperlink{lfeqns_8m_aebc40718d42ecc0fc957447bfbf8b68b}{admittances}} return V = zeros(\mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}}, \mbox{\hyperlink{lineflow__loss_8m_aeab71244afb687f16d8c4f5ee9d6ef0e}{n}})}
 
 \Hypertarget{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0}\label{lineflow__loss_8m_a2fb1c5cf58867b5bbc9a1b145a86f3a0} 
 \index{lineflow\_loss.m@{lineflow\_loss.m}!y@{y}}
